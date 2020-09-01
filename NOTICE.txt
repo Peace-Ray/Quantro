@@ -1,0 +1,145 @@
+Quantro: a falling tetromino puzzle game by Jake Rosin
+
+  Copyright (C) 2012-2022 Peace Ray
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+Original Media Assets
+
+  Quantro Music and Sounds (C) by Doğaç Yavuz
+    (OGG files located in app\src\main\res\raw)
+
+  Quantro Art Assets and Documentation (C) by Peace Ray
+    (all media assets not listed elsewhere in this notice)
+
+  These works are licensed under a
+  Creative Commons Attribution-ShareAlike 4.0 International License; see
+  project file licenses/CC-BY-SA-4.0.txt.
+
+  You should have received a copy of the license along with this
+  work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+
+Included Software
+
+  Quantro contains modified versions of the following files licensed under
+  the Apache License, Version 2.0. Change logs for each can be found in the
+  corresponding file. See http://www.apache.org/licenses/LICENSE-2.0 or the
+  project file licenses/Apache-2.0.txt for a copy of the license. For the purpose
+  of creating or distributing derivative works based on only these files you may
+  consider them licensed under the terms of either GPL 3.0 or Apache 2.0.
+
+  PinnedHeaderListView.java (C) 2010 The Android Open Source Project
+  https://code.google.com/p/android-playground/
+
+  EllipsizingTextView.java (C) 2011 Micah Hainline
+  http://stackoverflow.com/questions/2160619/android-ellipsize-multiline-textview
+
+  SectionableAdapter.java (C) 2012 Velos Mobile
+  https://github.com/velos/SectionedGrid/
+
+  Quantro contains modified verisons of the following files licensed under
+  the MIT license. See https://opensource.org/licenses/MIT or the project file
+  licenses/MIT.txt for a copy of the license. For the purpose
+  of creating or distributing derivative works based on only these files you may
+  consider them licensed under the terms of either GPL 3.0 or MIT.
+
+  MagicTextView.java (C) 2014 Micah Fivecoate
+  https://github.com/m5/MagicTextView
+
+Included Media Assets
+
+  Quantro contains original and derivative media assets released under various
+  licenses.
+
+  Iconic icon set (C) P.J. Onori
+  https://www.iconfinder.com/iconsets/iconic-1
+  Creative Commons Attribution-ShareAlike 3.0 license
+    (see https://creativecommons.org/licenses/by-sa/3.0/ or the project file
+    licenses/CC-BY-SA-3.0.txt)
+  Images derived from this icon set are used to label Quantro gameplay buttons.
+  They are modified from their original form. Each is rasterized in both white
+  and black; Quantro displays those two versions layered over each other to
+  produce a drop-shadow effect. The following images, located in
+  app/src/main/res/ and subdirectories, are derived from this icon set (all
+  files with these prefixes):
+
+    arrow_left
+    arrow_right
+    arrow_up_down
+    bolt
+    curved_arrow
+    curved_arrow_ccw
+    download
+    loop
+
+  Android system icons, versions 2.0, 2.3, 4.0 (C) The Android Open Source Project
+  Apache License, Version 2.0
+    (See http://www.apache.org/licenses/LICENSE-2.0 or the
+    project file licenses/Apache-2.0.txt)
+  Images derived from the Android system icons are used to label Quantro menu
+  and navigation buttons. In some cases they were modified according to Android
+  Icon Design guidelines for menu icons; in others, drop shadows were added to
+  better fit Quantro's app UI for navigation and menus. The following images,
+  located in app/src/main/res and subdirectories, are derived from Android
+  system icons (all files with these prefixes):
+
+    action_about
+    action_accept
+    action_cancel
+    action_chat
+    action_clock
+    action_discard
+    action_edit
+    action_edit_new
+    action_help
+    action_import_export
+    action_key
+    action_locked
+    action_mute_off
+    action_mute_on
+    action_new
+    action_overflow
+    action_play
+    action_refresh
+    action_search
+    action_send
+    action_settings
+    action_share
+    action_shuffle
+    action_undo
+    action_unlocked
+    icon_about
+    icon_alert
+    icon_clock
+    icon_error
+    icon_population_2
+    icon_population_3
+    menu_info
+    menu_mute
+    menu_pause
+    menu_question
+    menu_refresh
+    menu_settings_cog
+    menu_settings_dial
+    menu_share
+    menu_undo
+    menu_unmute
+
+  Roboto-Condensed and Roboto-BoldCondensed fonts (C) Christian Robertson
+  Apache License, Version 2.0
+    (See http://www.apache.org/licenses/LICENSE-2.0 or the
+    project file licenses/Apache-2.0.txt)
+  Used for Quantro menu and game text. Located in app/src/main/assets/fonts
+
+Quantro, Peace Ray, and the Q logo are trademarks of Peace Ray LLC.

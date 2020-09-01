@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.peaceray.quantro.view.button.collage.FreePlayGameLaunchButtonCollage
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    custom:image_drawable_first_game_button="@drawable/action_new_baked_huge"
+    custom:image_drawable_new_game_button="@drawable/action_new_baked_small"
+    custom:image_drawable_edit_game_mode_button="@drawable/action_edit_baked_small"
+    custom:alert_drawable_timed="@drawable/action_clock_baked_small"
+    android:id="@+id/free_play_game_mode_list_item_button_collage"
+     >
+    
+    <!-- Big Main Button -->
+    <com.peaceray.quantro.view.button.QuantroButton
+    	android:id="@id/button_collage_free_play_button_main"
+		android:layout_width="@dimen/button_big_size"
+		android:layout_height="@dimen/button_big_size"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		custom:content_layout="@layout/content_image_fixed_alert_long_description"
+		custom:border_width = "@dimen/button_big_border_size"
+		custom:drop_shadow="true"
+		custom:proportions="square_shrink"
+		android:clickable="true"/>
+    
+    <!-- Extra buttons. -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dip"
+        android:paddingRight="12dip"
+        android:layout_alignRight="@id/button_collage_free_play_button_main"
+        android:layout_alignTop="@id/button_collage_free_play_button_main"
+        android:orientation="vertical"
+        android:gravity="right|top"
+        >
+        
+        <!-- new first; this keeps 'new' in the same place for all. -->
+        <com.peaceray.quantro.view.button.QuantroButton
+	    	android:id="@id/button_collage_free_play_button_new"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			custom:content_layout="@layout/content_image"
+			custom:border_width = "2dip"
+			custom:drop_shadow="true"
+			custom:hide_unpressed="true"
+			custom:proportions="square_shrink"
+			android:clickable="true"/>
+        
+        <com.peaceray.quantro.view.button.QuantroButton
+	    	android:id="@id/button_collage_free_play_button_edit"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			custom:content_layout="@layout/content_image"
+			custom:border_width = "2dip"
+			custom:drop_shadow="true"
+			custom:hide_unpressed="true"
+			custom:proportions="square_shrink"
+			android:clickable="true"/>
+        
+        
+        
+        
+        
+    </LinearLayout>
+    
+    <!-- Label! -->
+    <com.peaceray.quantro.view.generic.HeavyShadowTextView
+		android:id="@id/button_collage_label"
+		android:paddingLeft="4dp"
+		android:paddingRight="4dp"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/button_collage_free_play_button_main"
+		android:layout_centerHorizontal="true"
+		android:textSize="14sp"
+		android:textColor="@drawable/quantro_button_white_text_color"
+		custom:typeface="Roboto-Condensed"/>
+
+</com.peaceray.quantro.view.button.collage.FreePlayGameLaunchButtonCollage>

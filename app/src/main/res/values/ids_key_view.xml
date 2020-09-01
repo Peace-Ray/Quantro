@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    	<item 	type="id" 
+				name="key_view_xl_button_strip" />
+    	
+    	<item 	type="id" 
+				name="key_view_mp_button_strip" />
+    	
+    	<item	type="id"
+    	    	name="key_view_xl_description" />
+    	
+    	<item	type="id"
+    	    	name="key_view_mp_description" />
+    	
+</resources>

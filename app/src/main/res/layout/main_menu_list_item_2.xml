@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@id/main_menu_list_item"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingBottom="2dip"
+	>
+	
+	<include layout="@layout/quantro_list_item_header"/>
+	
+	<LinearLayout
+	    android:id="@id/main_menu_list_row"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    >
+	    
+	    <RelativeLayout 
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"
+    	    android:paddingLeft="10dp"
+    	    android:paddingRight="10dp">
+    	   <include layout="@layout/main_menu_button_strip_fat"
+    	       android:layout_alignParentTop="true"
+    	       android:layout_centerHorizontal="true"
+    	       android:layout_width="fill_parent"
+    		   android:layout_height="wrap_content" />
+    	   <!-- LayoutInflater has a bug causing silent
+    	   failure unless we specify width and height
+    	   along with any other layout_ params. -->
+    	</RelativeLayout>
+    	
+		<RelativeLayout 
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"
+    	    android:paddingLeft="10dp"
+    	    android:paddingRight="10dp">
+    	   <include layout="@layout/main_menu_button_strip_fat"
+    	       android:layout_alignParentTop="true"
+    	       android:layout_centerHorizontal="true"
+    	       android:layout_width="fill_parent"
+    		   android:layout_height="wrap_content" />
+    	   <!-- LayoutInflater has a bug causing silent
+    	   failure unless we specify width and height
+    	   along with any other layout_ params. -->
+    	</RelativeLayout>
+		
+	</LinearLayout>
+
+  
+</LinearLayout>

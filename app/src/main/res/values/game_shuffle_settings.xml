@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- min gap was 60000, max gap was 180000 -->
+    <integer name="background_shuffle_min_gap">60000</integer>
+    <integer name="background_shuffle_max_gap">180000</integer>
+</resources>

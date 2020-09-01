@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- SHADES: various shades of color for use in simple, roughly monochromatic
+    		color schemes. -->
+    		
+    <color name="shade_grey">#ff808080</color>
+    
+    <!-- RED: everything is a shade of red, although we drift into orange
+    			and magenta territory. -->
+    
+    <color name="shade_red_below">#ffeb3bdc</color>		<!-- hue 305 -->
+    
+    <color name="shade_red_0">#ffeb3b84</color>		<!-- hue 335 -->
+    <color name="shade_red_1">#ffef0048</color>		<!-- hue 342 -->
+    <color name="shade_red_2">#ffcc3030</color>		<!-- hue 0 -->
+    <color name="shade_red_3">#ffff0d00</color>		<!-- hue 3 -->
+    <color name="shade_red_4">#ff9f1309</color>		<!-- hue 4 -->
+    <color name="shade_red_5">#ffff5c00</color>		<!-- hue 22 -->
+    <color name="shade_red_6">#ffff9400</color>		<!-- hue 35 -->
+    
+    <color name="shade_red_above">#ffffea00</color>	<!-- hue 55 -->
+    
+    
+    <!-- GREEN: everything is a shade of green, although we drift into blue
+    			and yellow territory. -->
+    
+    <color name="shade_green_below">#ffffde00</color>		<!-- hue 52 -->
+    
+    <color name="shade_green_0">#ffe9fb00</color>		<!-- hue 64 -->
+    <color name="shade_green_1">#ffc0f56e</color>		<!-- hue 84 -->
+    <color name="shade_green_2">#ff3d9200</color>		<!-- hue 95 -->
+    <color name="shade_green_3">#ff00ff00</color>		<!-- hue 120 -->
+    <color name="shade_green_4">#ff5ad89b</color>		<!-- hue 151 -->
+    <color name="shade_green_5">#ff00a287</color>		<!-- hue 170 -->
+    <color name="shade_green_6">#ff04748e</color>		<!-- hue 191 -->
+    
+    <color name="shade_green_above">#ff1729b0</color>	<!-- hue 233 -->
+    
+    
+    <!-- BLUE: everything is a shade of blue, although we drift into red
+    			and green territory. -->
+    
+    <color name="shade_blue_below">#ff16ea0c</color>		<!-- hue 117 -->
+    
+    <color name="shade_blue_0">#ff10e6cd</color>		<!-- hue 173 -->
+    <color name="shade_blue_1">#ff0c95b0</color>		<!-- hue 190 -->
+    <color name="shade_blue_2">#ff76d1ff</color>		<!-- hue 200 -->
+    <color name="shade_blue_3">#ff2626ff</color>		<!-- hue 240 -->
+    <color name="shade_blue_4">#ff4b18e6</color>		<!-- hue 255 -->
+    <color name="shade_blue_5">#ff963cf0</color>		<!-- hue 270 -->
+    <color name="shade_blue_6">#ffeb0db4</color>		<!-- hue 315 -->
+    
+    <color name="shade_blue_above">#ffff0e36</color>	<!-- hue 350 -->
+    
+    
+    
+    
+    
+</resources>

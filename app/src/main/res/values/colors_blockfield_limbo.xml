@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Limbo is a stark, black-on-white (or black-on-grey) color scheme. -->
+    <!-- Exactly how stark has yet to be determined, so we're going to play
+     		around with these values for a while. -->
+    
+    <!-- Clean matches most standard colors, but includes large areas of white. -->
+    <color name="limbo_block_background">#ffffffff</color>
+    
+    <color name="limbo_fill">#ffffffff</color>
+    <color name="limbo_border">#ff000000</color>
+    <color name="limbo_shadow">#ff000000</color>
+    
+    <color name="limbo_border_shine">#ff000000</color>
+    <integer name="limbo_border_shine_shape">@integer/block_shine_shape_full_wrap_top_left</integer>
+    <integer name="limbo_border_shine_alpha_range">@integer/block_shine_alpha_range_standard</integer>
+</resources>

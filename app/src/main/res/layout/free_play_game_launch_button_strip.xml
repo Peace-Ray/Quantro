@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Height WAS 55dp -->
+<com.peaceray.quantro.view.button.strip.SinglePlayerGameLaunchButtonStrip
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+	android:id="@+id/free_play_game_launch_button_strip"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	custom:button_border_width = "4dip"
+	custom:button_gradient_height="0dip"
+	custom:sub_button_border_inset="0dip"
+	custom:main_button_horizontal_offset="0dip"
+	custom:button_horizontal_separation="3dip"
+	android:paddingLeft="44dp"
+	android:paddingRight="44dp"
+	android:paddingBottom="4dp"
+	android:paddingTop="4dp"
+	  
+	custom:sp_image_drawable_new_game_button="@drawable/action_new_baked"
+	custom:sp_image_drawable_new_game_mode_button="@drawable/action_edit_new_baked"
+	custom:sp_image_drawable_edit_game_mode_button="@drawable/action_edit_baked"
+	custom:sp_alert_drawable_timed="@drawable/action_clock_baked_small"
+	>
+  
+  		<!-- Include two buttons -->
+   		<com.peaceray.quantro.view.button.QuantroButton
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 custom:content_layout="@layout/content_title_description_left_gravity_alert"
+				 android:clickable="true"/>
+		<com.peaceray.quantro.view.button.QuantroButton
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 custom:content_layout="@layout/content_image"
+				 android:clickable="true"/>
+		<com.peaceray.quantro.view.button.QuantroButton
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 custom:content_layout="@layout/content_image"
+				 android:clickable="true"/>
+</com.peaceray.quantro.view.button.strip.SinglePlayerGameLaunchButtonStrip>

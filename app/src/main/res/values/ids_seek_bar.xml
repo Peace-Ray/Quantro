@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item 	type="id" 
+			name="labeled_seek_bar_value_area"/>
+    <item	type="id"
+        	name="labeled_seek_bar_value_full"/>
+    <item 	type="id"
+        	name="labeled_seek_bar_value_parts"/>
+    <item 	type="id"
+        	name="labeled_seek_bar_value_parts_label"/>
+    <item 	type="id"
+        	name="labeled_seek_bar_value_parts_value"/>
+    <item 	type="id"
+        	name="labeled_seek_bar_seek_bar"/>
+    <item 	type="id"
+        	name="labeled_seek_bar_min_max_labels"/>
+    <item 	type="id"
+        	name="labeled_seek_bar_min_label"/>
+    <item 	type="id"
+        	name="labeled_seek_bar_max_label"/>
+    <item 	type="id"
+        	name="labeled_seek_bar_min_max_labels_substitute"/>
+    
+    
+    <!-- Seek bar preference -->
+	<item	type="id"
+	    	name="seekBarPrefBarContainer"/>
+	<item	type="id"
+	    	name="seekBarPrefSummaryContainer"/>
+	<item	type="id"
+	    	name="seekBarPrefUnitsLeft"/>
+	<item	type="id"
+	    	name="seekBarPrefUnitsRight"/>
+	<item	type="id"
+	    	name="seekBarPrefValue"/>
+    
+</resources>

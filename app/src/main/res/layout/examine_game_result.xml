@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+	android:id="@+id/examine_game_result"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="8dp"
+	>
+	
+    <com.peaceray.quantro.view.generic.MagicTextView
+        android:id="@id/dialog_content_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bright_text"
+        android:textSize="@dimen/examine_game_result_text_size_title"
+        android:paddingBottom="10dp"
+        custom:typeface="Roboto-Condensed"
+        />
+
+	<FrameLayout
+		android:id="@+id/examine_game_result_field_view_group"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		/>
+	
+	<!-- A divider we can color -->
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"
+		android:orientation="vertical">
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="5dip"
+	  		/>
+		<View
+			android:layout_width="fill_parent"
+		  	android:layout_height="1.5dip"
+		  	android:tag="@string/tag_color_filterable"
+		  	android:background="@drawable/solid_white"
+			/>
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="5dip"
+			/>
+	</LinearLayout>
+  
+	<!-- Action query -->
+	<com.peaceray.quantro.view.generic.MagicTextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/examine_game_result_action_query"
+		android:gravity="center"
+		android:text="Query?"
+		android:textSize="@dimen/examine_game_result_text_size_query"
+		android:padding="2dp"
+		android:textColor="@color/bright_text"
+		custom:typeface="Roboto-Condensed"
+		/>
+	
+	<!-- some spacing -->
+    <View
+       android:layout_width="fill_parent"
+       android:layout_height="@dimen/dialog_button_top_margin"/>
+    
+    <include layout="@layout/dialog_button_strip"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+  	
+
+</LinearLayout>

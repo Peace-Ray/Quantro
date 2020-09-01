@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Height WAS 55dp -->
+<com.peaceray.quantro.view.button.strip.LobbyButtonStrip
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+  android:id="@id/lobby_button_strip"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  
+  custom:lbs_base_color_button_wifi_main_searching="@color/lobby_button_strip_searching_main"
+  custom:lbs_base_color_button_wifi_main_open="@color/lobby_button_strip_open_main"
+  custom:lbs_base_color_button_wifi_main_full="@color/lobby_button_strip_full_main"
+  custom:lbs_base_color_button_wifi_hide_searching="@color/lobby_button_strip_searching_hide"
+  custom:lbs_base_color_button_wifi_hide_open="@color/lobby_button_strip_open_hide"
+  custom:lbs_base_color_button_wifi_hide_full="@color/lobby_button_strip_full_hide"
+  
+  custom:lbs_base_color_button_internet_public_main_open="@color/internet_lobby_button_strip_public_open_main"
+  custom:lbs_base_color_button_internet_public_main_full="@color/internet_lobby_button_strip_public_full_main"
+  custom:lbs_base_color_button_internet_public_main_closed="@color/internet_lobby_button_strip_public_closed_main"
+  custom:lbs_base_color_button_internet_public_hide_open="@color/lobby_button_strip_open_hide"
+  custom:lbs_base_color_button_internet_public_hide_full="@color/lobby_button_strip_full_hide"
+  custom:lbs_base_color_button_internet_public_hide_closed="@color/lobby_button_strip_closed_hide"
+  
+  custom:lbs_base_color_button_internet_private_main_open="@color/internet_lobby_button_strip_private_open_main"
+  custom:lbs_base_color_button_internet_private_main_full="@color/internet_lobby_button_strip_private_full_main"
+  custom:lbs_base_color_button_internet_private_main_closed="@color/internet_lobby_button_strip_private_closed_main"
+  custom:lbs_base_color_button_internet_private_hide_open="@color/lobby_button_strip_open_hide"
+  custom:lbs_base_color_button_internet_private_hide_full="@color/lobby_button_strip_full_hide"
+  custom:lbs_base_color_button_internet_private_hide_closed="@color/lobby_button_strip_closed_hide"
+  
+  custom:lbs_base_color_button_internet_itinerant_main_open="@color/internet_lobby_button_strip_itinerant_open_main"
+  custom:lbs_base_color_button_internet_itinerant_main_full="@color/internet_lobby_button_strip_itinerant_full_main"
+  custom:lbs_base_color_button_internet_itinerant_main_closed="@color/internet_lobby_button_strip_itinerant_closed_main"
+  custom:lbs_base_color_button_internet_itinerant_hide_open="@color/lobby_button_strip_open_hide"
+  custom:lbs_base_color_button_internet_itinerant_hide_full="@color/lobby_button_strip_full_hide"
+  custom:lbs_base_color_button_internet_itinerant_hide_closed="@color/lobby_button_strip_closed_hide"
+  
+  custom:lbs_image_drawable_button_wifi_hide_searching="@drawable/action_cancel_baked"
+  custom:lbs_image_drawable_button_wifi_hide_open="@drawable/action_cancel_baked"
+  custom:lbs_image_drawable_button_wifi_hide_full="@drawable/action_cancel_baked"
+  custom:lbs_image_drawable_button_wifi_hide_closed="@drawable/action_cancel_baked"
+  
+  custom:lbs_image_drawable_button_internet_public_hide_open="@drawable/action_cancel_baked"
+  custom:lbs_image_drawable_button_internet_public_hide_full="@drawable/action_cancel_baked"
+  custom:lbs_image_drawable_button_internet_public_hide_closed="@drawable/action_cancel_baked"
+  
+  custom:lbs_image_drawable_button_internet_private_hide_open="@drawable/action_cancel_baked"
+  custom:lbs_image_drawable_button_internet_private_hide_full="@drawable/action_cancel_baked"
+  custom:lbs_image_drawable_button_internet_private_hide_closed="@drawable/action_cancel_baked"
+  
+  custom:lbs_image_drawable_button_internet_itinerant_hide_open="@drawable/action_cancel_baked"
+  custom:lbs_image_drawable_button_internet_itinerant_hide_full="@drawable/action_cancel_baked"
+  custom:lbs_image_drawable_button_internet_itinerant_hide_closed="@drawable/action_cancel_baked"
+  
+  
+  custom:button_border_width = "@dimen/button_border_size"
+  custom:button_gradient_height="0dip"
+  custom:sub_button_border_inset="0dip"
+  custom:main_button_horizontal_offset="0dip"
+  custom:button_horizontal_separation="3dip"
+  android:paddingLeft="44dp"
+  android:paddingRight="44dp"
+  android:paddingBottom="4dp"
+  android:paddingTop="4dp"
+  >
+  
+  		<!-- Include two buttons -->
+   		<com.peaceray.quantro.view.button.QuantroButton
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 custom:content_layout="@layout/content_title_description_left_gravity"
+				 android:clickable="true"/>
+		<!-- For these two, previously used 
+				custom:content_layout="@layout/content_title_description_center_gravity"
+		 -->
+		<com.peaceray.quantro.view.button.QuantroButton
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 custom:content_layout="@layout/content_image"
+				 android:clickable="true"/>
+</com.peaceray.quantro.view.button.strip.LobbyButtonStrip>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    	
+   	<item	type="id"
+			name="examine_game_result_block_field_view"/>
+   	
+	<item	type="id"
+			name="examine_game_result_block_field_view_first"/>
+	<item	type="id"
+			name="examine_game_result_block_field_view_second"/>
+	<item	type="id"
+			name="examine_game_result_block_field_view_third"/>
+	
+	<item	type="id"
+			name="examine_game_result_block_field_view_4th"/>
+	<item	type="id"
+			name="examine_game_result_block_field_view_5th"/>
+	<item	type="id"
+			name="examine_game_result_block_field_view_6th"/>
+   	
+	<item	type="id"
+			name="examine_game_result_block_field_container_first"/>
+	<item	type="id"
+			name="examine_game_result_block_field_container_second"/>
+	<item	type="id"
+			name="examine_game_result_block_field_container_third"/>
+	
+	<item	type="id"
+			name="examine_game_result_block_field_container_4th"/>
+	<item	type="id"
+			name="examine_game_result_block_field_container_5th"/>
+	<item	type="id"
+			name="examine_game_result_block_field_container_6th"/>
+	
+	<!-- Tags for ExamineGameResult content layouts.  These tags indicate the TextView
+			(or subclass) which should be used to hold specific information. -->
+	<item	type="id"
+			name="examine_game_result_text_layout_first"/>
+	<item	type="id"
+			name="examine_game_result_text_layout_second"/>
+	<item	type="id"
+			name="examine_game_result_text_layout_third"/>
+	
+	<item	type="id"
+			name="examine_game_result_text_layout_4th"/>
+	<item	type="id"
+			name="examine_game_result_text_layout_5th"/>
+	<item	type="id"
+			name="examine_game_result_text_layout_6th"/>
+	
+	<item	type="id"
+			name="examine_game_result_win_lose"/>
+	<item	type="id"
+			name="examine_game_result_name"/>
+	<item	type="id"
+			name="examine_game_result_difficulty"/>
+	<item	type="id"
+			name="examine_game_result_time_full"/>
+	<item	type="id"
+			name="examine_game_result_time_number"/>
+	<item	type="id"
+			name="examine_game_result_level_full"/>
+	<item	type="id"
+			name="examine_game_result_level_number"/>
+	<item	type="id"
+			name="examine_game_result_score_full"/>
+	<item	type="id"
+			name="examine_game_result_score_number"/>
+	<item	type="id"
+			name="examine_game_result_rows_full"/>
+	<item	type="id"
+			name="examine_game_result_rows_number"/>
+	<item	type="id"
+			name="examine_game_result_config"/>
+	
+    
+</resources>

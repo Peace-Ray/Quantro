@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+	
+	<!-- Tritanopia -->
+	<color name="tritanopia_s0_fill_color">#ff0000ff</color>
+	<color name="tritanopia_s1_fill_color">#ffff0000</color>
+	
+	<color name="tritanopia_st_fill_color">#ff8800ff</color>
+	<color name="tritanopia_sl_s0_fill_color">#ff6060ff</color>
+	<color name="tritanopia_sl_s1_fill_color">#ffff6060</color>
+	<color name="tritanopia_sl_active_s0_fill_color">#ffffffff</color>
+	<color name="tritanopia_sl_active_s1_fill_color">#ffffffff</color>
+	<color name="tritanopia_ul_fill_color">#ffffffff</color>
+	<color name="tritanopia_u0_fill_color">#ff0000ff</color>
+	<color name="tritanopia_u1_fill_color">#ffff0000</color>
+	<color name="tritanopia_f0_fill_color">#ffffd500</color>
+	<color name="tritanopia_f1_fill_color">#ffffd500</color>
+	
+	<color name="tritanopia_s0_border_color">#ff0000ff</color>
+	<color name="tritanopia_s1_border_color">#ffff0000</color>
+	
+	<!-- sticky borders might have different colors depending on the qPane -->
+	<color name="tritanopia_st_s0_border_color">#ff8800ff</color>		<!-- blueish grey -->
+	<color name="tritanopia_st_s1_border_color">#ffff0088</color>		<!-- redish grey -->
+	<!-- linked borders might have very low-saturation colors -->
+	<color name="tritanopia_sl_s0_border_color">#ff6060ff</color>		<!-- low-sat blue... -->
+	<color name="tritanopia_sl_s1_border_color">#ffff6060</color>		<!-- low-sat blue -->
+	<color name="tritanopia_sl_active_s0_border_color">#ffffffff</color>
+	<color name="tritanopia_sl_active_s1_border_color">#ffffffff</color>
+	
+	<!-- flash borders might have different colors as well -->
+	<color name="tritanopia_f0_border_color">#ff0000ff</color>
+	<color name="tritanopia_f1_border_color">#ffff0000</color>
+	
+	<!-- Special detail colors for composing bitmaps and the like. -->
+	<color name="tritanopia_f0_detail_burst">#fff35b00</color>
+	<color name="tritanopia_f0_detail_stripe">#ffffd500</color>
+	<color name="tritanopia_f1_detail_burst">#fff35b00</color>
+	<color name="tritanopia_f1_detail_stripe">#ffffd500</color>
+	
+	
+	
+	<!-- Retro colors -->
+	<color name="tritanopia_r0_fill_color">#ffff0000</color>		<!-- bright 1 -->
+	<color name="tritanopia_r1_fill_color">#ff882222</color>		<!-- dim 2 -->
+	<color name="tritanopia_r2_fill_color">#ffaa5555</color>		<!-- bright 3 -->
+	<color name="tritanopia_r3_fill_color">#ff5a5a5a</color>		<!-- dim 4 -->
+	<color name="tritanopia_r4_fill_color">#ff55aaaa</color>		<!-- bright 5 -->
+	<color name="tritanopia_r5_fill_color">#ff2266ff</color>		<!-- dim 6 -->
+	<color name="tritanopia_r6_fill_color">#ff0000ff</color>		<!-- bright 7 -->
+	
+	<color name="tritanopia_r0_border_color">#ffff0000</color>		<!-- bright 1 -->
+	<color name="tritanopia_r1_border_color">#ff882222</color>		<!-- dim 2 -->
+	<color name="tritanopia_r2_border_color">#ffaa5555</color>		<!-- bright 3 -->
+	<color name="tritanopia_r3_border_color">#ff5a5a5a</color>		<!-- dim 4 -->
+	<color name="tritanopia_r4_border_color">#ff55aaaa</color>		<!-- bright 5 -->
+	<color name="tritanopia_r5_border_color">#ff2266ff</color>		<!-- dim 6 -->
+	<color name="tritanopia_r6_border_color">#ff0000ff</color>		<!-- bright 7 -->
+	
+    
+</resources>

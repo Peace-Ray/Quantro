@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Button Text -->
+    <dimen name="button_text_big">@dimen/button_text_miniscreen_big</dimen>
+    <dimen name="button_text">@dimen/button_text_miniscreen</dimen>
+    <dimen name="button_text_small">@dimen/button_text_miniscreen_small</dimen>
+</resources>

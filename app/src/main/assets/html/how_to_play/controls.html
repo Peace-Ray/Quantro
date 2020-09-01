@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>Controls</title>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+<p>
+<table class="subheader">
+<tr>
+	<th rowspan="2" class="subheader"><img src="../../png/logo/logo.png" class="center" width="60%" alt="..."/></th>
+	<td class="subheader"><header>Quantro</header></td>
+</tr>
+<tr>
+	<td class="subheader"><subheader>Controls</subheader></td>
+</tr>
+</table></p>
+<br/>
+
+<p>Quantro allows two different control styles: gamepad and gesture.  Select and configure
+your controls in the <a href="activity://QuantroPreferences">Settings</a> menu.</p>
+
+<p><a href="#gamepad">Gamepad</a> controls fill the touchscreen with "buttons" that can be tapped
+or held to move the current piece, or activate other features.  The gamepad control
+style is designed for use with both hands (touching buttons with your thumbs)
+on a device with a 4&quot; or smaller screen.  A thumbnail showing button locations
+is always available on the pause-screen, and on the edges of the game window.</p>
+
+<p><a href="#gesture">Gesture</a> controls include a few touchscreen "buttons,"
+but pieces are moved by dragging, swiping or tapping a finger anywhere else
+on the screen surface.  The gesture control style is designed for devices with
+screens 5&quot; or larger.</p>
+
+<p>All basic piece movements are available in either control style, but some
+advanced movement techniques, such as 180-turns and leans, are only available
+with certain configurations.  By default all advanced movement techniques are available.</p>
+
+<p><a name="piece"/><subheader>Piece Movement</subheader></p>
+
+<p><term>Pieces</term> fall from the top of the screen at a speed determined by your current <term>game level</term>.
+Until they <term>lock</term> into place, falling pieces can be maneuvered using <term>moves</term>, <term>turns</term> and
+<term>drops</term>.  Custom game modes can optionally allow <term>flips</term>.</p>
+
+<p><a name="move"/><term><a></a></term>
+A <term>move</term> shifts the piece horizontally by one block width.  Advanced players might also use
+<term><a href="advanced_techniques.html#quick_slide">quick-slides</a></term> to move the piece the
+entire width of the game field.</p>
+
+<p><img src="../../gif/move/move.gif" width="60%" class="center"/></p>
+<p class="caption">Moving in both directions.</p>
+
+<p><a name="turn"/><term><a></a></term>
+A <term>turn</term> rotates the current piece by 90 degrees.  The piece
+will remain in the same location as it turns.  If there isn't enough room available
+for a piece to turn in-place, it will <term><a href="advanced_techniques.html#kick">kick</a></term> away from obstacles
+to complete the rotation.
+Advanced players can also use <term><a href="advanced_techniques.html#180_turn">180-degree turns</a></term>.</p>
+
+<p><img src="../../gif/turn/turn.gif" width="60%" class="center"/></p>
+<p class="caption">Counter-clockwise and clockwise turns.</p>
+
+<p><a name="drop"/>A <term>drop</term> will immediately lower the current piece to its eventual
+landing position.  Depending on how you've configured your controls, you may
+have time to make a few final adjustments before the piece <term>locks</term>.
+Dropping a piece will earn a small number of <a href="game_basics.html#score">points</a>.</p>
+
+<p><a name="flip"/><term><a></a></term>
+A <term>flip</term> turns the piece top-over-bottom.  Flips are only available
+in custom game modes, where they might be used instead of or in addition to turns.
+
+<p><img src="../../gif/flip/flip.gif" width="60%" class="center"/></p>
+<p class="caption">Flipping a piece.</p>
+
+<a name="gamepad"/>
+<table class="subheader">
+<tr>
+	<th class="subheader"><img src="../../png/controls/controls_piece_small.png" class="center" width="90%" alt="..."/></th>
+	<td class="subheader"><subheader>Gamepad Controls</subheader></td>
+</tr>
+</table>
+
+<p>In the gamepad control style, there is an onscreen "button" for each movement.  These buttons fill the screen
+from edge to edge; to avoid obscuring your view of the game, they are invisible until touched.</p>
+
+<p>Tapping a <term>move</term> button will shift the piece horizontally by one block width.
+If the button is held, the piece will <a href="advanced_techniques.html#quick_slide">quick-slide</a>
+in that direction until the block is released.</p>
+
+<p>The <term>turn</term> buttons rotate the current piece by 90 degrees.  Using both together allows
+a <a href="advanced_techniques.html#180_turn">180-degree turns</a>; holding a move button and/or
+the drop button while turning will cause a <a href="advanced_techniques.html#lean">lean</a> in that direction.</p>
+
+<p>The effect of the <term>drop</term> button can be configured in the
+<a href="activity://QuantroPreferences">Settings</a> menu.  By
+default, holding the button will make the piece fall more quickly until it lands,
+and double-tapping the button will immediately drop the piece to its eventual
+landing position and lock it in place (earning points based on the distance traveled).</p>
+
+<p>When available, tapping the <term>flip</term> button will flip the current piece vertically.</p>
+
+<p><a name="gesture"/><subheader>Gesture Controls</subheader></p>
+
+<p>In the gesture control style, piece movement is controlled by touchscreen drags,
+swipes and taps.</p>
+
+<p>To <term>move</term> a piece, touch the screen and drag your finger left or right.  The piece
+will follow your finger until it hits an obstacle.  Swiping your finger left
+or right will cause a <a href="advanced_techniques.html#quick_slide">quick-slide</a> in that direction.
+
+<p>Tap to <term>turn</term> pieces.  Tapping the left side of the screen will cause a counter-clockwise
+turn, while the right side will turn the piece clockwise.  Dragging a piece with
+one finger and then tapping with a second will cause a
+<a href="advanced_techniques.html#lean">lean</a> in the drag direction.</p>
+
+<p>Pieces can be pulled down gradually by dragging a finger downward, or <term>dropped</term> to 
+the bottom of the screen with a downward swipe (earning points based on the distance traveled).</p>
+
+<p>When available, swipe upward to <term>flip</term> a piece vertically.</p>
+
+<p><a name="other"/><subheader>Other Buttons</subheader></p>
+
+<p>Certain actions are always controlled by an onscreen button, no matter the control style.</p>
+
+<p><a name="reserve"/>Pieces enter the game in a random order, but in most game modes a single
+piece can be held in reserve for later use.  Pressing the <term>reserve</term> button
+will release the held piece, replacing the piece currently falling.</p>
+
+<p>Different game types use reserve pieces in different ways.  In most
+<a href="game_modes.html#retro">Retro</a>
+games the reserve is initial empty.  Once a piece is placed in reserve, it
+can be swapped with the falling piece, placing it in reserve and the held piece
+in play.  In most <a href="game_modes.html#quantro">Quantro</a> games the reserve holds random
+<term><a href="special_pieces.html">special pieces</a></term>
+which can provide a significant advantage if used skillfully.  When used,
+these pieces replace the currently falling piece, which will reappear as the next
+piece to enter.</p>
+
+<p><a name="attack"/>A few multiplayer game types, such as Bitter Pill,
+replace the reserve button with an <term>attack</term> button.  Attacks are typically
+earned through skilled gameplay (e.g. clearing a certain number of rows, clearing
+many rows at once, etc.).  Once earned, tapping the attack button will unleash an
+attack (specific to the game type) on your opponent's game.</p>
+
+<p><a name="score"/>Your current <term>level</term> and <term>score</term> are displayed
+at the edge of the screen in an abbreviated form.  Press and hold the score button to see
+a more detailed description.</p>
+
+<p><a name="opponent"/>Opposite the score is a small thumbnail of your opponent's
+<term>field</term>.  Touch and hold this thumbnail to full-screen their field
+(<a href="game_modes.html#versus">Versus mode</a> only).</p>
+
+<div align=center><p><legalese>"Quantro," "Peace Ray," and the "Q" logo are trademarks of Peace Ray LLC.</legalese></p></div>
+
+</body>

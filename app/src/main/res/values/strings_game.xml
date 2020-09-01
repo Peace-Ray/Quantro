@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Game Score Drawer -->
+    <string name="game_interface_score_header_prefix_level_abbr">LV</string>
+    <string name="game_interface_score_header_prefix_level">LEVEL</string>
+    <string name="game_interface_score_header_prefix_time"></string>
+    <string name="game_interface_score_header_prefix_score"></string>
+    
+    <string name="game_interface_score_prefix_addition">+</string>
+    <string name="game_interface_score_prefix_multiplier">&#215;</string>
+    
+    <string name="game_interface_score_detailed_label_time">TIME:</string>
+	<string name="game_interface_score_detailed_label_score">SCORE:</string>
+	<string name="game_interface_score_detailed_label_rows">ROWS CLEARED:</string>
+	
+	<string name="game_interface_score_detailed_prefix_level">LEVEL </string>
+	<string name="game_interface_score_detailed_prefix_time"></string>
+	<string name="game_interface_score_detailed_prefix_score"></string>
+	<string name="game_interface_score_detailed_prefix_addition">+</string>
+	<string name="game_interface_score_detailed_prefix_multiplier">&#215;</string>
+	<string name="game_interface_score_detailed_prefix_rows"></string>
+	
+	
+	<!-- PlayerNameDrawer -->
+	<string name="game_interface_name_drawer_status_active"></string>		<!-- no special string -->
+	<string name="game_interface_name_drawer_status_won"></string>			<!-- no special string -->
+	<string name="game_interface_name_drawer_status_lost">Lost</string>
+	<string name="game_interface_name_drawer_status_kicked">Dropped</string>
+	<string name="game_interface_name_drawer_status_quit">Quit</string>
+	<string name="game_interface_name_drawer_status_inactive"></string>		<!-- no special string -->
+	
+	<string name="game_interface_status_drawer_game_over_title">GAME OVER</string>
+	<string name="game_interface_status_drawer_game_over_subtitle_is_client">Spectating Remaining Players</string>
+	<string name="game_interface_status_drawer_game_over_subtitle_is_host">Hosting Remaining Players</string>
+	
+	
+	<!-- Game "Next" Piece -->
+	<string name="game_interface_next">NEXT</string>
+	
+	
+	<!-- Pause Screen Elements for StandardPauseViewComponentAdapter-->
+	<string name="game_interface_pause_state_connecting">Connecting</string>
+	<string name="game_interface_pause_state_talking">Connecting</string>
+	<string name="game_interface_pause_state_waiting">Waiting</string>
+	<string name="game_interface_pause_state_loading">Loading</string>
+	<string name="game_interface_pause_state_saving">Saving</string>
+	<string name="game_interface_pause_state_ready">Ready</string>
+	<string name="game_interface_pause_state_paused">Paused</string>
+	<string name="game_interface_pause_state_starting">Starting</string>
+	<string name="game_interface_pause_state_other"></string>
+	<string name="game_interface_pause_state_connecting_abrv">CONNECTING</string>
+	<string name="game_interface_pause_state_talking_abrv">CONNECTING</string>
+	<string name="game_interface_pause_state_waiting_abrv">WAITING</string>
+	<string name="game_interface_pause_state_loading_abrv">LOADING</string>
+	<string name="game_interface_pause_state_saving_abrv">SAVING</string>
+	<string name="game_interface_pause_state_ready_abrv">READY</string>
+	<string name="game_interface_pause_state_paused_abrv">PAUSED</string>
+	<string name="game_interface_pause_state_starting_abrv">STARTING</string>
+	<string name="game_interface_pause_state_other_abrv"></string>
+	
+	<string name="game_interface_pause_state_description_loading">Please Wait</string>
+	<string name="game_interface_pause_state_description_saving">Please Wait</string>
+	<string name="game_interface_pause_state_description_local_ready">Touch to Begin</string>
+	<string name="game_interface_pause_state_description_local_paused">Touch to Resume</string>
+	
+	<string name="game_interface_pause_state_description_host_connecting">Creating Server</string>
+	<string name="game_interface_pause_state_description_host_talking">Configuring Server</string>
+	<string name="game_interface_pause_state_description_host_waiting">Waiting for F_XXXX.</string>
+	<string name="game_interface_pause_state_description_host_other_paused">U_XXXX has paused the game.</string>
+	<string name="game_interface_pause_state_description_host_you_paused">Touch to resume.</string>
+	<string name="game_interface_pause_state_description_host_you_paused_remote_only">Please Wait</string>
+	
+	<string name="game_interface_pause_state_description_host_ready">Get Ready to Play!</string>
+	<string name="game_interface_pause_state_description_host_starting">Starting Game&#8230;</string>
+	
+	<string name="game_interface_pause_state_description_client_connecting">Connecting to Server</string>
+	<string name="game_interface_pause_state_description_client_talking">Negotiating Connection</string>
+	<string name="game_interface_pause_state_description_client_waiting">Waiting for F_XXXX.</string>
+	<string name="game_interface_pause_state_description_client_waiting_to_drop">Dropping F_XXXX in DURATION_SECONDS_XXXX&#8230;</string>
+	<string name="game_interface_pause_state_description_client_other_paused">U_XXXX has paused the game.</string>
+	<string name="game_interface_pause_state_description_client_you_paused">Touch to resume.</string>
+	<string name="game_interface_pause_state_description_client_you_paused_remote_only">Please Wait</string>
+	<string name="game_interface_pause_state_description_client_ready">Get Ready to Play!</string>
+	<string name="game_interface_pause_state_description_client_starting">Starting Game&#8230;</string>
+	
+	<string name="game_interface_pause_game_mode_settings_default">GM_N_XXXX</string>
+	<string name="game_interface_pause_game_mode_settings_custom">GM_N_XXXX: GS_CUSTOM_LIST_XXXX</string>
+	
+	<string name="game_interface_pause_game_mode_settings_default_has_difficulty">GM_N_XXXXGS_CUSTOM_VALUE_DIFFICULTY_XXXX</string>
+	<string name="game_interface_pause_game_mode_settings_custom_has_difficulty">GM_N_XXXXGS_CUSTOM_VALUE_DIFFICULTY_XXXX: GS_CUSTOM_LIST_XXXX</string>
+	
+	<string name="game_interface_pause_game_mode_settings_difficulty_practice">\u0020(Practice)</string>
+	<string name="game_interface_pause_game_mode_settings_difficulty_normal"></string>
+	<string name="game_interface_pause_game_mode_settings_difficulty_hard">\u0020(Hard)</string>
+	
+	
+	<string name="game_interface_pause_game_mode_is_trial">Timed demo: GIT_DURATION_NUMBER_XXXX minutes</string>
+	
+	<string name="game_interface_pause_controls_gamepad_instructions_thumbnail_yes">GAMEPAD CONTROLS: tap or hold these areas of the screen to move pieces and activate other features.</string>
+	<string name="game_interface_pause_controls_gamepad_instructions_thumbnail_no">GAMEPAD CONTROLS: tap or hold different areas of the screen to move pieces and activate other features.</string>
+	
+	<string name="game_interface_pause_controls_gesture_instructions_thumbnail_yes">GESTURE CONTROLS: activate features by touching these areas of the side panels; move pieces by tapping, dragging or swiping anywhere else.</string>
+	<string name="game_interface_pause_controls_gesture_instructions_thumbnail_no">GESTURE CONTROLS: activate features by touching different areas of the side panels; move pieces by tapping, dragging or swiping anywhere else.</string>
+	
+	<string name="game_interface_pause_controls_gamepad_instructions_expanded_fall">MOVE: tap left/right buttons, EXERPT_XXXX FALL: hold down button</string>
+	<string name="game_interface_pause_controls_gamepad_instructions_expanded_fall_double_tap">MOVE: tap left/right buttons, EXERPT_XXXX FALL: hold down button, DROP &amp; LOCK: double-tap down button</string>
+	<string name="game_interface_pause_controls_gamepad_instructions_expanded_drop">MOVE: tap left/right buttons\nEXERPT_XXXX\nDROP: tap down button</string>
+	<string name="game_interface_pause_controls_gamepad_instructions_expanded_drop_double_tap">MOVE: tap left/right buttons, EXERPT_XXXX DROP: tap down button, DROP &amp; LOCK: double-tap down button</string>
+	
+	<string name="game_interface_pause_controls_gamepad_instructions_expanded_exerpt_has_turn">TURN: tap turn buttons,</string>
+	<string name="game_interface_pause_controls_gamepad_instructions_expanded_exerpt_has_flip">FLIP: tap flip button,</string>
+	<string name="game_interface_pause_controls_gamepad_instructions_expanded_exerpt_has_turn_and_flip">TURN: tap turn buttons, FLIP: tap flip button,</string>
+	<string name="game_interface_pause_controls_gamepad_instructions_expanded_exerpt_has_move_only"></string>
+	
+	<string name="game_interface_pause_controls_gamepad_instructions_expanded_exerpt_placeholder">EXERPT_XXXX</string>
+	
+	<string name="game_interface_pause_controls_gesture_instructions_expanded">DRAG to move, EXERPT_XXXX FLING to drop</string>
+	
+	<string name="game_interface_pause_controls_gestures_instructions_expanded_excerpt_has_turn">TAP to turn,</string>
+	<string name="game_interface_pause_controls_gestures_instructions_expanded_excerpt_has_flip">FLING UP to flip,</string>
+	<string name="game_interface_pause_controls_gestures_instructions_expanded_excerpt_has_turn_and_flip">TAP to turn, FLING UP to flip,</string>
+	<string name="game_interface_pause_controls_gestures_instructions_expanded_excerpt_has_move_only"></string>
+	
+	
+	<string name="game_interface_pause_draw_detail_minimal">Minimal Detail</string>
+	<string name="game_interface_pause_draw_detail_low">Low Detail</string>
+	<string name="game_interface_pause_draw_detail_mid">Mid Detail</string>
+	<string name="game_interface_pause_draw_detail_high">High Detail</string>
+	
+	<string name="game_interface_pause_colors">U1_XXXX Colors</string>
+	
+	<string name="game_interface_pause_sound_on_yes">Sound PERCENTAGE_XXXX%</string>
+	<string name="game_interface_pause_sound_on_no">Sound MUTED</string>
+	<string name="game_interface_pause_sound_on_no_by_ringer">Sound OFF (ringer is silent)</string>
+	
+	
+	<string name="game_interface_pause_music_on_yes">Music PERCENTAGE_XXXX%</string>
+	<string name="game_interface_pause_music_on_no">Music MUTED</string>
+	<string name="game_interface_pause_music_on_no_by_ringer">Music OFF (ringer is silent)</string>
+	
+	<string name="game_interface_pause_mute_alert_muted">MUTED: unmute in the game options menu</string>
+	<string name="game_interface_pause_mute_alert_muted_by_ringer">MUTED by ringer volume: unmute in the game options menu</string>
+	
+	<string name="game_interface_pause_header_next">Next:\u0020</string>
+	<string name="game_interface_pause_header_reserve">Reserve:\u0020</string>
+	<string name="game_interface_pause_header_special">Special:\u0020</string>
+	<string name="game_interface_pause_header_falling">Falling:\u0020</string>
+	
+	<string name="game_interface_pause_header_player_names_prefix"></string>
+	<string name="game_interface_pause_header_player_names_suffix"></string>
+	<string name="game_interface_pause_header_player_names_separator">,\u0020</string>
+	<string name="game_interface_pause_header_player_names_no_names"></string>
+	
+	
+	
+	<!-- Piece names and descriptions (for use e.g. on a pause screen -->
+	<string name="game_interface_piece_category_tro_line">Dash</string>
+	<string name="game_interface_piece_category_tro_v">Caret</string>
+	
+	<string name="game_interface_piece_category_tetro_line">Line</string>
+	<string name="game_interface_piece_category_tetro_gamma">Gamma</string>
+	<string name="game_interface_piece_category_tetro_gun">Seven</string>
+	<string name="game_interface_piece_category_tetro_square">Square</string>
+	<string name="game_interface_piece_category_tetro_s">Squiggly</string>
+	<string name="game_interface_piece_category_tetro_z">Zig-Zag</string>
+	<string name="game_interface_piece_category_tetro_t">Tee</string>
+	
+	<string name="game_interface_piece_category_pento_f">Ef</string>
+	<string name="game_interface_piece_category_pento_i">Stripe</string>
+	<string name="game_interface_piece_category_pento_l">Pry</string>
+	<string name="game_interface_piece_category_pento_n">Zap</string>
+	<string name="game_interface_piece_category_pento_p">Pee</string>
+	<string name="game_interface_piece_category_pento_t">Tau</string>
+	<string name="game_interface_piece_category_pento_u">Cup</string>
+	<string name="game_interface_piece_category_pento_v">Chevron</string>
+	<string name="game_interface_piece_category_pento_w">Steps</string>
+	<string name="game_interface_piece_category_pento_x">Plus</string>
+	<string name="game_interface_piece_category_pento_y">Hurdle</string>
+	<string name="game_interface_piece_category_pento_z">Dodge</string>
+	<string name="game_interface_piece_category_pento_f_reverse">Wo</string>
+	<string name="game_interface_piece_category_pento_l_reverse">Check</string>
+	<string name="game_interface_piece_category_pento_n_reverse">Spark</string>
+	<string name="game_interface_piece_category_pento_p_reverse">Cue</string>
+	<string name="game_interface_piece_category_pento_y_reverse">Bump</string>
+	<string name="game_interface_piece_category_pento_z_reverse">Strafe</string>
+	
+	
+	<string name="game_interface_piece_category_tetra_rect">Prism</string>
+	<string name="game_interface_piece_category_tetra_l">Bang</string>
+	<string name="game_interface_piece_category_tetra_s">Jink</string>
+	<string name="game_interface_piece_category_tetra_t">Fork</string>
+	<string name="game_interface_piece_category_tetra_branch">Branch</string>
+	<string name="game_interface_piece_category_tetra_screw">Screw</string>
+	<string name="game_interface_piece_category_tetra_corner_right">Dexter</string>
+	<string name="game_interface_piece_category_tetra_corner_left">Sinister</string>
+	
+	<string name="game_interface_piece_qpane_0_wrapper">Red PIECE_CATEGORY_XXXX</string>
+	<string name="game_interface_piece_qpane_1_wrapper">Blue PIECE_CATEGORY_XXXX</string>
+	<string name="game_interface_piece_qpane_both_wrapper">PIECE_CATEGORY_XXXX</string>
+	<string name="game_interface_piece_qpane_0_wrapper_no_color">Foreground PIECE_CATEGORY_XXXX</string>
+	<string name="game_interface_piece_qpane_1_wrapper_no_color">Background PIECE_CATEGORY_XXXX</string>
+	<string name="game_interface_piece_qpane_both_wrapper_no_color">PIECE_CATEGORY_XXXX</string>
+	<string name="game_interface_piece_special_f_wrapper">Flash</string>
+	<string name="game_interface_piece_special_ul_wrapper">PIECE_CATEGORY_XXXX Links</string>
+	<string name="game_interface_piece_special_st_wrapper">3D PIECE_CATEGORY_XXXX</string>
+	<string name="game_interface_piece_special_sl_wrapper">Fused PIECE_CATEGORY_XXXX</string>
+	<string name="game_interface_piece_special_push_wrapper">Push Block</string>
+	<string name="game_interface_piece_special_f_wrapper_no_color">Flash</string>
+	<string name="game_interface_piece_special_ul_wrapper_no_color">PIECE_CATEGORY_XXXX Links</string>
+	<string name="game_interface_piece_special_st_wrapper_no_color">3D PIECE_CATEGORY_XXXX</string>
+	<string name="game_interface_piece_special_sl_wrapper_no_color">Fused PIECE_CATEGORY_XXXX</string>
+	<string name="game_interface_piece_special_push_wrapper_no_color">Push Block</string>
+	
+	<string name="game_interface_piece_category_tetro_line_tooltip">Can clear four rows at once.</string>
+	<string name="game_interface_piece_category_tetro_gamma_tooltip">Lorem ipsum gamma sit amet.</string>
+	<string name="game_interface_piece_category_tetro_gun_tooltip">Lorem ipsum gun sit amet.</string>
+	<string name="game_interface_piece_category_tetro_square_tooltip">Lorem ipsum square sit amet.</string>
+	<string name="game_interface_piece_category_tetro_s_tooltip">Lorem ipsum squiggly sit amet.</string>
+	<string name="game_interface_piece_category_tetro_z_tooltip">Lorem ipsum zig-zag sit amet.</string>
+	<string name="game_interface_piece_category_tetro_t_tooltip">Lorem ipsum tee sit amet.</string>
+	
+	<string name="game_interface_piece_category_tetro_line_tooltip_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_category_tetro_gamma_tooltip_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_category_tetro_gun_tooltip_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_category_tetro_square_tooltip_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_category_tetro_s_tooltip_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_category_tetro_z_tooltip_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_category_tetro_t_tooltip_sep">.\u0020\u0020</string>
+	
+	<string name="game_interface_piece_category_tetro_line_omake">Everyone\'s favororite.</string>
+	<string name="game_interface_piece_category_tetro_gamma_omake">Greek for \'g.\'</string>
+	<string name="game_interface_piece_category_tetro_gun_omake">It\'s lucky!</string>
+	<string name="game_interface_piece_category_tetro_square_omake">hip to be.</string>
+	<string name="game_interface_piece_category_tetro_s_omake">Lorem omake squiggly sit amet.</string>
+	<string name="game_interface_piece_category_tetro_z_omake">Some call it \'zed.\'</string>
+	<string name="game_interface_piece_category_tetro_t_omake">Lorem omake tee sit amet.</string>
+	
+	<string name="game_interface_piece_category_tetro_line_omake_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_category_tetro_gamma_omake_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_category_tetro_gun_omake_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_category_tetro_square_omake_sep">,\u0020</string>
+	<string name="game_interface_piece_category_tetro_s_omake_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_category_tetro_z_omake_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_category_tetro_t_omake_sep">.\u0020\u0020</string>
+	
+	<string name="game_interface_piece_qpane_0_tooltip">Lands on red, passes in front of blue.</string>
+	<string name="game_interface_piece_qpane_1_tooltip">Lands on blue, passing behind red.</string>
+	<string name="game_interface_piece_qpane_both_tooltip">Red and blue components separate upon landing.</string>
+	
+	<string name="game_interface_piece_qpane_0_tooltip_no_color">Lands in the foreground, passes in front of the background.</string>
+	<string name="game_interface_piece_qpane_1_tooltip_no_color">Lands in the background, passes behind the foreground.</string>
+	<string name="game_interface_piece_qpane_both_tooltip_no_color">Foreground and background components separate upon landing.</string>
+	
+		
+	
+	<string name="game_interface_piece_special_f_tooltip">Slides forward and backward instead of rotating.  Land below blocks to unlock them.</string>
+	<string name="game_interface_piece_special_ul_tooltip">Each link falls freely into crevices.</string>
+	<string name="game_interface_piece_special_st_tooltip">Land this and clear it on the same turn for a reward.</string>
+	<string name="game_interface_piece_special_sl_tooltip">Grey won\'t separate.  Overlap red and blue to clear both together.</string>
+	<string name="game_interface_piece_special_push_tooltip">Land without clearing to push blocks into your opponent\'s game.</string>
+	
+	<string name="game_interface_piece_special_f_tooltip_no_color">Slides forward and backward instead of rotating.  Land below blocks to unlock them.</string>
+	<string name="game_interface_piece_special_ul_tooltip_no_color">Each link falls freely into crevices.</string>
+	<string name="game_interface_piece_special_st_tooltip_no_color">Land this and clear it on the same turn for a reward.</string>
+	<string name="game_interface_piece_special_sl_tooltip_no_color">The fused block won\'t separate.  Overlap foreground and background to clear both together.</string>
+	<string name="game_interface_piece_special_push_tooltip_no_color">Land without clearing to push the bottom row into your opponent\'s game.</string>
+	
+	<string name="game_interface_piece_qpane_0_tooltip_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_qpane_1_tooltip_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_qpane_both_tooltip_sep">.\u0020\u0020</string>
+	
+	<string name="game_interface_piece_special_f_tooltip_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_special_ul_tooltip_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_special_st_tooltip_sep">.\u0020\u0020</string>
+	<string name="game_interface_piece_special_sl_tooltip_sep">.\u0020\u0020</string>
+	
+	
+</resources>

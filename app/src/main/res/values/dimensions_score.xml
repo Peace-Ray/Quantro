@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="game_interface_score_title_text_size">10dp</dimen>
+	<dimen name="game_interface_score_header_text_size">10dp</dimen>
+	<dimen name="game_interface_score_text_size">10dp</dimen>
+	
+	<dimen name="game_interface_score_title_text_size_large">18dp</dimen>
+	<dimen name="game_interface_score_header_text_size_large">18dp</dimen>
+	<dimen name="game_interface_score_text_size_large">18dp</dimen>
+	
+	
+	
+	<dimen name="game_interface_score_abbr_horizontal_margin">5dp</dimen>
+	<dimen name="game_interface_score_abbr_vertical_margin_time">8dp</dimen>
+	<dimen name="game_interface_score_abbr_vertical_margin_score">8dp</dimen>
+	<dimen name="game_interface_score_abbr_vertical_margin_addition">4dp</dimen>
+	<dimen name="game_interface_score_abbr_vertical_margin_multiplier">2dp</dimen>
+	<dimen name="game_interface_score_abbr_vertical_margin_rows">6dp</dimen>
+	
+	<dimen name="game_interface_score_abbr_horizontal_margin_between_rows">8dp</dimen>
+	
+	<dimen name="game_interface_score_detailed_horizontal_margin_label">20dp</dimen>
+	<dimen name="game_interface_score_detailed_vertical_margin_top_bottom">6dp</dimen>
+	<dimen name="game_interface_score_detailed_vertical_margin_level">4dp</dimen>
+	<dimen name="game_interface_score_detailed_vertical_margin_time">10dp</dimen>
+	<dimen name="game_interface_score_detailed_vertical_margin_score_no_time">10dp</dimen>
+	<dimen name="game_interface_score_detailed_vertical_margin_score_with_time">2dp</dimen>
+	<dimen name="game_interface_score_detailed_vertical_margin_addition">2dp</dimen>
+	<dimen name="game_interface_score_detailed_vertical_margin_multiplier">2dp</dimen>
+	<dimen name="game_interface_score_detailed_vertical_margin_rows">4dp</dimen>
+	<dimen name="game_interface_score_detailed_vertical_margin_rows_again">2dp</dimen>
+	
+	<dimen name="game_interface_score_detailed_horizontal_margin_level">10dp</dimen>
+	<dimen name="game_interface_score_detailed_horizontal_margin_time">10dp</dimen>
+	<dimen name="game_interface_score_detailed_horizontal_margin_score">10dp</dimen>
+	<dimen name="game_interface_score_detailed_horizontal_margin_addition">0dp</dimen>
+	<dimen name="game_interface_score_detailed_horizontal_margin_multiplier">6dp</dimen>
+	<dimen name="game_interface_score_detailed_horizontal_margin_rows">4dp</dimen>
+	
+	
+	<dimen name="examine_game_result_text_size_title_mediumscreen">24sp</dimen>
+	<dimen name="examine_game_result_text_size_name_mediumscreen">20sp</dimen> 	
+	<dimen name="examine_game_result_text_size_difficulty_mediumscreen">16sp</dimen>
+	<dimen name="examine_game_result_text_size_score_mediumscreen">12sp</dimen>
+	<dimen name="examine_game_result_text_size_config_mediumscreen">10sp</dimen>
+	<dimen name="examine_game_result_text_size_score_submission_mediumscreen">12sp</dimen>
+	<dimen name="examine_game_result_text_size_name_smaller_mediumscreen">18sp</dimen>
+	<dimen name="examine_game_result_text_size_name_smallest_mediumscreen">12sp</dimen>
+	<dimen name="examine_game_result_text_size_query_mediumscreen">18sp</dimen>
+	
+	<dimen name="examine_game_result_text_size_title_bigscreen">34sp</dimen>
+	<dimen name="examine_game_result_text_size_name_bigscreen">30sp</dimen>
+	<dimen name="examine_game_result_text_size_difficulty_bigscreen">24sp</dimen>
+	<dimen name="examine_game_result_text_size_score_bigscreen">20sp</dimen>
+	<dimen name="examine_game_result_text_size_config_bigscreen">16sp</dimen>
+	<dimen name="examine_game_result_text_size_score_submission_bigscreen">16sp</dimen>
+	<dimen name="examine_game_result_text_size_name_smaller_bigscreen">24sp</dimen>
+	<dimen name="examine_game_result_text_size_name_smallest_bigscreen">18sp</dimen>
+	<dimen name="examine_game_result_text_size_query_bigscreen">24sp</dimen>
+	
+	
+	
+	
+</resources>

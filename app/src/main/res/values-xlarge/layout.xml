@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="free_play_button_collage_list_item" type="layout">@layout/free_play_button_collage_list_item_4</item>
+	<item name="multiplayer_button_collage_list_item" type="layout">@layout/multiplayer_button_collage_list_item_4</item>
+	<item name="lobby_list_item" type="layout">@layout/lobby_button_collage_list_item_2</item>
+	<item name="main_menu_list_item" type="layout">@layout/main_menu_list_item_2</item>
+	
+	<!-- Content collage button lists -->
+	<item name="button_collage_background_list_item" type="layout">@layout/button_collage_background_list_item_4</item>
+	<item name="button_collage_music_list_item" type="layout">@layout/button_collage_music_list_item_4</item>
+	<item name="button_collage_skin_list_item" type="layout">@layout/button_collage_skin_list_item_4</item>
+	
+</resources>

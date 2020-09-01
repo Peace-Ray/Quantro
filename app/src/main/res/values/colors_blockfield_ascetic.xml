@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Austere is almost entirely white. -->
+    <color name="austere_retro_block_background">#ffffffff</color>
+    <color name="austere_retro_border">#ffffffff</color>
+    <color name="austere_retro_fill">#ff606060</color>	<!-- used only for ghosts, not pieces -->
+    
+    <color name="austere_retro_push_down_chevron">#ff7d7dff</color>		<!-- Starting periwinkle, then darkened and hue increased. -->
+    <color name="austere_retro_push_up_chevron">#ffffa500</color>		<!-- Web Orange -->
+    
+    
+    
+    <!-- Severe has black edges and (possibly) black interiors? -->
+    <color name="severe_retro_block_background">#ffffffff</color>
+    
+    <color name="severe_retro_border_shine">#ff606060</color>
+    <integer name="severe_retro_border_shine_shape">@integer/block_shine_shape_full_wrap_top_left</integer>
+    <integer name="severe_retro_border_shine_alpha_range">@integer/block_shine_alpha_range_standard</integer>
+    
+    <color name="severe_retro_border">#ff101010</color>
+    <color name="severe_retro_fill">#ffffffff</color>
+    
+    <color name="severe_retro_push_down_chevron">#ff7d7dff</color>		<!-- Starting periwinkle, then darkened and hue increased -->
+    <color name="severe_retro_push_up_chevron">#ffffa500</color>		<!-- Web Orange -->
+    
+	
+        
+</resources>

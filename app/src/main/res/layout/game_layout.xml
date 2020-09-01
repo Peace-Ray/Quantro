@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/game_layout"
+  >
+  <!-- <include layout="@layout/block_field_tile_view_layout"/> -->
+  <include layout="@layout/game_view_layout"/>
+  
+  <TextView android:id="@+id/view_fps_text"
+		  android:visibility="visible"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#ffffffff"
+          android:textSize="12sp"/>
+  
+  <include layout="@layout/controls_invisible_buttons_gamepad_of_rows"/>
+  	
+  <include layout="@layout/controls_invisible_buttons_gesture_of_rows"/>
+  
+  <View 
+      android:id="@+id/game_layout_grey_overlay"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:background="#bb222222"/>
+  
+  <include layout="@layout/pause_overlay"/>
+  
+  <FrameLayout android:id="@+id/game_options_menu_fragment_container"
+  		android:layout_width="fill_parent" android:layout_height="fill_parent"
+  		/>
+  
+</RelativeLayout>

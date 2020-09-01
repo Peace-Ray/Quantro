@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:robobunny="http://robobunny.com"
+    xmlns:peaceray="http://peaceray.com"
+    android:background="@color/menu_background">
+    
+    <PreferenceScreen
+        android:key="@string/setting_screen_key_game"
+        android:title="@string/setting_screen_title_game"
+        android:summary="@string/setting_screen_summary_game">
+        
+        <PreferenceCategory android:title="@string/setting_category_title_game_all">
+        
+	        <ListPreference
+	            android:key="@string/setting_key_game_piece_tips"
+	            android:title="@string/setting_title_game_piece_tips"
+	            android:summary="@string/setting_summary_game_piece_tips"
+	            android:defaultValue="@string/setting_value_key_game_piece_tips_occasionally"
+	            android:entries="@array/setting_value_title_game_piece_tips"
+	            android:entryValues="@array/setting_value_key_game_piece_tips"
+	            />
+	        
+	        	        
+	        <!-- The default value of this is set in QuantroPreferences according to system capabilities -->
+	        <!--
+	        <ListPreference
+	            android:key="@string/setting_key_game_back_button"
+	            android:title="@string/setting_title_game_back_button"
+	            android:summary="@string/setting_summary_game_back_button"
+				android:entries="@array/setting_value_title_game_back_button"
+	            android:entryValues="@array/setting_value_key_game_back_button"
+	            />
+	            -->
+        
+        </PreferenceCategory>
+        
+        <PreferenceCategory android:title="@string/setting_category_title_game_single_player">
+        
+	        <CheckBoxPreference
+	            android:key="@string/setting_key_game_new_game_custom"
+	            android:title="@string/setting_title_game_new_game_custom"
+	            android:summary="@string/setting_summary_game_new_game_custom"
+				android:defaultValue="true"
+	            />
+
+        
+        </PreferenceCategory>
+        
+        <PreferenceCategory android:title="@string/setting_category_title_game_multiplayer">
+        
+	        <EditTextPreference
+	            android:key="@string/setting_key_game_multiplayer_name"
+	            android:title="@string/setting_title_game_multiplayer_name"
+	            android:summary="@string/setting_summary_game_multiplayer_name"
+	            android:defaultValue="Player"
+	            android:dialogMessage="@string/setting_dialog_game_multiplayer_name"
+	            />
+	        
+	        <CheckBoxPreference
+	            android:key="@string/setting_key_game_in_game_chat"
+	            android:title="@string/setting_title_game_in_game_chat"
+	            android:summary="@string/setting_summary_game_in_game_chat"
+				android:defaultValue="true"
+	            />
+        
+        </PreferenceCategory>
+    </PreferenceScreen>
+    
+    <PreferenceScreen
+        android:key="@string/setting_screen_key_graphics"
+        android:title="@string/setting_screen_title_graphics"
+        android:summary="@string/setting_screen_summary_graphics">
+        
+        <PreferenceScreen
+	        android:key="@string/setting_screen_key_details"
+	        android:title="@string/setting_screen_title_details"
+	        android:summary="@string/setting_screen_summary_details">
+           
+            <!-- The default value of this is set in QuantroPreferences according to system capabilities -->
+	        <ListPreference
+	            android:key="@string/setting_key_graphics_graphical_detail"
+	            android:title="@string/setting_title_graphics_graphical_detail"
+	            android:summary="@string/setting_summary_graphics_graphical_detail_mid"
+				android:entries="@array/setting_value_title_graphics_graphical_detail"
+	            android:entryValues="@array/setting_value_key_graphics_graphical_detail"
+	            />
+	        
+	        <CheckBoxPreference
+	            android:key="@string/setting_key_graphics_skip_animations"
+	            android:title="@string/setting_title_graphics_skip_animations"
+	            android:summary="@string/setting_summary_graphics_skip_animations"
+				android:defaultValue="false"
+	            />
+	        	        
+	        <CheckBoxPreference
+	            android:key="@string/setting_key_graphics_rotated_preview"
+	            android:title="@string/setting_title_graphics_rotated_preview"
+	            android:summary="@string/setting_summary_graphics_rotated_preview"
+				android:defaultValue="false"
+	            />
+	        
+	        <CheckBoxPreference
+	            android:key="@string/setting_key_graphics_swap_previews"
+	            android:title="@string/setting_title_graphics_swap_previews"
+	            android:summary="@string/setting_summary_graphics_swap_previews"
+				android:defaultValue="false"
+	            />
+	        
+	        <PreferenceCategory android:title="@string/setting_category_title_graphics_advanced">
+
+				<!-- This preference control is extremely hacky. Don't make changes (including max/min)
+				 	without adjusting QuantroPreferences.java -->
+				<com.robobunny.SeekBarPreference
+					android:key="@string/setting_key_graphics_scale"
+					android:title="@string/setting_title_graphics_scale"
+					android:summary="@string/setting_summary_graphics_scale"
+					android:defaultValue="19"
+					robobunny:min="0"
+					android:max="19"
+					/>
+
+	            <CheckBoxPreference
+		        	android:key="@string/setting_key_graphics_prioritize_framerate"
+		            android:title="@string/setting_title_graphics_prioritize_framerate"
+		            android:summary="@string/setting_summary_graphics_prioritize_framerate"
+					android:defaultValue="false"
+		            />
+	            
+	        </PreferenceCategory>	
+	       
+	    </PreferenceScreen>
+	    
+        <PreferenceScreen
+	        android:key="@string/setting_screen_key_skin"
+	        android:title="@string/setting_screen_title_skin"
+	        android:summary="@string/setting_screen_summary_skin">
+	        
+            <PreferenceCategory android:title="@string/setting_category_title_skin_quantro">
+	
+		        <ListPreference
+		            android:key="@string/setting_key_skin_quantro_template"
+		            android:title="@string/setting_title_skin_quantro_template"
+		            android:summary="@string/setting_summary_skin_quantro_template"
+		            />
+		        
+		        <ListPreference
+		            android:key="@string/setting_key_skin_quantro_color"
+		            android:title="@string/setting_title_skin_quantro_color"
+		            android:summary="@string/setting_summary_skin_quantro_color"
+		            />
+	        
+	        </PreferenceCategory>
+	        
+            <PreferenceCategory android:title="@string/setting_category_title_skin_retro">
+            
+		        <ListPreference
+		            android:key="@string/setting_key_skin_retro_template"
+		            android:title="@string/setting_title_skin_retro_template"
+		            android:summary="@string/setting_summary_skin_retro_template"
+		            />
+	        
+		        <ListPreference
+		            android:key="@string/setting_key_skin_retro_color"
+		            android:title="@string/setting_title_skin_retro_color"
+		            android:summary="@string/setting_summary_skin_retro_color"
+		            />
+	        
+	        </PreferenceCategory>
+        
+        </PreferenceScreen>
+        
+        <PreferenceScreen
+	        android:key="@string/setting_screen_key_background"
+	        android:title="@string/setting_screen_title_background"
+	        android:summary="@string/setting_screen_summary_background">
+	        
+	        <PreferenceCategory android:title="@string/setting_category_title_background_game">
+	            
+	            <ListPreference
+		            android:key="@string/setting_key_background_current_template"
+		            android:title="@string/setting_title_background_current_template"
+		            android:summary="@string/setting_summary_background_template_pieces"
+		            android:defaultValue="@string/setting_value_key_background_template_pieces"
+		            android:entries="@array/setting_value_title_background_template"
+		            android:entryValues="@array/setting_value_key_background_template"
+		            />
+	            
+	            <com.robobunny.SeekBarPreference
+		            android:key="@string/setting_key_background_current_shade"
+		            android:title="@string/setting_title_background_current_shade"
+		            android:summary="@string/setting_summary_background_current_shade"
+		            peaceray:labels="@array/setting_value_title_background_shade"
+		            android:defaultValue="1"
+		            />
+	            
+	            <CheckBoxPreference
+		            android:key="@string/setting_key_background_shuffle"
+		            android:title="@string/setting_title_background_shuffle"
+		            android:summary="@string/setting_summary_background_shuffle"
+					android:defaultValue="true"
+		            />
+	            
+	        </PreferenceCategory>
+	        
+	        <PreferenceCategory android:title="@string/setting_category_title_background_menu">
+	            
+	            <CheckBoxPreference
+		            android:key="@string/setting_key_background_menu_use_current"
+		            android:title="@string/setting_title_background_menu_use_current"
+		            android:summary="@string/setting_summary_background_menu_use_current"
+					android:defaultValue="true"
+		            />
+	            
+	            <ListPreference
+		            android:key="@string/setting_key_background_menu_template"
+		            android:title="@string/setting_title_background_menu_template"
+		            android:summary="@string/setting_summary_background_template_pieces"
+		            android:defaultValue="@string/setting_value_key_background_template_pieces"
+		            android:entries="@array/setting_value_title_background_template"
+		            android:entryValues="@array/setting_value_key_background_template"
+		            />
+	            
+	            <com.robobunny.SeekBarPreference
+		            android:key="@string/setting_key_background_menu_shade"
+		            android:title="@string/setting_title_background_menu_shade"
+		            android:summary="@string/setting_summary_background_menu_shade"
+		            peaceray:labels="@array/setting_value_title_background_shade"
+		            android:defaultValue="1"
+		            />
+	            
+	        </PreferenceCategory>
+	        
+	    </PreferenceScreen>
+        
+    </PreferenceScreen>
+        
+    
+    <PreferenceScreen
+        android:key="@string/setting_screen_key_sound"
+        android:title="@string/setting_screen_title_sound"
+        android:summary="@string/setting_screen_summary_sound">
+        
+        <PreferenceCategory android:title="@string/setting_category_title_sound_volume">
+        
+	        <CheckBoxPreference
+	            android:key="@string/setting_key_sound_mute_on_ringer_silent"
+	            android:title="@string/setting_title_sound_mute_on_ringer_silent"
+	            android:summary="@string/setting_summary_sound_mute_on_ringer_silent"
+				android:defaultValue="false"
+	            />
+	        
+	        <CheckBoxPreference
+	            android:key="@string/setting_key_sound_play"
+	            android:title="@string/setting_title_sound_play"
+	            android:summary="@string/setting_summary_sound_play"
+				android:defaultValue="true"
+	            />
+	        
+	        <com.robobunny.SeekBarPreference
+	            android:key="@string/setting_key_sound_music_volume"
+	            android:title="@string/setting_title_sound_music_volume"
+	            android:summary="@string/setting_summary_sound_music_volume"
+	            android:defaultValue="100"
+	            android:max="200"
+	            robobunny:min="0"
+	            robobunny:unitsLeft=""
+	            robobunny:unitsRight="%"
+	            />
+	        
+	        <com.robobunny.SeekBarPreference
+	            android:key="@string/setting_key_sound_sound_volume"
+	            android:title="@string/setting_title_sound_sound_volume"
+	            android:summary="@string/setting_summary_sound_sound_volume"
+	            android:defaultValue="100"
+	            android:max="200"
+	            robobunny:min="0"
+	            robobunny:unitsLeft=""
+	            robobunny:unitsRight="%"
+	            />
+	        
+	        <CheckBoxPreference
+	            android:key="@string/setting_key_sound_controls"
+	            android:title="@string/setting_title_sound_controls"
+	            android:summary="@string/setting_summary_sound_controls"
+				android:defaultValue="true"
+	            />
+        
+        </PreferenceCategory>
+        
+        <PreferenceCategory android:title="@string/setting_category_title_sound_menu_music">
+        
+            <ListPreference
+	            android:key="@string/setting_key_sound_music_in_menu"
+	            android:title="@string/setting_title_sound_music_in_menu"
+	            android:summary="@string/setting_summary_sound_music_in_menu"
+	            android:defaultValue="@string/setting_value_key_sound_music_main_theme"
+	            android:entries="@array/setting_value_title_sound_music"
+	            android:entryValues="@array/setting_value_key_sound_music"
+	            />
+            
+            <ListPreference
+	            android:key="@string/setting_key_sound_music_in_lobby"
+	            android:title="@string/setting_title_sound_music_in_lobby"
+	            android:summary="@string/setting_summary_sound_music_in_lobby"
+	            android:defaultValue="@string/setting_value_key_sound_music_waiting"
+	            android:entries="@array/setting_value_title_sound_music"
+	            android:entryValues="@array/setting_value_key_sound_music"
+	            />
+            
+        </PreferenceCategory>
+        
+    </PreferenceScreen>
+        
+    
+    <PreferenceScreen
+        android:key="@string/setting_screen_key_controls"
+        android:title="@string/setting_screen_title_controls"
+        android:summary="@string/setting_screen_summary_controls">
+        
+        <PreferenceCategory
+            android:key="@string/setting_category_key_controls_style"
+            android:title="@string/setting_category_title_controls_style" >
+	        <ListPreference
+	            android:key="@string/setting_key_controls_template"
+	            android:title="@string/setting_title_controls_template"
+	            android:summary="@string/setting_summary_controls_template_gamepad"
+	            android:defaultValue="@string/setting_value_key_controls_template_gamepad"
+	            android:entries="@array/setting_value_title_controls_template"
+	            android:entryValues="@array/setting_value_key_controls_template"
+	            />
+	        
+	        <CheckBoxPreference
+	            android:key="@string/setting_key_controls_show"
+	            android:title="@string/setting_title_controls_show"
+	            android:summary="@string/setting_summary_controls_show"
+				android:defaultValue="true"
+	            />
+	        
+        </PreferenceCategory>
+        
+        <PreferenceCategory
+            android:key="@string/setting_category_key_controls_gamepad_config"
+            android:title="@string/setting_category_title_controls_gamepad_config">
+            
+            <CheckBoxPreference
+	            android:key="@string/setting_key_controls_gamepad_quick_slide"
+	            android:title="@string/setting_title_controls_gamepad_quick_slide"
+	            android:summary="@string/setting_summary_controls_gamepad_quick_slide"
+				android:defaultValue="true"
+	            />
+            
+            <ListPreference
+	            android:key="@string/setting_key_controls_gamepad_down"
+	            android:title="@string/setting_title_controls_gamepad_down"
+	            android:summary="@string/setting_summary_controls_gamepad_down_fall"
+	            android:defaultValue="@string/setting_value_key_controls_gamepad_down_fall"
+	            android:entries="@array/setting_value_title_controls_gamepad_down"
+	            android:entryValues="@array/setting_value_key_controls_gamepad_down"
+	            />
+            
+            <CheckBoxPreference
+	            android:key="@string/setting_key_controls_gamepad_down_autolock"
+	            android:title="@string/setting_title_controls_gamepad_down_autolock"
+	            android:summary="@string/setting_summary_controls_gamepad_down_autolock"
+				android:defaultValue="false"
+	            />
+            
+            <CheckBoxPreference
+	            android:key="@string/setting_key_controls_gamepad_double_down_drop"
+	            android:title="@string/setting_title_controls_gamepad_double_down_drop"
+	            android:summary="@string/setting_summary_controls_gamepad_double_down_drop"
+				android:defaultValue="true"
+	            />
+            
+            <CheckBoxPreference
+	            android:key="@string/setting_key_controls_gamepad_use_custom"
+	            android:title="@string/setting_title_controls_gamepad_use_custom"
+	            android:summary="@string/setting_summary_controls_gamepad_use_custom"
+				android:defaultValue="false"
+	            />
+            
+        </PreferenceCategory>
+        
+        <PreferenceCategory
+            android:key="@string/setting_category_key_controls_gamepad_customization"
+            android:title="@string/setting_category_title_controls_gamepad_customization">
+            
+            <CheckBoxPreference
+	            android:key="@string/setting_key_controls_gamepad_swap_turn_move"
+	            android:title="@string/setting_title_controls_gamepad_swap_turn_move"
+	            android:summary="@string/setting_summary_controls_gamepad_swap_turn_move"
+				android:defaultValue="false"
+	            />
+            
+            <ListPreference
+	            android:key="@string/setting_key_controls_gamepad_center_button_width"
+	            android:title="@string/setting_title_controls_gamepad_center_button_width"
+	            android:summary="@string/setting_summary_controls_gamepad_center_button_width_standard"
+	            android:defaultValue="@string/setting_value_key_controls_gamepad_center_button_width_standard"
+	            android:entries="@array/setting_value_title_controls_gamepad_center_button_width"
+	            android:entryValues="@array/setting_value_key_controls_gamepad_center_button_width"
+	            />
+            
+            <com.robobunny.SeekBarPreference
+	            android:key="@string/setting_key_controls_gamepad_center_button_width_factor"
+	            android:title="@string/setting_title_controls_gamepad_center_button_width_factor"
+	            android:summary="@string/setting_summary_controls_gamepad_center_button_width_factor"
+	            android:defaultValue="100"
+	            android:max="240"
+	            robobunny:min="40"
+	            robobunny:unitsLeft=""
+	            robobunny:unitsRight="%"
+	            />
+            
+            
+            <CheckBoxPreference
+	            android:key="@string/setting_key_controls_gamepad_custom_height"
+	            android:title="@string/setting_title_controls_gamepad_custom_height"
+	            android:summary="@string/setting_summary_controls_gamepad_custom_height"
+				android:defaultValue="false"
+	            />
+            
+            <com.robobunny.SeekBarPreference
+	            android:key="@string/setting_key_controls_gamepad_custom_height_factor"
+	            android:title="@string/setting_title_controls_gamepad_custom_height_factor"
+	            android:summary="@string/setting_summary_controls_gamepad_custom_height_factor"
+	            android:defaultValue="100"
+	            android:max="125"
+	            robobunny:min="25"
+	            robobunny:unitsLeft=""
+	            robobunny:unitsRight="%"
+	            />
+            
+        </PreferenceCategory>
+        
+        <PreferenceCategory
+            android:key="@string/setting_category_key_controls_gesture_config"
+            android:title="@string/setting_category_title_controls_gesture_config">
+            
+            <CheckBoxPreference
+	            android:key="@string/setting_key_controls_gesture_quick_slide"
+	            android:title="@string/setting_title_controls_gesture_quick_slide"
+	            android:summary="@string/setting_summary_controls_gesture_quick_slide"
+				android:defaultValue="false"
+	            />
+            
+            <CheckBoxPreference
+	            android:key="@string/setting_key_controls_gesture_drag_down_autolock"
+	            android:title="@string/setting_title_controls_gesture_drag_down_autolock"
+	            android:summary="@string/setting_summary_controls_gesture_drag_down_autolock"
+				android:defaultValue="false"
+	            />
+            
+            <CheckBoxPreference
+	            android:key="@string/setting_key_controls_gesture_turn_buttons"
+	            android:title="@string/setting_title_controls_gesture_turn_buttons"
+	            android:summary="@string/setting_summary_controls_gesture_turn_buttons"
+				android:defaultValue="false"
+	            />
+            
+            <CheckBoxPreference
+	            android:key="@string/setting_key_controls_gesture_use_custom"
+	            android:title="@string/setting_title_controls_gesture_use_custom"
+	            android:summary="@string/setting_summary_controls_gesture_use_custom"
+				android:defaultValue="false"
+	            />
+            
+        </PreferenceCategory>
+        
+        <PreferenceCategory
+            android:key="@string/setting_category_key_controls_gesture_customization"
+            android:title="@string/setting_category_title_controls_gesture_customization">
+            
+            <com.robobunny.SeekBarPreference
+	            android:key="@string/setting_key_controls_gesture_drag_exaggeration"
+	            android:title="@string/setting_title_controls_gesture_drag_exaggeration"
+	            android:summary="@string/setting_summary_controls_gesture_drag_exaggeration"
+	            android:defaultValue="100"
+	            android:max="500"
+	            robobunny:min="50"
+	            robobunny:unitsLeft=""
+	            robobunny:unitsRight="%"
+	            />
+            
+            <com.robobunny.SeekBarPreference
+	            android:key="@string/setting_key_controls_gesture_fling_sensitivity"
+	            android:title="@string/setting_title_controls_gesture_fling_sensitivity"
+	            android:summary="@string/setting_summary_controls_gesture_fling_sensitivity"
+	            android:defaultValue="100"
+	            android:max="200"
+	            robobunny:min="1"
+	            robobunny:unitsLeft=""
+	            robobunny:unitsRight="%"
+	            />
+            
+        </PreferenceCategory>
+        
+        
+    </PreferenceScreen>
+    
+    
+    <PreferenceScreen
+        android:key="@string/setting_screen_key_fullscreen"
+        android:title="@string/setting_screen_title_fullscreen"
+        android:summary="@string/setting_screen_summary_fullscreen">
+        
+        <!-- XL Fullscreen: we keep this for API < 19. -->
+        <CheckBoxPreference
+            android:key="@string/setting_key_xl_fullscreen_game"
+            android:title="@string/setting_title_xl_fullscreen_game"
+            android:summary="@string/setting_summary_xl_fullscreen_game"
+			android:defaultValue="false"
+            />
+        
+        <CheckBoxPreference
+            android:key="@string/setting_key_xl_fullscreen_lobby"
+            android:title="@string/setting_title_xl_fullscreen_lobby"
+            android:summary="@string/setting_summary_xl_fullscreen_lobby"
+			android:defaultValue="false"
+            />
+        
+        <CheckBoxPreference
+            android:key="@string/setting_key_xl_fullscreen_menu"
+            android:title="@string/setting_title_xl_fullscreen_menu"
+            android:summary="@string/setting_summary_xl_fullscreen_menu"
+			android:defaultValue="false"
+            />
+        
+        <!-- Immersive Fullscreen: we keep these for API >= 19. -->
+        <ListPreference
+	            android:key="@string/setting_key_full_screen_immersive_game"
+	            android:title="@string/setting_title_full_screen_immersive_game"
+	            android:summary="@string/setting_summary_full_screen_immersive_game"
+	            android:defaultValue="@string/setting_value_key_full_screen_immersive_on"
+	            android:entries="@array/setting_value_title_full_screen_immersive_game"
+	            android:entryValues="@array/setting_value_key_full_screen_immersive_game"
+	            />
+        
+        <ListPreference
+	            android:key="@string/setting_key_full_screen_immersive_lobby"
+	            android:title="@string/setting_title_full_screen_immersive_lobby"
+	            android:summary="@string/setting_summary_full_screen_immersive_lobby"
+	            android:defaultValue="@string/setting_value_key_full_screen_immersive_off"
+	            android:entries="@array/setting_value_title_full_screen_immersive_non_game"
+	            android:entryValues="@array/setting_value_key_full_screen_immersive_non_game"
+	            />
+        
+        <ListPreference
+	            android:key="@string/setting_key_full_screen_immersive_menu"
+	            android:title="@string/setting_title_full_screen_immersive_menu"
+	            android:summary="@string/setting_summary_full_screen_immersive_menu"
+	            android:defaultValue="@string/setting_value_key_full_screen_immersive_off"
+	            android:entries="@array/setting_value_title_full_screen_immersive_non_game"
+	            android:entryValues="@array/setting_value_key_full_screen_immersive_non_game"
+	            />
+        
+        
+        
+    </PreferenceScreen>
+    
+    
+    <PreferenceScreen
+        android:key="@string/setting_screen_key_network"
+        android:title="@string/setting_screen_title_network"
+        android:summary="@string/setting_screen_summary_network">
+        
+        <CheckBoxPreference
+			android:key="@string/setting_key_network_wifi_lock"
+			android:title="@string/setting_title_network_wifi_lock"
+			android:summary="@string/setting_summary_network_wifi_lock"
+			android:defaultValue="true"
+			/>
+        
+    </PreferenceScreen>
+    
+    
+    <PreferenceScreen
+        android:key="@string/setting_screen_key_analytics"
+        android:title="@string/setting_screen_title_analytics"
+        android:summary="@string/setting_screen_summary_analytics">
+        
+        <CheckBoxPreference
+			android:key="@string/setting_key_analytics_active"
+			android:title="@string/setting_title_analytics_active"
+			android:summary="@string/setting_summary_analytics_active"
+			android:defaultValue="true"
+			/>
+        
+        <CheckBoxPreference
+			android:key="@string/setting_key_analytics_aggregated"
+			android:title="@string/setting_title_analytics_aggregated"
+			android:summary="@string/setting_summary_analytics_aggregated"
+			android:defaultValue="false"
+			/>
+        
+    </PreferenceScreen>
+    
+    
+    
+    
+    
+</PreferenceScreen>

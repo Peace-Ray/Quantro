@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+  android:id="@id/button_content_background_drawable"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:padding="0dip"
+  >
+  
+  <ImageView
+		android:id="@id/button_content_image_drawable"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:padding="5dp"
+		android:scaleType="centerInside"
+		/>
+  
+  <com.peaceray.quantro.view.generic.EllipsizingTextView
+		android:id="@id/button_content_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:textColor="@drawable/quantro_button_white_text_color"
+		android:gravity="bottom|left"
+		android:paddingLeft="5dip"
+	  	android:paddingRight="10dip"
+		android:paddingBottom="5dip"
+		android:paddingTop="5dip"
+		android:textSize="@dimen/button_text"
+		android:maxLines="1"
+		custom:typeface="Roboto-BoldCondensed"
+		/>
+  
+  <ImageView
+		android:id="@id/button_content_alert_drawable"
+		android:layout_width="44dp"
+		android:layout_height="44dp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:padding="5dp"
+		android:scaleType="centerInside"
+		/>
+	
+	<!-- For whatever reason, setting the padding doesn't accomplish much
+			when placed in a ListView.  Using an empty view for vertical padding instead. -->
+  
+</RelativeLayout>

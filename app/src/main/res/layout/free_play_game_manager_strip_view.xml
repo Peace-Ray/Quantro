@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.peaceray.quantro.view.freeplay.FreePlayGameManagerStripView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  custom:fpgmsv_action_strip="@+id/free_play_game_manager_action_strip"
+  custom:fpgmsv_game_list="@+id/free_play_game_manager_game_list"
+  custom:fpgmsv_game_list_placeholder="@+id/free_play_game_list_placeholder"
+  custom:fpgmsv_instructions_text_view="@+id/free_play_game_manager_instructions"
+  android:id="@+id/free_play_game_manager_strip_view"
+  >
+  
+    <include layout="@layout/free_play_game_manager_action_strip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@id/free_play_game_manager_action_strip"/>
+    
+    
+	<LinearLayout
+	    android:layout_height="fill_parent"
+	    android:layout_width="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@id/free_play_game_manager_action_strip"
+	    android:layout_alignParentBottom="true"
+	    >
+	    
+	    <!-- Use this linear layout so we can adjust heights relative to each
+	     other, without drawing over the stinger. -->
+	     
+	  	<!-- Our game mode list -->
+	  	<com.peaceray.quantro.view.generic.PinnedHeaderListView
+	  		android:layout_height="wrap_content"
+	  		android:layout_width="fill_parent"
+	  		android:id="@id/free_play_game_manager_game_list"
+	  		android:cacheColorHint="@android:color/transparent"
+	  		/>
+	    
+		<!-- Instructions, shown between list views and stinger (if room) -->
+	  	<com.peaceray.quantro.view.generic.HeavyShadowTextView
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:id="@id/free_play_game_manager_instructions"
+			android:textColor="@drawable/quantro_button_white_text_color"
+			android:text="@string/menu_free_play_manager_instructions"
+			android:gravity="center"
+			android:paddingLeft="44dip"
+			android:paddingRight="44dip"
+			android:paddingBottom="5dip"
+			android:paddingTop="5dip"
+			custom:typeface="Roboto-Condensed"
+			/>
+		
+	</LinearLayout>
+  	
+
+  	
+
+  	<LinearLayout 
+  	    	android:id="@id/free_play_game_list_placeholder"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_below="@id/free_play_game_manager_action_strip"
+  			android:layout_alignParentBottom="true"
+	        android:orientation="horizontal"
+	        android:gravity="center">
+
+		    <ProgressBar
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        />
+    </LinearLayout>
+  	
+  	
+</com.peaceray.quantro.view.freeplay.FreePlayGameManagerStripView>

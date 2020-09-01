@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- ************************************************************ -->
+	<!-- Generic empty placeholder -->
+	<string name="menu_placeholder_empty">\?</string>
+	
+
+
+
+	<!-- Single player game launches -->
+	<string name="menu_sp_new_game_title"></string>
+	<string name="menu_sp_resume_game_title">GM_N_XXXX</string>
+	<string name="menu_sp_first_game_title">GM_N_XXXX</string>
+	<string name="menu_sp_new_game_mode_title">Create Game</string>
+	<string name="menu_sp_edit_game_mode_title">Edit</string>
+	<string name="menu_sp_new_game_description">New Game</string>
+	<string name="menu_sp_resume_game_description">Level GR_L_XXXX with GR_S_XXXX points</string>
+	<string name="menu_sp_resume_game_long_description">Level GR_L_XXXX\nGR_S_XXXX points</string>
+	<string name="menu_sp_resume_game_measure_time_description">GR_T_XXXX with GR_R_XXXX rows</string>
+	<string name="menu_sp_resume_game_measure_time_long_description">GR_T_XXXX\nGR_R_XXXX rows</string>
+	<string name="menu_sp_first_game_description">GM_SD_XXXX</string>
+	<string name="menu_sp_new_game_mode_description">Design a custom game type</string>
+	<string name="menu_sp_edit_game_mode_description">Edit this game type</string>
+	
+	
+	<!-- Multi player game launches -->
+	<!-- We use the game name for all titles -->
+	<string name="menu_mp_game_vote_for_title">GM_N_XXXX</string>
+	<string name="menu_mp_game_vote_against_title">GM_N_XXXX</string>
+	<string name="menu_mp_game_launching_with_title">GM_N_XXXX</string>
+	<string name="menu_mp_game_launching_without_title">GM_N_XXXX</string>
+	<string name="menu_mp_game_halted_with_title">GM_N_XXXX</string>
+	<string name="menu_mp_game_halted_without_title">GM_N_XXXX</string>
+	<!-- We provide various customized  -->
+	<string name="menu_mp_game_vote_for_description">GM_SD_XXXX</string>
+	<string name="menu_mp_game_vote_against_description">GM_SD_XXXX</string>
+	<string name="menu_mp_game_launching_with_description">Launching in DURATION_SECONDS_XXXX&#8230;</string>
+	<string name="menu_mp_game_launching_without_description">Launching in DURATION_SECONDS_XXXX&#8230;</string>
+	<string name="menu_mp_game_halted_with_description">Waiting for players</string>		<!-- who we waitin' on? -->
+	<string name="menu_mp_game_halted_without_description">Waiting for players</string>
+	
+	
+	<!-- FREE PLAY MANAGER -->
+	<!-- Explanatory text for FreePlay -->
+	<string name="menu_free_play_manager_instructions">Tap to play, hold to configure.  Create a custom game with the icon in the top-right.</string>
+	
+	
+	<!-- LOBBY MANAGER -->
+	<!-- Explanatory text for Lobbies -->
+	<string name="menu_wifi_lobby_manager_instructions_no_wifi">No WiFi connection.</string>
+	<string name="menu_wifi_lobby_manager_instructions_searching">Searching for WiFi lobbies&#8230;</string>
+	<string name="menu_wifi_lobby_manager_instructions_empty">No lobbies found.  Create a new lobby, or locate one by specifying an IP address on this WiFi network.  If you create a new lobby, anyone on this WiFi network can join.  WiFi Multiplayer is experimental; bugs and service failures are possible.</string>
+	<string name="menu_wifi_lobby_manager_instructions_full_only">All lobbies are full.  If you create a new lobby, anyone on this WiFi network can join.  WiFi Multiplayer is experimental; bugs and service failures are possible.</string>
+	<string name="menu_wifi_lobby_manager_instructions_open">Join a lobby to play a multiplayer game.  If you create a new lobby, anyone on this WiFi network can join.  WiFi Multiplayer is experimental; bugs and service failures are possible.</string>
+	
+	<string name="menu_wifi_lobby_manager_text_warning">WiFi multiplayer is an experimental feature currently being tested.  You may experience bugs or connection failures.</string>
+	
+	<string name="menu_wifi_lobby_manager_toast_finding_lobby">Finding lobby at LOBBY_ADDRESS_XXXX&#8230;</string>
+	
+	<!-- INTERNET LOBBY MANAGER -->
+	<!-- Explanatory text for Lobbies -->
+	<string name="menu_internet_lobby_manager_instructions_no_response">Cannot contact server.  Internet Multiplayer is experimental; bugs and service failures are possible.</string>
+	<string name="menu_internet_lobby_manager_instructions_pending">Asking server for lobby list&#8230;</string>
+	<string name="menu_internet_lobby_manager_instructions_empty">No public lobbies found.  Create a new lobby to play online.  Internet Multiplayer is experimental; bugs and service failures are possible.</string>
+	<string name="menu_internet_lobby_manager_instructions_full_only">All public lobbies are full.  Create a new lobby to play online.  Internet Multiplayer is experimental; bugs and service failures are possible.</string>
+	<string name="menu_internet_lobby_manager_instructions_open">Join a lobby or create a new one to play a multiplayer game.  Internet Multiplayer is experimental; bugs and service failures are possible.</string>
+	
+	<string name="menu_internet_lobby_manager_text_warning">Internet multiplayer is an experimental feature currently being tested.  You may experience bugs or connection failures.</string>
+	
+	
+	<!-- toasts for joining -->
+	<string name="menu_internet_lobby_manager_toast_host_lobby">Hosting lobby&#8230;</string>
+	<string name="menu_internet_lobby_manager_toast_join_lobby">Joining lobby&#8230;</string>
+	<string name="menu_internet_lobby_manager_toast_join_fail_lobby_full">This lobby is full.</string>
+	<string name="menu_internet_lobby_manager_toast_join_fail_lobby_closed">This lobby is permanently closed.</string>
+	<string name="menu_internet_lobby_manager_toast_join_fail_lobby_removed">This lobby is permanently closed.</string>
+	
+	
+	
+	
+	<!-- Lobby button texts -->
+	<string name="menu_lobby_manager_button_new_title">Create Lobby</string>
+	<string name="menu_lobby_manager_button_main_title">LOBBY_NAME_XXXX</string>
+	<string name="menu_lobby_manager_button_main_title_searching_initial">Searching</string>
+	
+	<string name="menu_lobby_manager_button_hide_title"></string>
+	
+	<string name="menu_lobby_manager_button_main_internet_public_title">LOBBY_NAME_XXXX</string>
+	<string name="menu_lobby_manager_button_main_internet_private_title">LOBBY_NAME_XXXX</string>
+	<string name="menu_lobby_manager_button_main_internet_itinerant_title">LOBBY_NAME_XXXX</string>
+	
+	<string name="menu_lobby_manager_button_hide_internet_public_title"></string>
+	<string name="menu_lobby_manager_button_hide_internet_private_title"></string>
+	<string name="menu_lobby_manager_button_hide_internet_itinerant_title"></string>
+	
+	
+	
+	<string name="menu_lobby_manager_button_new_description">Open a new WiFi multiplayer lobby</string>
+	
+	<string name="menu_lobby_manager_button_main_description">LOBBY_NUM_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX at LOBBY_ADDRESS_XXXX</string>
+	<string name="menu_lobby_manager_button_main_description_searching_initial">Asking LOBBY_ADDRESS_XXXX for info</string>
+	<string name="menu_lobby_manager_button_main_description_searching_subsequent">Asking LOBBY_ADDRESS_XXXX for update</string>
+	<string name="menu_lobby_manager_button_hide_description"></string>
+	
+	<string name="menu_lobby_manager_button_main_internet_public_open_description">LOBBY_HOSTED_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX in LOBBY_HOST_NAME_XXXX\'s public lobby</string>
+	<string name="menu_lobby_manager_button_main_internet_private_open_description">LOBBY_HOSTED_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX in LOBBY_HOST_NAME_XXXX\'s lobby</string>
+	<string name="menu_lobby_manager_button_main_internet_itinerant_open_description">LOBBY_HOSTED_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX in LOBBY_HOST_NAME_XXXX\'s lobby</string>
+	
+	<string name="menu_lobby_manager_button_main_internet_public_full_description">LOBBY_HOSTED_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX in LOBBY_HOST_NAME_XXXX\'s public lobby</string>
+	<string name="menu_lobby_manager_button_main_internet_private_full_description">LOBBY_HOSTED_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX in LOBBY_HOST_NAME_XXXX\'s lobby</string>
+	<string name="menu_lobby_manager_button_main_internet_itinerant_full_description">LOBBY_HOSTED_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX in LOBBY_HOST_NAME_XXXX\'s lobby</string>
+	
+	<string name="menu_lobby_manager_button_main_internet_public_closed_description">Closed by LOBBY_HOST_NAME_XXXX</string>
+	<string name="menu_lobby_manager_button_main_internet_private_closed_description">Closed by LOBBY_HOST_NAME_XXXX</string>
+	<string name="menu_lobby_manager_button_main_internet_itinerant_closed_description">Currently unhosted</string>
+	
+	<string name="menu_lobby_manager_button_main_description_long">LOBBY_NUM_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX at LOBBY_ADDRESS_XXXX\nOpen since LOBBY_AGE_DATE_NEAR_XXXX</string>
+	<string name="menu_lobby_manager_button_main_description_long_searching_initial">Asking LOBBY_ADDRESS_XXXX for info\nNot yet contacted</string>
+	<string name="menu_lobby_manager_button_main_description_long_searching_subsequent">Asking LOBBY_ADDRESS_XXXX for update\nLast contacted LOBBY_STATUS_RECEIVED_DATE_NEAR_XXXX</string>
+	
+	
+	<string name="menu_lobby_manager_button_main_internet_public_open_description_long">LOBBY_HOSTED_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX in LOBBY_HOST_NAME_XXXX\'s public lobby\nOpen since LOBBY_AGE_DATE_NEAR_XXXX</string>
+	<string name="menu_lobby_manager_button_main_internet_private_open_description_long">LOBBY_HOSTED_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX in LOBBY_HOST_NAME_XXXX\'s lobby\nOpen since LOBBY_AGE_DATE_NEAR_XXXX</string>
+	<string name="menu_lobby_manager_button_main_internet_itinerant_open_description_long">LOBBY_HOSTED_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX in LOBBY_HOST_NAME_XXXX\'s lobby\nOpen since LOBBY_AGE_DATE_NEAR_XXXX</string>
+	
+	<string name="menu_lobby_manager_button_main_internet_public_full_description_long">LOBBY_HOSTED_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX in LOBBY_HOST_NAME_XXXX\'s public lobby\nOpen since LOBBY_AGE_DATE_NEAR_XXXX</string>
+	<string name="menu_lobby_manager_button_main_internet_private_full_description_long">LOBBY_HOSTED_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX in LOBBY_HOST_NAME_XXXX\'s lobby\nOpen since LOBBY_AGE_DATE_NEAR_XXXX</string>
+	<string name="menu_lobby_manager_button_main_internet_itinerant_full_description_long">LOBBY_HOSTED_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX in LOBBY_HOST_NAME_XXXX\'s lobby\nOpen since LOBBY_AGE_DATE_NEAR_XXXX</string>
+	
+	<string name="menu_lobby_manager_button_main_internet_public_closed_description_long">Closed by LOBBY_HOST_NAME_XXXX\nCreated at LOBBY_AGE_DATE_NEAR_XXXX</string>
+	<string name="menu_lobby_manager_button_main_internet_private_closed_description_long">Closed by LOBBY_HOST_NAME_XXXX\nCreated at LOBBY_AGE_DATE_NEAR_XXXX</string>
+	<string name="menu_lobby_manager_button_main_internet_itinerant_closed_description_long">Currently unhosted\Last hosted at LOBBY_AGE_DATE_NEAR_XXXX</string>
+	
+	
+	<string name="menu_lobby_manager_button_hide_internet_public_description"></string>
+	<string name="menu_lobby_manager_button_hide_internet_private_description"></string>
+	<string name="menu_lobby_manager_button_hide_internet_itinerant_description"></string>
+	
+	
+	<!-- Lobby Button Collage -->
+	<string name="menu_lobby_manager_button_collage_title">LOBBY_NAME_XXXX</string>
+	<string name="menu_lobby_manager_button_collage_title_searching_initial">Searching</string>
+	<!-- Membership -->
+	<string name="menu_lobby_manager_button_collage_membership_open">LOBBY_HOSTED_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX people present in this lobby</string>
+	<string name="menu_lobby_manager_button_collage_membership_full">LOBBY_HOSTED_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX people present (full)</string>
+	<string name="menu_lobby_manager_button_collage_membership_closed_forever">Closed</string>
+	<string name="menu_lobby_manager_button_collage_membership_closed_itinerant">Closed - waiting for a new host</string>
+	<string name="menu_lobby_manager_button_collage_membership_searching_initial">Requesting information from host</string>
+	<string name="menu_lobby_manager_button_collage_membership_searching_subsequent">Requesting update from host</string>
+	
+	<!-- Creation (time at) -->
+	<string name="menu_lobby_manager_button_collage_creation_open_local">Open on this WiFi network since LOBBY_AGE_DATE_NEAR_XXXX</string>
+	<string name="menu_lobby_manager_button_collage_creation_open_internet">Available online since LOBBY_AGE_DATE_NEAR_XXXX</string>
+	<string name="menu_lobby_manager_button_collage_creation_closed_forever">Created online at LOBBY_AGE_DATE_NEAR_XXXX</string>
+	<string name="menu_lobby_manager_button_collage_creation_closed_itinerant">Last hosted at LOBBY_AGE_DATE_NEAR_XXXX</string>
+	<string name="menu_lobby_manager_button_collage_creation_searching_initial">Not yet contacted</string>
+	<string name="menu_lobby_manager_button_collage_creation_searching_subsequent">Last contacted LOBBY_STATUS_RECEIVED_DATE_NEAR_XXXX</string>
+	
+	<!-- Host -->
+	<string name="menu_lobby_manager_button_collage_host_open">Hosted by LOBBY_HOST_NAME_XXXX</string>
+	<string name="menu_lobby_manager_button_collage_host_closed_forever">Hosted by LOBBY_HOST_NAME_XXXX</string>
+	<string name="menu_lobby_manager_button_collage_host_closed_itinerant">Unhosted - last hosted by LOBBY_HOST_NAME_XXXX</string>
+	<string name="menu_lobby_manager_button_collage_host_searching_initial">Host unknown</string>
+	<!-- Address or Type -->
+	<string name="menu_lobby_manager_button_collage_address_local">Address: LOBBY_ADDRESS_XXXX (anyone can join)</string>
+	<string name="menu_lobby_manager_button_collage_type_public">Public Internet lobby (anyone can join)</string>
+	<string name="menu_lobby_manager_button_collage_type_private">Private Internet lobby (invitation only)</string>
+	<string name="menu_lobby_manager_button_collage_type_itinerant">Roaming Internet lobby (invitation only)</string>
+	<string name="menu_lobby_manager_button_collage_address_local_searching">Address: LOBBY_ADDRESS_XXXX (trying to connect)</string>
+	<!-- Session ID -->
+	<string name="menu_lobby_manager_button_collage_session_id">Session ID: NONCE_XXXX</string>
+	
+	
+	
+	<!-- ************************************************************ -->
+	<!--  Substitution keys for describing durations!                 -->
+	<string name="menu_formatting_suffix_tomorrow">\u0020tomorrow</string>
+	<string name="menu_formatting_suffix_yesterday">\u0020yesterday</string>
+	
+	
+	
+	<!-- TARGET WIFI ADDRESS ACTIVITY -->
+	<string name="target_wifi_address_address_text_empty">Lobby IP Address</string>
+	<string name="target_wifi_address_address_description">Enter the local WiFi IP address of the Quantro lobby you want to join.</string>
+	<string name="target_wifi_address_address_description_no_wifi">You are not connected to a WiFi network.</string>
+	
+	
+	<string name="target_wifi_address_button_find">Find</string>
+	<string name="target_wifi_address_button_cancel">Cancel</string>
+	
+	
+	
+	<!-- NEW LOBBY ACTIVITY -->
+	<string name="new_lobby_name_label">Name:</string>
+	<string name="new_lobby_layout_name_empty">Enter a name</string>
+	<string name="new_lobby_name_description">This lobby name will be visible to everyone on your WiFi network.</string>
+	
+	<string name="new_lobby_large_label">Large:</string>
+	<string name="new_lobby_large_description">Room for up to four people.</string>
+	
+	
+	<string name="new_lobby_address_no_wifi">No WiFi address.  Are you connected to a WiFi network?</string>
+	<string name="new_lobby_address">WiFi lobby address: U1_XXXX</string>
+	
+	<string name="new_lobby_size_description">Maximum occupancy (including yourself).</string>
+	<string name="new_lobby_size_label">Size:</string>
+	
+	<string name="new_lobby_button_create">Create</string>
+	<string name="new_lobby_button_cancel">Cancel</string>
+	
+	<string name="new_lobby_size_2">Intimate (2)</string>
+	<string name="new_lobby_size_4">Cozy (4)</string>
+	<string name="new_lobby_size_6">Spacious (6)</string>
+	
+	<string-array name="new_lobby_size_array">
+	    <item>@string/new_lobby_size_2</item>
+	    <item>@string/new_lobby_size_4</item>
+	    <item>@string/new_lobby_size_6</item>
+	</string-array>
+	
+	
+	<!-- NEW INTERNET LOBBY ACTIVITY -->
+	<string name="new_internet_lobby_title_creating">Create Lobby</string>
+	<string name="new_internet_lobby_title_rehosting">Reopen Lobby</string>
+	
+	<string name="new_internet_lobby_name_label">Name:</string>
+	<string name="new_internet_lobby_name_empty">Enter a name</string>
+	<string name="new_internet_lobby_name_description">This lobby name will be visible to anyone who joins.</string>
+	
+	<string name="new_internet_lobby_large_label">Large:</string>
+	<string name="new_internet_lobby_large_description">Room for up to four people.</string>
+	
+	<string name="new_internet_lobby_size_label">Size:</string>
+	<string name="new_internet_lobby_size_description">Number of participants allowed in this lobby.</string>
+	
+	<string name="new_internet_lobby_type_label">Type:</string>
+	<string name="new_internet_lobby_type_description_public">Anyone can join a public lobby for as long as you host it.</string>
+	<string name="new_internet_lobby_type_description_private">Only invited guests can join a private lobby.  The lobby closes permanently when you leave.</string>
+	<string name="new_internet_lobby_type_description_itinerant">Only invited guests can join a roaming lobby.  After you leave, another invited guest can take over as the host.</string>
+	
+	<string name="new_internet_lobby_button_create">Create</string>
+	<string name="new_internet_lobby_button_rehost">Reopen</string>
+	<string name="new_internet_lobby_button_cancel">Cancel</string>
+	
+	<string name="new_internet_lobby_size_2">Intimate (2)</string>
+	<string name="new_internet_lobby_size_4">Cozy (4)</string>
+	<string name="new_internet_lobby_size_6">Spacious (6)</string>
+	
+	<string-array name="new_internet_lobby_size_array">
+	    <item>@string/new_internet_lobby_size_2</item>
+	    <item>@string/new_internet_lobby_size_4</item>
+	    <item>@string/new_internet_lobby_size_6</item>
+	</string-array>
+	
+	<string name="new_internet_lobby_type_public">Public</string>
+	<string name="new_internet_lobby_type_private">Private</string>
+	<string name="new_internet_lobby_type_itinerant">Roaming</string>
+	
+	<string-array name="new_internet_lobby_type_array">
+	    <item>@string/new_internet_lobby_type_public</item>
+	    <item>@string/new_internet_lobby_type_private</item>
+	    <item>@string/new_internet_lobby_type_itinerant</item>
+	</string-array>
+	
+	
+	
+	
+	<!-- MANUAL KEY ACTIVATION -->
+	<!-- XL -->
+	<string name="manual_key_activation_key_text">Key value, e.g. [XL:&#8230;], or [PROMO:&#8230;]</string>
+	<string name="manual_key_activation_key_description">Paste or type a promotional Key code to unlock new features.</string>
+	
+	<string name="manual_key_activation_activate">Unlock</string>
+	<string name="manual_key_activation_cancel">Cancel</string>
+	
+	<!-- other pop-ups for this -->
+	<string name="manual_key_activation_working">Unlocking&#8230;</string>
+	<!-- failure based on case-->
+	<string name="manual_key_activation_failed_title">Unlocking Failed</string>
+	<string name="manual_key_activation_failed_no_server">Could not contact Quantro servers.</string>
+	<string name="manual_key_activation_failed_invalid">Invalid Key.</string>
+	<string name="manual_key_activation_failed_refused">Request refused by server.  The Quantro server may be busy or experiencing problems; try again later.</string>
+	<string name="manual_key_activation_failed_storing">Could not access local storage.</string>
+	<string name="manual_key_activation_failed_waiting">This Key code has recently been used, possibly on a different Android device.  You can use the same Key on all your Android devices, but you must wait until at least DURATION_NEAR_DATE_XXXX before using this Key again.</string>
+	<string name="manual_key_activation_failed_unspecified">Reason unknown.</string>
+	<!-- Buttons! -->
+	<string name="manual_key_activation_failed_ok">OK</string>
+	<!-- success! -->
+	<string name="manual_key_activation_xl_success_title">Quantro XL Unlocked!</string>
+	<string name="manual_key_activation_xl_success">Gift code accepted (gift for: KEY_PROMO_XXXX).  Most premium content will be available immediately, but certain features will only appear after you restart Quantro.\n\nRestart now?</string>
+	<string name="manual_key_activation_xl_success_restart_yes">Restart</string>
+	<string name="manual_key_activation_xl_success_restart_no">Later</string>
+	<!-- success! -->
+	<string name="manual_key_activation_promo_success_title">Promotion Unlocked!</string>
+	<string name="manual_key_activation_promo_success">Gift code accepted (gift for: KEY_PROMO_XXXX).  Most premium content will be available immediately, but certain features will only appear after you restart Quantro.\n\nRestart now?</string>
+	<string name="manual_key_activation_promo_success_restart_yes">Restart</string>
+	<string name="manual_key_activation_promo_success_restart_no">Later</string>
+	
+	
+	<!-- LOBBY ACTIVITY -->
+	<string name="menu_lobby_wifi_description">Quantro public WiFi lobby\nOpen since LOBBY_AGE_DATE_NEAR_XXXX\nLOBBY_ADDRESS_XXXX\nSession ID: NONCE_XXXX</string>
+	<string name="menu_lobby_private_internet_description">Quantro private Internet lobby\nOpen since LOBBY_AGE_DATE_NEAR_XXXX\nSession ID: NONCE_XXXX</string>
+	<string name="menu_lobby_public_internet_description">Quantro public Internet lobby\nOpen since LOBBY_AGE_DATE_NEAR_XXXX\nSession ID: NONCE_XXXX</string>
+	<string name="menu_lobby_itinerant_internet_description">Quantro roaming Internet lobby\nOpen since LOBBY_AGE_DATE_NEAR_XXXX\nSession ID: NONCE_XXXX</string>
+	
+	<string name="menu_lobby_wifi_short_description">Public WiFi lobby</string>
+	<string name="menu_lobby_private_internet_short_description">Private Internet lobby</string>
+	<string name="menu_lobby_public_internet_short_description">Public Internet lobby</string>
+	<string name="menu_lobby_itinerant_internet_short_description">Roaming Internet lobby</string>
+	
+	<string name="menu_lobby_wifi_details">Open since LOBBY_AGE_DATE_NEAR_XXXX\nLOBBY_ADDRESS_XXXX\nSession ID: NONCE_XXXX</string>
+	<string name="menu_lobby_private_internet_details">Open since LOBBY_AGE_DATE_NEAR_XXXX\nSession ID: NONCE_XXXX</string>
+	<string name="menu_lobby_public_internet_details">Open since LOBBY_AGE_DATE_NEAR_XXXX\nSession ID: NONCE_XXXX</string>
+	<string name="menu_lobby_itinerant_internet_details">Open since LOBBY_AGE_DATE_NEAR_XXXX\nSession ID: NONCE_XXXX</string>
+	
+	<string name="menu_lobby_wifi_availability_description">This is a public WiFi lobby: anyone on the same WiFi network can enter.</string>
+	<string name="menu_lobby_wifi_invitation_description_beam_enabled">Tap phones to invite players directly using Android Beam&#8482;.</string>
+	<string name="menu_lobby_wifi_invitation_description_beam_disabled">Friends can search for the IP address below if this lobby does not automatically appear.</string>
+	
+	<string name="menu_lobby_private_internet_availability_description">This is a private Internet lobby: only those with an invitation can enter.</string>
+	<string name="menu_lobby_private_internet_invitation_description_beam_enabled">Share the invitation URL with your friends, or tap phones to invite players directly using Android Beam&#8482;.</string>
+	<string name="menu_lobby_private_internet_invitation_description_beam_disabled">Share the invitation URL to invite new players.</string>
+	
+	<string name="menu_lobby_public_internet_availability_description">This is a public Internet lobby: anyone can enter.</string>
+	<string name="menu_lobby_public_internet_invitation_description_beam_enabled">Share the invitation URL with your friends, or tap phones to invite players directly using Android Beam&#8482;.</string>
+	<string name="menu_lobby_public_internet_invitation_description_beam_disabled">Share the invitation URL to invite new players.</string>
+	
+	<string name="menu_lobby_itinerant_internet_availability_description">This is a roaming Internet lobby: anyone with an invitation can enter or rehost it.</string>
+	<string name="menu_lobby_itinerant_internet_invitation_description_beam_enabled">Share the invitation URL with your friends, or tap phones to invite players directly using Android Beam&#8482;.</string>
+	<string name="menu_lobby_itinerant_internet_invitation_description_beam_disabled">Share the invitation URL to invite new players.</string>
+	
+	
+	<string name="menu_lobby_launch_status_none">Waiting for consensus</string>
+	<string name="menu_lobby_launch_status_halted">Waiting for LOBBY_INACTIVE_PLAYER_XXXX</string>
+	<string name="menu_lobby_launch_status_active">Launching GM_SN_XXXX in DURATION_SECONDS_XXXX</string>
+	
+	<string name="menu_lobby_personal_launch_status_no_game">Vote to Play</string>
+	<string name="menu_lobby_personal_launch_status_no_launch">Waiting for Consensus</string>
+	<string name="menu_lobby_personal_launch_status_halted">Waiting for LOBBY_INACTIVE_PLAYER_XXXX</string>
+	<string name="menu_lobby_personal_launch_status_active">Launching GM_SN_XXXX in DURATION_SECONDS_XXXX</string>
+	
+	
+	<string name="menu_lobby_instructions_general">Return to your home screen without leaving this lobby by using the \"Home\" button.  You will receive a notification whenever someone enters or leaves.</string>
+	<string name="menu_lobby_instructions_vote">Tap to vote.</string>
+	<string name="menu_lobby_instructions_chat"></string>
+	
+	<string name="menu_lobby_chat_text_empty">Send a message</string>
+	
+	<string name="menu_lobby_empty_title">Connecting</string>
+	<string name="menu_lobby_empty_description">Connecting to lobby</string>
+	
+	<!-- Strings for events! -->
+	<string name="menu_lobby_log_event_connected">Connected to LOBBY_NAME_XXXX</string>
+	<string name="menu_lobby_log_event_disconnected">Disconnected from LOBBY_NAME_XXXX</string>
+	<string name="menu_lobby_log_event_player_joined">U1_XXXX entered LOBBY_NAME_XXXX</string>
+	<string name="menu_lobby_log_event_player_left">U1_XXXX left LOBBY_NAME_XXXX</string>
+	<string name="menu_lobby_log_event_player_kicked">U1_XXXX kicked from LOBBY_NAME_XXXX</string>
+	<string name="menu_lobby_log_event_launch">Starting a GM_SN_XXXX game</string>
+	
+	<!-- CUSTOM GAME MODE ACTIVITY -->
+	<string name="custom_game_mode_title_new">Create Game</string>
+	<string name="custom_game_mode_title_edit">Edit Game</string>
+	
+	<string name="custom_game_mode_base_label">Base Game:</string>
+	<string name="custom_game_mode_base_quantro">Quantro</string>
+	<string name="custom_game_mode_base_retro">Retro</string>
+	
+	<string-array name="custom_game_mode_base_array">
+	    <item>@string/custom_game_mode_base_quantro</item>
+	    <item>@string/custom_game_mode_base_retro</item>
+	</string-array>
+	
+	<string name="custom_game_mode_has_trominoes_label">Trominoes (3 blocks): Dashes and Carets</string>
+	<string name="custom_game_mode_has_tetrominoes_label">Tetrominoes (4 blocks): Lines, Squigglies, Squares, Tees and Gammas</string>
+	<string name="custom_game_mode_has_pentominoes_label">Pentominoes (5 blocks): Stripes, Checks, Taus, Cues, Cups, Pluses, Steps and more</string>
+	
+	<string name="custom_game_mode_controls_label">Controls:</string>
+	
+	<string name="custom_game_mode_controls_turns">Turns</string>
+	<string name="custom_game_mode_controls_flips">Flips</string>
+	<string name="custom_game_mode_controls_turns_and_flips">Turns &amp; Flips</string>
+	<string name="custom_game_mode_controls_moves_only">Moves only</string>
+	
+	
+	<string-array name="custom_game_mode_controls_array">
+	    <item>@string/custom_game_mode_controls_turns</item>
+	    <item>@string/custom_game_mode_controls_flips</item>
+	    <item>@string/custom_game_mode_controls_turns_and_flips</item>
+	    <item>@string/custom_game_mode_controls_moves_only</item>
+	</string-array>
+	
+	<string name="custom_game_mode_rows_label">Rows</string>
+	<string name="custom_game_mode_cols_label">Columns</string>
+	
+	<string name="custom_game_mode_name_label">Name</string>
+	<string name="custom_game_mode_summary_label">Summary</string>
+	<string name="custom_game_mode_description_label">Description</string>
+	
+	<string name="custom_game_mode_name_empty">Required</string>
+	<string name="custom_game_mode_summary_empty">Optional</string>
+	<string name="custom_game_mode_description_empty">Optional</string>
+	
+	<string name="custom_game_mode_button_cancel">Cancel</string>
+	<string name="custom_game_mode_button_delete">Delete</string>
+	<string name="custom_game_mode_button_save">Save</string>
+	
+	<string name="custom_game_mode_auto_name">Custom CGMS_ID_XXXX</string>
+	
+	<string name="custom_game_mode_action_new">This game will be fully playable in Endurance and Progression modes.</string>
+	<string name="custom_game_mode_action_edit">Changes will affect both Endurance and Progression modes.</string>
+	
+	<string name="custom_game_mode_action_new_has_flood">This game will be playable in Endurance, Progression and Flood modes.</string>
+	<string name="custom_game_mode_action_edit_has_flood">Changes will affect Endurance, Progression and Flood modes.</string>
+	
+	
+	
+	<!-- AUTO-SUMMARY -->
+	<string name="custom_game_mode_auto_summary">CGMS_ROWS_XXXX by CGMS_COLS_XXXX, CGMS_PIECES_XXXX</string>
+	<string name="custom_game_mode_auto_summary_no_pieces">no pieces</string>
+	<string name="custom_game_mode_auto_summary_one_set_pieces">CGMS_PIECES_NAME_XXXX</string>
+	<string name="custom_game_mode_auto_summary_two_set_pieces">CGMS_PIECES_LIST_XXXX</string>
+	<string name="custom_game_mode_auto_summary_all_pieces">all pieces</string>
+	<string name="custom_game_mode_auto_summary_two_set_pieces_list_separator">&#160;and&#160;</string>
+	<string name="custom_game_mode_auto_summary_trominoes">trominoes</string>
+	<string name="custom_game_mode_auto_summary_tetrominoes">tetrominoes</string>
+	<string name="custom_game_mode_auto_summary_pentominoes">pentominoes</string>
+	
+	
+	
+	<!-- Premium Store -->
+	<string name="premium_content_button_description_locked">PREMIUM_PRICE_XXXX - PREMIUM_DESCRIPTION_XXXX</string>
+	<string name="premium_content_button_description_invalid">INVALID - The Key unlocking this content is not valid.</string>
+	<string name="premium_content_button_description_inactive">ACTIVATION NEEDED - This feature needs to be activated online</string>
+	<string name="premium_content_button_description_unlocked">PREMIUM_STATUS_AND_SOURCE_XXXX - PREMIUM_DESCRIPTION_XXXX</string>
+	
+	<string name="premium_content_button_description_store_unavailable_price">STORE UNAVAILABLE</string>
+	
+	<string name="premium_content_button_status_source_unlocked_direct">Owned</string>
+	<string name="premium_content_button_status_source_unlocked_quantro_xl">Free with Quantro XL</string>
+	<string name="premium_content_button_status_source_unlocked_promo">Promotional gift</string>
+	<string name="premium_content_button_spaced_promo">&#160;(code for: KEY_PROMO_XXXX)</string>
+	
+</resources>

@@ -1,0 +1,19 @@
+<resources>
+    <style name="AutoHolo" parent="@android:style/Theme.Holo">
+        <!-- Any customizations for your app running on devices with Theme.Holo here -->
+    </style>
+    
+    <!-- Default theme for translucent activities, that is windows that allow you
+     to see through them to the windows behind.  This sets up the translucent
+     flag and appropriate animations for your windows.  -->
+    <style name="AutoHolo.Translucent" parent="@style/AutoHolo">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+    
+    <style name="AutoHolo.NoBackground" parent="@style/AutoHolo">
+		<item name="android:windowBackground">@null</item>
+	</style>
+</resources>

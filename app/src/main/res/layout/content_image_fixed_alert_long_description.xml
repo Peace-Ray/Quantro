@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"	
+	xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+	android:id="@id/button_content_background_drawable"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	
+	<ImageView
+		android:id="@id/button_content_image_drawable"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:scaleType="centerInside"
+		android:gravity="center"
+		/>
+	
+	<ImageView
+	    android:id="@id/button_content_alert_drawable"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="5dp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:scaleType="centerInside"
+		android:gravity="center"
+		/>
+	
+	<com.peaceray.quantro.view.generic.HeavyShadowTextView
+		android:id="@id/button_content_long_description"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		
+		android:paddingLeft="6dp"
+		android:paddingBottom="4dp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:textSize="@dimen/button_text_small"
+		android:textColor="@drawable/quantro_button_white_text_color"
+		android:gravity="left|bottom"
+		custom:typeface="Roboto-Condensed"/>
+	
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.peaceray.quantro.view.button.collage.BackgroundButtonCollage
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    custom:bbc_alert_drawable_locked="@drawable/action_locked_baked_small"
+    custom:bbc_image_drawable_background_none="@drawable/action_cancel_baked"
+    custom:bbc_color_standard="@color/game_options_background"
+    custom:bbc_color_shuffle="@color/game_options_background_shuffle"
+    android:id="@id/button_collage_background"
+     >
+    
+    <!-- Big Main Button -->
+    <com.peaceray.quantro.view.button.QuantroButton
+    	android:id="@id/button_collage_background_button_main"
+		android:layout_width="@dimen/button_medium_size"
+		android:layout_height="@dimen/button_big_size"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		custom:content_layout="@layout/content_image_freesize_floating"
+		custom:border_width = "@dimen/button_medium_border_size"
+		custom:border_width_alt = "@dimen/button_border_size"
+		custom:drop_shadow="true"
+		android:clickable="true"/>
+
+</com.peaceray.quantro.view.button.collage.BackgroundButtonCollage>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Include three buttons -->
+<com.peaceray.quantro.view.button.QuantroButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+	
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	custom:content_layout="@layout/content_vertical_ellipsis"
+	custom:qb_style="block_two_tier_enclose_content"
+	custom:button_color="@color/button_strip_overflow"
+	custom:button_min_width="35dp"
+	custom:button_min_touchable_width="29.1dp"
+	android:clickable="true"/>

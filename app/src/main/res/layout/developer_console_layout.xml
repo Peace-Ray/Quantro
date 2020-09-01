@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="0dip"
+    >
+    
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:padding="0dip"
+	    >
+	    <LinearLayout
+	    	android:orientation="vertical"
+	    	android:layout_height="wrap_content"
+	    	android:layout_width="fill_parent"
+	    	android:layout_gravity="center"
+	    	android:layout_weight="1"
+	    	android:padding="10dip"
+	    	>
+	    	
+	    	<TextView  
+				android:text="Quantro DevCon"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:layout_gravity="center"
+			    android:layout_marginBottom="25dip"
+			    android:textSize="24.5sp"
+			    />
+						
+		    			
+			<Button
+				android:id="@+id/main_menu_hack_main_menu"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Main Menu"
+				/>
+			
+			<Button
+			    android:id="@+id/main_menu_hack_freeplay"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="Free Play"
+			    />
+			
+			<Button
+				android:id="@+id/main_menu_hack_settings_button"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Settings"
+				/>
+			
+			<Button
+				android:id="@+id/main_menu_hack_log_stats_button"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Log.d Stats"
+				/>
+			
+			<View 
+			    android:layout_width="fill_parent"
+			    android:layout_height="20dp"/>
+			
+			<Spinner 
+	            android:id="@+id/main_menu_hack_show_logo_skin_spinner"
+	            style="@style/AutoHolo.Spinner"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            />
+			
+			<Spinner
+			    android:id="@+id/main_menu_hack_show_logo_style_spinner"
+			    style="@style/AutoHolo.Spinner"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            />
+			
+			<Button
+			    android:id="@+id/main_menu_hack_show_logo"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Show Logo"
+				/>
+			
+			
+			<View
+				android:layout_width="fill_parent"
+				android:layout_height="40dp"
+				/>  <!-- For spacing -->
+			
+			<Button
+				android:id="@+id/main_menu_hack_delete_saves"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Delete saves"
+				/>
+		</LinearLayout>
+			
+		<LinearLayout
+			android:orientation="vertical"
+	    	android:layout_height="wrap_content"
+	    	android:layout_width="fill_parent"
+	    	android:layout_gravity="center"
+	    	android:layout_weight="1"
+	    	android:padding="10dip"
+	    	>
+		    	
+		    <Button
+				android:id="@+id/main_menu_hack_retro_wifi_local_server_test_button"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="R (local test)"
+				/>
+		    
+		    <Button
+		        android:id="@+id/main_menu_hack_show_progress_dialog_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Progress Dialog"
+		        />
+		    
+		    <Button
+		        android:id="@+id/main_menu_hack_show_alert_dialog_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Alert Dialog"
+		        />
+		    
+		    <Button
+		        android:id="@+id/main_menu_hack_show_duration_picker_dialog_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Duration Picker"
+		        />
+		    
+		    <Button
+		        android:id="@+id/main_menu_hack_show_webview_dialog_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="What's New Dialog"
+		        />
+			
+			</LinearLayout>	
+	</LinearLayout>
+</ScrollView>

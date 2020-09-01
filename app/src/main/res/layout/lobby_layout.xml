@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A layout for lobbies.  Many of these are components suitable for
+		management by LobbyViewComponentAdapter. -->
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+  <!-- Most of the content here is always displayed on-screen; only a few parts can be obscured or temporarily hidden. -->
+  
+  	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  	<!-- TOP OF THE SCREEN -->
+  	<!-- Lobby Button Strip.  Used for tab-navigation, and basic lobby info display. -->
+  	<include android:id="@+id/lobby_title_bar_button_strip"
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_alignParentTop="true"
+  	    android:layout_alignParentLeft="true"
+  	    android:layout_alignParentRight="true"
+  	    layout="@layout/lobby_title_bar_button_strip_layout"/>
+
+
+	
+		  	
+  	    <!-- previously we used a simple text view for membership.  It worked OK.
+  	    		However, we've revised it to use horizontally-arranged scrollable list
+  	    		of names. -->
+  	    
+	<HorizontalScrollView
+	    android:id="@+id/lobby_membership_scroll_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/lobby_title_bar_button_strip"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:paddingLeft="5dp"
+  		android:paddingRight="5dp"
+  		android:paddingTop="2dp"
+  		android:paddingBottom="2dp"
+		>
+  	  	    
+  	    <LinearLayout 
+  	        android:layout_width="wrap_content"
+  	        android:layout_height="wrap_content"
+  	        android:orientation="horizontal"
+  	        android:layout_gravity="left"
+  	        >
+	  	        
+  	        <com.peaceray.quantro.view.generic.HeavyShadowTextView
+				android:id="@+id/lobby_membership_pair_1_text_view"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:paddingRight="10dp"
+				android:textSize="18sp"
+				custom:typeface="Roboto-Condensed"/>
+  	        
+  	        <com.peaceray.quantro.view.generic.HeavyShadowTextView
+				android:id="@+id/lobby_membership_pair_2_text_view"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:paddingRight="10dp"
+				android:textSize="18sp"
+				custom:typeface="Roboto-Condensed"/>
+  	        
+  	        <com.peaceray.quantro.view.generic.HeavyShadowTextView
+				android:id="@+id/lobby_membership_pair_3_text_view"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:paddingRight="10dp"
+				android:textSize="18sp"
+				custom:typeface="Roboto-Condensed"/>
+  	        
+  	        <com.peaceray.quantro.view.generic.HeavyShadowTextView
+				android:id="@+id/lobby_membership_pair_4_text_view"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:textSize="18sp"
+				custom:typeface="Roboto-Condensed"/>
+	  	        
+	  	        
+	  	        
+	  	    </LinearLayout>
+	  	    
+	  	</HorizontalScrollView>
+  	
+  	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  	<!-- BOTTOM OF THE SCREEN -->
+  	<!-- The primary UI content of the lobby.  Maybe controlled by the tab button layout above. -->
+  	<FrameLayout
+  		android:layout_width="fill_parent"
+  		android:layout_height="0dp"
+  		android:layout_below="@id/lobby_membership_scroll_view"
+  		android:layout_alignParentBottom="true"
+  		android:layout_alignParentLeft="true"
+  		android:layout_alignParentRight="true"
+  		android:paddingTop="1dp"
+  		android:paddingBottom="1dp"
+  		>
+  		
+  		<!-- Content item: event list view, and chat edit box.
+  				We place some space between these elements using layout_margin, placing
+  				a Left margin on the chat post button and a Bottom margin on the event ListView -->
+  		<RelativeLayout
+  			android:id="@+id/lobby_tab_chat"
+  			android:layout_width="fill_parent"
+  			android:layout_height="fill_parent"
+  			android:paddingLeft="1dp"
+  			android:paddingRight="1dp"
+  			android:orientation="vertical"
+  			> <!-- once had 9dp Left/Right padding.  Why?  Dunno. -->
+  			
+  			<com.peaceray.quantro.view.generic.HeavyShadowTextView
+  				android:id="@+id/lobby_instructions_chat_text_view"
+  				android:layout_width="fill_parent"
+  				android:layout_height="wrap_content"
+  				android:layout_alignParentBottom="true"
+  				android:layout_alignParentLeft="true"
+  				android:layout_alignParentRight="true"
+  				android:text="@string/menu_lobby_instructions_chat"
+  				android:textSize="12sp"
+  				android:textColor="@color/dim_text"
+  				android:gravity="center_horizontal"
+  				custom:typeface="Roboto-Condensed"
+  				/>
+  				
+  			<com.peaceray.quantro.view.button.QuantroButton
+  				android:id="@+id/lobby_chat_post_button"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+  				android:layout_alignParentRight="true"
+  				android:layout_above="@id/lobby_instructions_chat_text_view"
+  				android:layout_marginLeft="0dp"
+  				custom:gradient_height="0dp"
+  				custom:border_width="4dp"
+  				custom:button_min_height="75dp"
+  				custom:content_layout="@layout/content_image"
+  				custom:drop_shadow="true"/>
+  				
+  			
+  			<FrameLayout
+  			    android:id="@+id/lobby_chat_frame"
+  			    android:layout_width="0dp"
+  			    android:layout_height="0dp"
+  			    android:layout_alignTop="@id/lobby_chat_post_button"
+  				android:layout_alignBottom="@id/lobby_chat_post_button"
+  				android:layout_alignParentLeft="true"
+  				android:layout_toLeftOf="@id/lobby_chat_post_button"
+  				android:background="@drawable/rect_drop_shadow"
+  				>
+	  			<com.peaceray.quantro.view.generic.HeavyShadowEditText
+	  				android:id="@+id/lobby_chat_edit_text"
+	  				android:layout_width="fill_parent"
+	  				android:layout_height="fill_parent"
+	  				android:hint="@string/menu_lobby_chat_text_empty"
+					android:textColorHint="#88ffffff"
+					android:textColor="@color/bright_text"
+					android:background="@drawable/hairline_border"
+					android:gravity="left|top"
+					android:padding="5dp"
+					custom:typeface="Roboto-Condensed"
+	  				/>
+  			</FrameLayout>
+  			
+  			
+  			<FrameLayout
+  				android:layout_width="fill_parent"
+  				android:layout_height="0dp"
+  				android:layout_alignParentTop="true"
+  				android:layout_above="@id/lobby_chat_frame"
+  				android:layout_marginBottom="0dp"
+  				android:background="@drawable/rect_drop_shadow"
+  				>
+  				
+  				<ListView
+	  				android:id="@+id/lobby_event_list"
+	  				android:layout_width="fill_parent"
+	  				android:layout_height="fill_parent"
+	  				android:background="@drawable/hairline_border_black_fill"
+	  				android:padding="1dp"
+	  				/>
+  			
+  			</FrameLayout>
+  			
+  		
+  		</RelativeLayout>
+  	
+  		<!-- Content item: a lobby list view, with instructions for voting. -->
+  		<RelativeLayout
+  			android:id="@+id/lobby_tab_vote"
+  			android:layout_width="fill_parent"
+  			android:layout_height="fill_parent"
+  			>
+  			
+  			<com.peaceray.quantro.view.generic.PinnedHeaderListView
+  				android:id="@+id/lobby_game_mode_list"
+  				android:layout_width="fill_parent"
+  				android:layout_height="fill_parent"
+  				android:layout_alignParentLeft="true"
+  				android:layout_alignParentRight="true"
+  				android:layout_alignParentTop="true"
+  				android:layout_alignParentBottom="true"
+  				android:cacheColorHint="@android:color/transparent"
+  				/>
+  			
+  			
+  		
+  		</RelativeLayout>
+  	
+  	</FrameLayout>
+  	
+</RelativeLayout>

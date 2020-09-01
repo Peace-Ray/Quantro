@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+	android:id="@android:id/widget_frame"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingTop="4dp"
+	android:paddingBottom="4dp"
+	>
+	
+	<!-- Two parts - label and value. -->
+	<com.peaceray.quantro.view.generic.HeavyShadowTextView
+		android:id="@id/labeled_seek_bar_value_parts_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="left"
+		android:textColor="@color/mid_text"
+		android:textSize="14sp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:paddingBottom="1dp"
+		custom:typeface="Roboto-Condensed"
+		/>
+	
+	<com.peaceray.quantro.view.generic.HeavyShadowTextView
+		android:id="@id/labeled_seek_bar_value_parts_value"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="right"
+		android:textColor="@color/mid_text"
+		android:textSize="14sp"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:paddingBottom="1dp"
+		custom:typeface="Roboto-Condensed"
+		/>
+		
+	<!-- The bar. -->
+	<SeekBar
+		android:id="@id/labeled_seek_bar_seek_bar"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/labeled_seek_bar_value_parts_label"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		/>
+	
+</RelativeLayout>

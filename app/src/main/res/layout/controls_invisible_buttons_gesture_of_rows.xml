@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.peaceray.quantro.view.controls.InvisibleControlsGestureOfRows
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+	android:id="@+id/controls_gesture"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	
+	custom:gesture_fling_left_button="@string/controls_slide_left_button_name"
+	custom:gesture_fling_right_button="@string/controls_slide_right_button_name"
+	custom:gesture_fling_down_button="@string/controls_slide_down_button_name"
+	custom:gesture_fling_up_button="@string/controls_flip_button_name"
+	
+	custom:gesture_drag_left_button="@string/controls_left_button_name"
+	custom:gesture_drag_right_button="@string/controls_right_button_name"
+	custom:gesture_drag_down_button="@string/controls_down_button_name"
+	custom:gesture_drag_up_button="@string/controls_up_button_name"
+	
+	custom:gesture_tap_top_left_button="@string/controls_ccw_button_name"
+	custom:gesture_tap_bottom_left_button="@string/controls_ccw_button_name"
+	custom:gesture_tap_top_right_button="@string/controls_cw_button_name"
+	custom:gesture_tap_bottom_right_button="@string/controls_cw_button_name"
+	>
+  
+  				
+  				
+  			
+  	
+  	<!-- A linear layout containing rows of buttons. -->
+  	<LinearLayout
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:orientation="vertical"
+  		>
+  	
+  		<!-- Top row: just the reserve button on the right. -->
+  		<LinearLayout
+  		    android:id="@id/controls_extras_row_top"
+  			android:layout_width="fill_parent"
+  			android:layout_height="0dp"
+  			android:orientation="horizontal"
+  			android:layout_weight="1">
+  			
+  			<!-- Empty space! -->
+  			<View
+  			    android:id="@id/controls_extras_next"
+  				android:layout_width="0dp"
+		    	android:layout_height="fill_parent"
+		    	android:layout_weight="3"
+		    	/>
+  		
+  			<!-- Reserve button! -->
+  			<com.peaceray.quantro.view.controls.InvisibleButtonSimple
+  			    android:id="@id/controls_extras_reserve"
+		    	android:layout_width="0dp"
+		    	android:layout_height="fill_parent"
+		    	android:layout_weight="1"
+	  			custom:button_background_color="@color/button_background"
+		    	custom:button_name="@string/controls_reserve_button_name"
+		  		/>
+  		</LinearLayout>
+  		
+  		<!-- 2nd row: versus button on the left, score on the right. -->
+  		<LinearLayout
+  		    android:id="@id/controls_extras_row_bottom"
+  			android:layout_width="fill_parent"
+  			android:layout_height="0dp"
+  			android:orientation="horizontal"
+  			android:layout_weight="1">
+  			
+  			<!-- Versus button! -->
+  			<com.peaceray.quantro.view.controls.InvisibleButtonSimple
+  			    android:id="@id/controls_extras_vs"
+		    	android:layout_width="0dp"
+		    	android:layout_height="fill_parent"
+		    	android:layout_weight="1"
+		    	custom:button_name="@string/controls_opponent_button_name"
+		  		custom:button_text="vs"
+		  		custom:button_show="false"/>
+  			
+  			<!-- Empty space! -->
+  			<View
+  				android:layout_width="0dp"
+		    	android:layout_height="fill_parent"
+		    	android:layout_weight="2"
+		    	/>
+  		
+  			<!-- Score button! -->
+  			<com.peaceray.quantro.view.controls.InvisibleButtonSimple
+  			    android:id="@id/controls_extras_score"
+		    	android:layout_width="0dp"
+		    	android:layout_height="fill_parent"
+		    	android:layout_weight="1"
+		    	custom:button_name="@string/controls_score_button_name"
+		  		custom:button_text="score"
+		  		custom:button_show="false"/>
+  		</LinearLayout>
+  		
+  		<!-- Row above bottom: CCW, CW.  Height WAS 130... -->
+	  	<LinearLayout
+	  		android:layout_width="fill_parent"
+	  		android:layout_height="0dp"
+	  		android:layout_weight="2.9"
+	  		android:orientation="horizontal"
+	  		android:id="@id/controls_row_top">
+  			
+	  	    <com.peaceray.quantro.view.controls.InvisibleButtonSimple
+	  	        	android:id="@id/controls_button_ccw"
+	  				android:layout_width="0dp"
+	  				android:layout_height="fill_parent"
+	  				android:layout_weight="1"
+	  				custom:button_background_color="@color/button_background"
+	  				custom:button_name="@string/controls_ccw_button_name"
+	  				/>
+	  		
+	  		<View
+	  				android:layout_width="0dp"
+	  				android:layout_height="fill_parent"
+	  				android:layout_weight="2"
+	  				/>
+	  		
+	  		<com.peaceray.quantro.view.controls.InvisibleButtonSimple
+	  		    	android:id="@id/controls_button_cw"
+	  				android:layout_width="0dp"
+	  				android:layout_height="fill_parent"
+	  				android:layout_weight="1"
+	  				custom:button_background_color="@color/button_background"
+	  				custom:button_name="@string/controls_cw_button_name"
+	  				/>	
+	  		
+	  	</LinearLayout>
+  	
+  	
+  	</LinearLayout>	
+	
+  	
+  	
+</com.peaceray.quantro.view.controls.InvisibleControlsGestureOfRows>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- A file for storing all formatting placeholders and the "empty" fillers for them.
+			These strings are used for placing specific information within display strings. -->
+			
+	
+	
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+<!-- PLACEHOLDERS.  These strings appear in the various other strings, and are meant -->
+<!--                to be replaced by specific data, provided at format time.        -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- NAMES -->
+	<!-- These strings are used as placeholders for a list of names - formatted and -->
+	<!-- unformatted.  Generally, they can be applied to any list of strings, but we -->
+	<!-- assume names will be used.  Specific formatting information may depend on -->
+	<!-- context. -->
+	
+	<string name="placeholder_names_array_formatted">F_XXXX</string>		<!-- Formatted placement of an array of names -->
+	<string name="placeholder_names_array_unformatted">U_XXXX</string>		<!-- Unformatted placement of an array of names -->
+	<string name="placeholder_names_array_name_1">U1_XXXX</string>			<!-- The first name (string), index 0 in the provided array -->
+	<string name="placeholder_names_array_name_2">U2_XXXX</string>			<!-- The second name (string), index 1 in the provided array -->
+
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- SESSIONS -->
+	<!-- These strings are used for session information -->
+	<string name="placeholder_nonce">NONCE_XXXX</string>					<!-- Session nonce -->
+	<string name="placeholder_lobby_nonce">NONCE_LOBBY_XXXX</string>					<!-- Lobby nonce -->
+	
+
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- GAMES -->
+	<!-- These strings are used as placeholders for data concerning games and -->
+	<!--  game modes. -->
+	<string name="placeholder_game_mode_name">GM_N_XXXX</string>				<!-- name of the game mode, e.g. "Quantro Endurance" -->
+	<string name="placeholder_game_mode_short_name">GM_SN_XXXX</string>				<!-- "short" name of the game mode, as defined by XML files and loaded through GameModes.  eg. "Retro" -->
+	<string name="placeholder_game_mode_short_description">GM_SD_XXXX</string>		<!-- "short" description of the game mode, as defined by XML files and loaded through GameModes. -->
+	<string name="placeholder_game_mode_class">GM_C_XXXX</string>		<!-- "short" description of the game mode, as defined by XML files and loaded through GameModes. -->
+	<string name="placeholder_game_result_level">GR_L_XXXX</string>			<!-- Game level in a GameResult -->
+	<string name="placeholder_game_result_level_previous">GR_LP_XXXX</string>		<!-- Game previous level in a GameResult -->
+	<string name="placeholder_game_result_score">GR_S_XXXX</string>			<!-- Current score in a GameResult -->
+	<string name="placeholder_game_result_rows">GR_R_XXXX</string>			<!-- Game rows in a GameResult -->
+	<string name="placeholder_game_result_time">GR_T_XXXX</string>			<!-- Time passed in a GameResult -->
+	<string name="placeholder_game_result_garbage">GR_G_XXXX</string>
+	<string name="placeholder_game_result_first_level">GR_FL_XXXX</string>
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- DURATIONS -->
+	<!-- These strings are used as placeholders for data concerning duration, as -->
+	<!-- defined in a long value of milliseconds.  These can be used with only the -->
+	<!-- long, or related to another structure, such as the time until Challenge expiration. -->
+	<!-- Durations may be positive or negative; negative durations are assumed to be in the past. -->
+	<string name="placeholder_duration_date_near">DURATION_NEAR_DATE_XXXX</string>		<!-- Gives the near date after the duration expires; a "near" date is probably within 24 hours.  Probably this "date" is represented as a time.  The difference between this and a date is that we might preferentially prefer representations that offer limited information, such as only a time. -->
+	<string name="placeholder_duration_hours">DURATION_HOURS_XXXX</string>			<!-- The number of hours (integer 0-MAX) -->
+	<string name="placeholder_duration_minutes">DURATION_MINUTES_XXXX</string>		<!-- The number of minutes (integer 0-59) -->
+	<string name="placeholder_duration_seconds">DURATION_SECONDS_XXXX</string>		<!-- The number of seconds (integer 0-59) -->
+
+
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- LOBBIES -->
+	<!-- These strings are used as placeholders for data concerning lobbies -->
+	<!-- defined in a long value of milliseconds.  These can be used with only the -->
+	<!-- long, or related to another structure, such as the time until Challenge expiration. -->
+	<!-- Durations may be positive or negative; negative durations are assumed to be in the past. -->
+	<string name="placeholder_lobby_name">LOBBY_NAME_XXXX</string>
+	<string name="placeholder_lobby_description">LOBBY_DESCRIPTION_XXXX</string>
+	<string name="placeholder_lobby_host_name">LOBBY_HOST_NAME_XXXX</string>
+	<string name="placeholder_lobby_address">LOBBY_ADDRESS_XXXX</string>
+	<string name="placeholder_lobby_hosted_people">LOBBY_HOSTED_PEOPLE_XXXX</string>
+	<string name="placeholder_lobby_num_people">LOBBY_NUM_PEOPLE_XXXX</string>
+	<string name="placeholder_lobby_max_people">LOBBY_MAX_PEOPLE_XXXX</string>
+	<string name="placeholder_lobby_age_date_near">LOBBY_AGE_DATE_NEAR_XXXX</string>
+	<string name="placeholder_lobby_inactive_player_name">LOBBY_INACTIVE_PLAYER_XXXX</string>		<!-- The first inactive player found (involved in a launch, or etc.) -->
+	<string name="placeholder_lobby_other_players_first">LOBBY_OTHER_PLAYERS_F_XXXX</string>
+	<string name="placeholder_lobby_other_players_formatted">LOBBY_OTHER_PLAYERS_F_XXXX</string>
+	<string name="placeholder_lobby_other_players_unformatted">LOBBY_OTHER_PLAYERS_U_XXXX</string>
+	<string name="placeholder_lobby_status_received_date_near">LOBBY_STATUS_RECEIVED_DATE_NEAR_XXXX</string>
+	<string name="placeholder_lobby_name_null">-----</string>
+	<string name="placeholder_lobby_host_name_null">-----</string>
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- PIECES -->
+	<!-- These strings are used as placeholders for piece names and descriptions -->
+	<string name="placeholder_piece_category">PIECE_CATEGORY_XXXX</string>
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- SOUND AND MUSIC -->
+	<!-- These strings are used as placeholders for sound and music information -->
+	<string name="placeholder_percentage">PERCENTAGE_XXXX</string>
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- SETTINGS -->
+	<!-- Placeholders for settings titles and descriptions -->
+	<string name="placeholder_setting_value_string">SETTING_VALUE_STRING_XXXX</string>
+	<string name="placeholder_setting_value_int">SETTING_VALUE_INT_XXXX</string>
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- KEYS -->
+	<!-- Placeholders key strings -->
+	<string name="placeholder_key_value">KEY_VALUE_XXXX</string>
+	<string name="placeholder_key_promo">KEY_PROMO_XXXX</string>
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- GAME SETTINGS -->
+	<!-- Placeholders for GameSettings -->
+	<!-- A list of exactly those settings which have custom values -->
+	<string name="placeholder_game_settings_custom_list">GS_CUSTOM_LIST_XXXX</string>
+	<string name="placeholder_game_settings_custom_value_level">GS_CUSTOM_VALUE_LEVEL_XXXX</string>
+	<string name="placeholder_game_settings_custom_value_clears_per_level">GS_CUSTOM_VALUE_CLEARS_XXXX</string>
+	<string name="placeholder_game_settings_custom_value_garbage">GS_CUSTOM_VALUE_GARBAGE_XXXX</string>
+	<string name="placeholder_game_settings_custom_value_garbage_per_level">GS_CUSTOM_VALUE_GARBAGE_PER_LEVEL_XXXX</string>
+	<string name="placeholder_game_settings_custom_value_difficulty">GS_CUSTOM_VALUE_DIFFICULTY_XXXX</string>
+	<string name="placeholder_game_settings_custom_value_displacement_fixed_rate">GS_CUSTOM_VALUE_DISPLACEMENT_FIXED_RATE_XXXX</string>
+	
+	<string name="placeholder_game_is_trial_duration_string">GIT_DURATION_STRING_XXXX</string>
+	<string name="placeholder_game_is_trial_duration_number">GIT_DURATION_NUMBER_XXXX</string>
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- CUSTOM GAMES SETTINGS -->
+	<!-- Placeholders for CustomGameModeSettings -->
+	<string name="placeholder_custom_game_mode_settings_id">CGMS_ID_XXXX</string>
+	<string name="placeholder_custom_game_mode_settings_rows">CGMS_ROWS_XXXX</string>
+	<string name="placeholder_custom_game_mode_settings_cols">CGMS_COLS_XXXX</string>
+	<string name="placeholder_custom_game_mode_settings_pieces">CGMS_PIECES_XXXX</string>
+	<string name="placeholder_custom_game_mode_settings_pieces_name">CGMS_PIECES_NAME_XXXX</string>
+	<string name="placeholder_custom_game_mode_settings_pieces_list">CGMS_PIECES_LIST_XXXX</string>
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- WEB CONSTS -->
+	<string name="placeholder_web_consts_error_code">WC_ERROR_CODE_XXXX</string>
+	<string name="placeholder_web_consts_reason_code">WC_REASON_CODE_XXXX</string>
+	
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- LOBBY INVITATIONS -->
+	<string name="placeholder_lobby_string_encoding">INVITATION_LOBBY_STRING_ENCODING_XXXX</string>
+	<string name="placeholder_google_play_link">GOOGLE_PLAY_LINK_XXXX</string>
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- SCORE SUBMISSIONS -->
+	<string name="placeholder_score_submission_int">SCORE_SUBMISSION_INT_XXXX</string>
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- PREMIUM -->
+	<string name="placeholder_premium_content_name">PREMIUM_NAME_XXXX</string>
+	<string name="placeholder_premium_content_description">PREMIUM_DESCRIPTION_XXXX</string>
+	<string name="placeholder_premium_content_price">PREMIUM_PRICE_XXXX</string>
+	<string name="placeholder_premium_content_status_and_source">PREMIUM_STATUS_AND_SOURCE_XXXX</string>
+	<string name="placeholder_premium_content_status">PREMIUM_STATUS_XXXX</string>
+	
+	<string name="placeholder_premium_content_activation_problem_list">PREMIUM_ACTIVATION_PROBLEM_LIST_XXXX</string>
+	<string name="placeholder_premium_content_activation_problem">PREMIUM_ACTIVATION_PROBLEM_XXXX</string>
+	
+	<string name="placeholder_premium_content_key_name">KEY_NAME_XXXX</string>
+	
+	<string name="placeholder_premium_content_spaced_promo">KEY_SPACED_PROMO_XXXX</string>
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- GLOBAL DIALOG -->
+	<string name="placeholder_global_dialog_context_name">GLOBAL_DIALOG_CONTEXT_NAME_XXXX</string>
+	
+</resources>

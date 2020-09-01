@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- IDs for the game's Pause Overlay.
+			Purpose: to allow implementation of PauseViewComponentAdapter and
+			necessary support code relying on the existence of layout files.  -->
+			
+	<!-- The main overlay itself.  If an overlay is included,
+			this view should be registered for touches. -->
+	<item 	type="id" 
+			name="pause_overlay"/>
+	
+	<!-- Piece descriptions.  Optional. -->
+	<item 	type="id" 
+			name="pause_overlay_next_description"/>
+	<item 	type="id" 
+			name="pause_overlay_reserve_description"/>
+	<item 	type="id" 
+			name="pause_overlay_falling_description"/>
+	
+	<!-- Pause state.  Technically optional but very much recommended. -->
+	<item 	type="id" 
+			name="pause_overlay_state"/>
+	<item 	type="id" 
+			name="pause_overlay_state_description"/>
+	<item	type="id"
+	    	name="pause_overlay_game_mode"/>
+	
+	<!-- Graphical state.  Very useful in letting users know this can
+			be tweaked! -->
+	<item	type="id"
+	    	name="pause_overlay_graphics_description"/>
+	<!-- Colors! -->
+	<item	type="id"
+	    	name="pause_overlay_colors_description"/>
+	
+	<!-- Sound state.  Technically optional but recommended so players don't
+			get a BLAST of sound. -->
+	<item	type="id"
+	    	name="pause_overlay_sound_description"/>
+	<item	type="id"
+	    	name="pause_overlay_music_description"/>
+	<item	type="id"
+	    	name="pause_overlay_mute_alert"/>
+
+	<!-- Controls info. -->
+	<item 	type="id" 
+			name="pause_overlay_controls_description"/>
+	<item	type="id"
+	    	name="pause_overlay_controls_description_expanded"/>
+	
+	<!-- Images: logo and controls -->
+	<item 	type="id" 
+			name="pause_overlay_image_controls"/>
+	<item 	type="id" 
+			name="pause_overlay_image_logo"/>
+	
+</resources>

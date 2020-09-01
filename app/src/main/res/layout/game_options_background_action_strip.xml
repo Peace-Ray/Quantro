@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Height WAS 64dp -->
+<com.peaceray.quantro.view.button.strip.CustomButtonStrip
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	custom:cbs_button_0_title="@string/game_options_item_background_title"
+	custom:cbs_button_0_description="@string/game_options_item_background_description"
+	custom:cbs_button_0_color="@color/game_options_background"
+	
+	custom:cbs_button_1_image_drawable="@drawable/action_shuffle_baked"
+	custom:cbs_button_1_name="@string/action_strip_name_shuffle"
+	custom:cbs_button_1_color="@color/game_options_background_shuffle"
+	
+	custom:cbs_button_2_image_drawable="@drawable/action_settings_baked"
+	custom:cbs_button_2_name="@string/action_strip_name_settings"
+	custom:cbs_button_2_color="@color/game_options_main"
+	
+	custom:button_layout="@layout/action_bar_image_button"
+	
+	custom:overflow="none"
+	custom:trim="runs_left"
+	
+	custom:button_border_width = "4dip"
+	custom:button_gradient_height="0dip"
+	custom:sub_button_border_inset="0dip"
+	custom:main_button_horizontal_offset="0dip"
+	custom:button_horizontal_separation="3dip"
+	android:paddingLeft="20dp"
+	android:paddingRight="3dp"
+	android:paddingBottom="4dp"
+	android:paddingTop="4dp"
+	>
+  
+  		<!-- Include three buttons -->
+   		<com.peaceray.quantro.view.button.QuantroButton
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 custom:content_layout="@layout/content_title_big_left_gravity"
+				 android:clickable="false"/>
+		
+</com.peaceray.quantro.view.button.strip.CustomButtonStrip>

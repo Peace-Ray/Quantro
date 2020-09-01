@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Where we put the actual content layout -->
+    <item	type="id"
+        	name="activity_frame_content_placeholder"/>
+    
+    <!-- An ID used for a Smart Banner of type com.google.ads.AdView -->
+    <item 	type="id" 
+			name="admob_banner_adview"/>
+    <item	type="id"
+        	name="admob_banner_adview_frame"/>
+    
+    <!-- Stinger: A collapsable bit of info at the bottom of the frame.
+    		The stinger gives "sign in" status, allows sign-ins and sign-outs,
+    		and lists the Quantro version number. -->
+    <item	type="id"
+        	name="stinger_slim_background"/>
+    
+    <item	type="id"
+        	name="stinger_expand_button"/>
+    
+    <!-- Quantro X.Y.Z -->
+    <item	type="id"
+        	name="stinger_slim_text_app"/>
+    
+    <!-- Peace Ray LLC -->
+    <item	type="id"
+        	name="stinger_slim_text_company"/>
+    
+    <!-- "Signed In" / "Signed Out" -->
+    <item	type="id"
+        	name="stinger_slim_text_signed_in_status"/>
+    
+    <item	type="id"
+        	name="stinger_caret_expand"/>
+    
+    <item	type="id"
+        	name="stinger_background"/>
+    
+    <item	type="id"
+        	name="stinger_top_shadow"/>
+    
+    <item	type="id"
+        	name="stinger_reduce_button"/>
+    
+    <item 	type="id" 
+			name="stinger_badges"/>
+    
+    <item 	type="id" 
+			name="stinger_scoreloop"/>
+    
+    <item	type="id"
+        	name="stinger_google_play_games_sign_in_button"/>
+    
+    <item	type="id"
+        	name="stinger_google_play_games_sign_out_button"/>
+    
+    <item	type="id"
+        	name="stinger_full_text_signed_in_status"/>
+    
+    <item	type="id"
+        	name="stinger_text"/>
+    
+    <item	type="id"
+        	name="stinger_caret_reduce"/>
+    
+    <item	type="id"
+        	name="stinger_caret_button"/>
+    
+</resources>

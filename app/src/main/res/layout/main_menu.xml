@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Feel free to include as a layout with an ad strip above. -->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@color/menu_background">
+
+	<!-- A neato button strip in whatever container we want. -->
+	<include layout="@layout/main_menu_title_bar_button_strip_layout"/>
+	
+	<!--  A separator -->
+	<!-- 
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="20dp"/> -->
+	
+	<!-- Middle area: a ViewFlipper which we fill with ListViews. -->
+	<ViewFlipper
+		android:id="@+id/main_menu_list_flipper"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		>
+		
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="horizontal"
+	        android:gravity="center">
+	        
+	        
+			    <ProgressBar
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        />
+	        
+	    </LinearLayout>
+	    
+	    			    
+	    <include 
+	        layout="@layout/main_menu_list_view"
+	        android:layout_width="fill_parent"
+			android:layout_height="fill_parent"/>
+	    
+	    <include 
+	        layout="@layout/main_menu_list_view"
+	        android:layout_width="fill_parent"
+			android:layout_height="fill_parent"/>
+	    
+	    <include 
+	        layout="@layout/main_menu_list_view"
+	        android:layout_width="fill_parent"
+			android:layout_height="fill_parent"/>
+	    
+	    <include 
+	        layout="@layout/main_menu_list_view"
+	        android:layout_width="fill_parent"
+			android:layout_height="fill_parent"/>
+	    
+	    
+
+	
+	</ViewFlipper>
+		
+	<!-- 
+	<TextView
+		android:id="@+id/main_menu_instructions"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+  		android:textColor="@color/dim_text"
+  		android:textColorHint="#00000000"
+  		android:hint="@string/main_menu_placeholder_instructions"
+  		android:paddingTop="5dp"
+  		android:paddingBottom="10dp"
+  		/>
+  		-->
+  	<!--  includes a hint so we can bound its height in MainMenuActivity -->
+	
+	<!-- Bottom area: generic app info, such as version and company. -->
+	<!-- 
+	<include layout="@layout/stinger"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+		-->
+	
+</LinearLayout>

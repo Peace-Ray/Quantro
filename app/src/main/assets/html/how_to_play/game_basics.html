@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>Game Basics</title>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+<p>
+<table class="subheader">
+<tr>
+	<th rowspan="2" class="subheader"><img src="../../png/logo/logo.png" class="center" width="60%" alt="..."/></th>
+	<td class="subheader"><header>Quantro</header></td>
+</tr>
+<tr>
+	<td class="subheader"><subheader>Game Basics</subheader></td>
+</tr>
+</table></p>
+<br/>
+
+<p><a name="gameplay"/><subheader>Gameplay</subheader></p>
+<p>Quantro is a falling-block puzzle game.  The object is to keep the blocks
+from stacking to the top of the screen by completely filling rows, which
+are automatically cleared away.</p>
+
+<p><term>Pieces</term> fall one at a time from the top of the screen.  Most pieces are composed
+of four <term>blocks</term> - <term><a href="game_modes#retro">Retro</a></term> games use tetrominoes (made of four squares),
+while <term><a href="game_modes#quantro">Quantro</a></term>
+games also include tetracubes (four cubes).  Custom games can additional piece types.</p>
+
+<p><term><a></a></term>
+You can
+<term><a href="controls.html#move">move</a></term>,
+<term><a href="controls.html#turn">turn</a></term>, and
+<term><a href="controls.html#drop">drop</a></term>
+falling pieces until they
+<term>lock</term> in place after landing.  Custom game modes may
+also allow <term><a href="controls.html#flip">flips</a></term>.</p>
+
+<p>If a piece completes a full row when it locks, that row will be <term>cleared</term> to make room
+for more blocks.</p>
+
+<p>The game is over when blocks stack to the top of the game <term>field</term> and there is no room
+for another piece to enter.</p>
+
+<p><a name="screen"/><subheader>Screen Layout</subheader></p>
+
+<p><term><a></a></term>
+The center of the screen shows the game <term>field</term>, where the currently falling
+piece is controlled.  The left edge includes a preview of the next piece to enter
+and, in Versus mode, a thumbnail of your opponent's game.  The right edge shows
+the piece currently held in
+<term><a href="controls.html#reserve">reserve</a></term> (or ready for <a href="controls.html#attack">attack</a>)
+and an abbreviated description
+of your current <term>level</term> and <term>score</term>.  Both edges provide reminders of the
+location of any on-screen
+<a href="controls.html">controls</a>.</p>
+
+<p><a name="score"/><subheader>Scoring Points</subheader></p>
+
+<p><term><a></a></term>
+Points are earned primarily by clearing rows (<a href="controls.html#drop">dropping</a> a piece
+will also earn a small number of points).  The more rows cleared at once or in a <term>cascade</term>
+resulting from a single piece, the more points will be earned.  Additionally, more points can
+be earned at higher game levels.</p>
+
+<p>Points earned are multiplied against your current <term>multiplier</term> before being
+added to your total.  Your multiplier will begin at &times;1.0 and can be increased by
+certain in-game actions.  If you go long enough without clearing rows or increasing
+your multiplier, it will gradually drop back to &times;1.0.</p>
+
+<p>In Retro and Quantro games, your multiplier increases when:
+	<br/>	
+	<ul class="tight" type="square">
+	<li>Two or more rows are cleared with a gap (a row that isn't cleared) between them.</li>
+	<li>A row is cleared by an immobile piece: a piece that locked where it couldn't
+			move in any direction (even up).  Use turns to lock pieces this way.</li>
+	</ul>
+	</p>
+	
+<p>In Quantro games, your multiplier will also increase when:
+	<br/>	
+	<ul class="tight" type="square">
+	<li>A <a href="special_pieces.html#3d">3D piece</a> clears completely after landing.</li>
+	<li>A <a href="special_pieces.html#fused">fused</a> piece locks, activates, and causes a row clear.</li>
+	<li>A <a href="special_pieces.html#flash">flash</a> piece unlocks blocks, causing a row clear.</li>
+	<li>At least one row in both the <fg>foreground</fg> and the <bg>background</bg> is cleared by a <a href="special_pieces.html#links">links</a> piece.</li>
+	</ul>
+	</p>
+	
+<p>Raising and maintaining your score multiplier is the key to high scoring games.</p>
+
+<div align=center><p><legalese>"Quantro," "Peace Ray," and the "Q" logo are trademarks of Peace Ray LLC.</legalese></p></div>
+
+</body>

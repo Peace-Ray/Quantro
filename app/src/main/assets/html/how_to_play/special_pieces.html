@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>Special Pieces</title>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+<p>
+<table class="subheader">
+<tr>
+	<th rowspan="2" class="subheader"><img src="../../png/logo/logo.png" class="center" width="60%" alt="..."/></th>
+	<td class="subheader"><header>Quantro</header></td>
+</tr>
+<tr>
+	<td class="subheader"><subheader>Special Pieces</subheader></td>
+</tr>
+</table></p>
+<br/>
+
+<p><subsubheader>Quantro Special Pieces</subsubheader></p>
+
+<p><term><a href="game_modes.html#quantro">Quantro</a></term> games use four basic types
+of <term>special pieces</term>.  These pieces appear randomly
+in <term><a href="controls.html#reserve">reserve</a></term> and can be used at
+any time to replace the currently falling
+piece.</p>
+
+<p>The normal <term>tetrominoes</term> and <term>tetracubes</term> in Quantro will stack and clear
+separately in the <fg>foreground</fg> and <bg>background</bg>.  Special pieces, by contrast, will often
+interact with both the <fg>foreground</fg> and <bg>background</bg> in unique ways.  Because of this,
+special pieces can be dangerous if you aren't careful, but when used skillfully can
+dramatically improve your chances in a game.</p>
+
+<p><img src="../../png/special/special_blocks.png" width="60%" class="center"/></p>
+
+<p class="caption">Quantro blocks.</p>
+
+<a name="flash"/>
+<table class="subheader">
+<tr>
+	<th class="subheader"><img src="../../png/special/special_flash.png" class="center" width="35%" alt="..."/></th>
+	<td class="subheader"><subheader>Flash Pieces</subheader></td>
+</tr>
+</table>
+
+<p><term><a></a></term>
+The orange <term>Flash</term> piece is a single block in either the <fg>foreground</fg> or <bg>background</bg>
+(with a red- or blue-tinted border, respectively).  Instead of rotating, this piece will shift
+between the <fg>foreground</fg> and <bg>background</bg> when
+<term><a href="controls.html#turn">turned</a></term></p>
+
+<p>When it lands, a Flash piece will disappear instead of <term>locking</term> in place.  However,
+every block directly above the Flash piece - in both the <fg>foreground</fg> and <bg>background</bg> - will
+<term>unlock</term> from their neighbors and fall, filling gaps and possibly setting up row
+<term>clears</term>.</p>
+
+<p>Flash pieces should be landed as low in the field as possible, directly under a large
+column of blocks.  The Flash piece's small size and its ability to shift between 
+<fg>foreground</fg> and <bg>background</bg> allow it to be maneuvered into very tight spaces deep
+within a stack of blocks.</p>
+
+
+<a name="3d"/>
+<table class="subheader">
+<tr>
+	<th class="subheader"><img src="../../png/special/special_3d.png" class="center" width="70%" alt="..."/></th>
+	<td class="subheader"><subheader>3D Tetrominoes</subheader></td>
+</tr>
+</table>
+
+<p>Green 3D tetrominoes extend into both the <fg>foreground</fg> 
+and the <bg>background</bg>; they stack with
+both red and blue blocks.  However, a 3D block will be removed if either the <fg>foreground</fg> 
+or <bg>background</bg> row <term>clears</term>.  3D tetrominoes provide a reward if they are completely
+cleared immediately after landing, before the next piece can appear: either an entire
+column of blocks will unlock and fall to fill gaps, or new blocks will appear and fall
+into available valleys.</p>
+
+<p>3D tetrominoes should be used only when you're sure they can fill enough rows to be
+completely removed - a 3D block sitting in the field can be very difficult to maneuver around.</p>
+
+<a name="links"/>
+<table class="subheader">
+<tr>
+	<th class="subheader"><img src="../../png/special/special_links.png" class="center" width="70%" alt="..."/></th>
+	<td class="subheader"><subheader>Links</subheader></td>
+</tr>
+</table>
+
+<p>Links appear in unconnected groups of four, shaped like a tetromino.  A Link includes 
+a <fg>foreground</fg> and a <bg>background</bg> component, linked together.  Each Link will fall independently
+into cracks, without <term>locking</term> to blocks to the left or right, but the <fg>foreground</fg> 
+and <bg>background</bg> components of a single Link will not separate until one has been <term>cleared</term>
+away.</p>
+
+<p>Links can be useful for filling awkward gaps, but require careful consideration of both
+the <fg>foreground</fg> and <bg>background</bg> to be used effectively.</p>
+
+<a name="fused"/>
+<table class="subheader">
+<tr>
+	<th class="subheader"><img src="../../png/special/special_fused.png" class="center" width="46%" alt="..."/></th>
+	<td class="subheader"><subheader>Fused Tetracube</subheader></td>
+</tr>
+</table>
+
+<p>The <fg>foreground</fg> and <bg>background</bg> blocks in a normal tetracube separate upon
+landing; the grey-tinted block in
+a Fused tetracube, on the other hand, connects the <fg>foreground</fg> and <bg>background</bg> together.
+If carelessly placed, a Fused tetracube can permanently join <fg>foreground</fg> and <bg>background</bg>
+blocks into a single stack.</p>
+
+<p>Through careful positioning, a Fused block can be "activated."  An activated block changes
+the way its row is <term>cleared</term> - instead of <fg>foreground</fg> and <bg>background</bg>
+clearing independently,
+all blocks in the row will be cleared together.  In other words, when a Fused block is
+activated, the row will be cleared as if the <fg>foreground</fg> and <bg>background</bg>
+have been flattened together.</p>
+
+<p>A Fused tetracube will activate upon <term>locking</term>, provided all of its <fg>foreground</fg>
+blocks have locked in front of existing <bg>background</bg> blocks (and not empty space), and its
+<bg>background</bg> blocks behind existing <fg>foreground</fg> blocks.  A Fused block remains activated
+until it causes a clear.</p>
+
+<p><img src="../../png/special/monochrome_clear.png" width="60%" class="center"/></p>
+
+<p class="caption">An activated Fused block is about to clear this row: although the <fg>foreground</fg>
+and <bg>background</bg> have gaps, the row would be full if both were flattened together.</p>
+
+<p><subsubheader>Special Versus Pieces</subsubheader></p>
+
+<p>Certain mulitplayer game modes provide special block types apart from those
+found in most game types.</p>
+
+<a name="3d_block"/>
+<table class="subheader">
+<tr>
+	<th class="subheader"><img src="../../png/special/special_3d_block.png" class="center" width="35%" alt="..."/></th>
+	<td class="subheader"><subheader>3D Blocks</subheader></td>
+</tr>
+</table>
+
+<p>Green 3D blocks can be used to attack your opponent in
+<a href="game_modes.html#bitter_pull">Bitter Pill</a> mode.
+When used, they fall into your opponent's game field, landing on
+existing blocks.  Like a <a href="#3d">3D tetromino</a>, the 3D blocks
+extend into both the <fg>foreground</fg> and the <bg>background</bg>,
+and can be removed if either the <fg>foreground</fg> 
+or <bg>background</bg> row <term>clears</term>.  Clearing a 3D block
+will allow you to send it back to your opponent.</p>
+
+<a name="push_block"/>
+<table class="subheader">
+<tr>
+	<th class="subheader"><img src="../../png/special/special_push_down.png" class="center" width="35%" alt="..."/></th>
+	<td class="subheader"><subheader>Push Blocks</subheader></td>
+</tr>
+</table>
+
+<p>Push blocks appear in <a href="game_modes.html#gravity">Gravity</a>
+mode, which otherwise uses Retro blocks.
+Blue, downward-pointing push blocks will push the bottom row in your game
+field into your opponent's game, while orange, upward-pointing push blocks
+do the reverse.</p>
+
+<p>Push blocks can be cleared in the normal way, but clearing one has
+a unique effect.  Clearing one of your own downward-pointing push blocks
+will result in a "penalty" garbage row; clearing one of your opponent's
+upward-pointing push blocks will return the pushed row from your game field
+back to your opponent's.</p>
+
+<div align=center><p><legalese>"Quantro," "Peace Ray," and the "Q" logo are trademarks of Peace Ray LLC.</legalese></p></div>
+
+</body>

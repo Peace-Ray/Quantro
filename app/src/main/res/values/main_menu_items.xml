@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- A complete list of the normal menu items.  Excludes special items, such as GameLaunch buttons. -->
+	<integer name="main_menu_root_item">0</integer>						<!-- Root for main menu. -->
+	<integer name="main_menu_single_player_item">1</integer>			<!-- Single player game modes! -->
+	<integer name="main_menu_multi_player_item">2</integer>				<!-- Multiplayer options -->
+	<integer name="main_menu_social_and_setup_item">3</integer>			<!-- Social (Google Play) and Setup (Settings / Store). -->
+	<integer name="main_menu_information_item">4</integer>				<!-- Information: how to play, about, etc. -->
+	<integer name="main_menu_wifi_multi_player_item">5</integer>		<!-- WifiManager -->
+	<integer name="main_menu_internet_multi_player_item">6</integer>	<!-- ChallengeManager -->
+	<integer name="main_menu_social_item">7</integer>						<!-- Google Play Games -->
+	<integer name="main_menu_achievements_item">8</integer>					<!-- Google Play Achievements -->
+	<integer name="main_menu_leaderboards_item">9</integer>					<!-- Google Play Leaderboards -->
+	
+	<integer name="main_menu_setup_item">10</integer>					<!-- Game Setup! -->
+	<integer name="main_menu_settings_item">11</integer>
+	<integer name="main_menu_how_to_play_item">12</integer>				<!-- Instructions -->
+	<integer name="main_menu_app_info_item">13</integer>				<!-- Credits, etc. -->
+	<integer name="main_menu_feedback_item">14</integer>				<!-- User feedback -->
+	<integer name="main_menu_policies_item">15</integer>				<!-- User feedback -->
+	<integer name="main_menu_user_license_item">16</integer>			<!-- License agreement -->
+	<integer name="main_menu_privacy_policy_item">17</integer>			<!-- License agreement -->
+	<integer name="main_menu_updates_item">18</integer>					<!-- Updates -->
+	<integer name="main_menu_whats_new_item">19</integer>				<!-- What's New -->
+	<integer name="main_menu_version_history_item">20</integer>			<!-- Version History -->
+	<integer name="main_menu_credits_item">21</integer>					<!-- Credits -->
+	
+	
+	<integer name="main_menu_how_to_play_basics_item">22</integer>
+	<integer name="main_menu_how_to_play_advanced_item">23</integer>
+	
+	<integer name="main_menu_how_to_play_game_basics_item">24</integer>
+	<integer name="main_menu_how_to_play_controls_item">25</integer>
+	<integer name="main_menu_how_to_play_game_modes_item">26</integer>
+	<integer name="main_menu_how_to_play_special_pieces_item">27</integer>
+	<integer name="main_menu_how_to_play_advanced_techniques_item">28</integer>
+	
+	<integer name="main_menu_feedback_email_item">29</integer>
+	
+	<integer name="main_menu_num_items">30</integer>
+	
+	
+	<!-- Merge Cohesion!  The items above form a hierarchy which we compress to
+			the approx. minimum possible depth that still avoids needing to scroll
+			on any given screen.
+			Normally we work top-to-bottom, depth-first, when performing this merge.
+			However, for certain items (e.g. "how to play") we prefer to keep the
+			node cohesive as long as possible.  We only merge menu items into their
+			parent if their parent has >= their cohesion, or the items will
+			be fully contained within their own category. -->
+	<integer name="main_menu_root_cohesion">0</integer>						<!-- Root for main menu. -->
+	<integer name="main_menu_single_player_cohesion">0</integer>				<!-- Single player game modes! -->
+	<integer name="main_menu_multi_player_cohesion">0</integer>				<!-- Multiplayer options -->
+	<integer name="main_menu_social_and_setup_cohesion">1</integer>			<!-- Social (Google Play) and Setup (Settings / Store). -->
+	<integer name="main_menu_information_cohesion">0</integer>				<!-- Information: how to play, about, etc. -->
+	<integer name="main_menu_wifi_multi_player_cohesion">0</integer>			<!-- WifiManager -->
+	<integer name="main_menu_internet_multi_player_cohesion">0</integer>		<!-- ChallengeManager -->
+	<integer name="main_menu_social_cohesion">-1</integer>					<!-- Game Setup! -->
+	<integer name="main_menu_achievements_cohesion">0</integer>					<!-- Game Setup! -->
+	<integer name="main_menu_leaderboards_cohesion">0</integer>					<!-- Game Setup! -->
+	<integer name="main_menu_setup_cohesion">1</integer>					<!-- Game Setup! -->
+	<integer name="main_menu_settings_cohesion">1</integer>
+	<integer name="main_menu_how_to_play_cohesion">5</integer>				<!-- Instructions -->
+	<integer name="main_menu_app_info_cohesion">2</integer>					<!-- Credits, etc. -->
+	<integer name="main_menu_feedback_cohesion">0</integer>					<!-- User feedback -->
+	<integer name="main_menu_policies_cohesion">0</integer>					<!-- User feedback -->
+	<integer name="main_menu_user_license_cohesion">0</integer>				<!-- License agreement -->
+	<integer name="main_menu_privacy_policy_cohesion">0</integer>				<!-- Privacy policy -->
+	<integer name="main_menu_updates_cohesion">2</integer>					<!-- Updates -->
+	<integer name="main_menu_whats_new_cohesion">0</integer>				<!-- What's New -->
+	<integer name="main_menu_version_history_cohesion">0</integer>			<!-- Version History -->
+	<integer name="main_menu_credits_cohesion">0</integer>					<!-- Credits -->
+	
+	
+	<integer name="main_menu_how_to_play_basics_cohesion">0</integer>
+	<integer name="main_menu_how_to_play_advanced_cohesion">0</integer>
+	
+	<integer name="main_menu_how_to_play_game_basics_cohesion">0</integer>
+	<integer name="main_menu_how_to_play_controls_cohesion">0</integer>
+	<integer name="main_menu_how_to_play_game_modes_cohesion">0</integer>
+	<integer name="main_menu_how_to_play_special_pieces_cohesion">0</integer>
+	<integer name="main_menu_how_to_play_advanced_techniques_cohesion">0</integer>
+			
+	<integer name="main_menu_feedback_email_cohesion">0</integer>
+	
+	
+	
+	<!-- Color for these button strips -->
+	<color name="main_menu_root_color">#ffdddddd</color>
+	<color name="main_menu_single_player_color">@color/standard_s0_fill</color>
+	<color name="main_menu_multi_player_color">#ff93fa3e</color>						<!-- this color is 1/2 way between the current Wifi and Challenge colors. -->
+	<color name="main_menu_social_and_setup_color">#ffffffff</color>
+	<color name="main_menu_information_color">#ff51a3ff</color>				<!-- Information about the app.  A light, smokey blue! -->
+	<color name="main_menu_wifi_multi_player_color">@color/lobby_wifi</color>			<!-- WifiManager.  Color is light green, currently r3 -->
+	<color name="main_menu_internet_multi_player_color">@color/lobby_internet</color>		<!-- ChallengeManager.  Color is yellow-gold, currently r2 -->
+	<color name="main_menu_social_color">#ffb1cc3a</color>								<!-- this is the "pre-digested green" color used for Google Play Games -->
+	<color name="main_menu_achievements_color">#fff41818</color>
+	<color name="main_menu_leaderboards_color">#ff0b6ca1</color>
+	<color name="main_menu_setup_color">@color/standard_r5_fill</color>								<!-- purple -->
+	<color name="main_menu_settings_color">@color/standard_r5_fill</color>
+	<color name="main_menu_how_to_play_color">#ff51a3ff</color>					<!-- Instructions.  Light, smokey blue.. -->
+	<color name="main_menu_app_info_color">@color/standard_r1_fill</color>					<!-- Credits, etc.  Fiery red!. -->
+	<color name="main_menu_feedback_color">@color/standard_r1_fill</color>				<!-- User feedback.  Fiery red! -->
+	<color name="main_menu_policies_color">@color/standard_st_fill</color>
+	<color name="main_menu_user_license_color">@color/standard_st_s1_border</color>				<!-- License.  Sticky color. -->
+	<color name="main_menu_privacy_policy_color">@color/standard_s1_fill</color>				<!-- Privacy policy.  Blue. -->
+	<color name="main_menu_updates_color">@color/standard_r6_fill</color>					<!-- Updates.  Pink. -->
+	<color name="main_menu_whats_new_color">@color/standard_r2_fill</color>					<!-- What's New.  Yellow. -->
+	<color name="main_menu_version_history_color">@color/standard_r1_fill</color>			<!-- Updates.  Orange. -->
+	<color name="main_menu_credits_color">@color/standard_r0_fill</color>					<!-- Credits.  Bold red (a labor of love) -->
+	
+	
+	<color name="main_menu_how_to_play_basics_color">#ff7e76ef</color>
+	<color name="main_menu_how_to_play_advanced_color">@color/standard_r5_fill</color>
+
+	<color name="main_menu_how_to_play_game_basics_color">@color/standard_r4_fill</color>
+	<color name="main_menu_how_to_play_controls_color">#ff3c86f5</color>
+	<color name="main_menu_how_to_play_game_modes_color">#ff5d7ef2</color>
+	<color name="main_menu_how_to_play_special_pieces_color">#ff7e76ef</color>
+	<color name="main_menu_how_to_play_advanced_techniques_color">@color/standard_r5_fill</color>
+	
+	<color name="main_menu_feedback_email_color">@color/standard_r5_fill</color>
+	
+	
+	<!-- Some leaf items open as websites.  These give URLs.  If not prepended with "http",
+			we assume they are local file paths starting in 'assets', and use AssetAccessor
+			to translate the path to an absolute filepath before accessing. -->
+	<string name="main_menu_feedback_url">http://www.getsatisfaction.com/peaceray</string>
+	<string name="main_menu_user_license_url">html/app_info/user_agreement.html</string>
+	<string name="main_menu_privacy_policy_url">html/app_info/privacy_policy.html</string>
+	<string name="main_menu_version_history_url">html/app_info/version_history.html</string>
+	<string name="main_menu_credits_url">html/app_info/credits.html</string>
+	
+	<string name="main_menu_how_to_play_game_basics_url">html/how_to_play/game_basics.html</string>
+	<string name="main_menu_how_to_play_controls_url">html/how_to_play/controls.html</string>
+	<string name="main_menu_how_to_play_game_modes_url">html/how_to_play/game_modes.html</string>
+	<string name="main_menu_how_to_play_special_pieces_url">html/how_to_play/special_pieces.html</string>
+	<string name="main_menu_how_to_play_advanced_techniques_url">html/how_to_play/advanced_techniques.html</string>
+	
+	<!-- A typed array.  References integers from the above to build a recursive structure. -->
+	<array name="main_menu_root_contents">
+		<item>@integer/main_menu_single_player_item</item>
+		<item>@integer/main_menu_multi_player_item</item>
+		<item>@integer/main_menu_social_and_setup_item</item>
+		<item>@integer/main_menu_information_item</item>
+	</array>
+	
+	<array name="main_menu_multi_player_contents">
+		<item>@integer/main_menu_wifi_multi_player_item</item>
+		<item>@integer/main_menu_internet_multi_player_item</item>
+	</array>
+	
+	<array name="main_menu_social_and_setup_contents">
+	    <item>@integer/main_menu_social_item</item>
+		<item>@integer/main_menu_setup_item</item>
+	</array>
+	
+	<array name="main_menu_social_contents">
+	    <item>@integer/main_menu_achievements_item</item>
+		<item>@integer/main_menu_leaderboards_item</item>
+	</array>
+	
+	<array name="main_menu_setup_contents">
+	    <item>@integer/main_menu_settings_item</item>
+	</array>
+	
+	<array name="main_menu_information_contents">
+		<item>@integer/main_menu_how_to_play_item</item>
+		<item>@integer/main_menu_app_info_item</item>
+	</array>
+	
+	<array name="main_menu_feedback_contents">
+		<item>@integer/main_menu_feedback_email_item</item>
+	</array>
+	
+	<array name="main_menu_app_info_contents">
+	    <item>@integer/main_menu_credits_item</item>
+		<item>@integer/main_menu_policies_item</item>
+		<item>@integer/main_menu_updates_item</item>
+		<item>@integer/main_menu_feedback_item</item>
+	</array>
+	
+	<array name="main_menu_policies_contents">
+	    <item>@integer/main_menu_user_license_item</item>
+	    <item>@integer/main_menu_privacy_policy_item</item>
+	</array>
+	
+	<array name="main_menu_updates_contents">
+	    <item>@integer/main_menu_whats_new_item</item>
+	    <item>@integer/main_menu_version_history_item</item>
+	</array>
+	
+	<array name="main_menu_how_to_play_contents">
+	    <item>@integer/main_menu_how_to_play_basics_item</item>
+	    <item>@integer/main_menu_how_to_play_advanced_item</item>
+	</array>
+	
+	<array name="main_menu_how_to_play_basics_contents">
+	    <item>@integer/main_menu_how_to_play_game_basics_item</item>
+		<item>@integer/main_menu_how_to_play_controls_item</item>
+		<item>@integer/main_menu_how_to_play_game_modes_item</item>
+	</array>
+	
+	<array name="main_menu_how_to_play_advanced_contents">
+	    <item>@integer/main_menu_how_to_play_special_pieces_item</item>
+	    <item>@integer/main_menu_how_to_play_advanced_techniques_item</item>
+	</array>
+	
+</resources>

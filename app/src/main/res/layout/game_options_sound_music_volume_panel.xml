@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:id="@+id/game_options_music_sound_seek_bar_container"
+	>
+           
+	<include layout="@layout/labeled_seek_bar_bright"
+		android:id="@id/game_options_music_sound_labeled_seek_bar_music_volume"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		/>
+	
+	<include layout="@layout/labeled_seek_bar_bright"
+		android:id="@id/game_options_music_sound_labeled_seek_bar_sound_volume"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/game_options_music_sound_labeled_seek_bar_music_volume"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		/>
+	
+	<com.peaceray.quantro.view.generic.HeavyShadowTextView
+		android:id="@id/game_options_music_sound_description_muted_only"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignTop="@id/game_options_music_sound_seek_bar_container"
+		android:layout_alignBottom="@id/game_options_music_sound_seek_bar_container"
+		android:gravity="center"
+		android:textColor="@color/game_options_muted"
+		android:textSize="44sp"
+		android:paddingLeft="58dp"
+		android:paddingRight="58dp"
+		custom:typeface="Roboto-Condensed"
+		/>
+	
+</RelativeLayout>

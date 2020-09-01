@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.peaceray.quantro.view.PrototypeUpdatingView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/prototype_updating_view">
+    
+    <com.peaceray.quantro.view.BlockFieldTileView
+      android:id="@+id/block_field_tile_view"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      custom:columns="8"
+      custom:rows="18"
+      />
+
+    
+    <com.peaceray.quantro.view.BlockFieldTileView
+    	android:id="@+id/next_piece_view"
+    	android:layout_width="50dp"
+    	android:layout_height="50dp"
+    	custom:columns="4"
+    	custom:rows="4"
+    	/>
+    
+    <com.peaceray.quantro.view.BlockFieldTileView
+    	android:id="@+id/reserve_piece_view"
+    	android:layout_width="50dp"
+    	android:layout_height="50dp"
+    	custom:columns="4"
+    	custom:rows="4"
+    	android:layout_alignParentRight="true"
+    	/>
+
+         
+</com.peaceray.quantro.view.PrototypeUpdatingView>

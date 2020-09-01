@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Strings for the GameHelper -->
+    <string name="gamehelper_sign_in_failed">Failed to sign in. Please check your network connection and try again.</string>
+    <string name="gamehelper_app_misconfigured">The application is incorrectly configured. Check that the package name and signing certificate match the client ID created in Developer Console. Also, if the application is not yet published, check that the account you are trying to sign in with is listed as a tester account. See logs for more information.</string>
+    <string name="gamehelper_license_failed">License check failed.</string>
+    <string name="gamehelper_unknown_error">Unknown error.</string>
+    
+    
+    <!-- Strings for sign-in buttons and related. -->
+    <string name="stinger_google_sign_in_button">Sign in</string>
+    <string name="stinger_google_sign_out_button">Sign out</string>
+    
+    <string name="stinger_google_sign_in_description">Sign in with Google to share your scores and achievements with your friends.</string>
+	<string name="stinger_google_sign_out_description">You are signed in with Google and have access to leaderboards and achievements.</string>
+	
+    
+	<string name="stinger_google_is_signed_in_short">Signed In</string>
+	<string name="stinger_google_is_signed_out_short">Signed Out</string>
+	
+	
+	<!-- Alerts for not being signed in. -->
+	<string name="gamehelper_achievements_not_signed_in">Please sign in with Google to view Google Play Achievements.</string>
+	<string name="gamehelper_leaderboards_not_signed_in">Please sign in with Google to view Google Play Leaderboards.</string>
+	
+	
+	<!-- Alerts for score submission failure (in ExamineGameResult) -->
+	<string name="gamehelper_submission_error_title">Score Submission Failed</string>
+	<string name="gamehelper_submission_error_reconnect_required">Please sign-in with Google to try again.</string>
+	<string name="gamehelper_submission_error_license_check_failed">License check failed.  Score could not be submitted.</string>
+	<string name="gamehelper_submission_error_internal_error">An unexpected error occurred.  Your score could not be submitted.</string>
+	<string name="gamehelper_submission_error_deferred">Upload error.  Your score has been saved and will be uploaded later.</string>
+	
+	<!-- Text for current status (in ExamineGameResult) -->
+	<string name="gamehelper_examine_signed_out">Sign in with Google to share this score</string>
+	<string name="gamehelper_examine_top_ever">Your best yet!</string>
+	<string name="gamehelper_examine_top_weekly">Your best this week!</string>
+	<string name="gamehelper_examine_top_daily">Your best today!</string>
+	<string name="gamehelper_examine_top_none">Shared with Google Play</string>
+	<string name="gamehelper_examine_deferred">Saved</string>
+	
+	
+</resources>

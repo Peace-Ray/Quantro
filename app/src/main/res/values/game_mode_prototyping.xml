@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- The prototyping reserve behavior.  0 is swap, 1 is insert -->
+	<integer
+		name="sp_prototyping_mode_reserve_behavior">
+		1
+	</integer>
+	
+	<!-- Prototyping uses the basic QInteractions -->
+	<string
+		name="sp_prototyping_mode_q_interactions">
+		QInteractionsBasic
+	</string>
+	
+	<!-- Prototyping piece bags -->
+	<string
+		name="sp_prototyping_mode_piece_bag">
+		PrototypingPieceBag
+	</string>
+	<string
+		name="sp_prototyping_mode_special_bag">
+		PrototypingSpecialBag
+	</string>
+		
+	
+	<!-- Prototyping uses a mix of early and prototyping systems -->
+	<string
+		name="sp_prototyping_mode_attack_system">
+		PrototypingAttackSystem
+	</string>
+	<string
+		name="sp_prototyping_mode_clear_system">
+		EarlyClearSystem
+	</string>
+	<string
+		name="sp_prototyping_mode_collision_system">
+		EarlyCollisionSystem
+	</string>
+	<string
+		name="sp_prototyping_mode_kick_system">
+		EarlyKickSystem
+	</string>
+	<string
+		name="sp_prototyping_mode_lock_system">
+		EarlyLockSystem
+	</string>
+	<string
+		name="sp_prototyping_mode_rotation_system">
+		UniversalRotationSystem
+	</string>
+	<string
+		name="sp_prototyping_mode_score_system">
+		EarlyScoreSystem
+	</string>
+	<string
+		name="sp_prototyping_mode_timing_system">
+		PrototypingTimingSystem
+	</string>
+	<string
+		name="sp_prototyping_mode_trigger_system">
+		PrototypingTriggerSystem
+	</string>
+	
+</resources>

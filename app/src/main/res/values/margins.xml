@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="margin_game_button">3dp</dimen>		<!--  On either side of the main game, how much of a margin to draw around game button areas -->
+	<dimen name="margin_game_drawable">2dp</dimen>	<!--  Interior margin for drawables (within game button area) -->
+
+
+	<dimen name="margin_inset_dialog">20dp</dimen>	<!-- Some Activities have a "dialog-like" formatting.
+															When they display a dialog over themselves, they should be inset by this amount. -->
+
+</resources>

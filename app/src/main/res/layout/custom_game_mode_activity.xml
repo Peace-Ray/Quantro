@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="left"
+  	android:padding="8dp">
+    
+    
+    <com.peaceray.quantro.view.generic.MagicTextView
+        android:id="@id/dialog_content_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bright_text"
+        android:textSize="24sp"
+        android:paddingBottom="10dp"
+        custom:typeface="Roboto-BoldCondensed"
+        />
+    
+    
+    <ScrollView
+	    android:id="@+id/custom_game_mode_scroll_view"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="0dp"
+	  	android:layout_weight="1"
+	  	android:paddingBottom="10dp"
+	  	>
+    
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          	android:paddingLeft="10dp"
+	  		android:paddingRight="10dp"
+	  		android:orientation="vertical"
+	  		android:gravity="top">
+	  		
+            
+            <!-- First is base game to use -->
+            <LinearLayout
+                android:id="@+id/custom_game_mode_game_base_container"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:gravity="right|center_vertical"
+		        >
+		        
+                <com.peaceray.quantro.view.generic.MagicTextView
+                    android:id="@+id/custom_game_mode_game_base_label"
+	                android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:layout_height="wrap_content"
+	                android:gravity="left|center_vertical"
+	                android:text="@string/custom_game_mode_base_label"
+	                android:textColor="@color/mid_text"
+	                android:textSize="14sp"
+	                custom:typeface="Roboto-Condensed"
+	                />
+	  			
+	  			<FrameLayout
+	  			    android:layout_width="fill_parent"
+	  			    android:layout_height="wrap_content"
+	  			    android:layout_marginLeft="10dp"
+	  			    >
+	  			
+		  			<Spinner 
+			            android:id="@+id/custom_game_mode_game_base"
+			            style="@style/AutoHolo.Spinner"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left|center_vertical"
+			            />
+	  			
+	  			</FrameLayout>
+		        
+           	</LinearLayout>
+            
+            
+            <!-- Next is polyonimoes to use -->
+            <!-- Trominoes... -->
+            <LinearLayout
+                android:id="@+id/custom_game_mode_has_tromino_container"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:gravity="right|center_vertical"
+		        >
+		        
+                <com.peaceray.quantro.view.generic.MagicTextView
+	                android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:layout_height="wrap_content"
+	                android:gravity="left|center_vertical"
+	                android:text="@string/custom_game_mode_has_trominoes_label"
+	                android:textColor="@color/mid_text"
+	                android:textSize="14sp"
+	                custom:typeface="Roboto-Condensed"
+	                />
+		        
+		        <FrameLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="10dp"
+		            >
+		            
+			        <CheckBox 
+			            android:id="@+id/custom_game_mode_has_trominoes_checkbox"
+			            style="@style/AutoHolo.CheckBox"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:checked="false"/>
+			        
+				</FrameLayout>
+		        
+		    </LinearLayout>
+			
+            
+            <!-- Tetrominoes... -->
+            <LinearLayout
+                android:id="@+id/custom_game_mode_has_tetromino_container"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:gravity="right|center_vertical"
+		        >
+		        
+                <com.peaceray.quantro.view.generic.MagicTextView
+	                android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:layout_height="wrap_content"
+	                android:gravity="left|center_vertical"
+	                android:text="@string/custom_game_mode_has_tetrominoes_label"
+	                android:textColor="@color/mid_text"
+	                android:textSize="14sp"
+	                custom:typeface="Roboto-Condensed"
+	                />
+		        
+		        <FrameLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="10dp"
+		            >
+		            
+			        <CheckBox 
+			            android:id="@+id/custom_game_mode_has_tetrominoes_checkbox"
+			            style="@style/AutoHolo.CheckBox"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:checked="false"/>
+			        
+				</FrameLayout>
+		        
+		    </LinearLayout>
+		    
+            
+            <!-- Pentominoes... -->
+            <LinearLayout
+                android:id="@+id/custom_game_mode_has_pentomino_container"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:gravity="right|center_vertical"
+		        >
+		        
+                <com.peaceray.quantro.view.generic.MagicTextView
+	                android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:layout_height="wrap_content"
+	                android:gravity="left|center_vertical"
+	                android:text="@string/custom_game_mode_has_pentominoes_label"
+	                android:textColor="@color/mid_text"
+	                android:textSize="14sp"
+	                custom:typeface="Roboto-Condensed"
+	                />
+		        
+		        <FrameLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="10dp"
+		            >
+		            
+			        <CheckBox 
+			            android:id="@+id/custom_game_mode_has_pentominoes_checkbox"
+			            style="@style/AutoHolo.CheckBox"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:checked="false"/>
+			        
+				</FrameLayout>
+		        
+		    </LinearLayout>
+            
+            
+            <!-- Controls -->
+           	<LinearLayout
+                android:id="@+id/custom_game_mode_controls_container"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:gravity="right|center_vertical"
+		        >
+		        
+           	    <com.peaceray.quantro.view.generic.MagicTextView
+				  	android:id="@+id/custom_game_mode_controls_label"
+					android:layout_height="fill_parent" 
+					android:layout_width="wrap_content"
+					android:textSize="14sp"
+					android:text="@string/custom_game_mode_controls_label"
+					android:gravity="left|center_vertical"
+					android:textColor="@color/mid_text"
+					custom:typeface="Roboto-Condensed"
+				  	/>
+	  			
+	  			<FrameLayout
+	  			    android:layout_width="fill_parent"
+	  			    android:layout_height="wrap_content"
+	  			    android:layout_marginLeft="10dp"
+	  			    >
+	  			
+		  			<Spinner 
+			            android:id="@+id/custom_game_mode_controls"
+			            style="@style/AutoHolo.Spinner"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left|center_vertical"
+			            />
+	  			
+	  			</FrameLayout>
+		        
+           	</LinearLayout>
+           
+            
+            <!-- Rows and columns? -->
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"/>
+            
+            <include layout="@layout/labeled_seek_bar"
+				android:id="@+id/custom_game_mode_rows_labeled_seekbar"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				/>
+            
+            <include layout="@layout/labeled_seek_bar"
+				android:id="@+id/custom_game_mode_cols_labeled_seekbar"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				/>
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"/>
+            
+            
+            <!-- TEXT: name, summary, description? -->
+            <com.peaceray.quantro.view.generic.MagicEditText
+                android:id="@+id/custom_game_mode_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+			  	android:gravity="left|center_vertical"
+			  	android:background="@drawable/hairline_border"
+			  	android:hint="@string/custom_game_mode_name_empty"
+			  	android:textColorHint="@color/dim_text"
+			  	android:textColor="@color/bright_text"
+			  	custom:typeface="Roboto-Condensed"
+            	/>
+            
+            <com.peaceray.quantro.view.generic.MagicTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+			  	android:gravity="center"
+			  	android:text="@string/custom_game_mode_name_label"
+			  	android:textColor="@color/dim_text"
+			  	android:paddingTop="2dp"
+			  	android:paddingBottom="10dp"
+			  	custom:typeface="Roboto-Condensed"
+            	/>
+            
+            <com.peaceray.quantro.view.generic.MagicEditText
+                android:id="@+id/custom_game_mode_summary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+			  	android:gravity="left|center_vertical"
+			  	android:background="@drawable/hairline_border"
+			  	android:hint="@string/custom_game_mode_summary_empty"
+			  	android:textColorHint="@color/dim_text"
+			  	android:textColor="@color/bright_text"
+			  	custom:typeface="Roboto-Condensed"
+            	/>
+            
+            <com.peaceray.quantro.view.generic.MagicTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+			  	android:gravity="center"
+			  	android:text="@string/custom_game_mode_summary_label"
+			  	android:textColor="@color/dim_text"
+			  	android:paddingTop="2dp"
+			  	android:paddingBottom="10dp"
+			  	custom:typeface="Roboto-Condensed"
+            	/>
+            
+            <com.peaceray.quantro.view.generic.MagicEditText
+                android:id="@+id/custom_game_mode_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+			  	android:gravity="left|center_vertical"
+			  	android:background="@drawable/hairline_border"
+			  	android:hint="@string/custom_game_mode_description_empty"
+			  	android:textColorHint="@color/dim_text"
+			  	android:textColor="@color/bright_text"
+			  	custom:typeface="Roboto-Condensed"
+            	/>
+            
+            <com.peaceray.quantro.view.generic.MagicTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+			  	android:gravity="center"
+			  	android:text="@string/custom_game_mode_description_label"
+			  	android:textColor="@color/dim_text"
+			  	android:paddingTop="2dp"
+			  	android:paddingBottom="5dp"
+			  	custom:typeface="Roboto-Condensed"
+            	/>
+            
+                            
+		    <com.peaceray.quantro.view.generic.MagicTextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/custom_game_mode_action_description"
+				android:gravity="center"
+				android:text="DEFAULT"
+				android:textSize="18sp"
+				android:padding="2dp"
+				android:textColor="@color/bright_text"
+				custom:typeface="Roboto-Condensed"
+				/>
+            
+        </LinearLayout>
+	</ScrollView>
+	
+
+    
+    <!-- button strip -->
+	<!-- some spacing -->
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dialog_button_top_margin"/>
+    
+    <include layout="@layout/dialog_button_strip"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="examine_game_result_text_size_title">@dimen/examine_game_result_text_size_title_bigscreen</dimen>
+    <dimen name="examine_game_result_text_size_name">@dimen/examine_game_result_text_size_name_bigscreen</dimen>
+    <dimen name="examine_game_result_text_size_difficulty">@dimen/examine_game_result_text_size_difficulty_bigscreen</dimen>
+    <dimen name="examine_game_result_text_size_score">@dimen/examine_game_result_text_size_score_bigscreen</dimen>
+    <dimen name="examine_game_result_text_size_config">@dimen/examine_game_result_text_size_config_bigscreen</dimen>
+	<dimen name="examine_game_result_text_size_score_submission">@dimen/examine_game_result_text_size_score_submission_bigscreen</dimen>
+	<dimen name="examine_game_result_text_size_name_smaller">@dimen/examine_game_result_text_size_name_smaller_bigscreen</dimen>
+	<dimen name="examine_game_result_text_size_name_smallest">@dimen/examine_game_result_text_size_name_smallest_bigscreen</dimen>
+	<dimen name="examine_game_result_text_size_query">@dimen/examine_game_result_text_size_query_bigscreen</dimen>
+</resources>

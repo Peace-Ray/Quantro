@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>Advanced Techniques</title>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+<p>
+<table class="subheader">
+<tr>
+	<th rowspan="2" class="subheader"><img src="../../png/logo/logo.png" class="center" width="60%" alt="..."/></th>
+	<td class="subheader"><header>Quantro</header></td>
+</tr>
+<tr>
+	<td class="subheader"><subheader>Advanced Techniques</subheader></td>
+</tr>
+</table></p>
+<br/>
+
+<p>Most of these techniques require skilled use Quantro's controls, and may not
+be possible for players using hardware buttons, single-touch touchscreens, or
+certain control configurations.</p>
+
+<p><a name="quick_slide"/><subheader>Quick-Slides</subheader></p>
+
+<p><term><a></a></term>
+A <term>quick-slide</term> will immediately move the current piece as far to the left
+(or right) as possible.  In the <a href="controls.html#gesture">gesture</a> control
+style, swiping horizontally will cause a single quick-slide.  For
+<a href="controls.html#gamepad">gamepad</a> controls, press and hold a 
+<term><a href="controls.html#move">move button</a></term> to start a quick-slide.
+As long as the button is
+held, the piece will continue to slide in that direction, such as when a <term>turn</term>,
+<term>drop</term> or <term>fall</term> moves it away from an obstacle.</p>
+
+<p>Quick-slides are especially helpful on higher levels when fast piece movement is a requirement.</p>
+
+<p><img src="../../gif/move/quick_slide.gif" width="60%" class="center"/></p>
+
+<p class="caption">Quick-slides in both directions.</p>
+
+<p><a name="180_turn"/><subheader>180-Turns</subheader></p>
+
+<p><term><a></a></term>
+Pieces normally rotate by 90 degrees when <term><a href="controls.html#turn">turned</a></term>.
+Using both the clockwise and counter-clockwise turn buttons together produces
+a 180-degree turn.
+First press and hold one of the buttons (say, clockwise), then tap the second (CCW).
+The piece will first rotate 90 degrees clockwise &mdash; if possible &mdash; then 180 degrees counter-clockwise.  As
+long as the first button is held, the second will produce a 180-degree rotation each time
+it is tapped.  180-turns are always available in the <a href="controls.html#gamepad">gamepad</a>
+control style, and can be used in the <a href="controls.html#gesture">gesture</a> control
+style if on-screen turn buttons have been activated in the <a href="activity://QuantroPreferences">Settings</a>
+menu.</p>
+
+<p>180-turns are useful when normal turns are impossible, or to fit a piece where
+normal turns can't.</p>
+
+<p><img src="../../gif/turn/turn_180.gif" width="60%" class="center"/></p>
+
+<p class="caption">A 180-turn fits this piece where normal turns can't.</p>
+
+<p><a name="kick"/><subheader>Kicks</subheader></p>
+
+<p>When a falling piece is positioned next to a wall or other blocks and <term>turned</term>,
+it will sometimes need to move to a new position to avoid the obstacle.  This move is
+called a <term>kick</term>.  Kicks can be used to maneuver around blocks and get pieces into
+tricky positions.</p>
+
+<p><img src="../../gif/turn/turn_kick.gif" width="60%" class="center"/></p>
+<p class="caption">A kick helps get this piece into position.</p>
+
+<p><a name="lean"/><subheader>Leans</subheader></p>
+
+<p>When a piece <term>kicks</term> away from an obstacle it will tend to move in the direction
+it was <term>turned</term> &mdash; right for clockwise, left for counter-clockwise.</p>
+
+<p><term><a></a></term>
+You can override this preference by moving the piece in the preferred piece direction just
+before a turn.  This is called a <term>lean</term>.  In the <a href="controls.html#gamepad">gamepad</a>
+control style, lean by pressing and holding one or more of the <term>move</term> and <term>drop</term> buttons
+before tapping the <term>turn</term> button.  For <a href="controls.html#gesture">gesture</a>
+controls, use one finger to drag the piece in the preferred lean direction and then tap the screen
+with a second finger before releasing the first.</p>
+
+<p>As an example, if you turn  a piece clockwise while "leaning down and left" (holding
+the <term><a href="controls.html#drop">drop button</a></term> and move left
+button, or dragging down and left with another finger), the piece will prefer to kick downwards and to the left,
+rather than to the right.</p>
+
+<p>Note: control configurations that lock the piece automatically when dropped will prevent
+downward leans.</p>
+
+<p><img src="../../gif/turn/turn_lean.gif" width="60%" class="center"/></p>
+
+<p class="caption">Depending on the lean direction, this piece could
+kick in several different ways.</p>
+
+<div align=center><p><legalese>"Quantro," "Peace Ray," and the "Q" logo are trademarks of Peace Ray LLC.</legalese></p></div>
+
+</body>

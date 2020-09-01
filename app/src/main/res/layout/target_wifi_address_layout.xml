@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:gravity="left"
+  android:padding="8dp">
+  
+  
+    <com.peaceray.quantro.view.generic.MagicTextView
+        android:id="@id/dialog_content_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bright_text"
+        android:textSize="24sp"
+        android:paddingBottom="10dp"
+        custom:typeface="Roboto-BoldCondensed"
+        />
+  
+  
+  
+	<ScrollView
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="0dp"
+	  	android:layout_weight="1">
+	  	<LinearLayout
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:orientation="vertical"
+	  	    android:paddingLeft="20dp"
+	  	    android:paddingRight="20dp"
+	  	    >
+		    <!-- IP address! -->
+			<com.peaceray.quantro.view.generic.MagicEditText
+				android:id="@+id/target_wifi_address_text_ip"
+			  	android:layout_width="fill_parent"
+			  	android:layout_height="wrap_content"
+			  	android:padding="10dp"
+			  	android:gravity="left|center_vertical"
+			  	android:background="@drawable/hairline_border"
+			  	android:hint="@string/target_wifi_address_address_text_empty"
+			  	android:textColorHint="@color/dim_text"
+			  	android:textColor="@color/bright_text"
+			  	custom:typeface="Roboto-Condensed"
+			  	/>
+			  	
+			 <com.peaceray.quantro.view.generic.MagicTextView
+	  			android:id="@+id/target_wifi_address_description_ip"
+	  			android:layout_width="fill_parent"
+	  			android:layout_height="wrap_content"
+	  			android:text="@string/target_wifi_address_address_description"
+	  			android:textSize="12sp"
+	  			android:gravity="center"
+	  			android:textColor="@color/dim_text"
+	  			android:paddingTop="8dp"
+	  			custom:typeface="Roboto-Condensed"
+	  			/>
+		 </LinearLayout>
+	</ScrollView>
+	
+	
+	<!-- some spacing -->
+    <View
+       android:layout_width="fill_parent"
+       android:layout_height="@dimen/dialog_button_top_margin"/>
+    
+    <include layout="@layout/dialog_button_strip"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+
+  
+</LinearLayout>

@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    
+  <declare-styleable name="MagicTextView">
+		<attr name="innerShadowColor" format="color"/>
+		<attr name="innerShadowRadius" format="float"/>
+		<attr name="innerShadowDx" format="float"/>
+		<attr name="innerShadowDy" format="float"/>
+		
+		<attr name="outerShadowColor" format="color"/>
+		<attr name="outerShadowRadius" format="float"/>
+		<attr name="outerShadowDx" format="float"/>
+		<attr name="outerShadowDy" format="float"/>
+		
+		<attr name="typeface" format="string" />
+		
+		<attr name="foreground" format="reference|color"/>
+
+	  	<!-- Removed to fix a compilation error -->
+		<attr name="customBackground" format="reference|color"/>
+		
+		<attr name="strokeWidth" format="float" />
+		<attr name="strokeMiter" format="float" />
+		<attr name="strokeColor" format="color" />
+		<attr name="strokeJoinStyle">
+		    <enum name="miter" value="0" />
+		    <enum name="bevel" value="1" />
+		    <enum name="round" value="2" />
+		</attr>
+		
+		<attr name="indentFirst" format="dimension"/>
+		<attr name="indentRest" format="dimension"/>
+	</declare-styleable>
+	
+  <declare-styleable name="EllipsizingTextView">
+      <attr name="shrinkText" format="boolean"/>
+  </declare-styleable>
+  
+  <declare-styleable name="InvisibleButtonInterface">
+    <attr name="button_name" format="string" />
+    <attr name="button_double_tap_name" format="string" />
+    <attr name="button_text" format="string" />
+    <attr name="button_icon" format="reference"/>
+    <attr name="button_icon_alt" format="reference"/>
+    <attr name="button_show" format="boolean"/>
+    <attr name="button_capture_touches" format="boolean"/>
+    <attr name="button_background_color" format="color"/>
+  </declare-styleable>
+  
+  <declare-styleable name="InvisibleControlsGesture">
+      <attr name="gesture_fling_left_button" format="string" />
+      <attr name="gesture_fling_right_button" format="string" />
+      <attr name="gesture_fling_down_button" format="string" />
+      <attr name="gesture_fling_up_button" format="string" />
+      
+      <attr name="gesture_drag_left_button" format="string" />
+      <attr name="gesture_drag_right_button" format="string" />
+      <attr name="gesture_drag_down_button" format="string" />
+      <attr name="gesture_drag_up_button" format="string" />
+      
+      <attr name="gesture_tap_top_left_button" format="string" />
+      <attr name="gesture_tap_bottom_left_button" format="string" />
+      <attr name="gesture_tap_top_right_button" format="string" />
+      <attr name="gesture_tap_bottom_right_button" format="string" />
+  </declare-styleable>
+  
+  <declare-styleable name="TileView">
+    <attr name="rows" format="integer" />
+    <attr name="columns" format="integer" />
+  </declare-styleable>
+  
+  <declare-styleable name="FlowLayout">
+  	<attr name="layout_horizontalSpacing" format="dimension"/>
+  	<attr name="layout_verticalSpacing" format="dimension"/>
+  </declare-styleable>
+  
+  
+  <declare-styleable name="LineShadingDrawable">
+      <attr name="lsd_line_width" format="dimension"/>
+      <attr name="lsd_line_separation" format="dimension"/>
+      <attr name="lsd_line_vector_x" format="float"/>
+      <attr name="lsd_line_vector_y" format="float"/>
+      <attr name="lsd_line_color" format="color"/>
+  </declare-styleable>
+  
+  
+  <declare-styleable name="QuantroContentWrappingButton">
+  	<!-- Recur state change -->
+  	<attr name="recursive_state_change" format="boolean"/>
+  	
+  	<!-- Default: true.  If false, onMeasure will report its size with minimum content dimensions; it will not measure the content view. -->
+  	<attr name="qcwb_measure_content" format="boolean"/>
+  	
+  	<!-- Dimensions! -->
+  	<attr name="gradient_height" format="dimension"/>
+  	<attr name="border_width" format="dimension"/>
+  	<attr name="border_width_bottom" format="dimension"/>
+  	<attr name="border_width_top" format="dimension"/>
+  	<attr name="border_width_alt" format="dimension"/>
+  	<attr name="border_width_bottom_alt" format="dimension"/>
+  	<attr name="border_width_top_alt" format="dimension"/>
+  	
+  	<!-- Special Behavior! -->
+  	<attr name="hide_unpressed" format="boolean"/>
+  	<attr name="drop_shadow" format="boolean"/>
+  	<attr name="proportions">
+		    <enum name="rect" value="0" />
+		    <enum name="square_grow" value="1" />
+		    <enum name="square_shrink" value="2" />
+	</attr>
+  
+  	<!-- For gradients, you are limited to a single color or alpha, or a reference to
+  			an int array, assumed to be equidistant colors.  If a single value,
+  			it is applied to the top, with alpha 0 at the bottom.  For more complex
+  			gradients, put them in programatically.  -->
+  	<attr name="color_default" format="color"/>
+  	
+  	<attr name="color_background_default" format="color"/>
+  	<attr name="color_border_default" format="color"/>
+  	<attr name="color_border_bottom_default" format="color"/>
+  	
+  	<attr name="alpha_mult_background_default" format="float"/>
+  	<attr name="alpha_mult_border_default" format="float"/>
+  	<attr name="alpha_mult_border_bottom_default" format="float"/>
+  	
+  	<attr name="color_gradient_top_default" format="color"/>
+  	<attr name="alpha_mult_gradient_top_default" format="float"/>
+  	<attr name="color_gradient_array_default" format="reference"/>
+  	
+  	<attr name="color_top_gradient_bottom_default" format="color"/>
+  	<attr name="alpha_mult_top_gradient_bottom_default" format="float"/>
+  	<attr name="color_top_gradient_array_default" format="reference"/>
+  	
+  	
+
+	<!-- Disabled state -->
+  	<attr name="color_background_disabled" format="color"/>
+  	<attr name="color_border_disabled" format="color"/>
+  	<attr name="color_border_bottom_disabled" format="color"/>
+  	
+  	<attr name="alpha_mult_background_disabled" format="float"/>
+  	<attr name="alpha_mult_border_disabled" format="float"/>
+  	<attr name="alpha_mult_border_bottom_disabled" format="float"/>
+  	
+  	<attr name="color_gradient_top_disabled" format="color"/>
+  	<attr name="alpha_mult_gradient_top_disabled" format="float"/>
+  	<attr name="color_gradient_array_disabled" format="reference"/>
+  	
+  	<attr name="color_top_gradient_bottom_disabled" format="color"/>
+  	<attr name="alpha_mult_top_gradient_bottom_disabled" format="float"/>
+  	<attr name="color_top_gradient_array_disabled" format="reference"/>
+  	
+  	
+  	<!-- Enabled state -->
+  	<attr name="color_background_enabled" format="color"/>
+  	<attr name="color_border_enabled" format="color"/>
+  	<attr name="color_border_bottom_enabled" format="color"/>
+  	
+  	<attr name="alpha_mult_background_enabled" format="float"/>
+  	<attr name="alpha_mult_border_enabled" format="float"/>
+  	<attr name="alpha_mult_border_bottom_enabled" format="float"/>
+  	
+  	<attr name="color_gradient_top_enabled" format="color"/>
+  	<attr name="alpha_mult_gradient_top_enabled" format="float"/>
+  	<attr name="color_gradient_array_enabled" format="reference"/>
+  	
+  	<attr name="color_top_gradient_bottom_enabled" format="color"/>
+  	<attr name="alpha_mult_top_gradient_bottom_enabled" format="float"/>
+  	<attr name="color_top_gradient_array_enabled" format="reference"/>
+  	
+  	
+  	
+  	<!-- Pressed state -->
+  	<attr name="color_background_pressed" format="color"/>
+  	<attr name="color_border_pressed" format="color"/>
+  	<attr name="color_border_bottom_pressed" format="color"/>
+  	
+  	<attr name="alpha_mult_background_pressed" format="float"/>
+  	<attr name="alpha_mult_border_pressed" format="float"/>
+  	<attr name="alpha_mult_border_bottom_pressed" format="float"/>
+  	
+  	<attr name="color_gradient_top_pressed" format="color"/>
+  	<attr name="alpha_mult_gradient_top_pressed" format="float"/>
+  	<attr name="color_gradient_array_pressed" format="reference"/>
+  	
+  	<attr name="color_top_gradient_bottom_pressed" format="color"/>
+  	<attr name="alpha_mult_top_gradient_bottom_pressed" format="float"/>
+  	<attr name="color_top_gradient_array_pressed" format="reference"/>
+  	
+  	
+  	<!-- Selected state -->
+  	<attr name="color_background_focused" format="color"/>
+  	<attr name="color_border_focused" format="color"/>
+  	<attr name="color_border_bottom_focused" format="color"/>
+  	
+  	<attr name="alpha_mult_background_focused" format="float"/>
+  	<attr name="alpha_mult_border_focused" format="float"/>
+  	<attr name="alpha_mult_border_bottom_focused" format="float"/>
+  	
+  	<attr name="color_gradient_top_focused" format="color"/>
+  	<attr name="alpha_mult_gradient_top_focused" format="float"/>
+  	<attr name="color_gradient_array_focused" format="reference"/>
+  	
+  	<attr name="color_top_gradient_bottom_focused" format="color"/>
+  	<attr name="alpha_mult_top_gradient_bottom_focused" format="float"/>
+  	<attr name="color_top_gradient_array_focused" format="reference"/>
+  	
+  	
+  	
+  	<!-- Disabled focused state -->
+  	<attr name="color_background_disabled_focused" format="color"/>
+  	<attr name="color_border_disabled_focused" format="color"/>
+  	<attr name="color_border_bottom_disabled_focused" format="color"/>
+  	
+  	<attr name="alpha_mult_background_disabled_focused" format="float"/>
+  	<attr name="alpha_mult_border_disabled_focused" format="float"/>
+  	<attr name="alpha_mult_border_bottom_disabled_focused" format="float"/>
+  	
+  	<attr name="color_gradient_top_disabled_focused" format="color"/>
+  	<attr name="alpha_mult_gradient_top_disabled_focused" format="float"/>
+  	<attr name="color_gradient_array_disabled_focused" format="reference"/>
+  	
+  	<attr name="color_top_gradient_bottom_disabled_focused" format="color"/>
+  	<attr name="alpha_mult_top_gradient_bottom_disabled_focused" format="float"/>
+  	<attr name="color_top_gradient_array_disabled_focused" format="reference"/>
+  	
+  	<!-- Glow (enabled, not focused, not pressed) state -->
+  	<attr name="color_background_glow" format="color"/>
+  	<attr name="color_border_glow" format="color"/>
+  	<attr name="color_border_bottom_glow" format="color"/>
+  	
+  	<attr name="alpha_mult_background_glow" format="float"/>
+  	<attr name="alpha_mult_border_glow" format="float"/>
+  	<attr name="alpha_mult_border_bottom_glow" format="float"/>
+  	
+  	<attr name="color_gradient_top_glow" format="color"/>
+  	<attr name="alpha_mult_gradient_top_glow" format="float"/>
+  	<attr name="color_gradient_array_glow" format="reference"/>
+  	
+  	<attr name="color_top_gradient_bottom_glow" format="color"/>
+  	<attr name="alpha_mult_top_gradient_bottom_glow" format="float"/>
+  	<attr name="color_top_gradient_array_glow" format="reference"/>
+  	
+  	<!-- Glow Focused (enabled, focused, not pressed) state -->
+  	<attr name="color_background_glow_focused" format="color"/>
+  	<attr name="color_border_glow_focused" format="color"/>
+  	<attr name="color_border_bottom_glow_focused" format="color"/>
+  	
+  	<attr name="alpha_mult_background_glow_focused" format="float"/>
+  	<attr name="alpha_mult_border_glow_focused" format="float"/>
+  	<attr name="alpha_mult_border_bottom_glow_focused" format="float"/>
+  	
+  	<attr name="color_gradient_top_glow_focused" format="color"/>
+  	<attr name="alpha_mult_gradient_top_glow_focused" format="float"/>
+  	<attr name="color_gradient_array_glow_focused" format="reference"/>
+  	
+  	<attr name="color_top_gradient_bottom_glow_focused" format="color"/>
+  	<attr name="alpha_mult_top_gradient_bottom_glow_focused" format="float"/>
+  	<attr name="color_top_gradient_array_glow_focused" format="reference"/>
+  	
+  	<!-- Glow Pressed (enabled, not focused, pressed) state -->
+  	<attr name="color_background_glow_pressed" format="color"/>
+  	<attr name="color_border_glow_pressed" format="color"/>
+  	<attr name="color_border_bottom_glow_pressed" format="color"/>
+  	
+  	<attr name="alpha_mult_background_glow_pressed" format="float"/>
+  	<attr name="alpha_mult_border_glow_pressed" format="float"/>
+  	<attr name="alpha_mult_border_bottom_glow_pressed" format="float"/>
+  	
+  	<attr name="color_gradient_top_glow_pressed" format="color"/>
+  	<attr name="alpha_mult_gradient_top_glow_pressed" format="float"/>
+  	<attr name="color_gradient_array_glow_pressed" format="reference"/>
+  	
+  	<attr name="color_top_gradient_bottom_glow_pressed" format="color"/>
+  	<attr name="alpha_mult_top_gradient_bottom_glow_pressed" format="float"/>
+  	<attr name="color_top_gradient_array_glow_pressed" format="reference"/>
+  	
+  </declare-styleable>
+  
+  
+  <declare-styleable name="QuantroButton">
+  	<!-- A QuantroTextButton is styleable; it extends QunatroWrappedContentButton, so you can use its attributes too. -->
+  	<attr name="content_layout" format="reference"/>
+  	<attr name="button_color" format="color"/>
+  	<attr name="button_min_width" format="dimension"/>
+  	<attr name="button_min_height" format="dimension"/>
+  	<attr name="button_min_touchable_width" format="dimension"/>
+  	<attr name="button_min_touchable_height" format="dimension"/>
+  	<attr name="qb_style">
+		    <enum name="plain" value="0" />
+		    <enum name="block_underline" value="1" />
+		    <enum name="block_three_tier_enclose_content" value="2" />
+		    <enum name="block_three_tier_enclose_content_reverse" value="3" />
+		    <enum name="block_two_tier_enclose_content" value="4" />
+		    <enum name="block_two_tier_enclose_content_reverse" value="5" />
+		    
+		    <enum name="block_underline_two_tier_enclose_content" value="6" />
+		    <enum name="block_underline_two_tier_enclose_content_reverse" value="7" />
+		    
+		    <enum name="block_two_tier_always_enclose_content" value="8" />
+	</attr>
+  </declare-styleable>
+  
+  <!-- A strip of QuantroContentWrappingButtons -->
+  <declare-styleable name="QuantroButtonStrip">
+  	<!-- The layout for buttons.  Optional, but if you use inflateButtons(), this must be defined. -->
+  	<!-- Alternatively, one can provide buttons as children, or pass them in to addView. -->
+  	<!-- If num_buttons is provided, we attempt to create up to that many buttons immediately upon construction. -->
+  	<attr name="button_layout" format="reference"/>
+  	<attr name="num_buttons" format="integer"/>
+  	<attr name="button_style" format="integer"/>
+  	<attr name="overflow">
+		<enum name="none" value="0" />		<!-- Default: No overflow.  All buttons will be displayed. -->
+		<enum name="allow" value="1" />		<!-- Overflow is allowed.  Only performed on API >= 11 (supporting PopupMenu) -->
+		<enum name="force" value="2" />		<!-- Overflow is required.  On API < 11, buttons are dropped w/o displaying an "overflow" button. -->
+	</attr>
+  	<!-- Should we format the main button with the same width as the rest? -->
+  	<attr name="main_button_equal_horizontal_weight" format="boolean"/>
+  	<!-- Should we include main button trim?  What kind? -->
+  	<attr name="trim">
+		<enum name="none" value="0" />	
+		<enum name="bounded" value="1" />		
+		<enum name="runs_left" value="2" />		
+		<enum name="runs_right" value="3" />		
+	</attr>
+  	<!-- Offsets, insets, borders, etc. -->
+  	<attr name="button_border_width" format="dimension"/>
+  	<attr name="button_border_width_bottom" format="dimension"/>
+  	<attr name="button_border_width_top" format="dimension"/>
+  	<attr name="button_gradient_height" format="dimension"/>
+  	<attr name="button_horizontal_separation" format="dimension"/>
+  	<attr name="main_button_horizontal_offset" format="dimension"/>
+  	<attr name="sub_button_border_inset" format="dimension"/>
+  	<attr name="sub_button_gradient_inset" format="dimension"/>
+  	<attr name="sub_button_vertical_offset" format="dimension"/>
+  	<attr name="main_button_content_margin_left" format="dimension"/>
+  	<attr name="main_button_content_margin_top" format="dimension"/>
+  	<attr name="main_button_content_margin_right" format="dimension"/>
+  	<attr name="main_button_content_margin_bottom" format="dimension"/>
+  	<attr name="sub_button_content_margin_left" format="dimension"/>
+  	<attr name="sub_button_content_margin_top" format="dimension"/>
+  	<attr name="sub_button_content_margin_right" format="dimension"/>
+  	<attr name="sub_button_content_margin_bottom" format="dimension"/>
+  	<attr name="sub_button_equal_width" format="boolean"/>
+  	<attr name="button_bounds_width_min" format="dimension"/>
+  	<attr name="button_bounds_width_max" format="dimension"/>
+  	<attr name="button_bounds_height_min" format="dimension"/>
+  	<attr name="button_bounds_height_max" format="dimension"/>
+  </declare-styleable>
+  
+  <declare-styleable name="SinglePlayerGameLaunchButtonStrip">
+  	<attr name="sp_game_mode" format="integer"/>
+  	<attr name="sp_save_key" format="string"/>
+  	<attr name="sp_first_game_is_main" format="boolean"/>
+  	
+  	
+  	<!-- Button base colors -->
+  	<attr name="sp_base_color_main_game_button" format="color"/>
+  	<attr name="sp_base_color_first_game_button" format="color"/>
+  	<attr name="sp_base_color_resume_game_button" format="color"/>
+  	<attr name="sp_base_color_new_game_button" format="color"/>
+  	<attr name="sp_base_color_new_game_mode_button" format="color"/>
+  	<attr name="sp_base_color_edit_game_mode_button" format="color"/>
+  		  			<!-- if not set, customTertiary is used -->
+  	
+  	<!-- if not set, we use GameModeColors primary and secondary game mode colors. -->
+  	
+  	<!-- Button drawables -->
+  	<attr name="sp_image_drawable_main_game_button" format="reference"/>
+  	<attr name="sp_image_drawable_first_game_button" format="reference"/>
+  	<attr name="sp_image_drawable_resume_game_button" format="reference"/>
+  	<attr name="sp_image_drawable_new_game_button" format="reference"/>
+  	<attr name="sp_image_drawable_new_game_mode_button" format="reference"/>
+  	<attr name="sp_image_drawable_edit_game_mode_button" format="reference"/>
+  	
+  	<!-- Alerts! -->
+  	<attr name="sp_alert_drawable_timed" format="reference"/>
+  </declare-styleable>
+  
+  
+  <declare-styleable name="FreePlayGameLaunchButtonCollage">
+  	<!-- Button drawables -->
+  	<attr name="image_drawable_first_game_button" format="reference"/>
+  	<attr name="image_drawable_resume_game_button" format="reference"/>
+  	<attr name="image_drawable_new_game_button" format="reference"/>
+  	<attr name="image_drawable_edit_game_mode_button" format="reference"/>
+  	<attr name="alert_drawable_timed" format="reference"/>
+  </declare-styleable>
+  
+  <declare-styleable name="MultiPlayerGameLaunchButtonCollage">
+  	<!-- Vote drawables -->
+  	<attr name="image_drawable_local_vote" format="reference"/>
+  	<attr name="image_drawable_other_vote" format="reference"/>
+  	
+  	<attr name="image_drawable_local_launching" format="reference"/>
+  	<attr name="image_drawable_other_launching" format="reference"/>
+  	
+  	<attr name="alert_locked_drawable" format="reference"/>
+  	<attr name="alert_proxy_unlocked_drawable" format="reference"/>
+  </declare-styleable>
+  
+  
+  
+  <declare-styleable name="MultiPlayerGameLaunchButtonStrip">
+  	<attr name="mpglbs_game_mode" format="integer"/>
+  	
+  	<attr name="mpglbs_base_color_vote_button" format="color"/>
+  	<!-- if not set, we use GameModeColors primary and secondary game mode colors. -->
+  	
+  	<!-- Button drawables -->
+  	<attr name="mpglbs_background_drawable_vote_button" format="reference"/>
+  	
+  	<!-- Vote drawables! -->
+  	<attr name="mpglbs_local_vote_drawable" format="reference"/>
+  	<attr name="mpglbs_other_vote_drawable" format="reference"/>
+  	
+  	<!-- Alert: Locked! -->
+  	<attr name="mpglbs_alert_locked_drawable" format="reference"/>
+  	<attr name="mpglbs_alert_proxy_unlocked_drawable" format="reference"/>
+  </declare-styleable>
+  
+  
+  
+  <declare-styleable name="LobbyButtonStrip">
+  	<!-- Button base colors -->
+  	<attr name="lbs_base_color_button_wifi_main_searching" format="color"/>
+  	<attr name="lbs_base_color_button_wifi_main_open" format="color"/>
+  	<attr name="lbs_base_color_button_wifi_main_full" format="color"/>
+  	<attr name="lbs_base_color_button_wifi_main_closed" format="color"/>
+  	<attr name="lbs_base_color_button_wifi_hide_searching" format="color"/>
+  	<attr name="lbs_base_color_button_wifi_hide_open" format="color"/>
+  	<attr name="lbs_base_color_button_wifi_hide_full" format="color"/>
+  	<attr name="lbs_base_color_button_wifi_hide_closed" format="color"/>
+  	
+  	<attr name="lbs_base_color_button_internet_public_main_open" format="color"/>
+  	<attr name="lbs_base_color_button_internet_public_main_full" format="color"/>
+  	<attr name="lbs_base_color_button_internet_public_main_closed" format="color"/>
+  	<attr name="lbs_base_color_button_internet_public_hide_open" format="color"/>
+  	<attr name="lbs_base_color_button_internet_public_hide_full" format="color"/>
+  	<attr name="lbs_base_color_button_internet_public_hide_closed" format="color"/>
+  	
+  	<attr name="lbs_base_color_button_internet_private_main_open" format="color"/>
+  	<attr name="lbs_base_color_button_internet_private_main_full" format="color"/>
+  	<attr name="lbs_base_color_button_internet_private_main_closed" format="color"/>
+  	<attr name="lbs_base_color_button_internet_private_hide_open" format="color"/>
+  	<attr name="lbs_base_color_button_internet_private_hide_full" format="color"/>
+  	<attr name="lbs_base_color_button_internet_private_hide_closed" format="color"/>
+  	
+  	<attr name="lbs_base_color_button_internet_itinerant_main_open" format="color"/>
+  	<attr name="lbs_base_color_button_internet_itinerant_main_full" format="color"/>
+  	<attr name="lbs_base_color_button_internet_itinerant_main_closed" format="color"/>
+  	<attr name="lbs_base_color_button_internet_itinerant_hide_open" format="color"/>
+  	<attr name="lbs_base_color_button_internet_itinerant_hide_full" format="color"/>
+  	<attr name="lbs_base_color_button_internet_itinerant_hide_closed" format="color"/>
+  	
+  	
+  	<!-- Button background drawables -->
+  	<attr name="lbs_background_drawable_button_wifi_main_searching" format="reference"/>
+  	<attr name="lbs_background_drawable_button_wifi_main_open" format="reference"/>
+  	<attr name="lbs_background_drawable_button_wifi_main_full" format="reference"/>
+  	<attr name="lbs_background_drawable_button_wifi_main_closed" format="reference"/>
+  	<attr name="lbs_background_drawable_button_wifi_hide_searching" format="reference"/>
+  	<attr name="lbs_background_drawable_button_wifi_hide_open" format="reference"/>
+  	<attr name="lbs_background_drawable_button_wifi_hide_full" format="reference"/>
+  	<attr name="lbs_background_drawable_button_wifi_hide_closed" format="reference"/>
+  	
+  	<attr name="lbs_background_drawable_button_internet_public_main_open" format="reference"/>
+  	<attr name="lbs_background_drawable_button_internet_public_main_full" format="reference"/>
+  	<attr name="lbs_background_drawable_button_internet_public_main_closed" format="reference"/>
+  	<attr name="lbs_background_drawable_button_internet_public_hide_open" format="reference"/>
+  	<attr name="lbs_background_drawable_button_internet_public_hide_full" format="reference"/>
+  	<attr name="lbs_background_drawable_button_internet_public_hide_closed" format="reference"/>
+  	
+  	<attr name="lbs_background_drawable_button_internet_private_main_open" format="reference"/>
+  	<attr name="lbs_background_drawable_button_internet_private_main_full" format="reference"/>
+  	<attr name="lbs_background_drawable_button_internet_private_main_closed" format="reference"/>
+  	<attr name="lbs_background_drawable_button_internet_private_hide_open" format="reference"/>
+  	<attr name="lbs_background_drawable_button_internet_private_hide_full" format="reference"/>
+  	<attr name="lbs_background_drawable_button_internet_private_hide_closed" format="reference"/>
+  	
+  	<attr name="lbs_background_drawable_button_internet_itinerant_main_open" format="reference"/>
+  	<attr name="lbs_background_drawable_button_internet_itinerant_main_full" format="reference"/>
+  	<attr name="lbs_background_drawable_button_internet_itinerant_main_closed" format="reference"/>
+  	<attr name="lbs_background_drawable_button_internet_itinerant_hide_open" format="reference"/>
+  	<attr name="lbs_background_drawable_button_internet_itinerant_hide_full" format="reference"/>
+  	<attr name="lbs_background_drawable_button_internet_itinerant_hide_closed" format="reference"/>
+  	
+  	<!-- Button image drawables -->
+  	<attr name="lbs_image_drawable_button_wifi_main_searching" format="reference"/>
+  	<attr name="lbs_image_drawable_button_wifi_main_open" format="reference"/>
+  	<attr name="lbs_image_drawable_button_wifi_main_full" format="reference"/>
+  	<attr name="lbs_image_drawable_button_wifi_main_closed" format="reference"/>
+  	<attr name="lbs_image_drawable_button_wifi_hide_searching" format="reference"/>
+  	<attr name="lbs_image_drawable_button_wifi_hide_open" format="reference"/>
+  	<attr name="lbs_image_drawable_button_wifi_hide_full" format="reference"/>
+  	<attr name="lbs_image_drawable_button_wifi_hide_closed" format="reference"/>
+  	
+  	<attr name="lbs_image_drawable_button_internet_public_main_open" format="reference"/>
+  	<attr name="lbs_image_drawable_button_internet_public_main_full" format="reference"/>
+  	<attr name="lbs_image_drawable_button_internet_public_main_closed" format="reference"/>
+  	<attr name="lbs_image_drawable_button_internet_public_hide_open" format="reference"/>
+  	<attr name="lbs_image_drawable_button_internet_public_hide_full" format="reference"/>
+  	<attr name="lbs_image_drawable_button_internet_public_hide_closed" format="reference"/>
+  	
+  	<attr name="lbs_image_drawable_button_internet_private_main_open" format="reference"/>
+  	<attr name="lbs_image_drawable_button_internet_private_main_full" format="reference"/>
+  	<attr name="lbs_image_drawable_button_internet_private_main_closed" format="reference"/>
+  	<attr name="lbs_image_drawable_button_internet_private_hide_open" format="reference"/>
+  	<attr name="lbs_image_drawable_button_internet_private_hide_full" format="reference"/>
+  	<attr name="lbs_image_drawable_button_internet_private_hide_closed" format="reference"/>
+  	
+  	<attr name="lbs_image_drawable_button_internet_itinerant_main_open" format="reference"/>
+  	<attr name="lbs_image_drawable_button_internet_itinerant_main_full" format="reference"/>
+  	<attr name="lbs_image_drawable_button_internet_itinerant_main_closed" format="reference"/>
+  	<attr name="lbs_image_drawable_button_internet_itinerant_hide_open" format="reference"/>
+  	<attr name="lbs_image_drawable_button_internet_itinerant_hide_full" format="reference"/>
+  	<attr name="lbs_image_drawable_button_internet_itinerant_hide_closed" format="reference"/>
+  </declare-styleable>
+  
+  
+  <declare-styleable name="KeyButtonStrip">
+  	<!-- Button base colors -->
+  	<attr name="kbs_base_color_button_empty_main" format="color"/>
+  	<attr name="kbs_base_color_button_pending_main" format="color"/>
+  	<attr name="kbs_base_color_button_has_main" format="color"/>
+  	<attr name="kbs_base_color_button_enter" format="color"/>
+  	<attr name="kbs_base_color_button_refresh" format="color"/>
+  	<attr name="kbs_base_color_button_pending_stop" format="color"/>
+  	<attr name="kbs_base_color_button_has_stop" format="color"/>
+  	
+  	
+  	<!-- Button background drawables -->
+  	<attr name="kbs_background_drawable_button_empty_main" format="reference"/>
+  	<attr name="kbs_background_drawable_button_pending_main" format="reference"/>
+  	<attr name="kbs_background_drawable_button_has_main" format="reference"/>
+  	<attr name="kbs_background_drawable_button_enter" format="reference"/>
+  	<attr name="kbs_background_drawable_button_refresh" format="reference"/>
+  	<attr name="kbs_background_drawable_button_pending_stop" format="reference"/>
+  	<attr name="kbs_background_drawable_button_has_stop" format="reference"/>
+  	
+  	
+  	<!-- Button image drawables -->
+  	<attr name="kbs_image_drawable_button_empty_main" format="reference"/>
+  	<attr name="kbs_image_drawable_button_pending_main" format="reference"/>
+  	<attr name="kbs_image_drawable_button_has_main" format="reference"/>
+  	<attr name="kbs_image_drawable_button_enter" format="reference"/>
+  	<attr name="kbs_image_drawable_button_refresh" format="reference"/>
+  	<attr name="kbs_image_drawable_button_pending_stop" format="reference"/>
+  	<attr name="kbs_image_drawable_button_has_stop" format="reference"/>
+  </declare-styleable>
+  
+  
+  
+  <declare-styleable name="FreePlayGameManagerStripView">
+      <!-- IDs for gamemode-displaying content -->
+      <attr name="fpgmsv_action_strip" format="reference"/>
+      <attr name="fpgmsv_game_list" format="reference"/>
+      <attr name="fpgmsv_game_list_placeholder" format="reference"/>
+      <attr name="fpgmsv_instructions_text_view" format="reference"/>
+  </declare-styleable>
+  
+  
+  <declare-styleable name="ChallengeManagerStripView">
+  	<!-- IDs for challenge-displaying content -->
+  	<attr name="cmsv_action_strip" format="reference"/>
+  	<attr name="active_challenge_list" format="reference"/>
+  	<attr name="received_challenge_list" format="reference"/>
+  	<attr name="received_history_list" format="reference"/>
+  	<attr name="sent_history_list" format="reference"/>
+  	
+  	<!-- IDs for other content! -->
+  	<attr name="refresh_button" format="reference"/>
+  	
+  </declare-styleable>
+  
+  <declare-styleable name="WifiLobbyManagerStripView">
+  	<!-- IDs for challenge-displaying content -->
+  	<attr name="wlmsv_action_strip" format="reference"/>
+  	<attr name="wlmsv_create_lobby_strip" format="reference"/>
+  	<attr name="wlmsv_lobby_list" format="reference"/>
+  	<attr name="wlmsv_instructions_text_view" format="reference"/>
+  </declare-styleable>
+  
+  <declare-styleable name="InternetLobbyManagerStripView">
+  	<!-- IDs for challenge-displaying content -->
+  	<attr name="ilmsv_action_strip" format="reference"/>
+  	<attr name="ilmsv_lobby_list" format="reference"/>
+  	<attr name="ilmsv_instructions_text_view" format="reference"/>
+  </declare-styleable>
+  
+  
+  
+  <declare-styleable name="PremiumStoreCollageView">
+      <!-- IDs for premium store item content -->
+      <attr name="pscv_action_strip" format="reference"/>
+      <attr name="pscv_item_list" format="reference"/>
+  </declare-styleable>
+  
+  
+  <declare-styleable name="CustomButtonStrip">
+      <!-- Titles: we expect to only display this in the main button,
+      		but it is very useful for overflow and popup construction. -->
+      <attr name="cbs_button_0_title" format="string"/>
+      <attr name="cbs_button_1_title" format="string"/>
+      <attr name="cbs_button_2_title" format="string"/>
+      <attr name="cbs_button_3_title" format="string"/>
+      <attr name="cbs_button_4_title" format="string"/>
+      <attr name="cbs_button_5_title" format="string"/>
+      
+      <attr name="cbs_button_0_description" format="string"/>
+      <attr name="cbs_button_1_description" format="string"/>
+      <attr name="cbs_button_2_description" format="string"/>
+      <attr name="cbs_button_3_description" format="string"/>
+      <attr name="cbs_button_4_description" format="string"/>
+      <attr name="cbs_button_5_description" format="string"/>
+       
+      <attr name="cbs_button_0_color" format="color"/>
+      <attr name="cbs_button_1_color" format="color"/>
+      <attr name="cbs_button_2_color" format="color"/>
+      <attr name="cbs_button_3_color" format="color"/>
+      <attr name="cbs_button_4_color" format="color"/>
+      <attr name="cbs_button_5_color" format="color"/>
+      
+      <attr name="cbs_button_0_image_drawable" format="reference"/>
+      <attr name="cbs_button_1_image_drawable" format="reference"/>
+      <attr name="cbs_button_2_image_drawable" format="reference"/>
+      <attr name="cbs_button_3_image_drawable" format="reference"/>
+      <attr name="cbs_button_4_image_drawable" format="reference"/>
+      <attr name="cbs_button_5_image_drawable" format="reference"/>
+      
+      <attr name="cbs_button_0_name" format="string"/>
+      <attr name="cbs_button_1_name" format="string"/>
+      <attr name="cbs_button_2_name" format="string"/>
+      <attr name="cbs_button_3_name" format="string"/>
+      <attr name="cbs_button_4_name" format="string"/>
+      <attr name="cbs_button_5_name" format="string"/>
+      
+      <!-- Array of "button names" to compress into one button with
+      		a popup.  If popup is not available, 'name' will be used by default.
+      		'Name' is button name, not displayed title. -->
+      <attr name="cbs_button_0_names_array" format="reference"/>
+      <attr name="cbs_button_1_names_array" format="reference"/>
+      <attr name="cbs_button_2_names_array" format="reference"/>
+      <attr name="cbs_button_3_names_array" format="reference"/>
+      <attr name="cbs_button_4_names_array" format="reference"/>
+      <attr name="cbs_button_5_names_array" format="reference"/>
+      
+      <!-- Array of "button titles" to compress into one button with
+      		a popup.  If popup is not available, default title will
+      		be used.  'title' is displayed in the popup. -->
+      <attr name="cbs_button_0_titles_array" format="reference"/>
+      <attr name="cbs_button_1_titles_array" format="reference"/>
+      <attr name="cbs_button_2_titles_array" format="reference"/>
+      <attr name="cbs_button_3_titles_array" format="reference"/>
+      <attr name="cbs_button_4_titles_array" format="reference"/>
+      <attr name="cbs_button_5_titles_array" format="reference"/>
+  </declare-styleable>
+  
+  
+  <!-- Skin, Background, Music buttons. -->
+    <declare-styleable name="SkinButtonCollage">
+  	<!-- Status drawables -->
+  	<attr name="sbc_alert_drawable_locked" format="reference"/>
+  	<attr name="sbc_alert_drawable_active" format="reference"/>
+  	<!-- Mode colors -->
+  	<attr name="sbc_color" format="color"/>
+  	<!-- Thumbnail load width -->
+  	<attr name="sbc_thumbnail_load_width" format="dimension"/>
+  </declare-styleable>
+  
+  <declare-styleable name="BackgroundButtonCollage">
+  	<!-- Status drawables -->
+  	<attr name="bbc_alert_drawable_locked" format="reference"/>
+  	<attr name="bbc_alert_drawable_active" format="reference"/>
+  	<!-- Image for the NONE background? -->
+  	<attr name="bbc_image_drawable_background_none" format="reference"></attr>
+  	<!-- Mode colors -->
+  	<attr name="bbc_color_standard" format="color"/>
+  	<attr name="bbc_color_shuffle" format="color"/>
+  	<!-- Thumbnail load width -->
+  	<attr name="bbc_thumbnail_load_width" format="dimension"/>
+</declare-styleable>
+  
+  
+  <declare-styleable name="MusicButtonCollage">
+  	<!-- Status drawables -->
+  	<attr name="mbc_alert_drawable_locked" format="reference"/>
+  	<attr name="mbc_alert_drawable_active" format="reference"/>
+  </declare-styleable>
+  
+  
+  <declare-styleable name="PremiumContentButtonCollage">
+      <!-- Dimension -->
+      <attr name="pcbc_icon_load_width" format="dimension"/>
+      
+      <!-- Drawables -->
+      <attr name="pcbc_drawable_delete" format="reference"/>
+      <attr name="pcbc_alert_inactive" format="reference"/>
+      <attr name="pcbc_alert_invalid" format="reference"/>
+      
+      <!-- Colors -->
+      <attr name="pcbc_color_delete" format="color"/>	<!-- if unspecified, we use the content color. -->
+  </declare-styleable>
+  
+</resources>
+

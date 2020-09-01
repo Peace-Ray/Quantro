@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- The "Decadence" skin uses metallic coloration for the primary panes,
+    		and gemstone-inspired colors for special blocks.
+    		
+    	S1, the background, is colored as bright, shiny gold.  The base color
+    	is a deep, rich, yellow, which gets a metallic appearance from extremely
+    	focused specular shines.
+    	
+    	S0, the foreground, is bronze with a very healthy verigris.  Most of
+    	the block is brown, but the "business end" (top) of the block is pale
+    	green, providing nice contrast. -->
+    		
+   	<!--  FILL COLORS  -->
+    <!-- Here are the fill colors. -->
+    <color name="decadence_s0_fill">#ff68280f</color>		<!-- BRONZE!  Dark, as if in shadow, but a rich color.  By itself, a rich chocolate brown. -->
+    <color name="decadence_s1_fill">#fffcc200</color>		<!-- GOLD!  Not really, just a rich yellow. -->
+    <!-- ST is colored like a ruby! -->
+    <color name="decadence_st_fill">#ffea0000</color>
+    <!-- Flash: bright purple!  (amethyst) -->
+    <color name="decadence_flash_fill">#ffa029b5</color>
+    <!-- SL: silver.  Dark grey with a slight red tint. -->
+    <color name="decadence_sl_fill">#ff4d4a49</color>
+    <!-- SL ACTIVE: silver -->
+    <color name="decadence_sl_active_fill">#ffffffff</color>		<!-- Was #ff74706f -->
+    
+    
+    <!--  BORDER COLORS  -->
+    <!-- Here are the border colors.  Note that we use complex colored
+    		border shines to modify these colors. -->
+    <color name="decadence_s0_border">#ff766845</color>	<!-- Brown with a very slight verigris (i.e. tinged with green).  -->
+    <color name="decadence_s1_border">#ffeb9500</color>	<!-- Orange.  Covered with a brighter (GOLD) shine; just provides some contrast in the border. -->
+    <!-- ST gets a ruby-tinted edge.  It uses the "alt shines." -->
+    <color name="decadence_st_border_q0">#ffae3222</color>	<!-- brown-tinted ruby.  Gets unique shines, e.g. verigris.-->
+    <color name="decadence_st_border_q1">#fff36500</color>	<!-- gold-tinted ruby.  Gets unique shines. -->
+    <!-- Flash gets a purple-tinted edge.  It uses the "alt shines." -->
+    <color name="decadence_flash_border_q0">#ff895043</color>		<!-- rose/wine -->
+    <color name="decadence_flash_border_q1">#fff2b212</color>		<!-- dim orange -->
+    <!-- SL: silver.  Dark grey with a slight red tint. -->
+    <color name="decadence_sl_border">#ff524e4d</color>
+    <!-- SL Inactive: slight tint to the grey. -->
+    <color name="decadence_sl_inactive_border_q0">#ff715141</color>
+    <color name="decadence_sl_inactive_border_q1">#ffa68726</color>
+    <!-- SL Active: drawn as shiny silver.  Uses unique shines. -->
+    <color name="decadence_sl_active_border">#ff524e4d</color>
+    
+    
+    <!-- Simplified colors! -->
+    <color name="decadence_s0_fill_simplified">#ff72b39d</color>		<!-- Verigris green -->
+    <color name="decadence_s1_fill_simplified">#fffcc200</color>		<!-- Gold -->
+    <color name="decadence_s0_border_simplified">#ff72b39d</color>		<!-- Verigris green -->
+    <color name="decadence_s1_border_simplified">#fffcc200</color>		<!-- Gold -->
+    
+    
+    
+    <!-- DETAIL: substitute for fills for Flash.  These colors are meant to resemble amethyst. -->
+    <color name="decadence_flash_burst">#ffa029b5</color>	<!-- Bright purple -->
+    <color name="decadence_flash_stripe">#fff6e8f4</color>	<!-- Pale lavender -->
+    
+    
+    <!-- GLOWS: Because we use strange border colors, we specify different glow colors. -->
+    <color name="decadence_s0_glow">#ff72b39d</color>	<!-- Verigris Green -->
+    <color name="decadence_s1_glow">#fffcc200</color>	<!-- Bright Yellow-Gold -->
+    <color name="decadence_sl_active_glow">#ffffffff</color>
+    
+    
+    <!--  SHINES  -->
+    <!-- Shines are where this the Decadence skin really... shines...
+    		Ehem.  We use shines to make S0 borders get the appearance of verigris'd bronze,
+    		while S1 gets an extremely shine gold-looking outline. -->
+    		
+    <!-- S0: BRONZE WITH A VERIGRIS -->
+    <!-- Main verigris: the entire top edge gets a verigris cap. -->
+    <color name="decadence_s0_border_shine_0">#ff72b39d</color>		<!-- The jade green of verigris. -->
+    <integer name="decadence_s0_border_shine_0_alpha">255</integer>	<!-- full alpha! -->
+    <integer name="decadence_s0_border_shine_0_shape">@integer/block_shine_shape_cap_top_right_leaning</integer>
+    <!-- Basic: a lighter bronze shade in the bottom-right.  This gives a darker tone to left and right edges,
+    		near the verigris. -->
+    <color name="decadence_s0_border_shine_1">#ff875439</color>		<!-- A lighter brown. -->
+    <integer name="decadence_s0_border_shine_1_alpha">255</integer>	<!-- max at 75% -->
+    <integer name="decadence_s0_border_shine_1_shape">@integer/block_shine_shape_half_wrap_bottom_right</integer>
+    <!-- Traditional shine!  To make things just a bit more visually appealing, we put a mild, traditional white shine. -->
+    <color name="decadence_s0_border_shine_2">#ffffffff</color>
+    <integer name="decadence_s0_border_shine_2_alpha">64</integer>	<!-- full alpha! -->
+    <integer name="decadence_s0_border_shine_2_shape">@integer/block_shine_shape_full_wrap_top_left</integer>
+    
+    
+    
+    <!-- S1: GOLD WITH BRIGHT SPECULARS -->
+    <!-- Basic: a gold color in the top-left.  Note above that our border color is actually
+    		darker orange, not gold.  We place a gold (full wrap) shine around it to
+    		get some visual detail. -->
+    <color name="decadence_s1_border_shine_0">#fffcc200</color>
+    <integer name="decadence_s1_border_shine_0_alpha">255</integer>	<!-- full alpha! -->
+    <integer name="decadence_s1_border_shine_0_shape">@integer/block_shine_shape_full_wrap_top_left</integer>
+    <!-- Specular on the left. -->
+    <color name="decadence_s1_border_shine_1">#ffffffff</color>
+    <integer name="decadence_s1_border_shine_1_alpha">255</integer>	<!-- full alpha! -->
+    <integer name="decadence_s1_border_shine_1_shape">@integer/block_shine_shape_specular_left_side_low</integer>
+    <!-- Specular on the right. -->
+    <color name="decadence_s1_border_shine_2">#ffffffff</color>
+    <integer name="decadence_s1_border_shine_2_alpha">255</integer>	<!-- full alpha! -->
+    <integer name="decadence_s1_border_shine_2_shape">@integer/block_shine_shape_specular_right_side_high</integer>
+    
+    
+    <!--  ALT SHINES  -->
+    <!-- We use Shines to create a unique coloration and "feel" for both S0 and S1.
+    		The shines above are used for any S0 / S1 colored blocks.  For blocks which
+    		are "tinted" to S0 / S1, e.g. flash, ST, and SL, we apply a more "muted"
+    		version of these shines.  we can't skip them, because they more or less
+    		define the qPane's style, and we can't use the full-alpha ones without
+    		overdrawing the underlying "tint" color. -->
+    <!-- Main verigris: the entire top edge gets a verigris cap. -->
+    <color name="decadence_alt_q0_border_shine_0">#ff72b39d</color>		<!-- The jade green of verigris. -->
+    <integer name="decadence_alt_q0_border_shine_0_alpha">153</integer>	<!-- 60% -->
+    <integer name="decadence_alt_q0_border_shine_0_shape">@integer/block_shine_shape_cap_top_right_leaning</integer>
+    <!-- Traditional shine! -->
+    <color name="decadence_alt_q0_border_shine_1">#ffffffff</color>
+    <integer name="decadence_alt_q0_border_shine_1_alpha">128</integer>	<!-- 50% -->
+    <integer name="decadence_alt_q0_border_shine_1_shape">@integer/block_shine_shape_full_wrap_top_left</integer>
+    
+    
+    <!-- Specular on the left. -->
+    <color name="decadence_alt_q1_border_shine_0">#ffffffff</color>
+    <integer name="decadence_alt_q1_border_shine_0_alpha">191</integer>	<!-- 75% -->
+    <integer name="decadence_alt_q1_border_shine_0_shape">@integer/block_shine_shape_specular_left_side_low</integer>
+    <!-- Specular on the right. -->
+    <color name="decadence_alt_q1_border_shine_1">#ffffffff</color>
+    <integer name="decadence_alt_q1_border_shine_1_alpha">191</integer>	<!-- 75% -->
+    <integer name="decadence_alt_q1_border_shine_1_shape">@integer/block_shine_shape_specular_right_side_high</integer>
+    <!-- Traditional shine! -->
+    <color name="decadence_alt_q1_border_shine_2">#ffffffff</color>
+    <integer name="decadence_alt_q1_border_shine_2_alpha">128</integer>	<!-- 50% -->
+    <integer name="decadence_alt_q1_border_shine_2_shape">@integer/block_shine_shape_full_wrap_top_left</integer>
+    
+    
+    
+    <!--  SL ACTIVE SHINES  -->
+    <!-- Shined to look silver. First: a lighter color as a full wrap. -->
+    <color name="decadence_sl_active_border_shine_0">#ffb1b1af</color>
+    <integer name="decadence_sl_active_border_shine_0_alpha">255</integer>	<!-- 50% -->
+    <integer name="decadence_sl_active_border_shine_0_shape">@integer/block_shine_shape_full_wrap_top_left</integer>
+    <!-- Specular on the left. -->
+    <color name="decadence_sl_active_border_shine_1">#ffffffff</color>
+    <integer name="decadence_sl_active_border_shine_1_alpha">255</integer>
+    <integer name="decadence_sl_active_border_shine_1_shape">@integer/block_shine_shape_specular_left_side_low</integer>
+    <!-- Specular on the right. -->
+    <color name="decadence_sl_active_border_shine_2">#ffffffff</color>
+    <integer name="decadence_sl_active_border_shine_2_alpha">255</integer>
+    <integer name="decadence_sl_active_border_shine_2_shape">@integer/block_shine_shape_specular_right_side_high</integer>
+    
+    
+</resources>

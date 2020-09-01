@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="custom_game_mode_max_saved">4</integer>
+    
+    <integer name="custom_game_mode_min_rows">12</integer>
+    <integer name="custom_game_mode_max_rows">24</integer>
+    
+    <integer name="custom_game_mode_min_cols">5</integer>
+    <integer name="custom_game_mode_max_cols">12</integer>
+    
+    <integer name="custom_game_mode_max_name_length">32</integer>
+    <integer name="custom_game_mode_max_summary_length">100</integer>
+    <integer name="custom_game_mode_max_description_length">400</integer>
+    
+    <!-- Default values -->
+    <integer name="custom_game_mode_default_qpanes">2</integer>
+    
+    <bool name="custom_game_mode_default_has_trominoes">false</bool>
+    <bool name="custom_game_mode_default_has_tetrominoes">true</bool>
+    <bool name="custom_game_mode_default_has_pentominoes">false</bool>
+    
+    <bool name="custom_game_mode_default_has_rotation">true</bool>
+    <bool name="custom_game_mode_default_has_reflection">false</bool>
+    
+    <integer name="custom_game_mode_default_rows">18</integer>
+    <integer name="custom_game_mode_default_cols">8</integer>
+    
+</resources>

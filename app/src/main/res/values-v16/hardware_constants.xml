@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- By default, hardware Accel is disabled.  A bug existed
+    		in pre-4.1 that (on some devices) prevented disabling
+    		HW Accel on the view-level, meaning HW accel would be on
+    		when a BlockDrawer call was made which used clipRegion
+    		(a forbidden operation).  For that reason, we globally
+    		disable HW accel unless we can be sure that view-level
+    		disables will work (i.e., in everything before 4.1).
+    		
+    		This variable will be loaded when version is >= 4.1,
+    		meaning HW accel is enabled by default.  We use view-level
+    		controls to disable it in problem areas. -->
+    <bool name="hw_acceleration">true</bool>
+</resources>

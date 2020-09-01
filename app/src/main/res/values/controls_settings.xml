@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- minimum number of tenths of an inch per second
+    	before a Fling is recognized in our gesture controls. -->
+    <integer name="controls_fling_min_inch_hundredths_per_second">100</integer>
+    <integer name="controls_fling_min_screen_hundredths_per_second">30</integer>
+    
+    <integer name="controls_slide_min_inch_hundredths">10</integer>
+    
+	<integer name="controls_autoslide_hold_millis">200</integer>
+	<integer name="controls_autofall_delay_millis">40</integer>
+	
+	<integer name="controls_button_tap_max_millis">100</integer>
+	<integer name="controls_button_double_tap_max_millis">950</integer>
+	
+    
+    <string name="controls_reserve_button_name">RESERVE</string>
+    <string name="controls_left_button_name">LEFT</string>
+    <string name="controls_right_button_name">RIGHT</string>
+    <string name="controls_down_button_name">DOWN</string>
+    <string name="controls_cw_button_name">CW</string>
+    <string name="controls_ccw_button_name">CCW</string>
+    <string name="controls_flip_button_name">FLIP</string>
+    <string name="controls_score_button_name">SCORE</string>
+    <string name="controls_opponent_button_name">OPPONENT</string>
+	
+    <string name="controls_up_button_name">UP</string>
+    <string name="controls_slide_left_button_name">SLIDE_LEFT</string>
+    <string name="controls_slide_right_button_name">SLIDE_RIGHT</string>
+    <string name="controls_slide_down_button_name">SLIDE_DOWN</string>
+    <string name="controls_slide_up_button_name">SLIDE_UP</string>
+    
+    
+    
+</resources>

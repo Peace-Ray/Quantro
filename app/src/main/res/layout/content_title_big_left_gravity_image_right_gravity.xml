@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+  android:id="@id/button_content_background_drawable"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:paddingLeft="5dp"
+  android:paddingRight="5dp"
+  android:orientation="horizontal"
+  android:gravity="center">
+    
+    <!-- title -->
+	<com.peaceray.quantro.view.generic.EllipsizingTextView
+		android:id="@id/button_content_title"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:textColor="@drawable/quantro_button_white_text_color"
+		android:text="AaGgIiJjPpQqYy"
+		android:gravity="left"
+		android:paddingRight="5dip"
+		android:paddingBottom="2.5dip"
+		android:textSize="@dimen/button_text_big"
+		android:maxLines="1"
+		custom:typeface="Roboto-BoldCondensed"
+		/> <!-- text size was 20 -->
+    
+    
+
+    <!-- Useful for "main menu" layouts which include an alert icon. -->
+    <!-- First put the alert as an image view. -->
+    <ImageView
+        android:id="@id/button_content_image_drawable"
+        android:layout_width="wrap_content"
+		android:layout_height="44dip"
+		android:paddingBottom="2.5dip"
+		android:scaleType="fitCenter"
+		/>
+
+
+
+</LinearLayout>

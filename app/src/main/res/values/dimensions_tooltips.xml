@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="game_interface_tooltip_header_text_size">18dp</dimen>
+	<dimen name="game_interface_tooltip_body_text_size">14dp</dimen>
+	
+	<dimen name="game_interface_tooltip_header_text_size_large">24dp</dimen>
+	<dimen name="game_interface_tooltip_body_text_size_large">18dp</dimen>
+	
+	
+	
+	<dimen name="game_interface_tooltip_horizontal_margin">10dp</dimen>
+	
+	<dimen name="game_interface_tooltip_separator_height">1.5dp</dimen>
+	<dimen name="game_interface_tooltip_separator_horizontal_margin">20dp</dimen>
+	<dimen name="game_interface_tooltip_separator_vertical_margin">5dp</dimen>
+	
+	<dimen name="game_interface_tooltip_shadow_radius">1.2dp</dimen>
+	<dimen name="game_interface_tooltip_shadow_offset_x">1.5dp</dimen>
+	<dimen name="game_interface_tooltip_shadow_offset_y">1.1dp</dimen>
+	
+</resources>

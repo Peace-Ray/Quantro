@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  for testing purposes, let this just be the title bar strip.  
+		ultimately, the entire contents of this file form the top element
+		of the main menu screen, so add separators, backgrounds, etc.-->
+<com.peaceray.quantro.view.button.strip.MainMenuTitleBarButtonStrip
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+	android:id="@+id/main_menu_title_bar_button_strip"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	
+	custom:button_layout="@layout/action_bar_image_button"
+	custom:overflow="force"
+	custom:trim="runs_left"
+	custom:button_border_width = "4dip"
+	custom:button_gradient_height="0dip"
+	custom:sub_button_border_inset="0dip"
+	custom:main_button_horizontal_offset="0dip"
+	custom:button_horizontal_separation="3dip"
+	android:paddingLeft="20dp"
+	android:paddingRight="3dp"
+	android:paddingBottom="4dp"
+	android:paddingTop="4dp"
+	>
+  
+  		<!-- Include two buttons  -->
+   		<com.peaceray.quantro.view.button.QuantroButton
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 custom:content_layout="@layout/content_title_big_left_gravity_image_right_gravity"
+				 android:clickable="true"/>
+				 
+		<com.peaceray.quantro.view.button.QuantroButton
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 custom:content_layout="@layout/content_slice_sequence_image_preview_view"
+				 custom:qcwb_measure_content="false"
+				 android:clickable="true"/>
+		
+</com.peaceray.quantro.view.button.strip.MainMenuTitleBarButtonStrip>

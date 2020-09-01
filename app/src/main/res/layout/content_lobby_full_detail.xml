@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical|left"
+    >
+
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+	  	android:paddingRight="84dip"
+		android:paddingBottom="8dip"
+		android:paddingTop="5dip"
+		>
+		<!-- Right-side padding here is meant to allow the "hide" button space to exist.
+				This button appears in lobby_button_collage.xml -->
+        
+        <ImageView
+            android:id="@id/button_content_image_drawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="44dp"
+            android:minHeight="44dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="center"
+			/>	<!-- width is 44dp: size of action icons -->
+			
+		<ProgressBar
+		    android:id="@id/button_content_pinwheel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@id/button_content_image_drawable"
+	        android:layout_alignTop="@id/button_content_image_drawable"
+	        android:layout_alignRight="@id/button_content_image_drawable"
+	        android:layout_alignBottom="@id/button_content_image_drawable"
+	        />
+        
+	    <com.peaceray.quantro.view.generic.EllipsizingTextView
+	        android:id="@id/button_content_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/button_content_image_drawable"
+	        android:layout_centerVertical="true"
+	        android:textColor="@color/bright_text"
+	        android:gravity="left|center_vertical"
+	        android:textSize="@dimen/button_text_big"
+	        android:maxLines="1"
+	        custom:typeface="Roboto-BoldCondensed"
+	        android:paddingLeft="8dp"
+	        android:paddingRight="4dp"
+	        />
+    </RelativeLayout>
+    
+    <com.peaceray.quantro.view.generic.HeavyShadowTextView
+		android:id="@id/button_content_lobby_population"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@drawable/quantro_button_white_text_color"
+		android:gravity="left"
+		android:textSize="@dimen/button_text"
+		android:paddingLeft="30dip"
+		android:paddingRight="84dip"
+		android:paddingBottom="6dip"
+		custom:typeface="Roboto-BoldCondensed"
+		custom:indentFirst="0dip"
+		custom:indentRest="20dip"
+		/>
+    <!-- Right-side padding here is meant to allow the "hide" button space to exist.
+				This button appears in lobby_button_collage.xml -->
+    
+    <com.peaceray.quantro.view.generic.HeavyShadowTextView
+		android:id="@id/button_content_lobby_creation_time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@drawable/quantro_button_white_text_color"
+		android:gravity="left"
+		android:textSize="@dimen/button_text"
+		android:paddingLeft="30dip"
+		android:paddingRight="10dip"
+		android:paddingBottom="6dip"
+		custom:typeface="Roboto-BoldCondensed"
+		custom:indentFirst="0dip"
+		custom:indentRest="20dip"
+		/>
+    
+    <com.peaceray.quantro.view.generic.HeavyShadowTextView
+		android:id="@id/button_content_lobby_host"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@drawable/quantro_button_white_text_color"
+		android:gravity="left"
+		android:textSize="@dimen/button_text"
+		android:paddingLeft="30dip"
+		android:paddingRight="10dip"
+		android:paddingBottom="6dip"
+		custom:typeface="Roboto-BoldCondensed"
+		custom:indentFirst="0dip"
+		custom:indentRest="20dip"
+		/>
+    
+    <com.peaceray.quantro.view.generic.HeavyShadowTextView
+		android:id="@id/button_content_lobby_address_or_type"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@drawable/quantro_button_white_text_color"
+		android:gravity="left"
+		android:textSize="@dimen/button_text"
+		android:paddingLeft="30dip"
+		android:paddingRight="10dip"
+		android:paddingBottom="6dip"
+		custom:typeface="Roboto-BoldCondensed"
+		custom:indentFirst="0dip"
+		custom:indentRest="20dip"
+		/>
+    
+    <com.peaceray.quantro.view.generic.HeavyShadowTextView
+		android:id="@id/button_content_lobby_session_id"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@drawable/quantro_button_white_text_color"
+		android:gravity="left"
+		android:textSize="@dimen/button_text"
+		android:paddingLeft="30dip"
+		android:paddingRight="10dip"
+		android:paddingBottom="20dip"
+		custom:typeface="Roboto-BoldCondensed"
+		custom:indentFirst="0dip"
+		custom:indentRest="20dip"
+		/>
+    
+
+</LinearLayout>

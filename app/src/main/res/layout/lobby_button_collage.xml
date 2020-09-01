@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.peaceray.quantro.view.button.collage.LobbyButtonCollage
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lobby_list_item_button_collage"
+     >
+    
+    <!-- Big Main Button -->
+    <com.peaceray.quantro.view.button.QuantroButton
+    	android:id="@id/button_collage_lobby_button_main"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		custom:content_layout="@layout/content_lobby_full_detail"
+		custom:drop_shadow="true"
+		custom:border_width_alt = "@dimen/button_big_border_size"
+		custom:border_width = "@dimen/button_border_size"
+		custom:qb_style="block_two_tier_always_enclose_content"
+		android:clickable="true"/>
+    
+    <!-- Extra Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dip"
+        android:paddingRight="12dip"
+        android:layout_alignRight="@id/button_collage_lobby_button_main"
+        android:layout_alignTop="@id/button_collage_lobby_button_main"
+        android:orientation="horizontal"
+        android:gravity="right"
+        >
+        
+        <!-- edit first; this keeps 'new' in the same place for all. -->
+        <com.peaceray.quantro.view.button.QuantroButton
+	    	android:id="@id/button_collage_lobby_button_hide"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			custom:content_layout="@layout/content_image"
+			custom:border_width = "2dip"
+			custom:drop_shadow="true"
+			custom:hide_unpressed="true"
+			custom:proportions="square_shrink"
+			android:clickable="true"/>
+        
+    </LinearLayout>
+
+</com.peaceray.quantro.view.button.collage.LobbyButtonCollage>

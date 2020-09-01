@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+   	android:gravity="center">
+    
+
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+    	android:orientation="vertical">
+    	
+        
+        <!-- title -->
+        <com.peaceray.quantro.view.generic.EllipsizingTextView
+			android:id="@id/button_content_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@drawable/quantro_button_white_text_color"
+			android:text="AaGgIiJjPpQqYy"
+			android:gravity="left"
+			android:paddingLeft="5dip"
+			android:paddingRight="10dip"
+			android:textSize="@dimen/button_text"
+			android:maxLines="1"
+			custom:typeface="Roboto-BoldCondensed"
+			/> <!-- text size was 20 -->
+			
+		<!-- description -->
+		<com.peaceray.quantro.view.generic.EllipsizingTextView
+			android:id="@id/button_content_description"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@drawable/quantro_button_white_text_color"
+			android:text="AaGgIiJjPpQqYy"
+			android:gravity="left"
+			android:textSize="@dimen/button_text_small"
+			android:maxLines="1"
+			android:paddingLeft="10dip"
+			android:paddingRight="10dip"
+			custom:typeface="Roboto-BoldCondensed"
+			/>
+		
+		<!-- bit of buffer -->
+    	<View
+			android:layout_width="wrap_content"
+			android:layout_height="2.5dp"
+			/>
+    	
+    </LinearLayout>
+    
+    
+
+    <!-- Useful for "main menu" layouts which include an alert icon. -->
+    <!-- First put the alert as an image view. -->
+    <ImageView
+        android:id="@id/button_content_alert_drawable"
+        android:layout_width="36dip"
+		android:layout_height="38.5dip"
+		android:paddingBottom="2.5dip"
+		android:scaleType="fitCenter"
+		/>
+
+
+
+</LinearLayout>

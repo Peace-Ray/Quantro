@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.peaceray.quantro.view.button.strip.MultiPlayerGameLaunchButtonStrip
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+	android:id="@+id/multiplayer_game_mode_list_item_button_strip"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	custom:button_border_width = "4dip"
+	custom:button_gradient_height="0dip"
+	custom:sub_button_border_inset="0dip"
+	custom:main_button_horizontal_offset="0dip"
+	custom:button_horizontal_separation="3dip"
+	android:paddingLeft="44dp"
+	android:paddingRight="44dp"
+	android:paddingBottom="4dp"
+	android:paddingTop="4dp"
+	
+	custom:mpglbs_local_vote_drawable="@drawable/action_accept_baked"
+	custom:mpglbs_other_vote_drawable="@drawable/action_acceptmini_baked"
+	custom:mpglbs_alert_locked_drawable="@drawable/action_locked_baked"
+	custom:mpglbs_alert_proxy_unlocked_drawable="@drawable/action_unlocked_baked"
+	>
+	
+	<!-- Include one button -->
+	<com.peaceray.quantro.view.button.QuantroButton
+	 android:layout_width="wrap_content"
+	 android:layout_height="wrap_content"
+	 custom:content_layout="@layout/content_title_description_votes_left_gravity"
+	 android:clickable="true"/>
+		
+</com.peaceray.quantro.view.button.strip.MultiPlayerGameLaunchButtonStrip>

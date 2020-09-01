@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- An ImageView which displays itself as the background of a menu. -->
+    <item	type="id"
+        	name="overflow_options_menu_help"/>
+    <item	type="id"
+        	name="overflow_options_menu_settings"/>
+    <item	type="id"
+        	name="overflow_options_menu_lobby_info"/>
+    <item	type="id"
+        	name="overflow_options_menu_invite"/>
+    <item	type="id"
+        	name="overflow_options_menu_unhide"/>
+    
+    
+    <item	type="id"
+        	name="overflow_options_menu_group_unhide"/>
+    
+    
+</resources>

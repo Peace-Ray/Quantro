@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:gravity="left"
+  android:padding="8dp">
+  
+  
+    <com.peaceray.quantro.view.generic.MagicTextView
+        android:id="@id/dialog_content_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bright_text"
+        android:textSize="24sp"
+        android:paddingBottom="10dp"
+        custom:typeface="Roboto-BoldCondensed"
+        />
+  
+  
+  
+  <ScrollView
+  	android:layout_width="wrap_content"
+  	android:layout_height="0dp"
+  	android:layout_weight="1">
+  	
+  		<TableLayout
+  			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="20dp"
+			android:paddingRight="20dp"
+			android:stretchColumns="1"
+			android:shrinkColumns="1"> 		<!-- Stretch column 1 to fill available space. -->
+			
+			<!-- Row 0: the "lobby name" field. -->
+	  		<TableRow>
+	  			<com.peaceray.quantro.view.generic.MagicTextView
+				  	android:id="@+id/new_lobby_layout_name_label"
+					android:layout_height="fill_parent" 
+					android:text="@string/new_lobby_name_label"
+					android:textSize="14sp"
+					android:gravity="right|center_vertical"
+					android:textColor="@color/mid_text"
+					custom:typeface="Roboto-Condensed"
+				  	/>
+	  
+			  	<com.peaceray.quantro.view.generic.MagicEditText
+				    android:id="@+id/new_lobby_layout_name"
+				  	android:layout_height="wrap_content"
+				  	android:minHeight="44dp"
+				  	android:layout_marginLeft="10dp"
+				  	android:padding="10dp"
+				  	android:textSize="14sp"
+				  	android:hint="@string/new_lobby_layout_name_empty"
+				  	android:textColorHint="@color/dim_text"
+				  	android:textColor="@color/bright_text"
+				  	android:gravity="left|center_vertical"
+				  	android:background="@drawable/hairline_border"
+					android:selectable="true"
+					custom:typeface="Roboto-Condensed"
+				  	/>
+	  		</TableRow>
+	  		
+	  		<com.peaceray.quantro.view.generic.MagicTextView
+		  		android:id="@+id/new_lobby_layout_name_characters_remaining"
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:gravity="right"
+		  		custom:typeface="Roboto-Condensed"
+		  		/>
+	  		
+	  		<!-- Description for the above -->
+	  		<com.peaceray.quantro.view.generic.MagicTextView
+	  			android:id="@+id/new_lobby_layout_text_name_description"
+	  			android:layout_height="wrap_content"
+	  			android:textSize="12sp"
+	  			android:gravity="center"
+	  			android:textColor="@color/dim_text"
+	  			android:text="@string/new_lobby_name_description"
+	  			android:paddingTop="8dp"
+	  			android:paddingBottom="22dp"
+	  			custom:typeface="Roboto-Condensed"
+	  			/>
+			  			
+			<!-- Row 1: the "size:" field. -->
+	  		<TableRow
+	  		    android:paddingBottom="8dp" >
+	  			<com.peaceray.quantro.view.generic.MagicTextView
+				  	android:id="@+id/new_lobby_size_label"
+					android:layout_height="fill_parent" 
+					android:textSize="14sp"
+					android:text="@string/new_lobby_size_label"
+					android:gravity="right|center_vertical"
+					android:textColor="@color/mid_text"
+					android:selectable="true"
+					custom:typeface="Roboto-Condensed"
+				  	/>
+	  			
+	  			<FrameLayout
+	  			    android:layout_width="fill_parent"
+	  			    android:layout_height="wrap_content"
+	  			    android:layout_marginLeft="10dp"
+	  			    >
+	  			
+		  			<Spinner 
+			            android:id="@+id/new_lobby_size"
+			            style="@style/AutoHolo.Spinner"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left|center_vertical"
+			            />
+	  			
+	  			</FrameLayout>
+	  		</TableRow>
+			
+		</TableLayout>
+  	</ScrollView>
+  
+	<!-- IP information! -->
+	<com.peaceray.quantro.view.generic.MagicTextView
+		android:id="@+id/new_lobby_layout_ip_address"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:textSize="12sp"
+		android:gravity="center"
+		android:textColor="@color/mid_text"
+		android:paddingTop="8dp"
+		custom:typeface="Roboto-Condensed"
+		/>
+	
+	<!-- some spacing -->
+    <View
+       android:layout_width="fill_parent"
+       android:layout_height="@dimen/dialog_button_top_margin"/>
+    
+    <include layout="@layout/dialog_button_strip"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+
+  
+</LinearLayout>

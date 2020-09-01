@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- FREE PLAY GAME LAUNCH BUTTON COLLAGE -->
+    <item 	type="id" 
+			name="button_collage_free_play_button_main"/>
+    <item 	type="id" 
+			name="button_collage_free_play_button_new"/>
+    <item 	type="id" 
+			name="button_collage_free_play_button_edit"/>
+    
+    
+    <!-- MULTIPLAYER GAME LAUNCH BUTTON COLLAGE -->
+    <item 	type="id" 
+			name="button_collage_multi_player_button_main"/>
+    
+    
+    <!-- LOBBY BUTTON COLLAGE -->
+    <item	type="id"
+        	name="button_collage_lobby_button_main"/>
+    <item	type="id"
+        	name="button_collage_lobby_button_hide"/>
+    
+    
+    
+    <!-- CUSTOM CONTENT: SKIN -->
+    <item	type="id"
+        	name="button_collage_skin"/>
+    <item	type="id"
+        	name="button_collage_skin_button_main"/>
+    
+    <!-- CUSTOM CONTENT: BACKGROUND -->
+    <item	type="id"
+        	name="button_collage_background"/>
+    <item	type="id"
+        	name="button_collage_background_button_main"/>
+    
+    
+    <!-- CUSTOM CONTENT: MUSIC -->
+    <item	type="id"
+        	name="button_collage_music"/>
+    <item	type="id"
+        	name="button_collage_music_button_main"/>
+    
+    <item	type="id"
+        	name="button_collage_label"/>
+    
+    
+    <!-- PREMIUM STORE CONTENT -->
+    <item	type="id"
+        	name="button_collage_premium_content"/>
+    <item	type="id"
+        	name="button_collage_premium_content_button_buy"/>
+    <item	type="id"
+        	name="button_collage_premium_content_button_key"/>
+    <item	type="id"
+        	name="button_collage_premium_content_button_delete"/>
+    
+</resources>

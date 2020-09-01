@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Titles!  Used for buttons, and for the top-title. -->
+	<string name="main_menu_root_title">Quantro</string>
+	<string name="main_menu_root_xl_title">Quantro</string>	<!-- previously "Quantro XL"; now completely free -->
+	
+	<string name="main_menu_single_player_title">Single Player</string>
+	<string name="main_menu_multi_player_title">Multiplayer</string>
+		<string name="main_menu_wifi_multi_player_title">WiFi Multiplayer</string>
+		<string name="main_menu_internet_multi_player_title">Internet Multiplayer</string>
+	<string name="main_menu_social_and_setup_title">Social &amp; Setup</string>
+		<string name="main_menu_social_title">Google Play</string>
+			<string name="main_menu_achievements_title">Achievements</string>
+			<string name="main_menu_leaderboards_title">Leaderboards</string>
+		<string name="main_menu_setup_title">Options &amp; Features</string>
+		<string name="main_menu_setup_xl_title">Game Setup</string>
+			<string name="main_menu_settings_title">Settings</string>
+	<string name="main_menu_information_title">Information</string>
+		<string name="main_menu_how_to_play_title">How to Play</string>
+			<string name="main_menu_how_to_play_basics_title">Basic Instructions</string>
+				<string name="main_menu_how_to_play_game_basics_title">Game Basics</string>
+				<string name="main_menu_how_to_play_controls_title">Controls</string>
+				<string name="main_menu_how_to_play_game_modes_title">Game Types</string>
+			<string name="main_menu_how_to_play_advanced_title">Advanced Instructions</string>
+				<string name="main_menu_how_to_play_special_pieces_title">Special Pieces</string>
+				<string name="main_menu_how_to_play_advanced_techniques_title">Advanced Techniques</string>
+		<string name="main_menu_app_info_title">About Quantro</string>
+			<string name="main_menu_policies_title">Policies</string>
+				<string name="main_menu_user_license_title">User Agreement</string>
+				<string name="main_menu_privacy_policy_title">Privacy Policy</string>
+			<string name="main_menu_updates_title">Updates</string>
+				<string name="main_menu_whats_new_title">What\'s New</string>
+				<string name="main_menu_version_history_title">Version History</string>
+			<string name="main_menu_credits_title">Credits</string>
+			<string name="main_menu_feedback_title">Contact Peace Ray</string>
+				<string name="main_menu_feedback_email_title">Email Developer</string>
+				
+	
+	
+	
+						<!-- Game Setup! -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Descriptions!  Used for button descriptions -->
+	<string name="main_menu_root_description">Main menu</string>
+	<string name="main_menu_root_xl_description">Main menu</string>
+	
+	
+	<string name="main_menu_single_player_description">Game modes for one player</string>
+	<string name="main_menu_multi_player_description">Game modes for two players</string>
+	<string name="main_menu_social_and_setup_description">Social features and game config.</string>
+	<string name="main_menu_information_description">Controls, credits, feedback</string>
+	<string name="main_menu_wifi_multi_player_description">Play on local WiFi</string>
+	<string name="main_menu_internet_multi_player_description">(EXPERIMENTAL) Play over the Internet</string>
+	
+	<string name="main_menu_social_description">Share your scores and achievements</string>
+	<string name="main_menu_achievements_description">Review your achievements</string>
+	<string name="main_menu_leaderboards_description">Compare your score with friends</string>
+	
+	<string name="main_menu_setup_description">Remove ads or change game options</string>					<!-- Game Setup! -->
+	<string name="main_menu_setup_xl_description">Change options or unlock content</string>					<!-- Game Setup! -->
+	<string name="main_menu_settings_description">Game, graphics, sound and app options</string>
+	
+	<string name="main_menu_how_to_play_description">Objective and game controls</string>
+	<string name="main_menu_app_info_description">Learn about Quantro or send feedback</string>
+	<string name="main_menu_feedback_description">Suggest features, report bugs</string>
+	<string name="main_menu_policies_description">Minimal legalese</string>
+	<string name="main_menu_user_license_description">No one reads this anyway</string>
+	<string name="main_menu_privacy_policy_description">Don\'t worry</string>
+	<string name="main_menu_updates_description">Once and future updates</string>
+	<string name="main_menu_whats_new_description">Changes for this version</string>
+	<string name="main_menu_version_history_description">Previous changes</string>
+	<string name="main_menu_credits_description">Who to thank</string>
+	
+	<string name="main_menu_how_to_play_basics_description">A gentle introduction</string>
+	<string name="main_menu_how_to_play_advanced_description">Advanced piece movement</string>
+	
+	<string name="main_menu_how_to_play_game_basics_description">Intro to falling-block games</string>
+	<string name="main_menu_how_to_play_controls_description">Moving, turning, dropping, and more</string>
+	<string name="main_menu_how_to_play_game_modes_description">Retro/Quantro and more</string>
+	<string name="main_menu_how_to_play_special_pieces_description">Blocks used in Quantro games</string>
+	<string name="main_menu_how_to_play_advanced_techniques_description">Practice these to hone your skills</string>
+	
+	<string name="main_menu_feedback_email_description">Direct contact with jake@peaceray.com</string>
+				
+	
+	
+	<!-- Disabled Descriptions!  Used for button descriptions when not enabled. -->
+	<string name="main_menu_multi_player_description_disabled">(BETA) Not available on this device</string>
+	<string name="main_menu_wifi_multi_player_description_disabled">(BETA) Not available on this device</string>
+	<string name="main_menu_internet_multi_player_description_disabled">(BETA) Open beta begins soon!</string>
+	
+	
+	
+	<!-- Instructions!  Displayed below the options when this menu item is displayed. -->
+	<string name="main_menu_error">I AM ERROR</string>
+	<string name="main_menu_tap">Tap to select</string>
+	<string name="main_menu_root_instructions">@string/main_menu_tap</string>
+	<string name="main_menu_single_player_instructions">Tap to play, long-press to configure</string>
+	<string name="main_menu_multi_player_instructions">@string/main_menu_tap</string>
+	<string name="main_menu_social_and_setup_instructions">@string/main_menu_tap</string>
+	<string name="main_menu_information_instructions">@string/main_menu_tap</string>
+	<string name="main_menu_wifi_multi_player_instructions">@string/main_menu_error</string>
+	<string name="main_menu_internet_multi_player_instructions">@string/main_menu_error</string>
+	
+	<string name="main_menu_social_instructions">@string/main_menu_tap</string>					<!-- Game Setup! -->
+	<string name="main_menu_achievements_instructions">@string/main_menu_error</string>
+	<string name="main_menu_leaderboards_instructions">@string/main_menu_error</string>
+	
+	<string name="main_menu_setup_instructions">@string/main_menu_tap</string>					<!-- Game Setup! -->
+	<string name="main_menu_settings_instructions">@string/main_menu_error</string>
+	
+	<string name="main_menu_how_to_play_instructions">@string/main_menu_tap</string>
+	<string name="main_menu_app_info_instructions">@string/main_menu_tap</string>
+	<string name="main_menu_feedback_instructions">@string/main_menu_tap</string>
+	<string name="main_menu_policies_instructions">@string/main_menu_tap</string>
+	<string name="main_menu_user_license_instructions">@string/main_menu_error</string>
+	<string name="main_menu_privacy_policy_instructions">@string/main_menu_error</string>
+	<string name="main_menu_updates_instructions">@string/main_menu_error</string>
+	<string name="main_menu_whats_new_instructions">@string/main_menu_error</string>
+	<string name="main_menu_version_history_instructions">@string/main_menu_error</string>
+	<string name="main_menu_credits_instructions">@string/main_menu_error</string>
+	
+	<string name="main_menu_how_to_play_basics_instructions">@string/main_menu_tap</string>
+	<string name="main_menu_how_to_play_advanced_instructions">@string/main_menu_tap</string>
+	
+	<string name="main_menu_how_to_play_game_basics_instructions">@string/main_menu_error</string>
+	<string name="main_menu_how_to_play_controls_instructions">@string/main_menu_error</string>
+	<string name="main_menu_how_to_play_game_modes_instructions">@string/main_menu_error</string>
+	<string name="main_menu_how_to_play_special_pieces_instructions">@string/main_menu_error</string>
+	<string name="main_menu_how_to_play_advanced_techniques_instructions">@string/main_menu_error</string>
+	
+	<string name="main_menu_feedback_email_instructions">@string/main_menu_error</string>
+	
+	<string name="main_menu_placeholder_instructions">This is a very long string, longer than any of the instruction strings.  Its only purpose is to allow a measurement at max size.</string>
+	
+</resources>

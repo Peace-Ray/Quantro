@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="premium_content_name_game_mode_001">Game Pack 1 (Flood)</string>
+    <string name="premium_content_name_game_mode_002">Game Pack 2 (Versus)</string>
+    <string name="premium_content_name_skin_001">Skin Pack</string>
+    <string name="premium_content_name_background_001">Background Pack</string>
+    
+    <string name="premium_content_description_game_mode_001">Battle against a continuously rising flood of blocks in Quantro and Retro.  Available in both single player and multiplayer &#8212; "Flood" for head-to-head versus play, or "Tides" for big games with 3+ players.  Multiplayer modes are available in all lobbies.</string>
+    <string name="premium_content_description_game_mode_002">Two unique multiplayer game modes.  Send 3D blocks to your Quantro opponent in Bitter Pill, or push Retro rows out of your game and into your opponent\'s in Gravity.  Available in all multiplayer lobbies.</string>
+    <string name="premium_content_description_skin_001">Thirteen new skins for game blocks - five for Retro, eight for Quantro.</string>
+    <string name="premium_content_description_background_001">Sixteen new background images: Argyle, Rhombi, Tartan, and Tilted Tartan in four colors each.  Find your favorite or shuffle through them all.</string>
+    
+    <string name="premium_content_description_short_game_mode_001">Four \'Flood\' game modes, in 1-player and MP</string>
+    <string name="premium_content_description_short_game_mode_002">Two unique VS. game modes: Bitter Pill and Gravity</string>
+    <string name="premium_content_description_short_skin_001">Thirteen new skins for game blocks</string>
+    <string name="premium_content_description_short_background_001">Sixteen new background images</string>
+</resources>

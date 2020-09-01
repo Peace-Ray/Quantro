@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A layout for a "new game" dialog.  Does not include a title, or buttons; they are standard AlertDialog features. -->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="8dp"
+	>
+	
+    <com.peaceray.quantro.view.generic.MagicTextView
+        android:id="@id/dialog_content_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bright_text"
+        android:textSize="24sp"
+        android:paddingBottom="6dp"
+        custom:typeface="Roboto-BoldCondensed"
+        />
+	
+	<!-- A scroll view, in which we place some useful info.  Fills remaining space. -->
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		>
+		
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="top"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:paddingBottom="10dp"
+	        >
+		
+			<!-- Some seekbars. -->
+			<include layout="@layout/labeled_seek_bar"
+				android:id="@+id/new_game_labeled_seek_bar_level"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				/>
+			
+			<!-- Break things up with 'lock level' -->
+			<!-- Next is polyonimoes to use -->
+            <!-- Trominoes... -->
+            <LinearLayout
+                android:id="@+id/new_game_level_lock_container"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:gravity="right|center_vertical"
+		        android:paddingTop="4dp"
+		        android:paddingBottom="4dp"
+		        >
+		        
+                <com.peaceray.quantro.view.generic.MagicTextView
+	                android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:layout_height="wrap_content"
+	                android:gravity="left|center_vertical"
+	                android:text="@string/new_game_level_lock_label"
+	                android:textColor="@color/mid_text"
+	                android:textSize="14sp"
+	                custom:typeface="Roboto-Condensed"
+	                />
+		        
+		        <FrameLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="10dp"
+		            >
+		            
+			        <CheckBox 
+			            android:id="@+id/new_game_level_lock_checkbox"
+			            style="@style/AutoHolo.CheckBox"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:checked="false"/>
+			        
+				</FrameLayout>
+		        
+		    </LinearLayout>
+			
+			<include layout="@layout/labeled_seek_bar"
+				android:id="@+id/new_game_labeled_seek_bar_clears"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				/>
+			
+			<include layout="@layout/labeled_seek_bar"
+				android:id="@+id/new_game_labeled_seek_bar_starting_garbage"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				/>
+			
+			<include layout="@layout/labeled_seek_bar"
+				android:id="@+id/new_game_labeled_seek_bar_per_level_garbage"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				/>
+			
+			
+			<!-- Certain game modes support practice / normal / hard mode. -->
+            <LinearLayout
+                android:id="@+id/new_game_difficulty_container"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:gravity="right|center_vertical"
+		        >
+		        
+                <com.peaceray.quantro.view.generic.MagicTextView
+                    android:id="@+id/new_game_difficulty_label"
+	                android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:layout_height="wrap_content"
+	                android:gravity="left|center_vertical"
+	                android:text="@string/new_game_difficulty_label"
+	                android:textColor="@color/mid_text"
+	                android:textSize="14sp"
+	                custom:typeface="Roboto-Condensed"
+	                />
+	  			
+	  			<FrameLayout
+	  			    android:layout_width="fill_parent"
+	  			    android:layout_height="wrap_content"
+	  			    android:layout_marginLeft="10dp"
+	  			    >
+	  			
+		  			<Spinner 
+			            android:id="@+id/new_game_difficulty"
+			            style="@style/AutoHolo.Spinner"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left|center_vertical"
+			            />
+	  			
+	  			</FrameLayout>
+           	</LinearLayout>
+           	
+            
+            
+            <com.peaceray.quantro.view.generic.MagicTextView
+			    android:id="@+id/new_game_difficulty_skip_animations_warning"
+                android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/mid_text"
+                android:textSize="12sp"
+                android:text="@string/new_game_difficulty_skip_animations_warning"
+                custom:typeface="Roboto-Condensed"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                />
+           	
+            <include layout="@layout/labeled_seek_bar"
+				android:id="@+id/new_game_labeled_seek_bar_displacement_fixed_speed"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				/>
+			
+			<com.peaceray.quantro.view.generic.MagicTextView
+			    android:id="@+id/new_game_supports_leaderboard"
+                android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/mid_text"
+                android:textSize="12sp"
+                custom:typeface="Roboto-Condensed"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+			
+			<!-- A colorable element. -->
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="20dp"
+				android:paddingTop="6dp"
+				android:paddingRight="20dp"
+				android:orientation="vertical">
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="5dip"
+			  		/>
+				<View
+					android:layout_width="fill_parent"
+				  	android:layout_height="1.5dip"
+				  	android:tag="@string/tag_color_filterable"
+				  	android:background="@drawable/solid_white"
+					/>
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="5dip"
+					/>
+			</LinearLayout>
+				
+			<com.peaceray.quantro.view.generic.MagicTextView
+				android:id="@+id/new_game_description"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/mid_text"
+				android:textSize="16sp"
+				android:paddingTop="10dp"
+				custom:typeface="Roboto-Condensed"
+				/>
+		
+		</LinearLayout>
+		
+	</ScrollView>
+	
+	
+	
+	
+	<!-- button strip -->
+   	<!-- some spacing -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"/>
+    
+    <include layout="@layout/dialog_button_strip"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+	
+	
+</LinearLayout>

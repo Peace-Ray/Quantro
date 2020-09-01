@@ -1,0 +1,327 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.peaceray.quantro">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> 	<!-- Used for (at least) AdMob, but existed before that -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.NFC" />	<!-- NFC permission for Android Beam -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />  <!-- Allow lobbies to remain open in the background -->
+
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+
+    <!-- Default NFC: disable the default message. -->
+    <meta-data android:name="android.nfc.disable_beam_default"
+        android:value="true" />
+
+    <application android:name=".QuantroApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AutoHolo"
+        android:hardwareAccelerated="@bool/hw_acceleration"
+        android:allowBackup="true"
+        >
+
+        <!-- Default NFC: disable the default message. -->
+        <meta-data android:name="android.nfc.disable_beam_default"
+            android:value="true" />
+
+        <!-- Main menu -->
+        <activity android:name=".DeveloperConsoleActivity"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="SliceDrawerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="MainMenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="FreePlayGameManagerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- First Time Setup! - activity -->
+        <activity android:name="FirstTimeSetupActivity"
+            android:label="stub"
+            android:theme="@style/AutoHolo.Translucent"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="HtmlViewerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".QuantroPreferences"
+            android:label="@string/quantro_preference_activity_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <!-- Examine Game - activity -->
+        <activity android:name="ExamineGameResultActivity"
+            android:label="stub"
+            android:theme="@style/AutoHolo.Translucent"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- New Game - activity -->
+        <activity android:name="NewGameSettingsActivity"
+            android:label="stub"
+            android:theme="@style/AutoHolo.Translucent"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Custom Game Mode - activity -->
+        <activity android:name="CustomGameModeActivity"
+            android:label="stub"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AutoHolo.Translucent"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+
+
+        <!-- Games - activity and service -->
+        <activity android:name="GameActivity"
+            android:label="@string/game_activity_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AutoHolo.NoBackground"
+            >	<!-- more efficient draws for black background -->
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <service android:name=".main.GameService"
+            android:label="GameService">
+        </service>
+
+
+        <!-- Games - activity and service -->
+        <activity android:name="GameOptionsMenuActivity"
+            android:label="@string/game_options_menu_activity_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            >	<!-- more efficient draws for black background -->
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
+
+        <!-- Lobbies - activity and service -->
+        <activity android:name="LobbyActivity"
+            android:label="@string/lobby_activity_name"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <service android:name=".main.LobbyService"
+            android:label="LobbyService">
+        </service>
+
+
+        <activity android:name="InternetLobbyManagerActivity"
+            android:label="@string/internet_lobby_manager_activity_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <data android:scheme="http" android:host="peaceray.com" android:pathPrefix="/quantro/lobby"/>
+                <data android:scheme="https" android:host="peaceray.com" android:pathPrefix="/quantro/lobby"/>
+                <data android:scheme="http" android:host="www.peaceray.com" android:pathPrefix="/quantro/lobby"/>
+                <data android:scheme="https" android:host="www.peaceray.com" android:pathPrefix="/quantro/lobby"/>
+
+
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+
+            <!-- why not include this redundant filter?  The default Browser app seems to... -->
+            <intent-filter>
+                <data android:scheme="http" android:host="www.peaceray.com" android:pathPrefix="/quantro/lobby"/>
+                <data android:scheme="https" android:host="www.peaceray.com" android:pathPrefix="/quantro/lobby"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+
+            <intent-filter>
+                <data android:scheme="com.peaceray.quantro" android:host="lobby" />
+
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+
+            <!-- NFC intent filter! -->
+            <intent-filter>
+                <data android:scheme="http" android:host="peaceray.com" android:pathPrefix="/quantro/lobby"/>
+                <data android:scheme="https" android:host="peaceray.com" android:pathPrefix="/quantro/lobby"/>
+                <data android:scheme="http" android:host="www.peaceray.com" android:pathPrefix="/quantro/lobby"/>
+                <data android:scheme="https" android:host="www.peaceray.com" android:pathPrefix="/quantro/lobby"/>
+                <data android:scheme="com.peaceray.quantro" android:host="lobby" />
+
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- New Internet Lobby - activity -->
+        <activity android:name="NewInternetLobbyActivity"
+            android:label="@string/new_internet_lobby_activity_name"
+            android:theme="@style/AutoHolo.Translucent"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:screenOrientation="portrait"
+            >
+            <!-- We resize the window when the keyboard is shown, and we do NOT start with the keyboard displayed -->
+            <!-- can't use 'noHistory', because we call the ContactsPicker activity from here -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- We pan the window when the keyboard is shown, and we do NOT start with the keyboard displayed -->
+        <!-- can't use 'noHistory', because we call the ContactsPicker activity from here -->
+
+
+        <!-- Lobby manager - activity -->
+        <activity android:name=".WifiLobbyManagerActivity"
+            android:label="@string/lobby_manager_activity_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+            <!-- NFC intent filter! -->
+            <intent-filter>
+                <data android:scheme="com.peaceray.quantro" android:host="wifi.lobby" />
+
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- New Lobby - activity -->
+        <activity android:name="NewLobbyActivity"
+            android:label="@string/new_lobby_activity_name"
+            android:theme="@style/AutoHolo.Translucent"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:screenOrientation="portrait"
+            >
+            <!-- We resize the window when the keyboard is shown, and we do NOT start with the keyboard displayed -->
+            <!-- can't use 'noHistory', because we call the ContactsPicker activity from here -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Find Lobby - activity -->
+        <activity android:name="TargetWifiAddressActivity"
+            android:label="@string/target_wifi_address_activity"
+            android:theme="@style/AutoHolo.Translucent"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:screenOrientation="portrait"
+            >
+            <!-- We resize the window when the keyboard is shown, and we do NOT start with the keyboard displayed -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- BroadcastReceiver: listen for android.media.RINGER_MODE_CHANGED and start the refresher going. -->
+        <receiver android:name=".main.RingerModeChangedBroadcastReceiver"
+            android:label="RingerModeChangedBroadcastReceiver"
+            android:exported="true"
+            android:enabled="true"
+            >
+            <intent-filter>
+                <action android:name="android.media.RINGER_MODE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Service: Show toasts from anywhere. -->
+        <service android:name=".main.ToastShowerService"
+            android:label="ToastShowerService">
+        </service>
+        <!-- Service: Adjust volume based on ringer mode. -->
+        <service android:name=".main.RingerModeChangedService"
+            android:label="RingerModeChangedService">
+        </service>
+
+    </application>
+
+
+</manifest>

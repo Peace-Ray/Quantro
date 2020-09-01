@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- This is the overflow for an internet lobby on a normal screen.
+    		Four buttons overflow from the button strip, leaving only
+    		the two "control tabs" to be displayed up-top. -->
+    
+    <item android:id="@id/overflow_options_menu_invite"
+        android:title="@string/overflow_options_menu_invite"
+        android:icon="@drawable/menu_share"
+        android:alphabeticShortcut="@string/overflow_options_menu_invite_shortcut"
+        />
+    
+    <item android:id="@id/overflow_options_menu_lobby_info"
+        android:title="@string/overflow_options_menu_lobby_info"
+        android:icon="@drawable/menu_info"
+        android:alphabeticShortcut="@string/overflow_options_menu_lobby_info_shortcut"
+        />
+    
+    <item android:id="@id/overflow_options_menu_help"
+        android:title="@string/overflow_options_menu_help"
+        android:icon="@drawable/menu_question"
+        android:alphabeticShortcut="@string/overflow_options_menu_help_shortcut"
+        />
+    
+    <item android:id="@id/overflow_options_menu_settings"
+        android:title="@string/overflow_options_menu_settings"
+        android:icon="@drawable/menu_settings_dial"
+        android:alphabeticShortcut="@string/overflow_options_menu_settings_shortcut"
+        />
+
+</menu>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- The "Dawn" skin uses colors meant to be reminiscent of a sunrise.
+    
+    	S0 is a bright sunlight light - mostly white, tinged with light yellow.
+    	
+    	S1, behind it, is the dawn sky.  Rose, purple, blue. -->
+    		
+   	<!--  FILL COLORS  -->
+    <!-- Here are the fill colors. -->
+    <color name="dawn_s0_fill">#fff8c56a</color>		<!-- Orange; darker than the border yellow. -->
+    <color name="dawn_s1_fill">#ffba4f83</color>		<!-- A mild purple. -->
+	<!-- ST is colored teal.  It doesn't mean anything, it's just a nice color. -->
+    <color name="dawn_st_fill">#ff3bf6b2</color>
+    <!-- FLASH is colored red.  This fill is only used for LOW detail,
+    		although it matches the BURST detail color. -->
+    <color name="dawn_flash_fill">#ffff0000</color>
+    <!-- LI: a dark, dark grey. -->
+    <color name="dawn_sl_fill">#ff202020</color>
+    <!-- LI ACTIVE: black. -->
+    <color name="dawn_sl_active_fill">#ff000000</color>
+    
+    
+    <!--  BORDER COLORS  -->
+    <!-- Here are the border colors.  Note that we use complex colored
+    		border shines to modify these colors. -->
+    <color name="dawn_s0_border">#ffffffff</color>		<!-- WHITE!  Shines tinge it yellow. -->
+    <color name="dawn_s1_border">#ffba4f83</color>		<!-- Mild purple.  Shines tinge it with dawn colors. -->
+    <!-- ST: teal-tinged colors.  We apply an alternate, low-impact border shine to these. -->
+    <color name="dawn_st_border_q0">#ffb0fbac</color>	<!-- more yellow-ish green -->
+    <color name="dawn_st_border_q1">#ff948090</color>	<!-- pale purple, nearly grey. -->
+    <!-- FLASH: Red tinged. -->
+    <color name="dawn_flash_border_q0">#fffe9965</color>	<!-- orange rose -->
+    <color name="dawn_flash_border_q1">#ffd13457</color>	<!-- Wine. -->
+    <!-- FROM_SL: We give unique tints to the "from SL" border colors. -->
+    <color name="dawn_s0_from_sl_border">#fff7f8a5</color>
+    <color name="dawn_s1_from_sl_border">#ffb94f83</color>
+    <!-- LI: a dark grey background.  We apply a custom shine to this. -->
+    <color name="dawn_sl_border">#ff202020</color>
+    <!-- LI Inactive: a low-saturation, darker version of standard borders. -->
+    <color name="dawn_sl_inactive_border_q0">#ffa6a695</color>
+    <color name="dawn_sl_inactive_border_q1">#ff664f5a</color>
+    <!-- LI Active: A very dark-grey border.  We apply shines to alter this. -->
+    <color name="dawn_sl_active_border">#ff404040</color>
+    
+    
+    <!-- Simplified colors! -->
+    <color name="dawn_s0_fill_simplified">#fffeff91</color>
+    <color name="dawn_s1_fill_simplified">#ffba4f83</color>
+    <color name="dawn_s0_border_simplified">#fffeff91</color>
+    <color name="dawn_s1_border_simplified">#ffba4f83</color>
+    
+    
+    <!-- DETAIL: substitute for fills for Flash.  These colors are meant to hit the deep red tones of some sunrises. -->
+    <color name="dawn_flash_burst">#ffff0000</color>	<!-- RED -->
+    <color name="dawn_flash_stripe">#fffffde6</color>	<!-- Barely yellow.  With transparency, appears ~pink. -->
+    
+    
+    
+    <!-- GLOWS: Because we use strange border colors, we specify different glow colors. -->
+    <color name="dawn_s0_glow">#fffdfe74</color>	<!-- The brighter yellow of Sun Shines. -->
+    <color name="dawn_s1_glow">#ffd93485</color>	<!-- Pink-ish!  This is a test; we might change it. -->
+    <color name="dawn_sl_active_glow">#ff000000</color>
+    
+    
+    <!--  SHINES  -->
+    <!-- Shines are necessary for the Dawn skin's unique look.  S0, the sun,
+    		has an entirely white border until shines are applied  S1, the sky,
+    		gets rose and violet tinges. -->
+    		
+    <!-- S0: THE SUN -->
+    <!-- YELLOW TINGES APPLIED AROUND THE WHITE BORDER -->
+    <!-- Top-left: bright yellow -->
+    <color name="dawn_s0_border_shine_0">#fffdfe74</color>
+    <integer name="dawn_s0_border_shine_0_alpha">191</integer>	<!-- max at 75% -->
+    <integer name="dawn_s0_border_shine_0_shape">@integer/block_shine_shape_half_wrap_top_left</integer>
+    <!-- Bottom-right: a slightly lighter yellow. -->
+    <color name="dawn_s0_border_shine_1">#fffeff91</color>
+    <integer name="dawn_s0_border_shine_1_alpha">191</integer>	<!-- max at 75% -->
+    <integer name="dawn_s0_border_shine_1_shape">@integer/block_shine_shape_half_wrap_bottom_right</integer>
+    
+    
+    <!-- S1: THE SKY -->
+    <!-- Symbolizing the dawn, a darker purple tinges the top left, where a brighter rose
+    		color rises from the bottom-right. -->
+    <color name="dawn_s1_border_shine_0">#ff704cc1</color>
+    <integer name="dawn_s1_border_shine_0_alpha">204</integer>	<!-- 80% -->
+    <integer name="dawn_s1_border_shine_0_shape">@integer/block_shine_shape_half_wrap_top_left</integer>
+    <!-- Specular on the left. -->
+    <color name="dawn_s1_border_shine_1">#fffc727f</color>
+    <integer name="dawn_s1_border_shine_1_alpha">204</integer>	<!-- 80% -->
+    <integer name="dawn_s1_border_shine_1_shape">@integer/block_shine_shape_half_wrap_bottom_right</integer>
+    
+    
+    
+    <!--  ALT SHINES  -->
+    <!-- Special blocks (ST and FL) use a modified version of shines; the same color
+    		and style, but "turned down" to allow underlying colors to shine through better. -->
+    		
+    <!-- S0: THE SUN -->
+    <!-- YELLOW TINGES APPLIED AROUND THE WHITE BORDER -->
+    <!-- Top-left: bright yellow -->
+    <color name="dawn_alt_q0_border_shine_0">#fffdfe74</color>
+    <integer name="dawn_alt_q0_border_shine_0_alpha">191</integer>	<!-- max at 75% -->
+    <integer name="dawn_alt_q0_border_shine_0_shape">@integer/block_shine_shape_half_wrap_top_left</integer>
+    <!-- Bottom-right: a slightly lighter yellow. -->
+    <color name="dawn_alt_q0_border_shine_1">#fffeff91</color>
+    <integer name="dawn_alt_q0_border_shine_1_alpha">191</integer>	<!-- max at 75% -->
+    <integer name="dawn_alt_q0_border_shine_1_shape">@integer/block_shine_shape_half_wrap_bottom_right</integer>
+    
+    
+    <!-- S1: THE SKY -->
+    <!-- Symbolizing the dawn, a darker purple tinges the top left, where a brighter rose
+    		color rises from the bottom-right. -->
+    <color name="dawn_alt_q1_border_shine_0">#ff704cc1</color>
+    <integer name="dawn_alt_q1_border_shine_0_alpha">128</integer>	<!-- 50% -->
+    <integer name="dawn_alt_q1_border_shine_0_shape">@integer/block_shine_shape_half_wrap_top_left</integer>
+    <!-- Specular on the left. -->
+    <color name="dawn_alt_q1_border_shine_1">#fffc727f</color>
+    <integer name="dawn_alt_q1_border_shine_1_alpha">128</integer>	<!-- 50% -->
+    <integer name="dawn_alt_q1_border_shine_1_shape">@integer/block_shine_shape_half_wrap_bottom_right</integer>
+    
+    
+    <!-- FUSED SHINES -->
+    <!-- Basic shine.  We apply a stronger alpha to the foreground. -->
+    <color name="dawn_sl_q0_border_shine_0">#ffffffff</color>
+    <integer name="dawn_sl_q0_border_shine_0_alpha">128</integer>
+    <integer name="dawn_sl_q0_border_shine_0_shape">@integer/block_shine_shape_full_wrap_top_left</integer>
+    <!-- Top Left color tint: slight -->
+    <color name="dawn_sl_q0_border_shine_1">#fffdfe74</color>
+    <integer name="dawn_sl_q0_border_shine_1_alpha">26</integer>		<!-- 10% -->
+    <integer name="dawn_sl_q0_border_shine_1_shape">@integer/block_shine_shape_half_wrap_top_left</integer>
+    <!-- Bottom Right color tint: slight -->
+    <color name="dawn_sl_q0_border_shine_2">#fffeff91</color>
+    <integer name="dawn_sl_q0_border_shine_2_alpha">26</integer>		<!-- 10% -->
+    <integer name="dawn_sl_q0_border_shine_2_shape">@integer/block_shine_shape_half_wrap_bottom_right</integer>
+    
+    <!-- Basic shine.  We apply a very low alpha for the foreground. -->
+    <color name="dawn_sl_q1_border_shine_0">#ffffffff</color>
+    <integer name="dawn_sl_q1_border_shine_0_alpha">52</integer>
+    <integer name="dawn_sl_q1_border_shine_0_shape">@integer/block_shine_shape_full_wrap_top_left</integer>
+    <!-- Top Left color tint: slight -->
+    <color name="dawn_sl_q1_border_shine_1">#ff704cc1</color>
+    <integer name="dawn_sl_q1_border_shine_1_alpha">26</integer>		<!-- 10% -->
+    <integer name="dawn_sl_q1_border_shine_1_shape">@integer/block_shine_shape_half_wrap_top_left</integer>
+    <!-- Bottom Right color tint: slight -->
+    <color name="dawn_sl_q1_border_shine_2">#fffc727f</color>
+    <integer name="dawn_sl_q1_border_shine_2_alpha">26</integer>		<!-- 10% -->
+    <integer name="dawn_sl_q1_border_shine_2_shape">@integer/block_shine_shape_half_wrap_bottom_right</integer>
+    
+    <!-- INACTIVE SL Shine -->
+    <!-- Top Left color tint: slight -->
+    <color name="dawn_sl_inactive_q0_border_shine_0">#fffdfe74</color>
+    <integer name="dawn_sl_inactive_q0_border_shine_0_alpha">77</integer>		<!-- 30% -->
+    <integer name="dawn_sl_inactive_q0_border_shine_0_shape">@integer/block_shine_shape_half_wrap_top_left</integer>
+    <!-- Bottom Right color tint: slight -->
+    <color name="dawn_sl_inactive_q0_border_shine_1">#fffeff91</color>
+    <integer name="dawn_sl_inactive_q0_border_shine_1_alpha">51</integer>		<!-- 20% -->
+    <integer name="dawn_sl_inactive_q0_border_shine_1_shape">@integer/block_shine_shape_half_wrap_bottom_right</integer>
+    
+    <!-- Top Left color tint: slight -->
+    <color name="dawn_sl_inactive_q1_border_shine_0">#ff704cc1</color>
+    <integer name="dawn_sl_inactive_q1_border_shine_0_alpha">77</integer>		<!-- 30% -->
+    <integer name="dawn_sl_inactive_q1_border_shine_0_shape">@integer/block_shine_shape_half_wrap_top_left</integer>
+    <!-- Bottom Right color tint: slight -->
+    <color name="dawn_sl_inactive_q1_border_shine_1">#fffc727f</color>
+    <integer name="dawn_sl_inactive_q1_border_shine_1_alpha">51</integer>		<!-- 20% -->
+    <integer name="dawn_sl_inactive_q1_border_shine_1_shape">@integer/block_shine_shape_half_wrap_bottom_right</integer>
+    
+    
+    
+    
+    
+    
+    <!-- ACTIVE: Uses bright shines in q0, darker ones in q1.  This is the only
+    		skin with a visual difference between active SL panes. -->
+    <!-- Very bright.  A full white wrap, mirrored by a bottom half-wrap at lower opacity. -->
+    <color name="dawn_sl_active_border_shine_0">#ffffffff</color>
+    <integer name="dawn_sl_active_border_shine_0_shape">@integer/block_shine_shape_full_wrap_top_left</integer>
+    <!-- Bottom-right: the mirror. -->
+    <color name="dawn_sl_active_border_shine_1">#ffffffff</color>
+    <integer name="dawn_sl_active_border_shine_1_shape">@integer/block_shine_shape_half_wrap_bottom_right</integer>
+    
+    <!-- Difference is opacity. -->
+    <integer name="dawn_sl_active_q0_border_shine_0_alpha">255</integer>	<!-- full -->
+    <integer name="dawn_sl_active_q0_border_shine_1_alpha">191</integer>	<!-- max at 75% -->
+    <integer name="dawn_sl_active_q1_border_shine_0_alpha">52</integer>		<!-- 20% -->
+    <integer name="dawn_sl_active_q1_border_shine_1_alpha">26</integer>		<!-- 10% -->
+    
+    
+</resources>

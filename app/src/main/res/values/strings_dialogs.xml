@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    
+    
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- MAIN MENU -->
+	<!-- Dialogs shown by the main menu -->
+	<!--  -->
+	<string name="main_menu_update_controls_title">Update Controls?</string>
+	<string name="main_menu_update_controls_message">This update changes Quantro\'s default controls.  You can update to the new settings, or keep your current controls for now.  Controls can be configured in the Settings menu.\n\nUpdate your controls to the new style?</string>
+	<string name="main_menu_update_controls_button_yes">Update</string>
+	<string name="main_menu_update_controls_button_no">Cancel</string>
+	
+	<string name="main_menu_toast_updating_controls">Updating controls&#8230;</string>
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- IN-GAME NOTIFICATIONS -->
+	<!-- Notifications for when the game Service is running in the foreground-->
+	<!-- In other words, these appear after the user has pressed "Home" while in an MP game. -->
+	
+	<!-- Title -->
+	<string name="in_game_notification_title">Quantro Multiplayer Game</string>
+	
+	<!-- Non-recoverable connection failure -->
+	<string name="in_game_notification_connection_terminal_failure">Connection failure.</string>
+	
+	<!-- For connecting&#8230; -->
+	<string name="in_game_notification_connecting_to_server_as_client">Connecting to U1_XXXX\'s game.</string>
+	<string name="in_game_notification_connecting_to_server_as_host">Setting up game against U1_XXXX.</string>
+	
+	<!-- For negotiating&#8230; -->
+	<string name="in_game_notification_talking_to_server_as_client">Talking to U1_XXXX\'s server.</string>
+	<string name="in_game_notification_talking_to_server_as_host">Connecting as host.</string>
+	
+	<!-- PAUSED -->
+	<string name="in_game_notification_game_paused_as_client">Game against U1_XXXX is paused.</string>
+	<string name="in_game_notification_game_paused_as_host">Game against U1_XXXX is paused.</string>
+	
+	<!-- READY -->
+	<string name="in_game_notification_game_ready_as_client">In a game with U1_XXXX.</string>
+	<string name="in_game_notification_game_ready_as_host">In a game with U1_XXXX.</string>
+	
+	<!-- For game is over -->
+	<string name="in_game_notification_game_over_as_client">Game over.</string>
+	<string name="in_game_notification_game_over_as_host">Game over.</string>
+	
+	<string name="in_game_notification_ticker_connection_terminal_failure">Connection permanently lost</string>
+	
+	<!-- For when the game is running.. and we're not there! -->
+	<string name="in_game_notification_player_names_prefix">\u0020game with\u0020</string>
+	<string name="in_game_notification_player_names_suffix">.</string>
+	<string name="in_game_notification_player_names_separator">,\u0020</string>
+	<string name="in_game_notification_player_names_no_names">\u0020multiplayer game.</string>
+	
+
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- IN-GAME DIALOGS -->
+	<!-- For the connecting_to_server dialog -->
+	<string name="in_game_dialog_connecting_to_server_as_client">Connecting to U1_XXXX\'s game.</string>
+	<string name="in_game_dialog_connecting_to_server_as_host">Setting up against game U1_XXXX.</string>
+
+	<!-- For the talking_to_server dialog -->
+	<string name="in_game_dialog_talking_to_server_as_client">Talking to U1_XXXX\'s server.</string>
+	<string name="in_game_dialog_talking_to_server_as_host">Connecting as host.</string>
+
+	<!-- Metainfo for formatting the display of player names -->
+	<!-- In messages with player names included in the formatting, we will replace
+	all instances of the formatted placeholder with [prefix]name[separator]name[separator]name[suffix].
+	For those with an unformatted placeholder we use only name[separator]name -->
+	<string name="in_game_dialog_player_names_prefix">\u0020player(s):\u0020</string>
+	<string name="in_game_dialog_player_names_suffix">&#8230;</string>
+	<string name="in_game_dialog_player_names_separator">,\u0020</string>
+	<string name="in_game_dialog_player_names_no_names">\u0020synchronization&#8230;</string>
+	
+	<!-- For the "waiting for players" dialog -->
+	<string name="in_game_dialog_waiting_for_players_as_client">Waiting forF_XXXX</string>
+	<string name="in_game_dialog_waiting_for_players_as_host">Waiting forF_XXXX</string>
+
+	<!-- For the "paused by players" dialog -->
+	<string name="in_game_dialog_paused_by_players_as_client">Paused byF_XXXX</string>
+	<string name="in_game_dialog_paused_by_players_as_host">Paused byF_XXXX</string>
+
+	<!-- For the "quit SP game" dialog -->
+	<string name="in_game_dialog_quit_single_player_message">Save and quit, or open the options menu?</string>
+	<string name="in_game_dialog_quit_single_player_yes_button">Quit</string>
+	<string name="in_game_dialog_quit_single_player_menu_button">Options</string>
+	<string name="in_game_dialog_quit_single_player_no_button">Cancel</string>
+	
+	<!-- For the "quit MP game" dialog -->
+	<string name="in_game_dialog_quit_multiplayer_as_client">Quit this game against U1_XXXX and return to the lobby?</string>
+	<string name="in_game_dialog_quit_multiplayer_as_host">Quit this game against U1_XXXX and return to the lobby?</string>	
+	<string name="in_game_dialog_quit_multiplayer_as_client_yes_button">Quit</string>
+	<string name="in_game_dialog_quit_multiplayer_as_client_no_button">Stay</string>
+	<string name="in_game_dialog_quit_multiplayer_menu_button">Options</string>
+	<string name="in_game_dialog_quit_multiplayer_as_host_yes_button">Quit</string>
+	<string name="in_game_dialog_quit_multiplayer_as_host_no_button">Stay</string>
+	
+	
+	<!-- For the "opponent quit MP game" dialog -->
+	<string name="in_game_dialog_opponent_quit_multiplayer_title">Game Over</string>
+	<string name="in_game_dialog_opponent_quit_multiplayer_as_client">U_XXXX has quit the game.  This game cannot be completed with the remaining player(s).</string>
+	<string name="in_game_dialog_opponent_quit_multiplayer_as_host">U_XXXX has stopped hosting the game.  This game cannot be completed without a host.</string>
+	<string name="in_game_dialog_opponent_quit_multiplayer_quit_button">OK</string>
+	
+	<!-- For the "opponent left but MP game continues" toast -->
+	<string name="in_game_toast_opponent_quit_multiplayer">U_XXXX has quit the game.</string>
+	<string name="in_game_toast_opponent_kicked_multiplayer">U_XXXX was dropped from the game.</string>
+	
+	
+	<!-- Game WIFI connection messages. -->
+	<string name="in_game_dialog_no_wifi">You are not connected to a WiFi network.  Please check your WiFi settings.</string>
+	
+	
+	<!-- Matchmaking connection messages -->
+	<string name="in_game_dialog_matchmaking_no_response">Unable to communicate with the Quantro server.  Are you connected to the Internet?</string>
+	<string name="in_game_dialog_matchmaking_reject_full">The server is currently very busy.  You may want to try again later.</string>
+	<string name="in_game_dialog_matchmaking_reject_invalid_nonce">Multiplayer session invalid or expired.</string>
+	<string name="in_game_dialog_matchmaking_reject_intent_port_mismatch">Connection error.</string>
+	<string name="in_game_dialog_matchmaking_reject_nonce_in_use">Already two players in this session.</string>
+	<string name="in_game_dialog_matchmaking_reject_port_randomization">Can\'t connect to opponent; your Internet connection uses port randomization (that\'s bad).  If possible, try switching between local WiFi and your device\'s wireless data plan.</string>
+	<string name="in_game_dialog_matchmaking_reject_unspecified">Session error.</string>
+	<string name="in_game_dialog_matchmaking_reject_button_quit">Quit</string>
+	<string name="in_game_dialog_matchmaking_reject_title">Error</string>
+	
+	<!-- Web CGI communication problems / closed -->
+	<string name="in_game_dialog_cgi_communication_failure_message">Unable to communicate with the Quantro server.  Are you connected to the Internet?</string>
+	<string name="in_game_dialog_cgi_game_closed_title">Game Closed</string>
+	<string name="in_game_dialog_cgi_game_closed_message">This Internet game has been closed by the host or the Quantro server.</string>
+	<string name="in_game_dialog_cgi_game_closed_button_quit">Quit</string>
+	
+	<!-- Timed Demo Expired! -->
+	<string name="in_game_dialog_timed_demo_expired_title">Time\'s Up</string>
+	<string name="in_game_dialog_timed_demo_expired_message">You\'ve completed the timed demo for this premium game mode.  Unlock GM_C_XXXX mode to continue this game.\n\nUnlock GM_C_XXXX now?</string>
+	<string name="in_game_dialog_timed_demo_expired_button_unlock">Unlock</string>
+	<string name="in_game_dialog_timed_demo_expired_button_quit">Quit</string>
+	
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- IN-LOBBY NOTIFICATIONS -->
+	<!-- Notifications for when the Lobby Service is running in the foreground-->
+	<!-- In other words, these appear after the user has pressed "Home" while in an MP lobby. -->
+	
+	<!-- TITLE -->
+	<string name="in_lobby_notification_title">Quantro Multiplayer Lobby</string>
+	
+	<!-- TEXT -->
+	<!-- For connecting&#8230; -->
+	<!-- Non-recoverable connection failure -->
+	<string name="in_lobby_notification_connection_terminal_failure">Connection failure.</string>
+	
+	<string name="in_lobby_notification_connecting_to_server_as_client">Connecting to LOBBY_NAME_XXXX.</string>
+	<string name="in_lobby_notification_connecting_to_server_as_host">Setting up LOBBY_NAME_XXXX.</string>
+	
+	<!-- For negotiating&#8230; -->
+	<string name="in_lobby_notification_talking_to_server_as_client">Talking to LOBBY_NAME_XXXX.</string>
+	<string name="in_lobby_notification_talking_to_server_as_host">Connecting as host.</string>
+	
+	<!-- Alone or with others... -->
+	<string name="in_lobby_notification_alone_in_lobby_as_client">Alone in LOBBY_NAME_XXXX.</string>
+	<string name="in_lobby_notification_alone_in_lobby_as_host">Alone in LOBBY_NAME_XXXX.</string>
+	<string name="in_lobby_notification_with_in_lobby_as_client">With LOBBY_OTHER_PLAYERS_U_XXXX in LOBBY_NAME_XXXX.</string>
+	<string name="in_lobby_notification_with_in_lobby_as_host">With LOBBY_OTHER_PLAYERS_U_XXXX in LOBBY_NAME_XXXX.</string>
+	
+	<!-- Closed? -->
+	<string name="in_lobby_notification_closed_as_client">LOBBY_NAME_XXXX closed.</string>
+	<string name="in_lobby_notification_closed_as_host">LOBBY_NAME_XXXX closed.</string>
+	
+	<!-- TICKER TEXT -->
+	<string name="in_lobby_notification_ticker_connection_terminal_failure">Connection permanently lost</string>
+	<string name="in_lobby_notification_ticker_message">U1_XXXX: U2_XXXX</string>
+	<string name="in_lobby_notification_ticker_player_entered">U1_XXXX entered LOBBY_NAME_XXXX.</string>
+	<string name="in_lobby_notification_ticker_player_left">U1_XXXX left LOBBY_NAME_XXXX.</string>
+	<string name="in_lobby_notification_ticker_user_in_game">In game from LOBBY_NAME_XXXX.</string>
+	<string name="in_lobby_notification_ticker_user_idle">Now idle in LOBBY_NAME_XXXX.</string>
+	<string name="in_lobby_notification_ticker_user_active">Now active in LOBBY_NAME_XXXX.</string>
+	
+	<!-- Web CGI communication problems / closed -->
+	<string name="in_lobby_dialog_cgi_communication_failure_message">Unable to communicate with the Quantro server.  Are you connected to the Internet?</string>
+	<string name="in_lobby_dialog_cgi_full_message">Trouble connecting: this lobby is full.</string>
+	<string name="in_lobby_dialog_cgi_game_closed_title">Lobby Closed</string>
+	<string name="in_lobby_dialog_cgi_game_closed_message">This Internet lobby has been closed by the host or the Quantro server.</string>
+	<string name="in_lobby_dialog_cgi_game_closed_button_quit">Quit</string>
+	
+	<string name="in_lobby_toast_game_launch_failed">Failed launching game.  Retrying&#8230;</string>
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- IN-LOBBY DIALOGS -->
+	<!-- Metainfo for formatting the display of player names -->
+	<!-- In messages with player names included in the formatting, we will replace
+	all instances of the formatted placeholder with [prefix]name[separator]name[separator]name[suffix].
+	For those with an unformatted placeholder we use only name[separator]name -->
+	<string name="in_lobby_dialog_player_names_prefix">\u0020player(s):\u0020</string>
+	<string name="in_lobby_dialog_player_names_suffix">&#8230;</string>
+	<string name="in_lobby_dialog_player_names_separator">,\u0020</string>
+	<string name="in_lobby_dialog_player_names_no_names">\u0020synchronization&#8230;</string>
+	
+	<!-- For the connecting_to_lobby dialog -->
+	<string name="in_lobby_dialog_connecting_as_client">Connecting to LOBBY_NAME_XXXX</string>
+	<string name="in_lobby_dialog_connecting_as_host">Setting up LOBBY_NAME_XXXX</string>
+
+	<!-- For the talking_to_lobby dialog -->
+	<string name="in_lobby_dialog_talking_as_client">Talking to LOBBY_NAME_XXXX</string>
+	<string name="in_lobby_dialog_talking_as_host">Connecting as host</string>
+	
+	<!-- For the "launching game" dialog -->
+	<string name="in_lobby_dialog_launching_as_client">Entering game against U1_XXXX&#8230;</string>
+	<string name="in_lobby_dialog_launching_as_host">Launching game against U1_XXXX&#8230;</string>
+	<string name="in_lobby_toast_launching_as_absent">U_XXXX entering game&#8230;</string>
+
+	<!-- Quit lobby message -->
+	<string name="in_lobby_dialog_quit_as_client_title">Leave Lobby</string>
+	<string name="in_lobby_dialog_quit_as_client_message">Leave LOBBY_NAME_XXXX?</string>
+	<string name="in_lobby_dialog_quit_as_host_title">Close Lobby</string>
+	<string name="in_lobby_dialog_quit_as_host_message">Close LOBBY_NAME_XXXX?\n\nYou can return to your Home screen without closing this lobby.</string>
+	<string name="in_lobby_dialog_quit_as_client_yes_button">Leave</string>
+	<string name="in_lobby_dialog_quit_as_client_no_button">Stay</string>
+	<string name="in_lobby_dialog_quit_as_host_yes_button">Close</string>
+	<string name="in_lobby_dialog_quit_as_host_home_button">Home</string>
+	<string name="in_lobby_dialog_quit_as_host_no_button">Cancel</string>
+	
+	<!-- Lobby has closed message -->
+	<string name="in_lobby_dialog_lobby_closed_forever">LOBBY_NAME_XXXX has been closed.</string>
+	<string name="in_lobby_dialog_lobby_closed_forever_quit_button">Leave</string>
+	
+	<!-- Matchmaking connection messages -->
+	<string name="in_lobby_dialog_matchmaking_no_response">Unable to communicate with the Quantro server. If possible, try switching between local WiFi and your device\'s wireless data plan.</string>
+	<string name="in_lobby_dialog_matchmaking_reject_full">The server is currently very busy.  You may want to try again later.</string>
+	<string name="in_lobby_dialog_matchmaking_reject_invalid_nonce">Multiplayer session invalid or expired.</string>
+	<string name="in_lobby_dialog_matchmaking_reject_intent_port_mismatch">Connection error.</string>
+	<string name="in_lobby_dialog_matchmaking_reject_nonce_in_use">Already two players in this session.</string>
+	<string name="in_lobby_dialog_matchmaking_reject_port_randomization">Can\'t connect to opponent; your connection uses port randomization (that\'s bad). If possible, try switching between local WiFi and your device\'s wireless data plan.</string>
+	<string name="in_lobby_dialog_matchmaking_reject_unspecified">Session error.</string>
+	<string name="in_lobby_dialog_matchmaking_reject_button_quit">Quit</string>
+	<string name="in_lobby_dialog_matchmaking_reject_title">Error</string>
+	
+	
+	<!-- Lobby WIFI connection messages. -->
+	<string name="in_lobby_dialog_no_wifi">You are not connected to a WiFi network.  Please check your WiFi settings.</string>
+	
+	<!--  Lobby Information -->
+	<string name="in_lobby_dialog_information_title">Lobby Info</string>
+	<string name="in_lobby_dialog_information_button_share">Invite</string>
+	<string name="in_lobby_dialog_information_button_dismiss">Dismiss</string>
+	
+	
+	<!-- Switch lobbies -->
+	<string name="in_lobby_dialog_switch_lobby_title">Switch Lobbies?</string>
+	<string name="in_lobby_dialog_switch_lobby_message_host_to_host">Switch to hosting U2_XXXX?  This will close U1_XXXX, if it is not closed already.</string>
+	<string name="in_lobby_dialog_switch_lobby_message_host_to_client">Join U2_XXXX?  This will close U1_XXXX, if it is not closed already.</string>
+	<string name="in_lobby_dialog_switch_lobby_message_client_to_host">Leave U1_XXXX to start hosting U2_XXXX?</string>
+	<string name="in_lobby_dialog_switch_lobby_message_client_to_client">Leave U1_XXXX to join U2_XXXX</string>
+	<string name="in_lobby_dialog_switch_lobby_message_unknown_to_client">Leave to join U2_XXXX?</string>
+	<string name="in_lobby_dialog_switch_lobby_message_unknown_to_host">Switch to hosting U2_XXXX?</string>
+	<string name="in_lobby_dialog_switch_lobby_button_yes">Switch</string>
+	<string name="in_lobby_dialog_switch_lobby_button_no">Stay</string>
+	
+	
+	<!-- get premium game mode -->
+	<string name="in_lobby_dialog_unlock_premium_game_mode_title">Unlock Game</string>
+	<string name="in_lobby_dialog_unlock_premium_game_mode_message">GM_N_XXXX is a premium game mode which no one in this lobby has unlocked.  Unlocking this game mode will make it available in every multiplayer lobby you join.\n\nUnlock GM_N_XXXX now?</string>
+	<string name="in_lobby_dialog_unlock_premium_game_mode_button_yes">Unlock</string>
+	<string name="in_lobby_dialog_unlock_premium_game_mode_button_no">Cancel</string>
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- FREE PLAY MANAGER -->
+	<string name="free_play_maximum_custom_games_reached_title">Too Many Games</string>
+	<string name="free_play_maximum_custom_games_reached_description">You already have the maximum number of custom game modes.  Edit or delete an existing mode before creating a new one.</string>
+	<string name="free_play_maximum_custom_games_reached_button_ok">OK</string>
+	
+	
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- NEW INTERNET LOBBY -->
+	<string name="new_internet_lobby_dialog_creating">Creating a new lobby.  This might take a while.</string>
+	<string name="new_internet_lobby_dialog_rehosting">Reopening the lobby.  This might take a while.</string>
+	<string name="new_internet_lobby_dialog_failed_title">Failed</string>
+	<string name="new_internet_lobby_dialog_failed_message_unusual">An unusual error occurred.  I\'m not sure what to do.\n\nerr:WC_ERROR_CODE_XXXX, rsn:WC_REASON_CODE_XXXX</string>
+	<string name="new_internet_lobby_dialog_failed_message_timeout">Server communication timed-out.  Please check your Internet connection.\n\nerr:WC_ERROR_CODE_XXXX, rsn:WC_REASON_CODE_XXXX</string>
+	<string name="new_internet_lobby_dialog_failed_message_failed">There is a problem with the Quantro server.  Please try again later.\n\nerr:WC_ERROR_CODE_XXXX, rsn:WC_REASON_CODE_XXXX</string>
+	<string name="new_internet_lobby_dialog_failed_message_refused">A problem occurred creating the lobby.  Please try again later.\n\nerr:WC_ERROR_CODE_XXXX, rsn:WC_REASON_CODE_XXXX</string>
+	<string name="new_internet_lobby_dialog_failed_message_exists">This lobby is already open!</string>
+	<string name="new_internet_lobby_dialog_failed_button_ok">OK</string>
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- LOBBY CONFIRMATION DIALOGS -->
+		<!-- CONFIRMATION: Ask the user rather they really mean what they said -->
+	<string name="lobby_confirm_dialog_join">Enter LOBBY_NAME_XXXX, a WiFi multiplayer lobby?</string>
+	<string name="lobby_confirm_dialog_join_yes_button">Enter</string>
+	<string name="lobby_confirm_dialog_join_no_button">Cancel</string>
+	<string name="lobby_confirm_dialog_hide">Hide LOBBY_NAME_XXXX?</string>
+	<string name="lobby_confirm_dialog_hide_yes_button">Hide</string>
+	<string name="lobby_confirm_dialog_hide_no_button">Cancel</string>
+	
+		<!-- EXAMINATION: Look deep into this lobby's soul -->
+	<string name="lobby_examine_lobby_name">LOBBY_NAME_XXXX</string>
+	<string name="lobby_examine_lobby_name_searching_initial">Searching for Lobby</string>
+	<string name="lobby_examine_lobby_population">LOBBY_NUM_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX players connected</string>
+	<string name="lobby_examine_lobby_population_searching_initial">Requesting information from host</string>
+	<string name="lobby_examine_lobby_population_searching_subsequent">Requesting update from host</string>
+	<string name="lobby_examine_lobby_info">A Quantro WiFi lobby\nOpen since LOBBY_AGE_DATE_NEAR_XXXX\nLOBBY_ADDRESS_XXXX</string>
+	<string name="lobby_examine_lobby_info_searching_initial">Not yet contacted: looking for at LOBBY_ADDRESS_XXXX</string>
+	<string name="lobby_examine_lobby_info_searching_subsequent">No contact with lobby at LOBBY_ADDRESS_XXXX since LOBBY_STATUS_RECEIVED_DATE_NEAR_XXXX</string>
+	<string name="lobby_examine_lobby_open_query">Join this lobby?</string>
+	<string name="lobby_examine_lobby_full_query">This lobby is full</string>
+	<string name="lobby_examine_lobby_searching_query">Still trying to connect to this lobby&#8230;</string>
+	<string name="lobby_examine_no_wifi">No WiFi connection.</string>
+	<string name="lobby_examine_lobby_button_join">Join</string>
+	<string name="lobby_examine_lobby_button_cancel">Cancel</string>
+	
+		<!-- Whoops, no WiFi! -->
+	<string name="lobby_manager_no_wifi">You are not connected to a WiFi network.  Please check your WiFi settings and try again.</string>
+	<string name="lobby_manager_no_wifi_button_cancel">OK</string>
+	
+	<!-- Unhiding lobbies -->
+	<string name="lobby_manager_toast_unhide_lobbies">Revealing hidden lobbies&#8230;</string>
+	
+	<!-- Finding lobbies -->
+	<string name="lobby_manager_dialog_searching">Searching&#8230;</string>
+	<string name="lobby_manager_dialog_searching_failed">The lobby could not be found.</string>
+	<string name="lobby_manager_dialog_searching_failed_button_ok">OK</string>
+	
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	
+	<!-- OUT OF DATE! -->
+	<string name="internet_lobby_manager_app_out_of_date_title">Update Required</string>
+	<string name="internet_lobby_manager_app_out_of_date_message">Your version of Quantro is out-of-date, and incompatible with the latest version.  You will need to update Quantro before playing online.</string>
+	<string name="internet_lobby_manager_app_out_of_date_update_yes_button">Update</string>
+	<string name="internet_lobby_manager_app_out_of_date_update_no_button">Cancel</string>
+	<string name="internet_lobby_manager_dialog_getting_app_version_message">Contacting server&#8230;</string>
+	<string name="internet_lobby_manager_dialog_getting_app_version_no_response_title">Failed</string>
+	<string name="internet_lobby_manager_dialog_getting_app_version_no_response_message">No response from server.</string>
+	<string name="internet_lobby_manager_dialog_getting_app_version_no_response_button_ok">OK</string>
+	
+	<!-- INTERNET LOBBY WARNING DIALOG -->
+	<string name="internet_lobby_manager_dialog_intro_title">Internet Multiplayer</string>
+	<string name="internet_lobby_manager_dialog_intro_message">Internet multiplayer is experimental and not actively maintained. Availability is not guaranteed. For best results try while on your local WiFi; multiplayer connections are prevented by some mobile data providers.</string>
+	<string name="internet_lobby_manager_dialog_intro_button_ok">OK</string>
+
+	<!-- INTERNET LOBBY CONFIRMATION DIALOGS -->
+		<!-- CONFIRMATION: Ask the user rather they really mean what they said -->
+	<string name="internet_lobby_manager_confirm_dialog_join">Enter LOBBY_NAME_XXXX, an Internet multiplayer lobby?</string>
+	<string name="internet_lobby_manager_confirm_dialog_join_yes_button">Enter</string>
+	<string name="internet_lobby_manager_confirm_dialog_join_no_button">Cancel</string>
+	
+	<string name="internet_lobby_manager_confirm_dialog_remove">Remove LOBBY_NAME_XXXX from your records?</string>
+	<string name="internet_lobby_manager_confirm_dialog_remove_itinerant">Remove LOBBY_NAME_XXXX from your records?\n\nThis is a roaming lobby which may reopen at any time.</string>
+	<string name="internet_lobby_manager_confirm_dialog_remove_yes_button">Remove</string>
+	<string name="internet_lobby_manager_confirm_dialog_remove_no_button">Cancel</string>
+	
+	<string name="internet_lobby_manager_confirm_dialog_hide">Hide LOBBY_NAME_XXXX?</string>
+	<string name="internet_lobby_manager_confirm_dialog_hide_yes_button">Hide</string>
+	<string name="internet_lobby_manager_confirm_dialog_hide_no_button">Cancel</string>
+	
+	<!-- QUITTING! -->
+	<string name="internet_lobby_manager_dialog_quitting_message">Cleaning up&#8230;</string>
+	<!-- REFRESHING! -->
+	<string name="internet_lobby_manager_dialog_refreshing_message">Getting lobby list&#8230;</string>
+	
+	<!-- Communication error! -->
+	<string name="internet_lobby_manager_dialog_refresh_failed_communication_title">Failed</string>
+	<string name="internet_lobby_manager_dialog_refresh_failed_communication_message">Couldn\'t communicate with the Quantro server.  Please check your Internet connection and try again.</string>
+	<string name="internet_lobby_manager_dialog_refresh_failed_communication_button_retry">Retry</string>
+	<string name="internet_lobby_manager_dialog_refresh_failed_communication_button_cancel">Cancel</string>
+	
+	<string name="internet_lobby_manager_dialog_refresh_failed_database_title">Failed</string>
+	<string name="internet_lobby_manager_dialog_refresh_failed_database_message">An error occurred accessing your Lobby invitations.  Attempt to fix this problem?</string>
+	<string name="internet_lobby_manager_dialog_refresh_failed_database_button_fix">Fix</string>
+	<string name="internet_lobby_manager_dialog_refresh_failed_database_button_cancel">Cancel</string>
+	
+	
+	<!-- EXAMINATION: Look deep into this lobby's soul -->
+	<string name="internet_lobby_examine_lobby_name">LOBBY_NAME_XXXX</string>
+	<string name="internet_lobby_examine_lobby_name_empty">Loading</string>
+	<string name="internet_lobby_examine_lobby_name_removed">Not Found</string>
+	<string name="internet_lobby_examine_lobby_description_public">A public Quantro Internet lobby</string>
+	<string name="internet_lobby_examine_lobby_description_private">A private Quantro Internet lobby</string>
+	<string name="internet_lobby_examine_lobby_description_itinerant">A roaming Quantro Internet lobby</string>
+	
+	<string name="internet_lobby_examine_lobby_created_empty">Retrieving lobby information&#8230;</string>
+	<string name="internet_lobby_examine_lobby_created_removed">No information found</string>
+	<string name="internet_lobby_examine_lobby_created">Created by LOBBY_HOST_NAME_XXXX at LOBBY_AGE_DATE_NEAR_XXXX</string>
+	<string name="internet_lobby_examine_lobby_itinerant_created">Last hosted by LOBBY_HOST_NAME_XXXX at LOBBY_AGE_DATE_NEAR_XXXX</string>
+	<string name="internet_lobby_examine_lobby_population">LOBBY_HOSTED_PEOPLE_XXXX/LOBBY_MAX_PEOPLE_XXXX players connected</string>
+	<string name="internet_lobby_examine_lobby_open_query">Join this lobby?</string>
+	<string name="internet_lobby_examine_lobby_full_query">This lobby is full</string>
+	<string name="internet_lobby_examine_lobby_empty_query">Please wait</string>
+	<string name="internet_lobby_examine_lobby_closed_query">Permanently closed.  Remove from your records?</string>
+	<string name="internet_lobby_examine_lobby_removed_query">Permanently closed.  Remove from your records?</string>
+	<string name="internet_lobby_examine_lobby_itinerant_closed_query">Host this lobby?</string>
+	<string name="internet_lobby_examine_lobby_itinerant_removed_query">Host this lobby?</string>
+	<string name="internet_lobby_examine_lobby_button_join">Join</string>
+	<string name="internet_lobby_examine_lobby_button_cancel">Cancel</string>
+	<string name="internet_lobby_examine_lobby_button_host">Host</string>
+	<string name="internet_lobby_examine_lobby_button_remove">Remove</string>
+	
+	
+	<string name="internet_lobby_manager_toast_database_failure">Database failure</string>
+	
+	<!-- Refreshing for join -->
+	<string name="internet_lobby_manager_dialog_refresh_for_join_message">Contacting server&#8230;</string>
+	<string name="internet_lobby_manager_dialog_refresh_for_join_failure_communication_message">Couldn\'t contact server.  Please check your Internet connection.</string>
+	<string name="internet_lobby_manager_dialog_refresh_for_join_failure_communication_button_ok">OK</string>
+	
+	<!-- Invitations -->
+	<string name="internet_lobby_manager_dialog_receiving_invitation">Processing invitation&#8230;</string>
+	<string name="internet_lobby_manager_dialog_receiving_invitation_failed_title">Invitation Failed</string>	
+	<string name="internet_lobby_manager_dialog_receiving_invitation_failed_malformed_message">This invitation can\'t be processed: it is badly formatted.</string>
+	<string name="internet_lobby_manager_dialog_receiving_invitation_failed_communication_message">Can\'t contact server.  The invitation has been added to your records but no lobby information is available.</string>
+	<string name="internet_lobby_manager_dialog_receiving_invitation_failed_database_message">An error occurred accessing your Lobby invitations.  Attempt to fix this problem?</string>
+	<string name="internet_lobby_manager_dialog_receiving_invitation_failed_database_button_fix">Fix</string>
+	<string name="internet_lobby_manager_dialog_receiving_invitation_failed_database_button_cancel">Cancel</string>
+	
+	<string name="internet_lobby_manager_dialog_receiving_invitation_failed_button_ok">OK</string>
+	
+	
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- EXAMINE GAME RESULT TEXTS -->
+	<!-- Title for the dialog and/or activity -->
+	<string name="examine_game_result_title_saved_game">Saved GM_SN_XXXX Game</string>
+	<string name="examine_game_result_title_single_player_game_over">Game Over</string>
+	<string name="examine_game_result_title_single_player_level_over">Level GR_L_XXXX Complete</string>
+	<string name="examine_game_result_title_multi_player_game_over_player_won">You Won!</string>
+	<string name="examine_game_result_title_multi_player_game_over_player_lost">You Lost&#8230;</string>
+	
+	<string name="examine_game_result_difficulty_practice">Practice Difficulty</string>
+	<string name="examine_game_result_difficulty_normal">Normal Difficulty</string>
+	<string name="examine_game_result_difficulty_hard">Hard Difficulty</string>
+	
+	
+	<!-- Formatting information about the blockfield -->
+	<string name="examine_game_result_winner">WINNER</string>
+	<string name="examine_game_result_loser">2nd Best</string>
+	<string name="examine_game_result_quit">Quitter</string>
+	
+	<string name="examine_game_result_free4all_rank_1">WINNER</string>
+	<string name="examine_game_result_free4all_rank_2">2nd</string>
+	<string name="examine_game_result_free4all_rank_3">3rd</string>
+	<string name="examine_game_result_free4all_rank_4">4th</string>
+	<string name="examine_game_result_free4all_rank_5">5th</string>
+	<string name="examine_game_result_free4all_rank_6">6th</string>
+	
+	<string name="examine_game_result_free4all_quit">Quit</string>
+	
+	
+	<string name="examine_game_result_player_name">U1_XXXX</string>
+	<string name="examine_game_result_game_name">GM_N_XXXX</string>
+	<string name="examine_game_result_level_full_text">LEVEL GR_L_XXXX</string>
+	<string name="examine_game_result_level_number">GR_L_XXXX</string>
+	<string name="examine_game_result_level_text">LEVEL</string>
+	<string name="examine_game_result_score_full_text">Score: GR_S_XXXX</string>
+	<string name="examine_game_result_score_number">GR_S_XXXX</string>
+	<string name="examine_game_result_score_text">SCORE</string>
+	<string name="examine_game_result_rows_full_text">Rows: GR_R_XXXX</string>
+	<string name="examine_game_result_rows_number">GR_R_XXXX</string>
+	<string name="examine_game_result_rows_text">ROWS</string>
+	<string name="examine_game_result_time_full_text">Time: GR_T_XXXX</string>
+	<string name="examine_game_result_time_number">GR_T_XXXX</string>
+	
+	
+	
+	<!-- Query strings -->
+	<string name="examine_game_result_query_saved">Resume this saved game?</string>
+	<string name="examine_game_result_query_sp_game_over">Start a new game?</string>
+	<string name="examine_game_result_query_sp_rewindable_game_over">Rewind this level?</string>
+	<string name="examine_game_result_query_sp_rewindable_level_over">Play on, or rewind the last level?</string>
+	<string name="examine_game_result_query_mp_game_over">Return to the lobby to chat or start another game.</string>
+	
+	<!-- The buttons to perform an action -->
+	<string name="examine_game_result_button_cancel">Cancel</string>
+	<string name="examine_game_result_button_quit">Quit</string>
+	<string name="examine_game_result_button_rewindable_quit">Quit</string>
+	<string name="examine_game_result_button_return_to_lobby">Return</string>
+	<string name="examine_game_result_button_play">Play</string>
+	<string name="examine_game_result_button_continue">Play</string>
+	<string name="examine_game_result_button_replay">Start</string>
+	<string name="examine_game_result_button_rewind">Rewind</string>
+	<string name="examine_game_result_button_delete">Delete</string>
+	
+	<!-- Score Submission -->
+	<string name="examine_game_result_score_submission_unsubmitted">Upload?</string>
+	<string name="examine_game_result_score_submission_refused">Upload?</string>
+	<string name="examine_game_result_score_submission_rank">Rank SCORE_SUBMISSION_INT_XXXX</string>
+	<string name="examine_game_result_score_submission_submitted">Uploaded</string>
+	<string name="examine_game_result_score_submission_stored">Stored</string>
+	<string name="examine_game_result_score_submission_error">Error</string>
+	
+	
+	<!-- Game config.  Simple enough. -->
+	<string name="examine_game_settings">GS_CUSTOM_LIST_XXXX</string>
+	<string name="examine_game_settings_list_separator">\u0020\u0020</string>
+	<string name="examine_game_settings_list_level">L GS_CUSTOM_VALUE_LEVEL_XXXX</string>
+	<string name="examine_game_settings_list_clears_per_level">C GS_CUSTOM_VALUE_CLEARS_XXXX</string>
+	<string name="examine_game_settings_list_garbage">G GS_CUSTOM_VALUE_GARBAGE_XXXX/GS_CUSTOM_VALUE_GARBAGE_PER_LEVEL_XXXX</string>
+	<string name="examine_game_settings_list_displacement_fixed_rate">F GS_CUSTOM_VALUE_DISPLACEMENT_FIXED_RATE_XXXX</string>
+	<string name="examine_game_settings_list_default">--</string>
+	
+	
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- NEW GAME SETTINGS TEXTS -->
+	<!-- Title for the dialog and/or activity -->
+	<string name="new_game_title_new_game">GM_N_XXXX</string>
+	<string name="new_game_button_cancel">Cancel</string>
+	<string name="new_game_button_play">Start</string>
+	<string name="new_game_button_default">Default</string>
+	
+	<!-- Difficulty Warning -->
+	<string name="new_game_difficulty_skip_animations_warning">For more responsive gameplay, enable "Skip Animations" in the graphical settings menu</string>
+	
+	<!-- Leaderboard types -->
+	<string name="new_game_leaderboard_supported_yes">Google Play Leaderboards supported</string>
+	<string name="new_game_leaderboard_supported_no_game_mode">This game mode does not support Google Play Leaderboards</string>
+	<string name="new_game_leaderboard_supported_no_settings">Google Play Leaderboard is disabled by these settings</string>
+	
+	
+	<!-- Labels for sliders and options -->
+	<string name="new_game_level_seek_bar_parts_label">Starting Level</string>
+	<string name="new_game_level_lock_label">Lock to Starting Level: never increase game speed</string>
+	<string name="new_game_clears_seek_bar_parts_label">Clears / Level</string>
+	<string name="new_game_starting_garbage_seek_bar_parts_label">Garbage</string>
+	<string name="new_game_per_level_garbage_seek_bar_parts_label">Garbage / Level</string>
+	<string name="new_game_displacement_fixed_rate_seek_bar_parts_label">Flood Speed</string>
+	<string name="new_game_difficulty_label">Difficulty</string>
+	
+	<!-- spinner options! -->
+	<string name="new_game_difficulty_practice">Practice</string>
+	<string name="new_game_difficulty_normal">Normal</string>
+	<string name="new_game_difficulty_hard">Hard</string>
+	
+	<string-array name="new_game_difficulty_array">
+	    <item>@string/new_game_difficulty_practice</item>
+	    <item>@string/new_game_difficulty_normal</item>
+	    <item>@string/new_game_difficulty_hard</item>
+	</string-array>
+	
+	<string-array name="new_game_difficulty_no_practice_array">
+	    <item>@string/new_game_difficulty_normal</item>
+	    <item>@string/new_game_difficulty_hard</item>
+	</string-array>
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- PLAY AND QUICK-PLAY TOASTS -->
+	<!-- Toast text and templates for quick-play startups. -->
+	<string name="play_load">Loading GM_N_XXXX</string>
+	<string name="play_new">Starting GM_N_XXXX</string>
+	<string name="play_new_custom">Starting GM_N_XXXX:\nGS_CUSTOM_LIST_XXXX</string>
+	
+	<string name="quick_play_load">Quick-Loading GM_N_XXXX</string>
+	<string name="quick_play_new">Quick-Starting GM_N_XXXX</string>
+	<string name="quick_play_new_custom">Quick-Starting GM_N_XXXX:\nGS_CUSTOM_LIST_XXXX</string>
+	
+	<string name="play_list_separator">,\u0020</string>
+	<string name="play_list_level">Level GS_CUSTOM_VALUE_LEVEL_XXXX</string>
+	<string name="play_list_level_starting">Starting at Level GS_CUSTOM_VALUE_LEVEL_XXXX</string>
+	<string name="play_list_level_locked">Level Locked at GS_CUSTOM_VALUE_LEVEL_XXXX</string>
+	<string name="play_list_clears_per_level">Clears GS_CUSTOM_VALUE_CLEARS_XXXX</string>
+	<string name="play_list_garbage">Garbage GS_CUSTOM_VALUE_GARBAGE_XXXX/GS_CUSTOM_VALUE_GARBAGE_PER_LEVEL_XXXX</string>
+	<string name="play_list_displacement_fixed_rate">Flooding GS_CUSTOM_VALUE_DISPLACEMENT_FIXED_RATE_XXXX Rows/Second</string>
+	<string name="play_list_default">--</string>
+	
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- CUSTOM GAME MODES -->
+	<string name="custom_game_mode_dialog_save_error_no_pieces_message">Required: select at least one set of polyominoes.</string>
+	<string name="custom_game_mode_dialog_save_error_no_name_or_summary_message">Required: provide a name.</string>
+	<string name="custom_game_mode_dialog_save_error_button_ok">OK</string>
+	
+	<string name="custom_game_mode_dialog_confim_save_changes_title">Save Changes</string>
+	<string name="custom_game_mode_dialog_confim_save_changes_message">Save changes?  This will delete any saved games associated with this custom setup.</string>
+	<string name="custom_game_mode_dialog_confirm_save_changes_yes">Save</string>
+	<string name="custom_game_mode_dialog_confirm_save_changes_no">Cancel</string>
+	
+	<string name="custom_game_mode_dialog_confim_delete_title">Delete Game Modes</string>
+	<string name="custom_game_mode_dialog_confim_delete_message">Delete all game modes based on this custom setup, and their associated saves?</string>
+	<string name="custom_game_mode_dialog_confirm_delete_yes">Delete</string>
+	<string name="custom_game_mode_dialog_confirm_delete_no">Cancel</string>
+	
+	
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- PREMIUM STORE -->
+	<string name="premium_store_dialog_working_activating_xl">Activating Quantro XL features (thanks for your support!)&#8230;</string>
+	<string name="premium_store_dialog_working_activating_premium_content">Activating PREMIUM_NAME_XXXX&#8230;</string>
+	
+	<string name="premium_store_dialog_activation_failed_title">Activation Failure</string>
+	<string name="premium_store_dialog_activation_failed_message_template_single">A problem occurred during feature activation:\n\nPREMIUM_ACTIVATION_PROBLEM_LIST_XXXX</string>
+	<string name="premium_store_dialog_activation_failed_message_template_multiple">Problems occurred during feature activation:\n\nPREMIUM_ACTIVATION_PROBLEM_LIST_XXXX</string>
+	<string name="premium_store_dialog_activation_failed_button_ok">OK</string>
+	
+	
+	<string name="premium_store_dialog_activation_failed_message_item">PREMIUM_NAME_XXXX: PREMIUM_ACTIVATION_PROBLEM_XXXX</string>
+	<string name="premium_store_dialog_activation_failed_message_no_server">Could not contact Quantro servers.</string>
+	<string name="premium_store_dialog_activation_failed_message_invalid">Problem completing purchase: Key is invalid?</string>
+	<string name="premium_store_dialog_activation_failed_message_refused">Request refused by server.  The Quantro server may be busy or experiencing problems; try again later.</string>
+	<string name="premium_store_dialog_activation_failed_message_storing">Could not access local storage.</string>
+	<string name="premium_store_dialog_activation_failed_message_waiting">Request refused by server.  Please try again after DURATION_NEAR_DATE_XXXX.</string>
+	<string name="premium_store_dialog_activation_failed_message_unspecified">Reason unknown.</string>
+	
+	<string name="premium_store_dialog_no_store_connection_title">Store Unavailable</string>
+	<string name="premium_store_dialog_no_store_connection_message">In-app billing is not currently available on this device.  You will be unable to purchase premium content.  Promotional keys may still be entered.</string>
+	<string name="premium_store_dialog_no_store_connection_button_ok">OK</string>
+	
+	<string name="premium_store_dialog_confirm_forget_title">Erase Keycode</string>
+    <string name="premium_store_dialog_confirm_forget_message">Erase your KEY_NAME_XXXX keycode?  You can\'t undo this.</string>
+    <string name="premium_store_dialog_confirm_forget_button_forget">Erase</string>
+    <string name="premium_store_dialog_confirm_forget_button_cancel">Cancel</string>
+	
+	<string name="premium_store_dialog_key_name_xl">Quantro XL</string>
+	<string name="premium_store_dialog_key_name_promotional">Promotional</string>
+	
+	<!-- Premium Content Examination -->
+	<string name="premium_store_dialog_examine_invalid_status">The key unlocking this content is invalidKEY_SPACED_PROMO_XXXX; these features are not available.</string>
+	<string name="premium_store_dialog_examine_inactive_status">The key unlocking this content needs to be activatedKEY_SPACED_PROMO_XXXX; these features are not available.</string>
+	<string name="premium_store_dialog_examine_unlocked_status_direct_purchase">Thanks for your support!</string>
+	<string name="premium_store_dialog_examine_unlocked_status_xl">Unlocked by Quantro XLKEY_SPACED_PROMO_XXXX.  Thanks for your early support!</string>
+	<string name="premium_store_dialog_examine_unlocked_status_promo">Unlocked by a promotional keyKEY_SPACED_PROMO_XXXX.</string>
+	
+	<string name="premium_store_dialog_examine_key_spaced">&#160;(promo code for: KEY_PROMO_XXXX)</string>
+	
+	<string name="premium_store_dialog_examine_locked_no_store_action">The Google Play store is not available; this content cannot be unlocked directly.</string>
+	<string name="premium_store_dialog_examine_locked_action">Unlock this content?</string>
+	<string name="premium_store_dialog_examine_invalid_action">Erase this invalid key?</string>
+	<string name="premium_store_dialog_examine_inactive_action">Activate this key?</string>
+	
+	<string name="premium_store_dialog_examine_locked_button_buy">Unlock</string>
+	<string name="premium_store_dialog_examine_locked_button_cancel">Cancel</string>
+	<string name="premium_store_dialog_examine_invalid_button_erase">Erase</string>
+	<string name="premium_store_dialog_examine_invalid_button_cancel">Cancel</string>
+	<string name="premium_store_dialog_examine_invalid_button_activate">Activate</string>
+	<string name="premium_store_dialog_examine_inactive_button_cancel">Cancel</string>
+	<string name="premium_store_dialog_examine_inactive_button_ok">OK</string>
+	
+	<!-- XL! -->
+	<string name="premium_store_dialog_quit_after_xl_title">Quantro XL</string>
+	<string name="premium_store_dialog_quit_after_xl_message">Thanks for your support!  Your new premium content will be available immediately.\n\nWith this content unlocked, Quantro will no longer display ads, and the game will expand to fill the space.  However, you will need to restart Quantro before ads are hidden.  Restarting Quantro will exit or close any multiplayer lobbies and end any games in progress.\n\nRestart now?</string>
+	<string name="premium_store_dialog_quit_after_xl_button_restart">Restart</string>
+	<string name="premium_store_dialog_quit_after_xl_button_quit">Later</string>
+	
+	
+	
+	
+	<!-- GLOBAL DILAOGS -->
+	
+	
+	<string name="global_whats_new_dialog_title">What\'s New</string>
+	<string name="global_whats_new_dialog_title_alpha">Alpha Test</string>
+	<string name="global_whats_new_dialog_title_beta">Beta Test</string>
+	<string name="global_whats_new_dialog_title_release_candidate">What\'s New RC</string>
+	
+	<string name="global_whats_new_dialog_button_ok">OK</string>
+	
+	<string name="global_new_install_unlock_premium_content_title">Quantro XL</string>
+	<string name="global_new_install_unlock_premium_content_message">Welcome to Quantro!  If you\'ve previously used Quantro and own premium content, you will need to unlock that content on this device.  This process is automatic once begun.\n\nYou can always unlock your premium items, or purchase new owns, from the premium store &#8212; just tap the "padlock" icon in the top-right of the Main Menu.\n\nUnlock premium content now?</string>
+	<string name="global_new_install_unlock_premium_content_button_yes">Unlock</string>
+	<string name="global_new_install_unlock_premium_content_button_no">Later</string>
+	
+	<string name="global_help_dialog_title">Help: GLOBAL_DIALOG_CONTEXT_NAME_XXXX</string>
+	<string name="global_help_dialog_button_ok">OK</string>
+	
+</resources>

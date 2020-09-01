@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- "Natural" skin is based on brown, red and tan tones.
+    		It is not recommended for colorblind users.   -->
+    		
+   	<!--  FILL COLORS  -->
+    <!-- Here are the fill colors. -->
+    <color name="zen_s0_fill">#fff4e0dc</color>		<!-- grey/tan, was ECE2E0 -->
+    <color name="zen_s1_fill">#ff6ebd50</color>		<!-- green -->
+    <!-- Sticky: a greyish' "sky" blue. -->
+    <color name="zen_st_fill">#ff1648e6</color>		<!-- deep blue, close to Egyptian Blue. -->
+    <!-- Linked: here is the fill color for inactive linked -->
+    <color name="zen_sl_fill">#ff606060</color>		<!-- dark grey -->
+    <!-- and active (grey brown) -->
+    <color name="zen_sl_active_fill">#ff000000</color>	<!-- BLACK -->
+    <!-- Here's a fill color for flashes.  It is only used for LOW draw detail. -->
+    <color name="zen_flash_fill">#ffff69b4</color>		<!-- Hot Pink -->
+    
+    
+    <!--  BORDER COLORS  -->
+    <!-- Here are the border colors.  Note that we use complex colored
+    		border shines to modify these colors. -->
+    <color name="zen_s0_border">#fff4e0dc</color>	<!-- grey/tan, was ECE2E0 -->
+    <color name="zen_s1_border">#ff6ebd50</color>	<!-- green -->
+    <!-- Sticky: the colors of sticky borders. -->
+    <color name="zen_st_s0_border">#ff7d92e3</color>	<!-- grey/blue -->
+    <color name="zen_st_s1_border">#ff42839a</color>	<!-- teal -->
+    <!-- Linked: border color for SL, SL_Inactive, SL_Active -->
+    <color name="zen_sl_border">#ff606060</color>
+    <color name="zen_sl_inactive_s0_border">#ffa5a09f</color>	<!-- slightly rose grey -->
+    <color name="zen_sl_inactive_s1_border">#ff678e57</color>	<!-- green/grey. -->
+   	<color name="zen_sl_active_border">#ff303030</color>	<!-- DARK grey. -->
+    <!-- Border colors for flashes. -->
+    <color name="zen_f0_border">#ff508e5c</color>
+    <color name="zen_f1_border">#ff9ec78a</color>
+    
+    
+    <color name="zen_s0_fill_simplified">#ffe7aea3</color>
+    <color name="zen_s1_fill_simplified">#ff87df67</color>
+    <color name="zen_s0_border_simplified">#ffe7aea3</color>
+    <color name="zen_s1_border_simplified">#ff87df67</color>
+    
+    <!--  DETAILS  -->
+    <!-- Flashes are drawn with detail colors. -->
+    <color name="zen_flash_burst">#ffff69b4</color>		<!-- hot pink -->
+    <color name="zen_flash_stripe">#ffffddfe</color>	<!-- very light purple -->
+    
+    
+    <!--  SHINES  -->
+    <!-- S0 S1 SHINES: These shines are applied to almost everything, using different alpha mults. -->
+    <color name="zen_s0_border_shine">#ffb5867c</color>		<!-- reddish grey/tan (rose)  Was AC8982 -->
+    <integer name="zen_s0_border_shine_alpha">179</integer>	<!-- max at 70% -->
+    <integer name="zen_s0_border_shine_shape">@integer/block_shine_shape_full_wrap_top_left</integer>
+    
+    <color name="zen_s1_border_shine_0">#ff9eff7c</color>		<!-- top-left: light green, was c5ffb1 -->
+    <color name="zen_s1_border_shine_1">#ff33bc56</color>		<!-- dark green -->
+    <integer name="zen_s1_border_shine_0_alpha">191</integer>	<!-- max at 75% -->
+    <integer name="zen_s1_border_shine_1_alpha">255</integer>
+    <integer name="zen_s1_border_shine_0_shape">@integer/block_shine_shape_half_wrap_top_left</integer>
+    <integer name="zen_s1_border_shine_1_shape">@integer/block_shine_shape_half_wrap_bottom_right</integer>
+    
+    
+    <!-- SPECIAL CASE ALPHAS -->
+    <!-- SL: linked while falling -->
+    <integer name="zen_s0_border_shine_alpha_sl">77</integer>		<!-- 30% -->
+    <integer name="zen_s1_border_shine_0_alpha_sl">77</integer>		<!-- 30% -->
+    <integer name="zen_s1_border_shine_1_alpha_sl">77</integer>		<!-- 30% -->
+    <!-- SL inactive: after locking -->
+    <integer name="zen_s0_border_shine_alpha_sl_inactive">54</integer>		<!-- 30% of 179 -->
+    <integer name="zen_s1_border_shine_0_alpha_sl_inactive">57</integer>		<!-- 30% of 191 -->
+    <integer name="zen_s1_border_shine_1_alpha_sl_inactive">77</integer>		<!-- 30% of 255 -->
+    <!-- ST and ST_INACTIVE -->
+    <integer name="zen_s0_border_shine_alpha_st">90</integer>			<!-- 50% of 179 -->
+    <integer name="zen_s1_border_shine_0_alpha_st">96</integer>			<!-- 50% of 191 -->
+    <integer name="zen_s1_border_shine_1_alpha_st">128</integer>		<!-- 50% of 255 -->
+    <!-- Flash -->
+    <integer name="zen_s0_border_shine_alpha_flash">120</integer>		<!-- 2/3 of 179 -->
+    <integer name="zen_s1_border_shine_0_alpha_flash">127</integer>		<!-- 2/3 of 190 -->
+    <integer name="zen_s1_border_shine_1_alpha_flash">170</integer>		<!-- 2/3 of 255 -->
+    
+    
+    <!-- The only thing that gets a special shine is SL Active. -->
+    <color name="zen_sl_active_border_shine_0">#ffffffff</color>		<!-- white -->
+    <color name="zen_sl_active_border_shine_1">#ff181818</color>		<!-- white -->
+    <integer name="zen_sl_active_border_shine_0_alpha">153</integer>	
+    <integer name="zen_sl_active_border_shine_1_alpha">255</integer>
+    <integer name="zen_sl_active_border_shine_0_shape">@integer/block_shine_shape_half_wrap_top_left</integer>
+    <integer name="zen_sl_active_border_shine_1_shape">@integer/block_shine_shape_half_wrap_bottom_right</integer>
+    
+    
+</resources>

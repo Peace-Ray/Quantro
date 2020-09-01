@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp"
+    >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left" >
+        
+        <ImageView
+            android:id="@id/dialog_content_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+			/>
+        
+	    <com.peaceray.quantro.view.generic.MagicTextView
+	        android:id="@id/dialog_content_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/bright_text"
+	        android:textSize="24sp"
+	        android:paddingBottom="8dp"
+	        custom:typeface="Roboto-BoldCondensed"
+	        />
+	    
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@id/dialog_content_message_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+	    
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            
+            <com.peaceray.quantro.view.generic.MagicTextView
+                android:id="@+id/lobby_information_availability_text_view"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:textSize="12sp"
+				android:textColor="@color/bright_text"
+				android:paddingTop="4dp"
+				android:paddingBottom="4dp"
+				android:lineSpacingExtra="2sp"
+				custom:typeface="Roboto-Condensed" />
+            
+            <com.peaceray.quantro.view.generic.MagicTextView
+                android:id="@+id/lobby_information_invitation_text_view"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:textSize="12sp"
+				android:textColor="@color/bright_text"
+				android:paddingTop="4dp"
+				android:paddingBottom="4dp"
+				android:lineSpacingExtra="2sp"
+				custom:typeface="Roboto-Condensed" />
+            
+	    
+	        <!-- Lobby description -->
+			<com.peaceray.quantro.view.generic.MagicTextView
+			    android:id="@+id/lobby_information_name_text_view"
+			    android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:textSize="12sp"
+				android:textColor="@color/bright_text"
+				android:paddingTop="4dp"
+				android:paddingBottom="4dp"
+				android:lineSpacingExtra="2sp"
+				custom:typeface="Roboto-Condensed" />
+					
+			<com.peaceray.quantro.view.generic.MagicTextView
+				android:id="@+id/lobby_information_details_text_view"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:textSize="12sp"
+				android:textColor="@color/bright_text"
+				android:paddingTop="4dp"
+				android:paddingBottom="4dp"
+				android:lineSpacingExtra="2sp"
+				custom:typeface="Roboto-Condensed" />
+				
+			
+			<!-- General instructions!  We may want to put this back in the "always on-screen" section -->
+		  	<com.peaceray.quantro.view.generic.MagicTextView
+		  		android:id="@+id/lobby_information_instructions_general_text_view"
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:gravity="center_horizontal"
+		  		android:text="@string/menu_lobby_instructions_general"
+		  		android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+		  		android:textSize="12sp"
+				android:textColor="@color/dim_text"
+				custom:typeface="Roboto-Condensed"
+		  		/>
+	
+		</LinearLayout>
+    </ScrollView>
+    
+    <!-- some spacing -->
+    <View
+       android:layout_width="fill_parent"
+       android:layout_height="@dimen/dialog_button_top_margin"/>
+    
+    <include layout="@layout/dialog_button_strip"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+
+</LinearLayout>

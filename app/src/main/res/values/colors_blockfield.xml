@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="button_background">#44ffffff</color>
+	<!-- was 44ffffff -->
+	
+	<integer name="block_shine_shape_full_wrap_top_left">0</integer>
+	<integer name="block_shine_shape_full_wrap_top_right">1</integer>
+	<integer name="block_shine_shape_full_wrap_bottom_left">2</integer>
+	<integer name="block_shine_shape_full_wrap_bottom_right">3</integer>
+	
+	<integer name="block_shine_shape_half_wrap_top_left">4</integer>
+	<integer name="block_shine_shape_half_wrap_top_right">5</integer>
+	<integer name="block_shine_shape_half_wrap_bottom_left">6</integer>
+	<integer name="block_shine_shape_half_wrap_bottom_right">7</integer>
+	
+	<integer name="block_shine_shape_cap_top_left_leaning">8</integer>
+	<integer name="block_shine_shape_cap_top_right_leaning">9</integer>
+	<integer name="block_shine_shape_cap_bottom_left_leaning">10</integer>
+	<integer name="block_shine_shape_cap_bottom_right_leaning">11</integer>
+	
+	<integer name="block_shine_shape_specular_left_side_low">11</integer>
+	<integer name="block_shine_shape_specular_right_side_high">12</integer>
+	
+	<integer name="block_shine_shape_specular_spot_top_side_right">13</integer>
+	<integer name="block_shine_shape_specular_spot_bottom_side_left">14</integer>
+	
+	
+	
+	
+	<!-- Defines an index into ColorScheme's shine alpha range array.
+			NOTE: these values are negative for the specific purpose of
+			general-loading of resources.
+			
+			Alpha shine ranges can be represented as a length-2 integer
+			array (min, then max), as an explicit alpha value (taken as
+			the max, with min=0), or as a reference to one of the below.
+			
+			Since negative alphas are not allowed, a negative integer will
+			be interpreted as an attempt to represent one of these alpha ranges.
+			 -->
+	<integer name="block_shine_alpha_range_standard">-1</integer>
+	<integer name="block_shine_alpha_range_bold">-2</integer>
+	<integer name="block_shine_alpha_range_extreme">-3</integer>
+	<integer name="block_shine_alpha_range_weak">-3</integer>
+	
+	
+	<!-- ColorScheme needs to be able to distinguish between integer and
+			integer-array resource IDs before loading their Value (since
+			I can't see a way for Resources to load a TypedValue that is
+			then reduced to an array).  It therefore checks the "resourceTypeName"
+			for these two resources to get the string-representation of those
+			types, for later comparison against other resource types. -->
+	<integer name="color_scheme_resource_type">0</integer>
+	<integer-array name="color_scheme_resource_type">
+        <item>0</item>
+    </integer-array>
+	
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    
+    <!-- A solid-white drawable, ready for arbitrary color filters.
+    		Defined as a gradient because ColorDrawables do not
+    		support color filters (and have other issues besides) -->
+
+	<gradient
+	    android:startColor="#ffffffff"
+	    android:endColor="#ffffffff"
+	    />
+	    
+
+</shape>

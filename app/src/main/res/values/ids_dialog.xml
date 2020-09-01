@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item	type="id"
+        	name="dialog_wrapping_panel"/>
+    
+    <item	type="id"
+			name="dialog_content"/>
+    <item	type="id"
+			name="dialog_content_title"/>
+    <item	type="id"
+			name="dialog_content_icon"/>
+    <item	type="id"
+			name="dialog_content_message"/>
+    <item	type="id"
+			name="dialog_content_message_container"/>
+    <item	type="id"
+			name="dialog_content_button_strip"/>
+    <item 	type="id"
+        	name="dialog_content_progress_bar"/>
+    <item 	type="id"
+        	name="dialog_content_time_picker"/>
+    <item 	type="id"
+        	name="dialog_content_checkbox"/>
+    <item 	type="id"
+        	name="dialog_content_checkbox_message"/>
+    <item	type="id"
+        	name="dialog_content_webview"/>
+    
+   	
+    
+</resources>

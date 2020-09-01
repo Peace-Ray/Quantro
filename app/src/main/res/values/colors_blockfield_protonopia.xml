@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+	
+	<!-- Alternative Color Schemes! -->
+	<!-- Protonopia -->
+	<color name="protonopia_s0_fill_color">#ffff3333</color>
+	<color name="protonopia_s1_fill_color">#ff0000ff</color>
+	
+	<color name="protonopia_st_fill_color">#ffffff00</color>
+	<color name="protonopia_sl_s0_fill_color">#ffa0a0a0</color>
+	<color name="protonopia_sl_s1_fill_color">#ffa0a0a0</color>
+	<color name="protonopia_sl_active_s0_fill_color">#ffffffff</color>
+	<color name="protonopia_sl_active_s1_fill_color">#ffffffff</color>
+	<color name="protonopia_ul_fill_color">#ffffffff</color>
+	<color name="protonopia_u0_fill_color">#ffff3333</color>
+	<color name="protonopia_u1_fill_color">#ff0000ff</color>
+	<color name="protonopia_f0_fill_color">#ffffd500</color>
+	<color name="protonopia_f1_fill_color">#ffffd500</color>
+	
+	<color name="protonopia_s0_border_color">#ffff3333</color>
+	<color name="protonopia_s1_border_color">#ff0000ff</color>
+	
+	<!-- sticky borders might have different colors depending on the qPane -->
+	<color name="protonopia_st_s0_border_color">#ffffbb00</color>		<!-- kinda brownish... -->
+	<color name="protonopia_st_s1_border_color">#ffffff44</color>		<!-- blue-green -->
+	<!-- linked borders might have very low-saturation colors -->
+	<color name="protonopia_sl_s0_border_color">#ffad8585</color>		<!-- low-sat red... -->
+	<color name="protonopia_sl_s1_border_color">#ff8686ae</color>		<!-- low-sat blue -->
+	<color name="protonopia_sl_active_s0_border_color">#ffffffff</color>
+	<color name="protonopia_sl_active_s1_border_color">#ffffffff</color>
+	
+	<!-- flash borders might have different colors as well -->
+	<color name="protonopia_f0_border_color">#ffff3333</color>
+	<color name="protonopia_f1_border_color">#ff0000ff</color>
+	
+	<!-- Special detail colors for composing bitmaps and the like. -->
+	<color name="protonopia_f0_detail_burst">#fff35b00</color>
+	<color name="protonopia_f0_detail_stripe">#ffffd500</color>
+	<color name="protonopia_f1_detail_burst">#fff35b00</color>
+	<color name="protonopia_f1_detail_stripe">#ffffd500</color>
+	
+	
+		<!-- Retro Rainbow -->
+	<color name="protonopia_r0_fill_color">#ffff6600</color>		<!-- bright 1 -->
+	<color name="protonopia_r1_fill_color">#ffffff00</color>		<!-- yellow? -->
+	<color name="protonopia_r2_fill_color">#ffffffff</color>		<!-- bright 3 -->
+	<color name="protonopia_r3_fill_color">#ff707070</color>		<!-- dim 4 -->
+	<color name="protonopia_r4_fill_color">#ff0099bb</color>		<!-- bright 5 -->
+	<color name="protonopia_r5_fill_color">#ff0055ff</color>		<!-- dim 6 -->
+	<color name="protonopia_r6_fill_color">#ff0000ff</color>		<!-- bright 7 -->
+	
+	<color name="protonopia_r0_border_color">#ffff6600</color>		<!-- bright 1 -->
+	<color name="protonopia_r1_border_color">#ffffff00</color>		<!-- yellow? -->
+	<color name="protonopia_r2_border_color">#ffffffff</color>		<!-- bright 3 -->
+	<color name="protonopia_r3_border_color">#ff707070</color>		<!-- dim 4 -->
+	<color name="protonopia_r4_border_color">#ff00aaaa</color>		<!-- bright 5 -->
+	<color name="protonopia_r5_border_color">#ff0055ff</color>		<!-- dim 6 -->
+	<color name="protonopia_r6_border_color">#ff0000ff</color>		<!-- bright 7 -->
+	
+    
+</resources>

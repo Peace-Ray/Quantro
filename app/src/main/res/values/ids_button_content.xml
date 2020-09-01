@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- IDs for QuantroContentWrappingButton Views and Layouts. 
+			Purpose: to allow any Layout to be inserted into special-purpose
+			ButtonStrips, those strips will set content using contentView.findViewById.
+			In other words, for a ButtonStrip that wants to set a Title a particular
+			button, the content of that button will be searched for a View with
+			the tag "@id/button_content_title" and setText() called on
+			that view with the desired title.  If no view in the content has that
+			tag, no Title will be set.-->
+			
+	<!-- View type is inferred from relevant tag.  Title and description
+			must be placed on TextViews, or sub-views, on which setText will be called. -->
+	<item 	type="id" 
+			name="button_content_title"/>
+	<item 	type="id" 
+			name="button_content_description"/>
+	<item	type="id"
+	    	name="button_content_long_description"/>
+	
+	<!-- Drawable for background.  We set the Drawable (if we have one) using setBackground. -->
+	<item	type="id"
+			name="button_content_background_drawable"/>
+	
+	<!-- Drawable for the "image."  We set the Drawable (if we have one) using set ImageDrawable, and scale CENTER -->
+	<item	type="id"
+			name="button_content_image_drawable"/>
+	
+	<!-- Drawable for "alert." -->
+	<item	type="id"
+	    	name="button_content_alert_drawable"/>
+	
+	<!-- "Time remaining" displays.  Text is set based on formatted text; milliseconds
+			is for Views that fit a (pending) interface for accepting time remaining in milliseconds. -->
+	<item	type="id"
+			name="button_content_time_remaining_text"/>
+	<item	type="id"
+			name="button_content_time_remaining_milliseconds"/>
+	
+	<!-- Vote displays.  Drawables set multiplayer vote images. -->
+	<item	type="id"
+			name="button_content_local_vote_image_drawable"/>
+	<item	type="id"
+			name="button_content_other_vote_0_image_drawable"/>
+	<item	type="id"
+			name="button_content_other_vote_1_image_drawable"/>
+	<item	type="id"
+			name="button_content_other_vote_2_image_drawable"/>
+	<item	type="id"
+			name="button_content_other_vote_3_image_drawable"/>
+	<item	type="id"
+			name="button_content_other_vote_4_image_drawable"/>
+	<item	type="id"
+			name="button_content_other_vote_5_image_drawable"/>
+	
+	
+	<!-- Block field view.  Very rare. -->
+	<item	type="id"
+			name="button_content_block_field_view"/>
+	<item 	type="id"
+			name="button_content_slice_sequence_view"/>
+	
+	
+	<!-- Spinner -->
+	<item	type="id"
+	    	name="button_content_spinner"/>
+	
+	<item	type="id"
+	    	name="button_content_pinwheel"/>
+	
+	
+	<!-- Detailed lobby information -->
+	<item	type="id"
+	   		name="button_content_lobby_population"/>
+	<item	type="id"
+	   		name="button_content_lobby_creation_time"/>
+	<item	type="id"
+	   		name="button_content_lobby_host"/>
+	<item	type="id"
+	   		name="button_content_lobby_address_or_type"/>
+	<item	type="id"
+	   		name="button_content_lobby_session_id"/>
+	
+
+</resources>

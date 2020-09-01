@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+	android:id="@id/button_content_background_drawable"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	
+    <ImageView
+		android:id="@id/button_content_alert_drawable"
+		android:layout_width="44dp"
+		android:layout_height="44dp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:padding="5dp"
+		android:scaleType="centerInside"
+		/>
+    
+   <ImageView
+		android:id="@id/button_content_other_vote_0_image_drawable"
+		android:layout_width="39dp"
+		android:layout_height="wrap_content"
+		android:minWidth="13.5dp"
+		android:minHeight="13.5dp"
+		android:scaleType="center"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		/>
+   
+   <ImageView
+		android:id="@id/button_content_other_vote_1_image_drawable"
+		android:layout_width="39dp"
+		android:layout_height="wrap_content"
+		android:minWidth="13.5dp"
+		android:minHeight="13.5dp"
+		android:scaleType="center"
+		android:layout_alignParentRight="true"
+		android:layout_above="@id/button_content_other_vote_0_image_drawable"
+		/>
+   
+   <ImageView
+		android:id="@id/button_content_other_vote_2_image_drawable"
+		android:layout_width="39dp"
+		android:layout_height="wrap_content"
+		android:minWidth="13.5dp"
+		android:minHeight="13.5dp"
+		android:scaleType="center"
+		android:layout_alignParentRight="true"
+		android:layout_above="@id/button_content_other_vote_1_image_drawable"
+		/>
+   
+   <ImageView
+		android:id="@id/button_content_other_vote_3_image_drawable"
+		android:layout_width="39dp"
+		android:layout_height="wrap_content"
+		android:minWidth="13.5dp"
+		android:minHeight="13.5dp"
+		android:scaleType="center"
+		android:layout_alignParentRight="true"
+		android:layout_above="@id/button_content_other_vote_2_image_drawable"
+		/>
+   
+   <ImageView
+		android:id="@id/button_content_other_vote_4_image_drawable"
+		android:layout_width="39dp"
+		android:layout_height="wrap_content"
+		android:minWidth="13.5dp"
+		android:minHeight="13.5dp"
+		android:scaleType="center"
+		android:layout_alignParentRight="true"
+		android:layout_above="@id/button_content_other_vote_3_image_drawable"
+		/>
+   
+	<ImageView
+		android:id="@id/button_content_other_vote_5_image_drawable"
+		android:layout_width="39dp"
+		android:layout_height="wrap_content"
+		android:minWidth="13.5dp"
+		android:minHeight="13.5dp"
+		android:scaleType="center"
+		android:layout_alignParentRight="true"
+		android:layout_above="@id/button_content_other_vote_4_image_drawable"
+		/>
+   
+		
+	<!-- And the local vote -->
+	<ImageView
+		android:id="@id/button_content_local_vote_image_drawable"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:scaleType="centerInside"
+		android:layout_centerVertical="true"
+		android:layout_toLeftOf="@id/button_content_other_vote_0_image_drawable"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true"
+		/>
+	
+	
+	<!-- A (short) description of the game type. -->
+    <com.peaceray.quantro.view.generic.HeavyShadowTextView
+		android:id="@id/button_content_description"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		
+		android:paddingLeft="6dp"
+		android:paddingBottom="4dp"
+		android:paddingRight="4dp"
+		android:paddingTop="4dp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_toLeftOf="@id/button_content_other_vote_0_image_drawable"
+		android:layout_alignParentBottom="true"
+		android:textSize="@dimen/button_text_small"
+		android:textColor="@drawable/quantro_button_white_text_color"
+		android:gravity="left|bottom"
+		custom:typeface="Roboto-Condensed"/>
+
+	
+</RelativeLayout>

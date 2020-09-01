@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Settings Locked -->
+    <!-- Strings for premium-only settings -->
+    <string name="setting_dialog_any_premium_only_title">Premium Feature</string>
+    <string name="setting_dialog_any_premium_only_message">You need at least one premium content pack to use this feature.  Unlock one now?</string>
+    <string name="setting_dialog_any_premium_only_button_buy">Unlock</string>
+    <string name="setting_dialog_any_premium_only_button_cancel">Cancel</string>
+    
+    <string name="setting_dialog_premium_skin_only_title">Premium Feature</string>
+    <string name="setting_dialog_premium_skin_only_message">This skin is a premium feature.  Unlock it now?</string>
+    <string name="setting_dialog_premium_skin_only_button_buy">Unlock</string>
+    <string name="setting_dialog_premium_skin_only_button_cancel">Cancel</string>
+    
+    <string name="setting_dialog_premium_background_only_title">Premium Feature</string>
+    <string name="setting_dialog_premium_background_only_message">This background is a premium feature.  Unlock it now?</string>
+    <string name="setting_dialog_premium_background_only_button_buy">Unlock</string>
+    <string name="setting_dialog_premium_background_only_button_cancel">Cancel</string>
+    
+    
+    <!-- Prioritize Framerate -->
+    <string name="setting_dialog_prioritize_framerate_on_title">Prioritize Frame Rate</string>
+    <string name="setting_dialog_prioritize_framerate_on_message">Disable features (e.g. background shuffle, in-game options menu) and lower overall graphical quality to improve in-game performance?\n\nYou will need to restart Quantro to change this setting.</string>
+    <string name="setting_dialog_prioritize_framerate_on_button_yes">Restart</string>
+    <string name="setting_dialog_prioritize_framerate_on_button_no">Cancel</string>
+    
+    <string name="setting_dialog_prioritize_framerate_off_title">Prioritize Features</string>
+    <string name="setting_dialog_prioritize_framerate_off_message">Enable features (e.g. background shuffle, in-game options menu) and improve overall graphical quality at the expense of in-game performance?\n\nYou will need to restart Quantro to change this setting.</string>
+    <string name="setting_dialog_prioritize_framerate_off_button_yes">Restart</string>
+    <string name="setting_dialog_prioritize_framerate_off_button_no">Cancel</string>
+    
+    
+    
+    <!-- Toast Settings -->
+    <!-- Some settings don't take effect immediately (Fullscreen settings mostly) -->
+    <!-- so we put up a toast to inform the user of that. -->
+    <string name="setting_toast_fullscreen_game_changed">The next game you begin will use this setting</string>
+    <string name="setting_toast_fullscreen_lobby_changed">The next lobby you create or enter will use this setting</string>
+    <string name="setting_toast_fullscreen_menu_changed">You will need to restart Quantro for this change to take effect</string>
+    <!-- Thank the user for anonymous analytics -->
+    <string name="setting_toast_analytics_activated">Thanks!</string>
+    <!-- Warn user they can't upload scores anymore -->
+    <string name="setting_toast_social_score_upload_unavailable">Score uploads completely disabled</string>
+    
+    <string name="setting_toast_sound_muted">Warning: lobby notifications muted</string>
+    
+    <!-- Settings section headers -->
+    <string name="setting_screen_key_game">game_settings_screen</string>
+    <string name="setting_screen_title_game">Games</string>
+    <string name="setting_screen_summary_game">Single- and multiplayer game options</string>
+    
+    <string name="setting_screen_key_graphics">graphics_screen</string>
+    <string name="setting_screen_title_graphics">Graphics</string>
+    <string name="setting_screen_summary_graphics">Quality, colors, background, etc.</string>
+    
+    <string name="setting_screen_key_details">detail_screen</string>
+    <string name="setting_screen_title_details">Details</string>
+    <string name="setting_screen_summary_details">Graphical quality, animations, tweaks</string>
+    
+    <string name="setting_screen_key_skin">skin_screen</string>
+    <string name="setting_screen_title_skin">Skin</string>
+    <string name="setting_screen_summary_skin">Piece and block appearance</string>
+    
+    <string name="setting_screen_key_background">background_screen</string>
+    <string name="setting_screen_title_background">Background</string>
+    <string name="setting_screen_summary_background">Game and menu backgrounds</string>
+    
+    <string name="setting_screen_key_sound">sound_screen</string>
+    <string name="setting_screen_title_sound">Sound and Music</string>
+    <string name="setting_screen_summary_sound">Volume and other sound controls</string>
+    
+    <string name="setting_screen_key_controls">controls_screen</string>
+ 	<string name="setting_screen_title_controls">Controls</string>
+ 	<string name="setting_screen_summary_controls">Gamepad / gesture settings</string>
+    
+    <string name="setting_screen_key_fullscreen">fullscreen_screen</string>
+    <string name="setting_screen_title_fullscreen">Full-Screen</string>
+    <string name="setting_screen_summary_fullscreen">Hide or show the status bar</string>
+    
+    <string name="setting_screen_key_network">network_screen</string>
+    <string name="setting_screen_title_network">Network</string>
+    <string name="setting_screen_summary_network">Multiplayer network settings</string>
+    
+    <string name="setting_screen_key_social">social_screen</string>
+    <string name="setting_screen_title_social">Scores</string>
+    <string name="setting_screen_summary_social">Global leaderboards</string>
+    
+    <string name="setting_screen_key_analytics">analytics_screen</string>
+    <string name="setting_screen_title_analytics">Analytics</string>
+    <string name="setting_screen_summary_analytics">Collect data anonymously</string>
+    
+    
+    
+    <!-- GRAPHICAL DETAILS settings -->
+	<string name="setting_key_graphics_graphical_detail">graphics_detail</string>
+    <string name="setting_title_graphics_graphical_detail">Quality</string>
+    <string name="setting_summary_graphics_graphical_detail_low">Low Quality: Simple shapes, colors and animations.  High performance, low memory requirements.</string>
+    <string name="setting_summary_graphics_graphical_detail_mid">Mid Quality: More complex blocks and drop-shadows.  Average performance and memory requirements.</string>
+    <string name="setting_summary_graphics_graphical_detail_high">High Quality: Better animations.  Low-to-mid performance, high memory requirements.</string>
+    
+    <string name="setting_summary_graphics_graphical_detail_low_required">Only low-quality graphics are supported on this device.</string>
+    
+    <string name="setting_value_title_graphics_graphical_detail_low">Low Quality</string>
+    <string name="setting_value_title_graphics_graphical_detail_mid">Mid Quality</string>
+    <string name="setting_value_title_graphics_graphical_detail_high">High Quality</string>
+    <string name="setting_value_key_graphics_graphical_detail_low">low_quality</string>
+    <string name="setting_value_key_graphics_graphical_detail_mid">mid_quality</string>
+    <string name="setting_value_key_graphics_graphical_detail_high">high_quality</string>
+    
+    <string-array name="setting_value_title_graphics_graphical_detail">
+        <item>@string/setting_value_title_graphics_graphical_detail_low</item>
+        <item>@string/setting_value_title_graphics_graphical_detail_mid</item>
+        <item>@string/setting_value_title_graphics_graphical_detail_high</item>
+    </string-array>
+    
+    <string-array name="setting_value_key_graphics_graphical_detail">
+        <item>@string/setting_value_key_graphics_graphical_detail_low</item>
+        <item>@string/setting_value_key_graphics_graphical_detail_mid</item>
+        <item>@string/setting_value_key_graphics_graphical_detail_high</item>
+    </string-array>
+
+    <string name="setting_key_graphics_scale">graphics_scale</string>
+    <string name="setting_title_graphics_scale">Game Resolution</string>
+    <string name="setting_summary_graphics_scale">Lower to improve performance and frame rate</string>
+    <string name="setting_summary_graphics_scale_disabled">Resolution is fixed on this device</string>
+    <string name="setting_label_graphics_scale">%.1f%%</string>
+
+    <string name="setting_key_graphics_rotated_preview">graphics_rotated_preview</string>
+    <string name="setting_title_graphics_rotated_preview">Rotate Previews</string>
+    <string name="setting_summary_graphics_rotated_preview">Rotate \"Next\" and \"Reserve\" piece previews by 90 degrees for a better fit</string>
+    
+    <string name="setting_key_graphics_swap_previews">graphics_swap_previews</string>
+    <string name="setting_title_graphics_swap_previews">Swap Previews</string>
+    <string name="setting_summary_graphics_swap_previews">Show \"Next\" piece preview on the right, \"Reserve\" on the left</string>
+	
+    <string name="setting_category_key_graphics_advanced">graphics_advanced</string>
+    <string name="setting_category_title_graphics_advanced">Advanced</string>
+    
+    
+	<string name="setting_key_graphics_prioritize_framerate">graphics_prioritize_framerate</string>
+	<string name="setting_title_graphics_prioritize_framerate">Prioritize Performance</string>
+	<string name="setting_summary_graphics_prioritize_framerate">Disable features and reduce graphical quality to improve in-game performance</string>
+	<string name="setting_summary_graphics_prioritize_framerate_no_effect">Performance is prioritized automatically on this device.</string>
+	
+	<string name="setting_key_graphics_skip_animations">graphics_skip_animations</string>
+	<string name="setting_title_graphics_skip_animations">Skip Animations</string>
+	<string name="setting_summary_graphics_skip_animations">For competitive players: skips animations for faster, more responsive gameplay</string>
+	<!-- GRAPHIC DETAILS END  -->    
+    
+    
+    <string name="setting_category_title_graphics_colors">Colors</string>
+    
+    <string name="setting_key_graphics_color_scheme">graphics_color_scheme</string>
+    <string name="setting_title_graphics_color_scheme">Color Scheme</string>
+    <string name="setting_summary_graphics_color_scheme">Colors used for game pieces: SETTING_VALUE_STRING_XXXX</string>
+    
+    <string name="setting_value_title_graphics_color_scheme_standard">Standard</string>
+    <string name="setting_value_title_graphics_color_scheme_protanopia">Protanopia</string>
+    <string name="setting_value_title_graphics_color_scheme_deuteranopia">Deuteranopia</string>
+    <string name="setting_value_title_graphics_color_scheme_tritanopia">Tritanopia</string>
+    <string name="setting_value_key_graphics_color_scheme_standard">standard</string>
+    <string name="setting_value_key_graphics_color_scheme_protanopia">protanopia</string>
+    <string name="setting_value_key_graphics_color_scheme_deuteranopia">deuteranopia</string>
+    <string name="setting_value_key_graphics_color_scheme_tritanopia">tritanopia</string>
+    
+    <string-array name="setting_value_title_graphics_color_scheme">
+        <item>@string/setting_value_title_graphics_color_scheme_standard</item>
+        <item>@string/setting_value_title_graphics_color_scheme_protanopia</item>
+        <item>@string/setting_value_title_graphics_color_scheme_deuteranopia</item>
+        <item>@string/setting_value_title_graphics_color_scheme_tritanopia</item>
+    </string-array>
+    
+    <string-array name="setting_value_key_graphics_color_scheme">
+        <item>@string/setting_value_key_graphics_color_scheme_standard</item>
+        <item>@string/setting_value_key_graphics_color_scheme_protanopia</item>
+        <item>@string/setting_value_key_graphics_color_scheme_deuteranopia</item>
+        <item>@string/setting_value_key_graphics_color_scheme_tritanopia</item>
+    </string-array>
+	
+    <string name="setting_key_graphics_colorblind_help">graphics_colorblind_help</string>
+    <string name="setting_title_graphics_colorblind_help">Colorblind Help</string>
+    <string name="setting_summary_graphics_colorblind_help">Additional visual detail to help differentiate colors.  May reduce frame rate.</string>
+    
+    
+    
+    
+    
+    <string name="setting_category_title_graphics_background">Background</string>
+    
+    <!-- NU-Backgrounds: multiple settings. -->
+    <!-- There are five basic background settings. -->
+    <!-- 1. Current game background.  Represents the most recently set in-game background.  As Template / Shade. -->
+    <!-- 2. BOOL: Shuffling in-game backgrounds?  If 'false', we always use current.  If 'true', we
+    		start with 'current' but shuffle through the background shuffled list. -->
+    <!-- 3. BG Shuffled!  Represents whether a particular background is currently
+    		included in the "shuffling" rotation.  By default, this is 'true' for every
+    		background EXCEPT the black 'none' background.  The storage key is a template;
+    		append the Background's unique string encoding to get the storage key for
+    		that background.  Note: behavior-wise, the current background should be
+    		included in the shuffle, even if not explicitly listed. -->
+    <!-- 4. Use in menus.  Do we use the current in-game background
+    		as our menu background. -->
+    <!-- 5. Menu Background!  If 'Copy Current' is False, we use this value as our background
+    		instead. -->
+    		
+    <!-- Subheadings -->
+    <string name="setting_category_title_background_game">Games</string>
+    <string name="setting_category_title_background_menu">Menus</string>
+    
+    
+    <!-- 1. Current background -->
+    <string name="setting_key_background_current_template">background_current_template</string>
+    <string name="setting_title_background_current_template">Image</string>
+    <string name="setting_key_background_current_shade">background_current_shade</string>
+    <string name="setting_title_background_current_shade">Color</string>
+    <string name="setting_summary_background_current_shade">Brightness</string>
+    
+    <!-- 2. Is Shuffling? -->
+    <string name="setting_key_background_shuffle">background_shuffle</string>
+    <string name="setting_title_background_shuffle">Shuffle</string>
+    <string name="setting_summary_background_shuffle">Periodically change backgrounds in-game</string>
+    <string name="setting_summary_background_shuffle_unsupported">This device does not support background shuffle</string>
+    
+    
+    <!-- 3. Is THIS BACKGROUND part of the shuffle? -->
+    <string name="setting_key_background_in_shuffle_prefix">background_in_shuffle_</string>
+    <!-- (append the background string encoding to get the bg-specific key -->
+    
+    <!-- 4. Use as menu background? -->
+    <string name="setting_key_background_menu_use_current">background_menu_use_current</string>
+    <string name="setting_title_background_menu_use_current">Use Game Background</string>
+    <string name="setting_summary_background_menu_use_current">Show the current in-game background in menus</string>
+    
+    <!-- 5. In-Menu Background!  Used only if 'background_menu_set' is false. -->
+    <string name="setting_key_background_menu_template">background_menu_template</string>
+    <string name="setting_title_background_menu_template">Image</string>
+    <string name="setting_key_background_menu_shade">background_menu_shade</string>
+    <string name="setting_title_background_menu_shade">Color</string>
+    <string name="setting_summary_background_menu_shade">Brightness</string>
+    
+    
+    
+    <!-- LEGACY: These are needed for the previous background storage method,
+    		where a single background was stored as template / color. -->
+    
+    <string name="setting_title_background_template">Image</string>
+    <string name="setting_summary_background_template_none">None: Plain black background.  Best frame rate.</string>
+    <string name="setting_summary_background_template_pieces">Pieces: A low-contrast stack of tetrominoes.</string>
+    <string name="setting_summary_background_template_spin">Spin: Don\'t get dizzy.</string>
+    <string name="setting_summary_background_template_argyle">Argyle: Everyone loves argyle.</string>
+    <string name="setting_summary_background_template_rhombi">Rhombi: Diamonds layered over each other.</string>
+    <string name="setting_summary_background_template_tartan">Tartan: Detailed fabric pattern.</string>
+    <string name="setting_summary_background_template_tilted_tartan">Tilted Tartan: Detailed fabric pattern.</string>
+    
+    
+    <string name="setting_value_title_background_template_none">None</string>
+    <string name="setting_value_title_background_template_pieces">Pieces</string>
+    <string name="setting_value_title_background_template_spin">Spin</string>
+    <string name="setting_value_title_background_template_argyle">Argyle</string>
+    <string name="setting_value_title_background_template_rhombi">Rhombi</string>
+    <string name="setting_value_title_background_template_tartan">Tartan</string>
+    <string name="setting_value_title_background_template_tilted_tartan">Tilted Tartan</string>
+    
+    
+    <string name="setting_value_key_background_template_none">none</string>
+    <string name="setting_value_key_background_template_pieces">pieces</string>
+    <string name="setting_value_key_background_template_spin">spin</string>
+    <string name="setting_value_key_background_template_argyle">argyle</string>
+    <string name="setting_value_key_background_template_rhombi">rhombi</string>
+    <string name="setting_value_key_background_template_tartan">tartan</string>
+    <string name="setting_value_key_background_template_tilted_tartan">tilted_tartan</string>
+    
+    
+    <string-array name="setting_value_title_background_template">
+        <item>@string/setting_value_title_background_template_none</item>
+        <item>@string/setting_value_title_background_template_pieces</item>
+        <item>@string/setting_value_title_background_template_spin</item>
+        <item>@string/setting_value_title_background_template_argyle</item>
+        <item>@string/setting_value_title_background_template_rhombi</item>
+        <item>@string/setting_value_title_background_template_tartan</item>
+        <item>@string/setting_value_title_background_template_tilted_tartan</item>
+        
+    </string-array>
+    
+    <string-array name="setting_value_key_background_template">
+        <item>@string/setting_value_key_background_template_none</item>
+        <item>@string/setting_value_key_background_template_pieces</item>
+        <item>@string/setting_value_key_background_template_spin</item>
+        <item>@string/setting_value_key_background_template_argyle</item>
+        <item>@string/setting_value_key_background_template_rhombi</item>
+        <item>@string/setting_value_key_background_template_tartan</item>
+        <item>@string/setting_value_key_background_template_tilted_tartan</item>
+    </string-array>
+    
+    <string name="setting_value_title_background_shade_white">White</string>
+    <string name="setting_value_title_background_shade_light">Light</string>
+    <string name="setting_value_title_background_shade_dark">Dark</string>
+    <string name="setting_value_title_background_shade_black">Black</string>
+    
+    <string-array name="setting_value_title_background_shade">
+        <item>@string/setting_value_title_background_shade_black</item>
+        <item>@string/setting_value_title_background_shade_dark</item>
+        <item>@string/setting_value_title_background_shade_light</item>
+        <item>@string/setting_value_title_background_shade_white</item>
+    </string-array>
+    
+    
+    
+    <!-- SKIN SETTINGS -->
+    <!-- We have split skins into two basic settings: Template and Color.  Not every Template supports every Color. -->
+    <!-- We abandon legacy settings... kinda. -->
+    
+    <!-- Categories -->
+    <string name="setting_category_key_skin_quantro">category_skin_quantro</string>
+    <string name="setting_category_title_skin_quantro">Quantro</string>
+    
+    <string name="setting_category_key_skin_retro">category_skin_retro</string>
+    <string name="setting_category_title_skin_retro">Retro</string>
+    
+    
+    
+    <!-- Skin Template -->
+    <string name="setting_key_skin_quantro_template">skin_quantro_template</string>
+    <string name="setting_title_skin_quantro_template">Quantro Skin</string>
+    <string name="setting_summary_skin_quantro_template">Skin used for Quantro pieces: SETTING_VALUE_STRING_XXXX</string>
+    
+    <string name="setting_key_skin_retro_template">skin_retro_template</string>
+    <string name="setting_title_skin_retro_template">Retro Skin</string>
+    <string name="setting_summary_skin_retro_template">Skin used for Retro pieces: SETTING_VALUE_STRING_XXXX</string>
+    
+    <!-- Templates: Keys and Strings. -->
+    <string name="setting_value_key_skin_template_standard">skin_template_standard</string>
+    <string name="setting_value_key_skin_template_colorblind">skin_template_colorblind</string>
+    <string name="setting_value_key_skin_template_ne0n">skin_template_ne0n</string>
+    
+    <string name="setting_value_title_skin_template_standard">Standard</string>
+    <string name="setting_value_title_skin_template_colorblind">Colorblind</string>
+    <string name="setting_value_title_skin_template_ne0n">NE0N</string>
+    
+    <!-- Skin Color -->
+    <!-- Each Template gets its own  -->
+    <string name="setting_key_skin_quantro_color">skin_quantro_color</string>
+    <string name="setting_title_skin_quantro_color">Quantro Colors</string>
+    <string name="setting_summary_skin_quantro_color">Colors for these pieces: SETTING_VALUE_STRING_XXXX</string>
+    
+    <string name="setting_key_skin_retro_color">skin_retro_color</string>
+    <string name="setting_title_skin_retro_color">Retro Colors</string>
+    <string name="setting_summary_skin_retro_color">Colors for these pieces: SETTING_VALUE_STRING_XXXX</string>
+    
+    
+    <!-- Colors: Keys, Strings, Arrays.  Each template gets its own setting key; the arrays themselves
+    		are set dynamically from the Skin class. -->
+    <string name="setting_value_key_skin_color_quantro">skin_color_quantro</string>
+    <string name="setting_value_key_skin_color_retro">skin_color_retro</string>
+    <string name="setting_value_key_skin_color_clean">skin_color_clean</string>
+    <string name="setting_value_key_skin_color_primary">skin_color_primary</string>
+    <string name="setting_value_key_skin_color_red">skin_color_red</string>
+    <string name="setting_value_key_skin_color_green">skin_color_green</string>
+    <string name="setting_value_key_skin_color_blue">skin_color_blue</string>
+    <string name="setting_value_key_skin_color_austere">skin_color_austere</string>
+    <string name="setting_value_key_skin_color_severe">skin_color_severe</string>
+    <string name="setting_value_key_skin_color_ne0n">skin_color_ne0n</string>
+    <string name="setting_value_key_skin_color_limbo">skin_color_limbo</string>
+    <string name="setting_value_key_skin_color_nile">skin_color_nile</string>
+    <string name="setting_value_key_skin_color_natural">skin_color_natural</string>
+    <string name="setting_value_key_skin_color_zen">skin_color_zen</string>
+    <string name="setting_value_key_skin_color_dawn">skin_color_dawn</string>
+    <string name="setting_value_key_skin_color_decadence">skin_color_decadence</string>
+    <string name="setting_value_key_skin_color_protanopia">skin_color_protonopia</string>
+    <string name="setting_value_key_skin_color_deuteranopia">skin_color_deuteranopia</string>
+    <string name="setting_value_key_skin_color_tritanopia">skin_color_tritanopia</string>
+    
+    <string name="setting_value_title_skin_color_quantro">Quantro</string>
+    <string name="setting_value_title_skin_color_retro">Retro</string>
+    <string name="setting_value_title_skin_color_clean">Clean</string>
+    <string name="setting_value_title_skin_color_primary">Primary</string>
+    <string name="setting_value_title_skin_color_red">Red</string>
+    <string name="setting_value_title_skin_color_green">Green</string>
+    <string name="setting_value_title_skin_color_blue">Blue</string>
+    <string name="setting_value_title_skin_color_austere">Austere</string>
+    <string name="setting_value_title_skin_color_severe">Severe</string>
+    <string name="setting_value_title_skin_color_ne0n">NE0N</string>
+    <string name="setting_value_title_skin_color_limbo">Limbo</string>
+    <string name="setting_value_title_skin_color_nile">Nile</string>
+    <string name="setting_value_title_skin_color_natural">Natural</string>
+    <string name="setting_value_title_skin_color_zen">Zen</string>
+    <string name="setting_value_title_skin_color_dawn">Dawn</string>
+    <string name="setting_value_title_skin_color_decadence">Decadence</string>
+    <string name="setting_value_title_skin_color_protanopia">Protanopia</string>
+    <string name="setting_value_title_skin_color_deuteranopia">Deuteranopia</string>
+    <string name="setting_value_title_skin_color_tritanopia">Tritanopia</string>
+    
+    
+    <!-- LEGACY: Do not delete below -->
+			    <string name="setting_key_graphics_color_scheme_quantro">graphics_color_scheme_quantro</string>
+			    <string name="setting_title_graphics_color_scheme_quantro">Quantro Color Scheme</string>
+			    <string name="setting_summary_graphics_color_scheme_quantro">Colors used for Quantro pieces: SETTING_VALUE_STRING_XXXX</string>
+			    <string name="setting_value_title_graphics_color_scheme_nile">Nile</string>
+			    <string name="setting_value_key_graphics_color_scheme_nile">nile</string>
+			    
+			    
+			    <string name="setting_key_graphics_color_scheme_retro">graphics_color_scheme_retro</string>
+			    <string name="setting_title_graphics_color_scheme_retro">Retro Color Scheme</string>
+			    <string name="setting_summary_graphics_color_scheme_retro">Colors used for Retro pieces: SETTING_VALUE_STRING_XXXX</string>
+			    <string name="setting_value_title_graphics_color_scheme_ne0n">NE0N</string>
+			    <string name="setting_value_key_graphics_color_scheme_ne0n">ne0n</string>
+			    <!-- LEGACY: Do not delete below -->
+			    <!-- LEGACY: Do not delete above -->
+			    
+			    <string-array name="setting_value_title_graphics_color_scheme_quantro">
+			        <item>@string/setting_value_title_graphics_color_scheme_standard</item>
+			        <item>@string/setting_value_title_graphics_color_scheme_nile</item>
+			        <item>@string/setting_value_title_graphics_color_scheme_protanopia</item>
+			        <item>@string/setting_value_title_graphics_color_scheme_deuteranopia</item>
+			        <item>@string/setting_value_title_graphics_color_scheme_tritanopia</item>
+			    </string-array>
+			    <string-array name="setting_value_key_graphics_color_scheme_quantro">
+			        <item>@string/setting_value_key_graphics_color_scheme_standard</item>
+			        <item>@string/setting_value_key_graphics_color_scheme_nile</item>
+			        <item>@string/setting_value_key_graphics_color_scheme_protanopia</item>
+			        <item>@string/setting_value_key_graphics_color_scheme_deuteranopia</item>
+			        <item>@string/setting_value_key_graphics_color_scheme_tritanopia</item>
+			    </string-array>
+			    <string-array name="setting_value_title_graphics_color_scheme_retro">
+			        <item>@string/setting_value_title_graphics_color_scheme_standard</item>
+			        <item>@string/setting_value_title_graphics_color_scheme_ne0n</item>
+			        <item>@string/setting_value_title_graphics_color_scheme_protanopia</item>
+			        <item>@string/setting_value_title_graphics_color_scheme_deuteranopia</item>
+			        <item>@string/setting_value_title_graphics_color_scheme_tritanopia</item>
+			    </string-array>
+			    <string-array name="setting_value_key_graphics_color_scheme_retro">
+			        <item>@string/setting_value_key_graphics_color_scheme_standard</item>
+			        <item>@string/setting_value_key_graphics_color_scheme_ne0n</item>
+			        <item>@string/setting_value_key_graphics_color_scheme_protanopia</item>
+			        <item>@string/setting_value_key_graphics_color_scheme_deuteranopia</item>
+			        <item>@string/setting_value_key_graphics_color_scheme_tritanopia</item>
+			    </string-array>
+    <!-- LEGACY: Do not delete above -->
+    
+    
+    <!-- "SOUND" settings -->
+    <string name="setting_category_title_sound_volume">Volume and Muting</string>
+    
+    <string name="setting_key_sound_mute_on_ringer_silent">sound_mute_on_ringer_silent</string>
+    <string name="setting_title_sound_mute_on_ringer_silent">Mute With Ringer</string>
+    <string name="setting_summary_sound_mute_on_ringer_silent">Completely mute Quantro when your phone\'s ringer is set to silent.</string>
+    
+    <string name="setting_key_sound_play">sound_play</string>
+    <string name="setting_title_sound_play">Play Sounds</string>
+    <string name="setting_summary_sound_play">Play music and sound effects through speakers or headphones</string>
+    
+    <string name="setting_key_sound_music_volume">sound_music_volume</string>
+    <string name="setting_title_sound_music_volume">Music Volume</string>
+    <string name="setting_summary_sound_music_volume">In-game music</string>
+    
+    <string name="setting_key_sound_sound_volume">sound_sound_volume</string>
+    <string name="setting_title_sound_sound_volume">Sound Volume</string>
+    <string name="setting_summary_sound_sound_volume">In-game sound effects</string>
+    
+    <string name="setting_key_sound_controls">sound_controls</string>
+    <string name="setting_title_sound_controls">Controls</string>
+    <string name="setting_summary_sound_controls">Play sounds for button presses</string>
+    
+    <string name="setting_category_title_sound_menu_music">Music Tracks</string>
+    
+    <string name="setting_key_sound_music_in_menu">sound_music_in_menu</string>
+    <string name="setting_title_sound_music_in_menu">Menu Music</string>
+    <string name="setting_summary_sound_music_in_menu">Music played in the main menu: SETTING_VALUE_STRING_XXXX</string>
+    
+    <string name="setting_key_sound_music_in_lobby">sound_music_in_lobby</string>
+    <string name="setting_title_sound_music_in_lobby">Lobby Music</string>
+    <string name="setting_summary_sound_music_in_lobby">Music played in the multiplayer lobbies: SETTING_VALUE_STRING_XXXX</string>
+    
+    <string name="setting_value_key_sound_music_main_theme">sound_music_main_theme</string>
+    <string name="setting_value_key_sound_music_waiting">sound_music_waiting</string>
+    <string name="setting_value_key_sound_music_quantro_1">sound_music_quantro_1</string>
+    <string name="setting_value_key_sound_music_quantro_2">sound_music_quantro_2</string>
+    <string name="setting_value_key_sound_music_retro_1">sound_music_retro_1</string>
+    <string name="setting_value_key_sound_music_retro_2">sound_music_retro_2</string>
+    <string name="setting_value_key_sound_music_none">sound_music_none</string>
+    
+    <string name="setting_value_title_sound_music_main_theme">Main Theme</string>
+    <string name="setting_value_title_sound_music_waiting">Waiting</string>
+    <string name="setting_value_title_sound_music_quantro_1">Quantro 1</string>
+    <string name="setting_value_title_sound_music_quantro_2">Quantro 2</string>
+    <string name="setting_value_title_sound_music_retro_1">Retro 1</string>
+    <string name="setting_value_title_sound_music_retro_2">Retro 2</string>
+    <string name="setting_value_title_sound_music_none">None</string>
+    
+    <string-array name="setting_value_title_sound_music">
+        <item>@string/setting_value_title_sound_music_main_theme</item>
+        <item>@string/setting_value_title_sound_music_waiting</item>
+        <item>@string/setting_value_title_sound_music_quantro_1</item>
+        <item>@string/setting_value_title_sound_music_quantro_2</item>
+        <item>@string/setting_value_title_sound_music_retro_1</item>
+        <item>@string/setting_value_title_sound_music_retro_2</item>
+        <item>@string/setting_value_title_sound_music_none</item>
+    </string-array>
+    <string-array name="setting_value_key_sound_music">
+        <item>@string/setting_value_key_sound_music_main_theme</item>
+        <item>@string/setting_value_key_sound_music_waiting</item>
+        <item>@string/setting_value_key_sound_music_quantro_1</item>
+        <item>@string/setting_value_key_sound_music_quantro_2</item>
+        <item>@string/setting_value_key_sound_music_retro_1</item>
+        <item>@string/setting_value_key_sound_music_retro_2</item>
+        <item>@string/setting_value_key_sound_music_none</item>
+    </string-array>
+    
+    <!-- "GAME" settings -->
+    <string name="setting_category_title_game_all">All Games</string>
+    <string name="setting_category_title_game_single_player">Single-Player</string>
+    <string name="setting_category_title_game_multiplayer">Multiplayer</string>
+    
+    <string name="setting_key_game_piece_tips">game_piece_tips</string>
+    <string name="setting_title_game_piece_tips">Piece Tips</string>
+    <string name="setting_summary_game_piece_tips">Display in-game Quantro gameplay reminders: SETTING_VALUE_STRING_XXXX</string>
+    
+    <string name="setting_value_key_game_piece_tips_never">game_piece_tips_never</string>
+    <string name="setting_value_key_game_piece_tips_occasionally">game_piece_tips_occasionally</string>
+    <string name="setting_value_key_game_piece_tips_often">game_piece_tips_often</string>
+    <string name="setting_value_title_game_piece_tips_never">Never</string>
+    <string name="setting_value_title_game_piece_tips_occasionally">Occasionally</string>
+    <string name="setting_value_title_game_piece_tips_often">Often</string>
+    
+    <string-array name="setting_value_key_game_piece_tips">
+        <item>@string/setting_value_key_game_piece_tips_never</item>
+        <item>@string/setting_value_key_game_piece_tips_occasionally</item>
+        <item>@string/setting_value_key_game_piece_tips_often</item>
+    </string-array>
+    
+    <string-array name="setting_value_title_game_piece_tips">
+        <item>@string/setting_value_title_game_piece_tips_never</item>
+        <item>@string/setting_value_title_game_piece_tips_occasionally</item>
+        <item>@string/setting_value_title_game_piece_tips_often</item>
+    </string-array>
+    
+    <string name="setting_key_game_new_game_custom">new_game_custom</string>
+    <string name="setting_title_game_new_game_custom">Remember 1-Player Setup</string>
+    <string name="setting_summary_game_new_game_custom">Always start 1-player games with the most-recent custom setup (starting level, garbage rows, etc.)</string>
+    
+    <!-- LEGACY: We now use the options menu instead. -->
+		    <string name="setting_key_game_warn_before_quit">game_warn_before_quit</string>
+		    <string name="setting_title_game_warn_before_quit">Warn Before Quitting</string>
+		    <string name="setting_summary_game_warn_before_quit">Warn before quitting a game with the \'Back\' button</string>
+    
+    <string name="setting_key_game_back_button">game_back_button</string>
+	<string name="setting_title_game_back_button">Back Button</string>
+	<string name="setting_summary_game_back_button">The \'Back\' button will: SETTING_VALUE_STRING_XXXX</string>
+	
+	<string name="setting_value_key_game_back_button_quit">game_back_button_quit</string>
+    <string name="setting_value_key_game_back_button_menu">game_back_button_menu</string>
+    <string name="setting_value_key_game_back_button_ask">game_back_button_ask</string>
+    <string name="setting_value_title_game_back_button_quit">Quit</string>
+    <string name="setting_value_title_game_back_button_menu">Show game options</string>
+    <string name="setting_value_title_game_back_button_ask">Ask</string>
+    
+    <string-array name="setting_value_key_game_back_button">
+        <item>@string/setting_value_key_game_back_button_quit</item>
+        <item>@string/setting_value_key_game_back_button_menu</item>
+        <item>@string/setting_value_key_game_back_button_ask</item>
+    </string-array>
+    
+    <string-array name="setting_value_title_game_back_button">
+        <item>@string/setting_value_title_game_back_button_quit</item>
+        <item>@string/setting_value_title_game_back_button_menu</item>
+        <item>@string/setting_value_title_game_back_button_ask</item>
+    </string-array>
+		    
+    
+    <string name="setting_key_game_multiplayer_name">game_multiplayer_name</string>
+    <string name="setting_title_game_multiplayer_name">Multiplayer Name</string>
+    <string name="setting_summary_game_multiplayer_name">Your name, shown to all multiplayer opponents: SETTING_VALUE_STRING_XXXX</string>
+    <string name="setting_dialog_game_multiplayer_name">Your name, shown to all multiplayer opponents</string>
+    
+    <string name="setting_key_game_default_lobby_name">game_default_lobby_name</string>
+    <string name="setting_title_game_default_lobby_name">Default WiFi Lobby</string>
+    <string name="setting_summary_game_default_lobby_name">Default name for WiFi multiplayer lobbies: SETTING_VALUE_STRING_XXXX</string>
+    <string name="setting_dialog_game_default_lobby_name">Default name for Wifi multiplayer lobbies</string>
+    
+    <string name="setting_key_game_default_lobby_large">game_default_lobby_large</string>
+	<string name="setting_key_game_default_lobby_size">game_default_lobby_size</string>
+	
+    
+    
+    <string name="setting_key_game_default_internet_lobby_name">game_default_internet_lobby_name</string>
+    <string name="setting_title_game_default_internet_lobby_name">Default Internet Lobby</string>
+    <string name="setting_summary_game_default_internet_lobby_name">Default name for Internet multiplayer lobbies: SETTING_VALUE_STRING_XXXX</string>
+    <string name="setting_dialog_game_default_internet_lobby_name">Default name for Internet multiplayer lobbies</string>
+    
+    <string name="setting_key_game_default_internet_lobby_large">game_default_internet_lobby_large</string>
+    <string name="setting_key_game_default_internet_lobby_size">game_default_internet_lobby_size</string>
+    <string name="setting_key_game_default_internet_lobby_type">game_default_internet_lobby_type</string>
+    
+    
+    <string name="setting_key_game_in_game_chat">game_in_game_chat</string>
+    <string name="setting_title_game_in_game_chat">Chat in Status Bar</string>
+    <string name="setting_summary_game_in_game_chat">Use the Status Bar to display lobby chat messages when in a game or in another app</string>
+    
+    
+    
+    <!-- *********************************************************************** -->
+    <!-- Headers -->
+    <string name="setting_category_key_controls_style">category_controls_style</string>
+    <string name="setting_category_title_controls_style">Style</string>
+    <!-- Controls settings -->
+    <string name="setting_key_controls_template">controls_template</string>
+    <string name="setting_title_controls_template">Control Style</string>
+    <string name="setting_summary_controls_template_gamepad">Gamepad: touchscreen \"gamepad\" covering the entire screen.  Recommended for 4\" or smaller screens.</string>
+    <string name="setting_summary_controls_template_gesture">Gesture: drag and fling pieces using gestures.  Recommended for 5\" or larger screens.</string>
+    
+    <string name="setting_value_key_controls_template_gamepad">controls_template_gamepad</string>
+    <string name="setting_value_key_controls_template_gesture">controls_template_gesture</string>
+    <string name="setting_value_title_controls_template_gamepad">Gamepad</string>
+    <string name="setting_value_title_controls_template_gesture">Gesture</string>
+
+    <string-array name="setting_value_key_controls_template">
+        <item>@string/setting_value_key_controls_template_gamepad</item>
+        <item>@string/setting_value_key_controls_template_gesture</item>
+    </string-array>
+    
+    <string-array name="setting_value_title_controls_template">
+        <item>@string/setting_value_title_controls_template_gamepad</item>
+        <item>@string/setting_value_title_controls_template_gesture</item>
+    </string-array>
+    
+    <string name="setting_key_controls_show">controls_show</string>
+    <string name="setting_title_controls_show">Show Button Presses</string>
+    <string name="setting_summary_controls_show">Buttons appear on-screen while they are pressed</string>
+    
+    <string name="setting_category_key_controls_gamepad_config">category_controls_gamepad_config</string>
+    <string name="setting_category_key_controls_gamepad_customization">category_controls_gamepad_customization</string>
+    <string name="setting_category_key_controls_gesture_config">category_controls_gesture_config</string>
+    <string name="setting_category_key_controls_gesture_customization">category_controls_gesture_customization</string>
+    
+    <string name="setting_category_title_controls_gamepad_config">Gamepad Settings</string>
+    <string name="setting_category_title_controls_gamepad_customization">Advanced Customization</string>
+    <string name="setting_category_title_controls_gesture_config">Gesture Settings</string>
+    <string name="setting_category_title_controls_gesture_customization">Advanced Customization</string>
+    
+    <!-- Gamepad Details -->
+    <string name="setting_key_controls_gamepad_quick_slide">controls_gamepad_quick_slide</string>
+    <string name="setting_title_controls_gamepad_quick_slide">Quick Slide</string>
+    <string name="setting_summary_controls_gamepad_quick_slide">Hold Left or Right to quickly slide in that direction</string>
+    
+    <string name="setting_key_controls_gamepad_down">controls_gamepad_down</string>
+    <string name="setting_title_controls_gamepad_down">Drop Button</string>
+    <!-- summary is based on value -->
+    <string name="setting_value_key_controls_gamepad_down_fall">controls_gamepad_down_fall</string>
+    <string name="setting_value_key_controls_gamepad_down_drop">controls_gamepad_down_drop</string>
+    <string name="setting_value_title_controls_gamepad_down_fall">Fall Quickly</string>
+    <string name="setting_value_title_controls_gamepad_down_drop">Drop Immediately</string>
+    <string name="setting_summary_controls_gamepad_down_fall">Fall Quickly: pieces fall more quickly while the \"drop\" button is held</string>
+    <string name="setting_summary_controls_gamepad_down_drop">Drop Immediately: pressing \"drop\" will immediately drop the piece to its landing position</string>
+    
+    
+    <string-array name="setting_value_key_controls_gamepad_down">
+        <item>@string/setting_value_key_controls_gamepad_down_fall</item>
+        <item>@string/setting_value_key_controls_gamepad_down_drop</item>
+    </string-array>
+    
+    <string-array name="setting_value_title_controls_gamepad_down">
+        <item>@string/setting_value_title_controls_gamepad_down_fall</item>
+        <item>@string/setting_value_title_controls_gamepad_down_drop</item>
+    </string-array>
+    
+    <string name="setting_key_controls_gamepad_down_autolock">controls_gamepad_autolock</string>
+    <string name="setting_title_controls_gamepad_down_autolock">Drop Button Locks</string>
+    <string name="setting_summary_controls_gamepad_down_autolock">Pieces automatically land and lock when the \"drop\" button is pressed (prevents downward-leans)</string>
+	
+    <string name="setting_key_controls_gamepad_double_down_drop">controls_gamepad_double_down_drop</string>
+    <string name="setting_title_controls_gamepad_double_down_drop">Double-Tap Drops</string>
+    <string name="setting_summary_controls_gamepad_double_down_drop">Drop and lock a piece immediately by double-tapping the \"drop\" button</string>
+    
+    <!-- Gamepad Customization -->
+    <string name="setting_key_controls_gamepad_use_custom">controls_gamepad_use_custom</string>
+    <string name="setting_title_controls_gamepad_use_custom">Advanced Customization</string>
+    <string name="setting_summary_controls_gamepad_use_custom">Allow advanced customization options</string>
+    
+    <string name="setting_key_controls_gamepad_swap_turn_move">controls_gamepad_swap_turn_move</string>
+    <string name="setting_title_controls_gamepad_swap_turn_move">Swap Turn &amp; Move</string>
+    <string name="setting_summary_controls_gamepad_swap_turn_move">Place turn buttons on the bottom row and move buttons above</string>
+    
+    <!-- Center button size -->
+    <string name="setting_key_controls_gamepad_center_button_width">controls_gamepad_center_button_width</string>
+    <string name="setting_title_controls_gamepad_center_button_width">Scale Drop Button Width</string>
+    <!-- summary is based on value -->
+    <string name="setting_value_key_controls_gamepad_center_button_width_standard">controls_gamepad_center_button_width_standard</string>
+    <string name="setting_value_key_controls_gamepad_center_button_width_panel_to_panel">controls_gamepad_center_button_width_panel_to_panel</string>
+    <string name="setting_value_key_controls_gamepad_center_button_width_custom">controls_gamepad_center_button_width_custom</string>
+    <string name="setting_value_title_controls_gamepad_center_button_width_standard">Standard</string>
+    <string name="setting_value_title_controls_gamepad_center_button_width_panel_to_panel">Panel-to-Panel</string>
+    <string name="setting_value_title_controls_gamepad_center_button_width_custom">Custom</string>
+    <string name="setting_summary_controls_gamepad_center_button_width_standard">Standard: The \"drop\" button matches others in width</string>
+    <string name="setting_summary_controls_gamepad_center_button_width_panel_to_panel">Panel-to-Panel: The \"drop\" button fits exactly between the left and right side panels</string>
+    <string name="setting_summary_controls_gamepad_center_button_width_custom">Custom: Scale the \"drop\" button width below</string>
+    
+    
+    <string-array name="setting_value_key_controls_gamepad_center_button_width">
+        <item>@string/setting_value_key_controls_gamepad_center_button_width_standard</item>
+        <item>@string/setting_value_key_controls_gamepad_center_button_width_panel_to_panel</item>
+        <item>@string/setting_value_key_controls_gamepad_center_button_width_custom</item>
+    </string-array>
+    
+    <string-array name="setting_value_title_controls_gamepad_center_button_width">
+        <item>@string/setting_value_title_controls_gamepad_center_button_width_standard</item>
+        <item>@string/setting_value_title_controls_gamepad_center_button_width_panel_to_panel</item>
+        <item>@string/setting_value_title_controls_gamepad_center_button_width_custom</item>
+    </string-array>
+    
+    <string name="setting_key_controls_gamepad_center_button_width_factor">controls_gamepad_center_button_width_factor</string>
+    <string name="setting_title_controls_gamepad_center_button_width_factor">Custom Width</string>
+    <string name="setting_summary_controls_gamepad_center_button_width_factor">Scale factor for the \"drop\" button width</string>
+    
+    <string name="setting_key_controls_gamepad_custom_height">controls_gamepad_custom_height</string>
+    <string name="setting_title_controls_gamepad_custom_height">Scale Button Height</string>
+    <string name="setting_summary_controls_gamepad_custom_height">Scale height of the movement buttons by the amount below</string>
+    
+    <string name="setting_key_controls_gamepad_custom_height_factor">controls_gamepad_custom_height_factor</string>
+    <string name="setting_title_controls_gamepad_custom_height_factor">Custom Height</string>
+    <string name="setting_summary_controls_gamepad_custom_height_factor">Scale factor for movement button height</string>
+	
+    
+    <!-- Gesture Details -->
+    <string name="setting_key_controls_gesture_quick_slide">controls_gesture_quick_slide</string>
+    <string name="setting_title_controls_gesture_quick_slide">Quick Slide</string>
+    <string name="setting_summary_controls_gesture_quick_slide">Fling Left or Right to quickly slide in that direction</string>
+    
+    <string name="setting_key_controls_gesture_drag_down_autolock">controls_gesture_drag_down_autolock</string>
+    <string name="setting_title_controls_gesture_drag_down_autolock">Drag Down to Lock</string>
+    <string name="setting_summary_controls_gesture_drag_down_autolock">Pieces automatically land and lock when dragged downward (prevents downward leans)</string>
+    
+    <string name="setting_key_controls_gesture_turn_buttons">controls_gesture_turn_buttons</string>
+    <string name="setting_title_controls_gesture_turn_buttons">Turn Buttons</string>
+    <string name="setting_summary_controls_gesture_turn_buttons">Include on-screen turn buttons (smaller gesture area, but allows 180 turns)</string>
+    
+    <string name="setting_key_controls_gesture_use_custom">controls_gesture_use_custom</string>
+    <string name="setting_title_controls_gesture_use_custom">Advanced Customization</string>
+    <string name="setting_summary_controls_gesture_use_custom">Allow advanced customization options</string>
+    
+    <string name="setting_key_controls_gesture_drag_exaggeration">controls_gesture_drag_exaggeration</string>
+    <string name="setting_title_controls_gesture_drag_exaggeration">Drag Exaggeration</string>
+    <string name="setting_summary_controls_gesture_drag_exaggeration">Distance pieces are dragged compared to gesture</string>
+    
+    
+    <string name="setting_key_controls_gesture_fling_sensitivity">controls_gesture_fling_sensitivity</string>
+    <string name="setting_title_controls_gesture_fling_sensitivity">Fling Sensitivity</string>
+    <string name="setting_summary_controls_gesture_fling_sensitivity">Eagerness to "fling" a piece upon release</string>
+    
+    
+    <!-- *********************************************************************** -->
+    
+    <!-- "QUANTRO XL" settings.  No longer linked to premium keys; name retained for legacy purposes. -->
+    <string name="setting_key_xl_fullscreen_game">xl_fullscreen_game</string>
+    <string name="setting_title_xl_fullscreen_game">Games XL</string>
+    <string name="setting_summary_xl_fullscreen_game">Full-screen the game by hiding the status bar</string>
+    
+    <string name="setting_key_xl_fullscreen_menu">xl_fullscreen_menu</string>
+    <string name="setting_title_xl_fullscreen_menu">Menus XL</string>
+    <string name="setting_summary_xl_fullscreen_menu">Full-screen menus by hiding the status bar</string>
+    
+    <string name="setting_key_xl_fullscreen_lobby">xl_fullscreen_lobby</string>
+    <string name="setting_title_xl_fullscreen_lobby">Lobbies XL</string>
+    <string name="setting_summary_xl_fullscreen_lobby">Full-screen multiplayer lobbies by hiding the status bar</string>   
+    
+    
+    <string name="setting_key_full_screen_immersive_game">full_screen_immersive_game</string>
+    <string name="setting_title_full_screen_immersive_game">Games</string>
+    <string name="setting_summary_full_screen_immersive_game">Full-screen games for full immersion: SETTING_VALUE_STRING_XXXX</string>
+    
+    <string name="setting_key_full_screen_immersive_menu">full_screen_immersive_menu</string>
+    <string name="setting_title_full_screen_immersive_menu">Menus</string>
+    <string name="setting_summary_full_screen_immersive_menu">Hide status bar in menus: SETTING_VALUE_STRING_XXXX</string>
+    
+    <string name="setting_key_full_screen_immersive_lobby">full_screen_immersive_lobby</string>
+    <string name="setting_title_full_screen_immersive_lobby">Lobbies</string>
+    <string name="setting_summary_full_screen_immersive_lobby">Hide status bar in lobbies: SETTING_VALUE_STRING_XXXX</string>
+    
+    
+    
+    <string name="setting_value_key_full_screen_immersive_off">full_screen_immersive_off</string>
+    <string name="setting_value_key_full_screen_immersive_nav_only">full_screen_immersive_nav_only</string>
+    <string name="setting_value_key_full_screen_immersive_on">full_screen_immersive_on</string>
+    <string name="setting_value_title_full_screen_immersive_off">No</string>
+    <string name="setting_value_title_full_screen_immersive_nav_only">Hide Status Bar</string>
+    <string name="setting_value_title_full_screen_immersive_hide_status_bar">Yes</string>
+    <string name="setting_value_title_full_screen_immersive_on">Yes</string>
+    
+    <string-array name="setting_value_key_full_screen_immersive_game">
+        <item>@string/setting_value_key_full_screen_immersive_off</item>
+        <item>@string/setting_value_key_full_screen_immersive_nav_only</item>
+        <item>@string/setting_value_key_full_screen_immersive_on</item>
+    </string-array>
+    
+    <string-array name="setting_value_title_full_screen_immersive_game">
+        <item>@string/setting_value_title_full_screen_immersive_off</item>
+        <item>@string/setting_value_title_full_screen_immersive_nav_only</item>
+        <item>@string/setting_value_title_full_screen_immersive_on</item>
+    </string-array>
+    
+    <string-array name="setting_value_key_full_screen_immersive_non_game">
+        <item>@string/setting_value_key_full_screen_immersive_off</item>
+        <item>@string/setting_value_key_full_screen_immersive_nav_only</item>
+    </string-array>
+    
+    <string-array name="setting_value_title_full_screen_immersive_non_game">
+        <item>@string/setting_value_title_full_screen_immersive_off</item>
+        <item>@string/setting_value_title_full_screen_immersive_hide_status_bar</item>
+    </string-array>
+    
+    
+    <!-- "LEADERBOARD" settings -->
+    <string name="setting_category_title_social_scores">Scores</string>
+    
+    <string name="setting_key_social_auto_upload">social_upload_automatically</string>
+    <string name="setting_title_social_auto_upload">Upload Automatically</string>
+    <string name="setting_summary_social_auto_upload">Automatically send your ranked game scores to the global leaderboards</string>
+    
+    <string name="setting_key_social_scoreloop_badge">social_scoreloop_badge</string>
+    <string name="setting_title_social_scoreloop_badge">Scoreloop Badge</string>
+    <string name="setting_summary_social_scoreloop_badge">Show the Scoreloop badge when a ranked game ends</string>
+    
+    
+    <!-- "NETWORK" settings -->
+    <string name="setting_key_network_wifi_lock">network_wifi_lock</string>
+    <string name="setting_title_network_wifi_lock">High Performance</string>
+    <string name="setting_summary_network_wifi_lock">More reliable lobby connections when WiFi is available (higher power usage)</string>
+
+    
+    <!-- ANALYTICS settings -->
+    <string name="setting_key_analytics_active">analytics_active</string>
+    <string name="setting_title_analytics_active">Anonymous Analytics</string>
+    <string name="setting_summary_analytics_active">Collect anonymous usage data to help fix bugs and improve Quantro</string>
+    
+    <string name="setting_key_analytics_aggregated">analytics_aggregated</string>
+    <string name="setting_title_analytics_aggregated">Aggregate Data</string>
+    <string name="setting_summary_analytics_aggregated">Aggregate your anonymous data with other anonymous users\'.  Aggregated data is less detailed but less useful.</string>
+    
+    
+    
+    
+    
+    <!-- "PRIVATE ACTIVITY" settings -->
+    <string name="setting_key_private_prefix">private_activity_setting_</string>
+    
+    
+</resources>

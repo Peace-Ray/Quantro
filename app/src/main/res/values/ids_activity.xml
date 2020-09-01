@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- IDs used for Quantro Activities so consistent behavior can be
+    	applied by QuantroActivity on its subclasses and their layouts. -->
+    	
+    <!-- An ImageView which displays itself as the background of a menu. -->
+    <item	type="id"
+        	name="menu_background"/>
+</resources>

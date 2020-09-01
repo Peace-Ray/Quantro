@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:gravity="center"
+  android:padding="8dp">
+  
+  
+  	<!-- The components outside this scrollView use wrap_content for their height; with weight=0,
+  			we fill the remaining space with this scroll view. -->
+    <ScrollView
+	    android:layout_width="fill_parent"
+	  	android:layout_height="0dp"
+	  	android:layout_weight="1"
+		>
+  
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+		
+			 <!-- com.peaceray.quantro.view.generic.MagicTextView for Lobby name -->
+			 <com.peaceray.quantro.view.generic.MagicTextView
+			 	android:layout_width="fill_parent"
+			 	android:layout_height="wrap_content"
+			 	android:id="@+id/examine_lobby_name"
+				android:gravity="left"
+				android:paddingLeft="12dp"
+				android:paddingRight="12dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				android:textSize="24sp"
+				android:textColor="@color/bright_text"
+				custom:typeface="Roboto-Condensed"/>
+	
+			<!-- Displaying lobby information -->
+			<com.peaceray.quantro.view.generic.MagicTextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/examine_lobby_info"
+				android:textColor="@color/mid_text"
+				android:paddingLeft="12dp"
+				android:paddingRight="12dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				custom:typeface="Roboto-Condensed"/>
+			<com.peaceray.quantro.view.generic.MagicTextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/examine_lobby_population"
+				android:textColor="@color/mid_text"
+				android:paddingLeft="12dp"
+				android:paddingRight="12dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				custom:typeface="Roboto-Condensed"/>
+			
+		</LinearLayout>
+	</ScrollView>
+  	
+  	
+  <!-- A divider we can color -->
+  <LinearLayout
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:paddingLeft="12dp"
+  	android:paddingRight="12dp"
+  	android:orientation="vertical">
+	  <View
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="5dip"
+	  	/>
+	  <View
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="1.5dip"
+	  	android:id="@+id/examine_lobby_bottom_divider"
+	  	/>
+	  <View
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="5dip"
+	  	/>
+  </LinearLayout>
+  	
+  <!-- Action query -->
+  <com.peaceray.quantro.view.generic.MagicTextView
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:id="@+id/examine_lobby_text_view_action_query"
+	android:gravity="center"
+	android:textSize="18sp"
+	android:paddingLeft="2dp"
+	android:paddingRight="2dp"
+	android:paddingTop="2dp"
+	android:textColor="@color/bright_text"
+	custom:typeface="Roboto-Condensed"
+	/>
+  
+  <!-- button strip -->
+   	<!-- some spacing -->
+    <View
+       android:layout_width="fill_parent"
+       android:layout_height="@dimen/dialog_button_top_margin"/>
+    
+    <include layout="@layout/dialog_button_strip"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+  
+</LinearLayout>

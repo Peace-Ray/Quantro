@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Unique Shines -->
+    <color   name="nile_s0_shine">#ffc2e6f8</color>
+    <integer name="nile_s0_shine_shape">@integer/block_shine_shape_full_wrap_bottom_right</integer>
+    <integer name="nile_s0_shine_alpha">@integer/block_shine_alpha_range_bold</integer>
+    <color   name="nile_s1_shine">#fffff84c</color>
+    <integer name="nile_s1_shine_shape">@integer/block_shine_shape_full_wrap_top_left</integer>
+    <integer name="nile_s1_shine_alpha">@integer/block_shine_alpha_range_bold</integer>
+    
+    <color   name="nile_sl_0_shine">#ffc2e6f8</color>
+    <integer name="nile_sl_0_shine_shape">@integer/block_shine_shape_full_wrap_bottom_right</integer>
+    <integer name="nile_sl_0_shine_alpha">@integer/block_shine_alpha_range_weak</integer>
+    <color   name="nile_sl_1_shine">#fffff84c</color>
+    <integer name="nile_sl_1_shine_shape">@integer/block_shine_shape_full_wrap_top_left</integer>
+    <integer name="nile_sl_1_shine_alpha">@integer/block_shine_alpha_range_weak</integer>
+    
+    
+    <!-- Quantro colors -->
+	<color name="nile_s0_fill">#ff56aaf1</color>		<!-- ICE! -->
+	<color name="nile_s1_fill">#fff86d02</color>		<!-- FIRE! -->
+	
+	<color name="nile_st_fill">#ffff23d3</color>		<!--  BRIGHT fuschia (too bright?) -->
+	<color name="nile_sl_s0_fill">#ff606060</color>
+	<color name="nile_sl_s1_fill">#ff606060</color>
+	<color name="nile_sl_active_s0_fill">#ff000000</color>
+	<color name="nile_sl_active_s1_fill">#ff000000</color>
+	<color name="nile_ul_fill">#ffffffff</color>
+	<color name="nile_u0_fill">#ff56aaf1</color>
+	<color name="nile_u1_fill">#fff86d02</color>
+	<color name="nile_f0_fill">#ff22ff24</color>
+	<color name="nile_f1_fill">#ff22ff24</color>
+	
+	<color name="nile_s0_border">#ff05b1f3</color>
+	<color name="nile_s1_border">#ffff770e</color>
+	
+	<!-- sticky borders might have different colors depending on the qPane -->
+	<color name="nile_st_s0_border">#ff9061e1</color>		<!-- bluish purple... -->
+	<color name="nile_st_s1_border">#ffff5068</color>		<!-- reddish purple -->
+	<!-- linked borders might have very low-saturation colors -->
+	<color name="nile_sl_s0_border">#ff606060</color>		<!-- low-sat red... -->
+	<color name="nile_sl_s1_border">#ff606060</color>		<!-- low-sat blue -->
+	<color name="nile_sl_active_s0_border">#ffffffff</color>
+	<color name="nile_sl_active_s1_border">#ffffffff</color>
+	
+	<!-- flash borders might have different colors as well -->
+	<color name="nile_f0_border">#ff0ecbac</color>
+	<color name="nile_f1_border">#ffdd8b11</color>
+	
+	<!-- Special detail colors for composing bitmaps and the like. -->
+	<color name="nile_f0_detail_burst">#ff5faca2</color>
+	<color name="nile_f0_detail_stripe">#ff22ff24</color>
+	<color name="nile_f1_detail_burst">#ff5faca2</color>
+	<color name="nile_f1_detail_stripe">#ff22ff24</color>
+	
+	
+	<!-- SHADOWS! -->
+	<color name="nile_sl_active_inner_shadow">#ff000000</color>
+    
+</resources>

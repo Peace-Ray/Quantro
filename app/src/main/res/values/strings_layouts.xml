@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="characters_remaining_prefix">\u0020</string>
+	<string name="characters_remaining_suffix">\u0020</string>
+
+</resources>

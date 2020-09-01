@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Height WAS 64dp -->
+<com.peaceray.quantro.view.button.strip.CustomButtonStrip
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	
+	custom:cbs_button_0_title="@string/free_play_game_manager_action_bar_title"
+	custom:cbs_button_0_description="@string/free_play_game_manager_action_bar_description"
+	custom:cbs_button_0_color="@color/freeplay_main"
+	
+	custom:cbs_button_1_title="@string/free_play_game_manager_action_bar_new_game_mode_title"
+	custom:cbs_button_1_image_drawable="@drawable/action_edit_new_baked"
+	custom:cbs_button_1_name="@string/action_strip_name_new"
+	custom:cbs_button_1_color="@color/freeplay_new_game_mode"
+	
+	custom:cbs_button_2_title="@string/free_play_game_manager_action_bar_settings_title"
+	custom:cbs_button_2_image_drawable="@drawable/action_settings_baked"
+	custom:cbs_button_2_name="@string/action_strip_name_settings"
+	custom:cbs_button_2_color="@color/freeplay_settings"
+	
+	
+	
+	
+	custom:button_layout="@layout/action_bar_image_button"
+	
+	custom:overflow="force"
+	custom:trim="runs_left"
+	
+	custom:button_border_width = "4dip"
+	custom:button_gradient_height="0dip"
+	custom:sub_button_border_inset="0dip"
+	custom:main_button_horizontal_offset="0dip"
+	custom:button_horizontal_separation="3dip"
+	android:paddingLeft="20dp"
+	android:paddingRight="3dp"
+	android:paddingBottom="4dp"
+	android:paddingTop="4dp"
+	>
+  
+  		<!-- Include three buttons -->
+   		<com.peaceray.quantro.view.button.QuantroButton
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 custom:content_layout="@layout/content_title_big_left_gravity"
+				 android:clickable="false"
+				 android:enabled="false"/>
+		
+   		
+   		<!-- Leaderboards... -->
+   		<!-- 
+		<com.peaceray.quantro.view.button.QuantroButton
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 custom:content_layout="@layout/content_image"
+				 android:clickable="true"
+				 android:enabled="true"/>
+		
+		
+		<com.peaceray.quantro.view.button.QuantroButton
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 custom:content_layout="@layout/content_image"
+				 android:clickable="true"
+				 android:enabled="true"/>
+				 -->
+		
+</com.peaceray.quantro.view.button.strip.CustomButtonStrip>

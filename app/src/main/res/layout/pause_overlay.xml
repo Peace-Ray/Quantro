@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@id/pause_overlay"
+	android:gravity="bottom" 
+	>
+	
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        />
+    
+    <!-- This is a vastly simplified version of the "pause overlay," intended to
+    		handle the main "status updates" used by the current pause overlay,
+    		while omitting most of the other information (such as sound volume, controls,
+    		skin, etc.) -->
+	<com.peaceray.quantro.view.generic.EllipsizingTextView
+		android:id="@id/pause_overlay_state"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@drawable/quantro_button_white_text_color"
+		android:gravity="left"
+		android:paddingLeft="60dip"
+		android:textSize="48sp"
+		android:maxLines="1"
+		custom:typeface="Roboto-BoldCondensed"
+		/>
+	
+	<com.peaceray.quantro.view.generic.EllipsizingTextView
+		android:id="@id/pause_overlay_state_description"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@drawable/quantro_button_white_text_color"
+		android:gravity="left"
+		android:paddingLeft="60dip"
+		android:textSize="18sp"
+		android:maxLines="1"
+		custom:typeface="Roboto-BoldCondensed"
+		/>
+	
+	<ImageView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="30dip"
+		android:src="@drawable/rect_trim_horiz_runs_right"
+		android:scaleType="fitXY"
+		/>
+	
+	<!-- Two parts - label and value. -->
+	<com.peaceray.quantro.view.generic.HeavyShadowTextView
+		android:id="@id/pause_overlay_game_mode"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="right"
+		android:textColor="@drawable/quantro_button_white_text_color"
+		android:textSize="14sp"
+		android:paddingRight="30dp"
+		android:paddingLeft="160dp"
+		custom:typeface="Roboto-Condensed"
+		/>
+	
+	<com.peaceray.quantro.view.generic.HeavyShadowTextView
+		android:id="@id/pause_overlay_mute_alert"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="right"
+		android:textColor="@color/game_options_muted"
+		android:textSize="14sp"
+		android:paddingTop="20dp"
+		android:paddingRight="30dp"
+		android:paddingLeft="160dp"
+		custom:typeface="Roboto-Condensed"
+		/>
+	
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        />
+
+</LinearLayout>

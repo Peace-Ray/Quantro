@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- "Natural" skin is based on brown, red and tan tones.
+    		It is not recommended for colorblind users.   -->
+    		
+   	<!--  FILL COLORS  -->
+    <!-- Here are the fill colors. -->
+    <color name="natural_s0_fill">#ff328809</color>		<!-- dark green -->
+    <color name="natural_s1_fill">#ff9b1f11</color>		<!-- reddish brown -->
+    <!-- Sticky: a greyish' "sky" blue. -->
+    <color name="natural_st_fill">#ffa2dbff</color>		<!-- grey-blue -->
+    <!-- Linked: here is the fill color for inactive linked -->
+    <color name="natural_sl_fill">#ff808080</color>		<!-- dark brown -->
+    <!-- and active (grey brown) -->
+    <color name="natural_sl_active_fill">#ffffffff</color>
+    <!-- Here's a fill color for flashes.  It is only used for LOW draw detail. -->
+    <color name="natural_flash_fill">#ff3e96ff</color>		<!-- a deep blue -->
+    
+    
+    <!--  BORDER COLORS  -->
+    <!-- Here are the border colors.  Note that we use complex colored
+    		border shines to modify these colors. -->
+    <color name="natural_s0_border">#ff5a8a0b</color>	<!-- green -->
+    <color name="natural_s1_border">#ffb64032</color>	<!-- redish brown; was ff7c1f14 -->
+    <!-- Sticky: the colors of sticky borders. -->
+    <color name="natural_st_s0_border">#ff8cc2b6</color>	<!-- blue/green -->
+    <color name="natural_st_s1_border">#ff857744</color>	<!-- tannish? -->
+    <!-- Linked: border color for SL, SL_Inactive, SL_Active -->
+    <color name="natural_sl_border">#ff808080</color>
+    <color name="natural_sl_inactive_s0_border">#ff74825d</color>	<!-- slight-greenish grey -->
+    <color name="natural_sl_inactive_s1_border">#ff7e635f</color>	<!-- slightly tan brown -->
+   	<color name="natural_sl_active_border">#ffa0a0a0</color>	<!-- light grey.  We use white shines on the corners. -->
+    <!-- Border colors for flashes. -->
+    <color name="natural_f0_border">#ff508e5c</color>		<!-- green verging on blue -->
+    <color name="natural_f1_border">#ff8d6959</color>		<!-- brown -->
+    
+    
+    <!-- GLOW COLORS: Brighter than the standard borders. -->
+    <color name="natural_s0_glow">#ffb9da2f</color>
+    <color name="natural_s1_glow">#fff08331</color>
+    
+    
+    
+    <!--  DETAILS  -->
+    <!-- Flashes are drawn with detail colors. -->
+    <color name="natural_flash_burst">#ff3e96ff</color>		<!-- deep-ish blue -->
+    <color name="natural_flash_stripe">#ffcbfffc</color>	<!-- very light cyan -->
+    
+    
+    <!--  SHINES  -->
+    <!-- The main difficulty in creating the Natural skin is the fact that it
+    		uses a two-toned shine style, with shines originating from the top-left
+    		and bottom-right.  By contrast, every previous shine has originated from
+    		EITHER the top-left or bottom-right, not both.
+    		
+    		These shines are applied with a overall multiplier, such as 50% for
+    		standard shines, but that multiplier is applied to these settings:
+    		
+    		
+    			1 (TL)	-	-	-	-	- 1/4 (TL)	|
+    				|						|		v
+    			|	|						0 (TL)	1/3
+    			v	|						0 (BR)
+    			2/3	|						|		2/3
+    				0 (TL)					|		^
+    				0 (BR)					|		|
+    		 ^		|						|
+    		 |	1/4 (BR) -	-	-	-	- 1 (BR)
+    			
+    		Top-Left shine descends 2/3rds of the way down the left side, approaching 0.
+    		It also proceeds right to the top-right corner, reaching 1/4 saturation at
+    		the corner, then downward 1/3rd of the way to reach 0.
+    		
+    		The Bottom-Right shine acts as a reflection.
+    		-->
+    		
+    <!-- S0 S1 SHINES: These shines are applied to almost everything, using different alpha mults. -->
+    <color name="natural_s0_border_shine_0">#ff46b734</color>		<!-- top-left: green -->
+    <color name="natural_s0_border_shine_1">#ffb9da2f</color>		<!-- bottom-right: lighter green -->
+    <integer name="natural_s0_border_shine_0_alpha">255</integer>	<!-- max at 65.4% -->
+    <integer name="natural_s0_border_shine_1_alpha">191</integer>
+    <integer name="natural_s0_border_shine_0_shape">@integer/block_shine_shape_half_wrap_top_left</integer>
+    <integer name="natural_s0_border_shine_1_shape">@integer/block_shine_shape_half_wrap_bottom_right</integer>
+    
+    
+    <color name="natural_s1_border_shine_0">#fff08331</color>		<!-- top-left: orange -->
+    <color name="natural_s1_border_shine_1">#ffa22415</color>		<!-- bottom-right: red-brown -->
+    <integer name="natural_s1_border_shine_0_alpha">179</integer>	<!-- max at 65.4% -->
+    <integer name="natural_s1_border_shine_1_alpha">255</integer>
+    <integer name="natural_s1_border_shine_0_shape">@integer/block_shine_shape_half_wrap_top_left</integer>
+    <integer name="natural_s1_border_shine_1_shape">@integer/block_shine_shape_half_wrap_bottom_right</integer>
+    
+    
+    <!-- SPECIAL CASE ALPHAS -->
+    <!-- SL: linked while falling -->
+    <integer name="natural_s0_border_shine_0_alpha_sl">77</integer>		<!-- 30% -->
+    <integer name="natural_s0_border_shine_1_alpha_sl">77</integer>		<!-- 30% -->
+    <integer name="natural_s1_border_shine_0_alpha_sl">77</integer>		<!-- 30% -->
+    <integer name="natural_s1_border_shine_1_alpha_sl">77</integer>		<!-- 30% -->
+    <!-- SL inactive: after locking -->
+    <integer name="natural_s0_border_shine_0_alpha_sl_inactive">77</integer>		<!-- 30% of 255 -->
+    <integer name="natural_s0_border_shine_1_alpha_sl_inactive">57</integer>		<!-- 30% of 191 -->
+    <integer name="natural_s1_border_shine_0_alpha_sl_inactive">54</integer>		<!-- 30% of 179 -->
+    <integer name="natural_s1_border_shine_1_alpha_sl_inactive">77</integer>		<!-- 30% of 255 -->
+    <!-- ST and ST_INACTIVE -->
+    <integer name="natural_s0_border_shine_0_alpha_st">77</integer>			<!-- 30% of 255 -->
+    <integer name="natural_s0_border_shine_1_alpha_st">57</integer>			<!-- 30% of 191 -->
+    <integer name="natural_s1_border_shine_0_alpha_st">90</integer>			<!-- 50% of 179 -->
+    <integer name="natural_s1_border_shine_1_alpha_st">128</integer>		<!-- 50% of 255 -->
+    <!-- Flash -->
+    <integer name="natural_s0_border_shine_0_alpha_flash">170</integer>		<!-- 2/3 of 255 -->
+    <integer name="natural_s0_border_shine_1_alpha_flash">127</integer>		<!-- 2/3 of 191 -->
+    <integer name="natural_s1_border_shine_0_alpha_flash">119</integer>		<!-- 2/3 of 179 -->
+    <integer name="natural_s1_border_shine_1_alpha_flash">170</integer>		<!-- 2/3 of 255 -->
+    
+    
+    <!-- The only thing that gets a special shine is SL Active. -->
+    <color name="natural_sl_active_border_shine_0">#ffffffff</color>		<!-- white -->
+    <color name="natural_sl_active_border_shine_1">#ffffffff</color>		<!-- white -->
+    <integer name="natural_sl_active_border_shine_0_alpha">255</integer>	
+    <integer name="natural_sl_active_border_shine_1_alpha">255</integer>
+    
+    
+</resources>

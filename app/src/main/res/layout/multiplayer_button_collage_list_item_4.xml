@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@id/multiplayer_game_mode_list_item"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingBottom="2dip"
+	>
+	
+	<include layout="@layout/quantro_list_item_header"/>
+	
+	<LinearLayout
+	    android:id="@id/multiplayer_game_mode_list_row"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:baselineAligned="false"
+	    android:paddingLeft="15dp"
+	    android:paddingRight="15dp"
+	    >
+    	<RelativeLayout 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"
+    	    >
+    	   <include layout="@layout/multiplayer_button_collage"
+    	       android:layout_alignParentTop="true"
+    	       android:layout_centerHorizontal="true"
+    	       android:layout_width="wrap_content"
+    		   android:layout_height="wrap_content" />
+    	   <!-- LayoutInflater has a bug causing silent
+    	   failure unless we specify width and height
+    	   along with any other layout_ params. -->
+    	</RelativeLayout>
+    	
+		<RelativeLayout 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1">
+    	   <include layout="@layout/multiplayer_button_collage"
+    	       android:layout_alignParentTop="true"
+    	       android:layout_centerHorizontal="true"
+    	       android:layout_width="wrap_content"
+    		   android:layout_height="wrap_content" />
+    	   <!-- LayoutInflater has a bug causing silent
+    	   failure unless we specify width and height
+    	   along with any other layout_ params. -->
+    	</RelativeLayout>
+    	
+		<RelativeLayout 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1">
+    	   <include layout="@layout/multiplayer_button_collage"
+    	       android:layout_alignParentTop="true"
+    	       android:layout_centerHorizontal="true"
+    	       android:layout_width="wrap_content"
+    		   android:layout_height="wrap_content" />
+    	   <!-- LayoutInflater has a bug causing silent
+    	   failure unless we specify width and height
+    	   along with any other layout_ params. -->
+    	</RelativeLayout>
+    	
+		<RelativeLayout 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1">
+    	   <include layout="@layout/multiplayer_button_collage"
+    	       android:layout_alignParentTop="true"
+    	       android:layout_centerHorizontal="true"
+    	       android:layout_width="wrap_content"
+    		   android:layout_height="wrap_content" />
+    	   <!-- LayoutInflater has a bug causing silent
+    	   failure unless we specify width and height
+    	   along with any other layout_ params. -->
+    	</RelativeLayout>
+    	
+		
+	</LinearLayout>
+
+  
+</LinearLayout>

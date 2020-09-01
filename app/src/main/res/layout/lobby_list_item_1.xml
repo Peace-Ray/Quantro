@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@id/lobby_list_item"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingBottom="2dip"
+	>
+	
+	<include layout="@layout/quantro_list_item_header"/>
+	
+	<LinearLayout
+	    android:id="@id/lobby_list_row"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    >
+	    
+		<include layout="@layout/lobby_button_strip" />
+		
+	</LinearLayout>
+
+  
+</LinearLayout>

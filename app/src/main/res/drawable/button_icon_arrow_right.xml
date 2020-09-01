@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:top="4dip"
+		  android:left="6dip">
+		<bitmap android:src="@drawable/arrow_right_alt3_big_black"
+				android:gravity="center"/>
+	</item>
+	<item>
+		<bitmap android:src="@drawable/arrow_right_alt3_big_white"
+				android:gravity="center"/>
+	</item>
+</layer-list>

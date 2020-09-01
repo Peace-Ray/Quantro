@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="600dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp"
+    >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="left" >
+        
+        <ImageView
+            android:id="@id/dialog_content_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+			/>
+        
+	    <com.peaceray.quantro.view.generic.MagicTextView
+	        android:id="@id/dialog_content_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/bright_text"
+	        android:textSize="24sp"
+	        android:paddingBottom="8dp"
+	        custom:typeface="Roboto-BoldCondensed"
+	        />
+	    
+    </LinearLayout>
+
+    <WebView
+        android:id="@id/dialog_content_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+    
+    <!-- some spacing -->
+    <View
+       android:layout_width="fill_parent"
+       android:layout_height="@dimen/dialog_button_top_margin"/>
+    
+    <include layout="@layout/dialog_button_strip"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+
+</LinearLayout>

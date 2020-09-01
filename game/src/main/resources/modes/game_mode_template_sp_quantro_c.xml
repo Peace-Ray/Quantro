@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GameMode>
+	<Mode
+		name="Quantro Flood Template"
+		short_name=""
+		class_name="Flood"
+		class_code="Flood"
+		description=""
+		short_description=""
+		players="1"
+		max_level="1000000"
+		max_starting_level="1"
+		rows="18"
+		cols="8"
+		qpanes="2"
+		reserve="insert_reenter"
+		set_clears="false"
+		set_starting_garbage="true"
+		set_per_level_garbage="false"
+		default_garbage="0"
+		set_level_lock="true"
+		set_difficulty="true"
+		set_displacement_fixed_rate="practice_only"
+		level_up="smooth"/>
+
+	<QInteractions name="QInteractionsBasic"/>
+	
+	<PieceBag name="BinomialTetracubePieceBag"
+					C="0"
+					N="2"
+					P="0.5"/>
+	
+	<ReserveBag name="UniformSpecialPieceBag"/>
+
+	<AttackSystem name="InitialGarbageQuantroAttackSystem"/> <!--  <AttackSystem name="MasochistQuantroAttackSystem"/> -->
+	<ClearSystem name="QuantroClearSystem"/>
+	<CollisionSystem name="EarlyCollisionSystem"/>
+	
+	<!-- AbsoluteTime Tides lift all blocks. -->
+	<DisplacementSystem name="AbsoluteTimeDisplacementSystem"
+	    accel="0.2"
+	    decel="0" >
+	    <displacement>
+	        <quadratic
+	            a="0.0003"
+	            b="0.02"
+	            c="0.0"/>
+	    </displacement>
+	</DisplacementSystem>
+	
+	<KickSystem name="LeaningKickSystem"/>
+	
+	<!-- Go up a level every 10 total clears. -->
+	<LevelSystem name="CustomLevelSystem">
+		<level_up>
+			<clears>
+				<clear type="total">
+					<linear_by_level
+									slope="10"
+									intercept="0" />
+				</clear>
+			</clears>
+		</level_up>
+	</LevelSystem>
+	
+	<LockSystem name="EarlyLockSystem"/>
+	<MetamorphosisSystem name="QuantroMetamorphosisSystem"/>
+	<RotationSystem name="UniversalRotationSystem"/>
+	
+	<!-- We increase the points awarded for clears by 50 -->
+	<!-- with each level gain, starting at 100 for level 1. -->
+	<!-- We also use an increasing multiplier based on special piece use. -->
+	<ScoreSystem name="TriggerableLevelScoreSystem"
+				 decrement="0.01"
+				 round="0.1"
+				 maximum_grace_multiplier_product="399"
+				 charity_slope="-1.3333"
+				 charity_intercept="20">
+		<score_system_clear_multiplier>
+			<linear_by_level_pinning	slope="50" intercept="50" pin="100"/>
+		</score_system_clear_multiplier>		 
+	</ScoreSystem>			 
+	
+	<SpecialSystem name="DeadSpecialSystem"/>
+	
+	<!-- Our timing system imposes no enter delay, and a -->
+	<!-- constant fall delay.  Difficulty comes from displacement, not fall speed. -->
+	<TimingSystem name="CustomTimingSystem">
+		<timing_system_enter_delay>
+			<constant val="0"/>
+		</timing_system_enter_delay>
+		<timing_system_fall_delay>
+			<constant val="1.1"/>
+		</timing_system_fall_delay>
+		<timing_system_fast_fall_delay>
+			<constant val="0.04"/>
+		</timing_system_fast_fall_delay>
+	</TimingSystem>
+	
+	<TriggerSystem name="QuantroSinglePlayerTriggerSystem"
+				   score_multiplier_increase_complex_clear="1"
+				   score_multiplier_increase_special_piece="1"/>
+	
+	<ValleySystem name="QuantroValleySystem"/>
+
+</GameMode>

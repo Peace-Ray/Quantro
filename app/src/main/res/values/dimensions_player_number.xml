@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Slide on the left side -->
+    <dimen name="game_interface_player_slide_text_size">18dp</dimen>
+    
+    <!-- text superimposed over the game -->
+    <dimen name="game_interface_player_number_text_size">24dp</dimen>
+	
+	<dimen name="game_interface_player_number_horizontal_margin">10dp</dimen>
+	<dimen name="game_interface_player_number_vertical_margin">10dp</dimen>
+	
+	<dimen name="game_interface_player_number_shadow_radius">1.2dp</dimen>
+	<dimen name="game_interface_player_number_shadow_offset_x">1.5dp</dimen>
+	<dimen name="game_interface_player_number_shadow_offset_y">1.1dp</dimen>
+	
+</resources>

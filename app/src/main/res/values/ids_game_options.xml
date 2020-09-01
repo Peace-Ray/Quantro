@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+    <!-- Skin View -->
+	<item type="id"
+	    	name="game_options_skin"/>
+	<!-- Inner parts of this -->
+	<item type="id"
+        	name="game_options_skin_action_strip"/>
+    <item type="id"
+        	name="game_options_skin_list"/>
+
+    
+    <!-- Background View -->
+    <item type="id"
+        	name="game_options_background"/>
+    <!-- inner parts of this -->
+    <item type="id"
+        	name="game_options_background_action_strip"/>
+    <item type="id"
+        	name="game_options_background_list"/>
+    
+    
+    <!-- Music / Sound View -->
+    <item type="id"
+        	name="game_options_music_sound"/>
+    <!-- inner parts of this -->
+    <item type="id"
+        	name="game_options_music_sound_action_strip"/>
+    <item type="id"
+        	name="game_options_music_sound_labeled_seek_bar_music_volume"/>
+    <item type="id"
+        	name="game_options_music_sound_labeled_seek_bar_sound_volume"/>
+    <item type="id"
+        	name="game_options_music_sound_description_muted_only"/>
+    <item type="id"
+        	name="game_options_music_sound_track_list"/>
+    
+    
+    
+    
+    <!-- Controls View -->
+    <item type="id"
+        	name="game_options_controls"/>
+    <!-- inner parts to this -->
+    <item type="id"
+        	name="game_options_controls_action_strip"/>
+    <item type="id"
+        	name="game_options_controls_thumbnail"/>
+    <item type="id"
+        	name="game_options_controls_description"/>
+    <item type="id"
+        	name="game_options_controls_description_expansion"/>
+    <item type="id"
+        	name="game_options_controls_description_full"/>
+    
+    
+   
+    
+    
+    
+</resources>

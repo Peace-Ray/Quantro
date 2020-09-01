@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Clean matches most standard colors, but includes large areas of white. -->
+    <color name="clean_block_background">#ffffffff</color>
+    
+    <color name="clean_push_down">#ff3442e3</color>
+	<color name="clean_push_up">#ffe34234</color>
+	
+	<color name="clean_rainbow_bland">#ff606070</color>
+    
+</resources>

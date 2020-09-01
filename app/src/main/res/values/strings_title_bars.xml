@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Main Menu -->
+    <string name="main_menu_action_bar_quantro_title">Quick Play</string>
+    <string name="main_menu_action_bar_achievements_title">Achievements</string>
+    <string name="main_menu_action_bar_leaderboard_title">Leaderboards</string>
+    <string name="main_menu_action_bar_premium_title">Premium Store</string>
+    <string name="main_menu_action_bar_help_title">Help</string>
+    <string name="main_menu_action_bar_settings_title">Settings</string>
+    <string-array
+        name="main_menu_action_bar_google_play_menu_titles">
+        <item>@string/free_play_game_manager_action_bar_achievements_title</item>
+        <item>@string/free_play_game_manager_action_bar_leaderboard_title</item>
+    </string-array>
+    
+    <!-- FreePlay Game Manager! -->
+    <string name="free_play_game_manager_action_bar_title">Single Player</string>
+    <string name="free_play_game_manager_action_bar_description">Game modes for one player</string>
+    <string name="free_play_game_manager_action_bar_achievements_title">Achievements</string>
+    <string name="free_play_game_manager_action_bar_leaderboard_title">Leaderboards</string>
+    <string name="free_play_game_manager_action_bar_new_game_mode_title">Create Game</string>
+    <string name="free_play_game_manager_action_bar_help_title">Help</string>
+    <string name="free_play_game_manager_action_bar_settings_title">Settings</string>
+    <string-array
+        name="free_play_game_manager_action_bar_google_play_menu_titles">
+        <item>@string/free_play_game_manager_action_bar_achievements_title</item>
+        <item>@string/free_play_game_manager_action_bar_leaderboard_title</item>
+    </string-array>
+    <string-array
+        name="free_play_game_manager_action_bar_google_play_menu_names">
+        <item>@string/action_strip_name_achievements</item>
+        <item>@string/action_strip_name_leaderboard</item>
+    </string-array>
+    
+    
+    
+    <!-- Lobby -->
+    <!-- Button! -->
+	<string name="lobby_action_bar_vote_title">Vote</string>
+	<string name="lobby_action_bar_chat_title">Chat</string>
+	<string name="lobby_action_bar_share_title">Invite Players</string>
+	<string name="lobby_action_bar_info_title">Lobby Info</string>
+    <string name="lobby_action_bar_help_title">Help</string>
+    <string name="lobby_action_bar_settings_title">Settings</string>
+    
+    
+    <!-- Lobby manager! -->
+    <!-- Title/Description -->
+    <string name="wifi_lobby_manager_action_bar_title">WiFi Lobbies</string>
+    <string name="wifi_lobby_manager_action_bar_description">(BETA) Play on local WiFi</string>
+    <!-- button names -->
+    <string name="wifi_lobby_manager_action_bar_new_title">Create Lobby</string>
+    <string name="wifi_lobby_manager_action_bar_find_title">Find Lobby</string>
+    <string name="wifi_lobby_manager_action_bar_unhide_title">Unhide Lobbies</string>
+    <string name="wifi_lobby_manager_action_bar_help_title">Help</string>
+    <string name="wifi_lobby_manager_action_bar_settings_title">Settings</string>
+    
+    
+    <!-- Lobby manager! -->
+    <!-- Title/Description -->
+    <string name="internet_lobby_manager_action_bar_title">Internet Lobbies</string>
+    <string name="internet_lobby_manager_action_bar_description">(BETA) Play over the Internet</string>
+    <!-- button names -->
+    <string name="internet_lobby_manager_action_bar_new_title">Create Lobby</string>
+    <string name="internet_lobby_manager_action_bar_refresh_title">Refresh</string>
+    <string name="internet_lobby_manager_action_bar_unhide_title">Unhide Lobbies</string>
+    <string name="internet_lobby_manager_action_bar_help_title">Help</string>
+    <string name="internet_lobby_manager_action_bar_settings_title">Settings</string>
+    
+    
+    <!-- Premium Store! -->
+    <!-- Title / Description -->
+    <string name="premium_store_action_bar_title">Premium Store</string>
+    <string name="premium_store_action_bar_description">Acquire and manage premium features</string>
+    <!-- button names -->
+    <string name="premium_store_action_bar_manual_entry_title">Enter Keycode</string>
+	<string name="premium_store_action_bar_refresh_title">Refresh</string>
+    <string name="premium_store_action_bar_help_title">Help</string>
+    
+    
+    <!-- button names -->
+    <string name="action_strip_name_new">new</string>
+    <string name="action_strip_name_find">find</string>
+    <string name="action_strip_name_send">send</string>
+    <string name="action_strip_name_receive">receive</string>
+    <string name="action_strip_name_refresh">refresh</string>
+    <string name="action_strip_name_achievements">achievements</string>
+    <string name="action_strip_name_leaderboard">leaderboard</string>
+    <string name="action_strip_name_resume">resume</string>
+    <string name="action_strip_name_settings">settings</string>
+    <string name="action_strip_name_gamepad">gamepad</string>
+    <string name="action_strip_name_gesture">gesture</string>
+    <string name="action_strip_name_mute_on">mute</string>
+    <string name="action_strip_name_mute_off">unmute</string>
+    <string name="action_strip_name_shuffle">shuffle</string>
+    <string name="action_strip_name_manual_entry">manual_entry</string>
+    <string name="action_strip_name_help">help</string>
+    <string name="action_strip_name_unhide">unhide</string>
+    
+    
+</resources>

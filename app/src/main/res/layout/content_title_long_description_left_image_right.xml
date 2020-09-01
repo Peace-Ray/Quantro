@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical|left"
+	>
+    
+    <ImageView
+        android:id="@id/button_content_image_drawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="1dp"
+		android:scaleType="centerInside"
+		/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/button_content_image_drawable"
+        android:orientation="vertical"
+        android:gravity="center_vertical|left"
+        >
+        
+        <com.peaceray.quantro.view.generic.EllipsizingTextView
+			android:id="@id/button_content_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@drawable/quantro_button_white_text_color"
+			android:gravity="left"
+			android:paddingLeft="5dip"
+		  	android:paddingRight="10dip"
+			android:paddingBottom="5dip"
+			android:paddingTop="5dip"
+			android:textSize="@dimen/button_text"
+			android:maxLines="1"
+			custom:typeface="Roboto-BoldCondensed"
+			/>
+    
+	    <com.peaceray.quantro.view.generic.HeavyShadowTextView
+			android:id="@id/button_content_long_description"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@drawable/quantro_button_white_text_color"
+			android:gravity="left"
+			android:textSize="@dimen/button_text_small"
+			android:paddingLeft="10dip"
+			android:paddingRight="10dip"
+			android:paddingBottom="10dip"
+			custom:typeface="Roboto-BoldCondensed"
+			/>
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>

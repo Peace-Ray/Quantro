@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@id/music_list_item"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingBottom="2dip"
+	>
+	
+	<include layout="@layout/quantro_list_item_header"/>
+	
+	<!-- Small: 1 item, which grows to fill the available space. -->
+	<LinearLayout
+	    android:id="@id/music_list_row"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:baselineAligned="false"
+	    android:paddingLeft="44dp"
+	    android:paddingRight="44dp"
+	    >
+   	   <include layout="@layout/button_collage_music_wide"
+   	       android:layout_width="fill_parent"
+   		   android:layout_height="wrap_content" />
+   	   <!-- LayoutInflater has a bug causing silent
+   	   failure unless we specify width and height
+   	   along with any other layout_ params. -->
+	</LinearLayout>
+
+  
+</LinearLayout>

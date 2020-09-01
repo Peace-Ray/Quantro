@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array
+        name="game_modes_single_player">
+        <item>0</item>		<!-- 8/2/12 for 0.8.2: changes order to list Quantro x2, then Retro x2. -->
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+    
+    <integer-array
+        name="game_modes_multi_player">
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+</resources>

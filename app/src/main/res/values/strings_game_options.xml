@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Game Options Menu Title Bar -->
+    <string name="game_options_action_strip_title">Game Options</string>
+    <string name="game_options_action_strip_description">Alter game settings</string>   
+    
+    <!-- Menu Items -->
+    <!-- Skin -->
+    <string name="game_options_item_skin_title">Skin</string>
+    <string name="game_options_item_skin_description">Change piece and block appearance</string>
+    <!-- Background -->
+    <string name="game_options_item_background_title">Background</string>
+    <string name="game_options_item_background_description">Shuffle or change background image</string>
+    <!-- Music / Sound -->
+    <string name="game_options_item_music_sound_title">Music / Sound</string>
+    <string name="game_options_item_music_sound_description">Volume, SFX, and music track</string>
+    <!-- Controls -->
+    <string name="game_options_item_controls_title">Controls</string>
+    <string name="game_options_item_controls_description">View or change control scheme</string>
+    <!-- Advanced -->
+    <string name="game_options_item_advanced_title">Advanced</string>
+    <string name="game_options_item_advanced_description">Advanced configuration</string>
+    <!-- Quit -->
+    <string name="game_options_item_quit_title">Quit</string>
+    <string name="game_options_item_quit_description">Back to menu or lobby</string>
+    <!-- Resume -->
+    <string name="game_options_item_resume_title">Resume</string>
+    <string name="game_options_item_resume_description">Return to game</string>
+    
+    
+    
+    
+    <!-- MUSIC / SOUND DESCRIPTIONS -->
+    <string name="game_options_music_sound_volume_slider_music_label">Music Volume</string>
+    <string name="game_options_music_sound_volume_slider_sound_label">Sound Volume</string>
+    <string name="game_options_music_sound_volume_slider_units_left"></string>
+    <string name="game_options_music_sound_volume_slider_units_right">&#37;</string>
+    
+    <string name="game_options_music_sound_muted_by_ringer_alert">MUTED BY RINGER</string>
+    <string name="game_options_music_sound_muted_by_user_alert">SOUND IS MUTED</string>
+    
+    
+    <!-- CONTROLS DESCRIPTIONS -->
+    <string name="game_options_controls_gamepad_instructions_thumbnail_yes">GAMEPAD CONTROLS: tap or hold these areas of the screen to move pieces and activate other features.</string>
+	<string name="game_options_controls_gamepad_instructions_thumbnail_no">GAMEPAD CONTROLS: tap or hold different areas of the screen to move pieces and activate other features.</string>
+	
+	<string name="game_options_controls_gesture_instructions_thumbnail_yes">GESTURE CONTROLS: activate features by touching these areas of the side panels; move pieces by tapping, dragging or swiping anywhere else.</string>
+	<string name="game_options_controls_gesture_instructions_thumbnail_no">GESTURE CONTROLS: activate features by touching different areas of the side panels; move pieces by tapping, dragging or swiping anywhere else.</string>
+	
+	<string name="game_options_controls_instructions_full">BASE_XXXX\n\nEXPANSION_XXXX</string>
+	
+	<string name="game_options_controls_gamepad_instructions_expansion_fall">MOVE: tap left/right buttons, EXERPT_XXXX FALL: hold down button</string>
+	<string name="game_options_controls_gamepad_instructions_expansion_fall_double_tap">MOVE: tap left/right buttons, EXERPT_XXXX FALL: hold down button, DROP &amp; LOCK: double-tap down button</string>
+	<string name="game_options_controls_gamepad_instructions_expansion_drop">MOVE: tap left/right buttons\nEXERPT_XXXX\nDROP: tap down button</string>
+	<string name="game_options_controls_gamepad_instructions_expansion_drop_double_tap">MOVE: tap left/right buttons, EXERPT_XXXX DROP: tap down button, DROP &amp; LOCK: double-tap down button</string>
+	
+	<string name="game_options_controls_gamepad_instructions_expansion_exerpt_has_turn">TURN: tap turn buttons,</string>
+	<string name="game_options_controls_gamepad_instructions_expansion_exerpt_has_flip">FLIP: tap flip button,</string>
+	<string name="game_options_controls_gamepad_instructions_expansion_exerpt_has_turn_and_flip">TURN: tap turn buttons, FLIP: tap flip button,</string>
+	<string name="game_options_controls_gamepad_instructions_expansion_exerpt_has_move_only"></string>
+	
+	<string name="game_options_controls_gamepad_instructions_base_placeholder">BASE_XXXX</string>
+	<string name="game_options_controls_gamepad_instructions_expansion_placeholder">EXPANSION_XXXX</string>
+	<string name="game_options_controls_gamepad_instructions_expansion_exerpt_placeholder">EXERPT_XXXX</string>
+	
+	<string name="game_options_controls_gesture_instructions_expansion">DRAG to move, EXERPT_XXXX FLING to drop</string>
+	
+	<string name="game_options_controls_gestures_instructions_expansion_excerpt_has_turn">TAP to turn,</string>
+	<string name="game_options_controls_gestures_instructions_expansion_excerpt_has_flip">FLING UP to flip,</string>
+	<string name="game_options_controls_gestures_instructions_expansion_excerpt_has_turn_and_flip">TAP to turn, FLING UP to flip,</string>
+	<string name="game_options_controls_gestures_instructions_expansion_excerpt_has_move_only"></string>
+	
+    
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="transparent">#00000000</color>
+
+	<!-- These colors were used for initial prototyping game interface.  This is changing! -->
+	<color name="game_interface_button_background">#ff505050</color>
+	<color name="game_interface_nonbutton_background">#ffa0a0a0</color>
+
+	<color name="game_interface_score_background">#88000000</color>
+	<color name="game_interface_score_text_color_stable">#ffffffff</color>
+	
+	<color name="game_interface_score_text_color_glow">#ffffdf3f</color>
+	
+	<color name="game_interface_tooltip_text_color">#ffffffff</color>
+	<color name="game_interface_tooltip_text_shadow_color">#ff000000</color>
+	
+	<color name="game_interface_player_number_text_color">#ffffffff</color>
+	<color name="game_interface_player_number_text_inactive_color">#ffaaaaaa</color>
+	<color name="game_interface_player_number_text_shadow_color">#ff000000</color>
+	
+	
+	<!-- These colors represent the new, fancier game interface.  They will eventually
+			replace the prototyping colors. -->
+	<color name="game_interface_side_panel_background">#ff131313</color>
+	
+	<color name="game_interface_side_panel_outer_edge_top">#ffdcdcdc</color>	<!-- ffdcdcdc -->
+	<color name="game_interface_side_panel_outer_edge_bottom">#ffb8b8b8</color>	<!-- ffb8b8b8 -->
+	<color name="game_interface_side_panel_inner_edge_top">#ff858585</color>	<!-- ff858585 -->
+	<color name="game_interface_side_panel_inner_edge_bottom">#ff5e5e5e</color>	<!-- ff5e5e5e -->
+	
+	<color name="game_interface_button_diagram">#ffc3c3c3</color>
+	<color name="game_interface_button_icon">#ffffffff</color>
+	
+	
+	<!-- Special buttom edges -->
+	<color name="quantro_content_wrapping_button_inner_edge">#ff858585</color> 		<!-- was ff7b7b7b -->
+	<color name="quantro_content_wrapping_button_outer_edge">#ff3d3d3d</color>		<!-- was ff252525 -->
+	
+	<!-- Stinger background! -->
+	<color name="quantro_stinger_background">#ff3d3d3d</color>
+	
+    <!-- Free play game launch list! -->
+    <color name="standard_list_item_header_text">#ffffffff</color>
+    <color name="free_play_game_mode_list_pinned_header_text">#ffffffff</color>
+	
+    <color name="lobby_list_pinned_header_text">#ffffffff</color>
+    
+    <!-- Dialog colors! -->
+    <color name="dialog_default_color_filter">#ffbbbbbb</color> 		<!-- applied to elements with the "color_filterable" tag -->
+    <color name="dialog_button_strip_positive">#ffbbbbbb</color>
+    <color name="dialog_button_strip_neutral">#ffbbbbbb</color>
+    <color name="dialog_button_strip_negative">#ff999999</color>
+    
+    <!-- Main Menu Button Colors! -->
+    <color name="main_menu_leaderboard">#ff0b6ca1</color>
+    <color name="main_menu_help">#ff707070</color>
+    <color name="main_menu_settings">#ff707070</color>
+    
+    <!-- Freeplay Button Strip Colors! -->
+    <color name="freeplay_main">@color/main_menu_single_player_color</color>
+    <color name="freeplay_leaderboard">#ff0b6ca1</color>
+    <color name="freeplay_new_game_mode">#ff9999bb</color>
+    <color name="freeplay_help">#ff707070</color>
+    <color name="freeplay_settings">#ff707070</color>
+    
+    <!-- Main Menu Button Colors! -->
+    <color name="lobby_share">#ff707070</color>
+    <color name="lobby_info">#ff707070</color>
+    <color name="lobby_help">#ff707070</color>
+    <color name="lobby_settings">#ff707070</color>
+    
+    <!-- Lobby button strip colors! -->
+    <color name="lobby_button_strip_new">#ff7bf69d</color>
+    <color name="lobby_button_strip_searching_main">#ff6ba38b</color>
+    <color name="lobby_button_strip_open_main">#ff66ff33</color>
+    <color name="lobby_button_strip_full_main">#ffccccdd</color>
+    <color name="lobby_button_strip_closed_main">#ffccccdd</color>
+    <color name="lobby_button_strip_searching_hide">#ff9999bb</color>
+    <color name="lobby_button_strip_open_hide">#ff9999bb</color>
+    <color name="lobby_button_strip_full_hide">#ff9999bb</color>
+    <color name="lobby_button_strip_closed_hide">#ff9999bb</color>
+    <color name="lobby_new">#ff7bf69d</color>
+    <color name="lobby_join">#ff66ff33</color>
+    <color name="lobby_hide">#ff9999bb</color>
+    <color name="lobby_find">#ff9999bb</color>
+    <color name="lobby_unhide">#ff9999bb</color>
+    
+    
+    <!-- Lobby button strip colors! -->
+    <color name="internet_lobby_button_strip_new">#ffffd500</color>
+    <color name="internet_lobby_button_strip_public_open_main">#ff8ab5ef</color>
+    <color name="internet_lobby_button_strip_private_open_main">#ffffd500</color>
+    <color name="internet_lobby_button_strip_itinerant_open_main">#ffc154c1</color>
+    
+    <color name="internet_lobby_button_strip_public_full_main">#ffb4c6de</color>
+    <color name="internet_lobby_button_strip_private_full_main">#ffcdbc63</color>
+    <color name="internet_lobby_button_strip_itinerant_full_main">#ffb78bb7</color>
+    
+    <color name="internet_lobby_button_strip_public_closed_main">#ffbcbcbc</color>
+    <color name="internet_lobby_button_strip_private_closed_main">#ff7f7f7f</color>
+    <color name="internet_lobby_button_strip_itinerant_closed_main">#ff947994</color>
+    
+    
+    
+    <color name="internet_lobby_new">#ffffd500</color>
+    <color name="internet_lobby_refresh">#ff8ab5ef</color>
+    <color name="internet_lobby_full">#ffccccdd</color>
+    <color name="internet_lobby_unknown">#ffccccdd</color>
+    <color name="internet_lobby_public">#ff8ab5ef</color>
+    <color name="internet_lobby_invited">#ffffd500</color>
+    <color name="internet_lobby_itinerant">#ffc154c1</color>
+    <color name="internet_lobby_unhide">#ff9999bb</color>
+    <color name="internet_lobby_help">#ff707070</color>
+    <color name="internet_lobby_settings">#ff707070</color>
+    
+    
+    
+    
+    <!-- Key button strip colors! -->
+    <color name="key_button_strip_xl_empty_main">#ffffd21d</color>
+    <color name="key_button_strip_xl_pending_main">#ffffd21d</color>
+    <color name="key_button_strip_xl_has_main">#ffffd21d</color>
+    <color name="key_button_strip_xl_stop">#ffffd21d</color>
+    <color name="key_button_strip_xl_enter">#ffffd21d</color>
+    <color name="key_button_strip_xl_refresh">#ffffd21d</color>
+    <color name="key_xl_buy">#ffffd21d</color>
+    <color name="key_xl_activate">#ffffd21d</color>
+    <color name="key_xl_forget">#ffffd21d</color>
+    <color name="key_xl_enter">#ffffd21d</color>
+    <color name="key_xl_refresh">#ffffd21d</color>
+    
+    <color name="key_forget">#ffffd21d</color>
+    <color name="key_enter">#ffff0042</color>
+    
+    <!-- Premium Store Colors! -->
+    <color name="premium_store_main">#ffffd21d</color>
+    <color name="premium_store_refresh">#ff8ab5ef</color>
+    <color name="premium_store_manual_entry">#ffff0042</color>
+    <color name="premium_store_help">#ff707070</color>
+    
+    <!-- Premium ITEM colors. -->
+    <color name="premium_content_color_game_mode_001">#ffffac0c</color>		<!-- Orange -->
+    <color name="premium_content_color_game_mode_002">#fff41818</color>		<!-- Red -->
+    <color name="premium_content_color_skin_001">#ff1b8ef9</color>			<!-- Blue: same as skin color. -->
+    <color name="premium_content_color_background_001">#ff7bf69d</color>	<!-- Green: same as background option color #ff7bf69d -->
+    
+    
+    
+    <!-- Alert colors! -->
+    <color name="main_menu_alert_minor">#ff9999aa</color>
+    <color name="main_menu_alert_major">#ffffffff</color>
+    
+    
+	<!-- Helpful text colors! -->
+	<color name="bright_text">#ffffffff</color>
+	<color name="mid_text">#ffd0d0d0</color>
+	<color name="dim_text">#ff888888</color>
+	
+	<color name="link_text">#ff1b8ef9</color>		<!-- blue rainbow color -->
+	<color name="followed_link_text">#ff9f6fed</color>		<!-- purple rainbow color -->
+	
+	
+	
+	<!-- Some dedicated colors for different types of lobbys -->
+	<color name="lobby_wifi">#ff7bf69d</color>
+	<color name="lobby_internet">#ffffd500</color>
+	
+	
+	<!-- Standard menu! -->
+	<color name="menu_background">#ff000000</color>
+	
+	
+	<!-- in-game options menu -->
+	<color name="game_options_main">#ffffffff</color>
+	<color name="game_options_skin">#ff1b8ef9</color>
+	<color name="game_options_background">#ff7bf69d</color>
+	<color name="game_options_background_shuffle">#ff56aaf1</color>
+	<color name="game_options_music_sound">#fff41818</color>
+	<color name="game_options_unmuted">#fff41818</color>
+	<color name="game_options_muted">#fff41818</color>
+	<color name="game_options_controls">#ffff23d3</color>
+	<color name="game_options_controls_gamepad">#ff9061e1</color>
+	<color name="game_options_controls_gesture">#ffff5068</color>
+	
+	
+	<!-- Overflow! -->
+	<color name="button_strip_overflow">#ff707070</color>
+	
+</resources>

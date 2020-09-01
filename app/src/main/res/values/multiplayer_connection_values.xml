@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<integer name="lobby_maximum_name_length">32</integer>
+	<integer name="player_maximum_name_length">32</integer>
+
+	<integer name="wifi_multiplayer_game_port">50470</integer>
+	<integer name="wifi_multiplayer_lobby_port">51470</integer>
+	
+	<integer name="wifi_multiplayer_lobby_announcement_port">52470</integer>
+	<integer name="wifi_multiplayer_lobby_query_port">52471</integer>
+	<integer name="wifi_multiplayer_lobby_query_response_port">52472</integer>
+	
+	
+</resources>

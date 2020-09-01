@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.peaceray.quantro.view.controls.InvisibleControlsGamepadOfRows
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+  android:id="@+id/controls_gamepad_of_rows"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <!-- android:gravity="bottom" -->
+  				
+  				
+  			
+  	
+  	<!-- A linear layout containing rows of buttons. -->
+  	<LinearLayout
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:orientation="vertical"
+  		>
+  	
+  		<!-- Top row: just the reserve button on the right. -->
+  		<LinearLayout
+  			android:layout_width="fill_parent"
+  			android:layout_height="0dp"
+  			android:orientation="horizontal"
+  			android:layout_weight="1"
+  			android:id="@id/controls_extras_row_top">
+  			
+  			<!-- Empty space! -->
+  			<View
+  			    android:id="@id/controls_extras_next"
+  				android:layout_width="0dp"
+		    	android:layout_height="fill_parent"
+		    	android:layout_weight="1"
+		    	/>
+  		
+  			<!-- Reserve button! -->
+  			<com.peaceray.quantro.view.controls.InvisibleButtonSimple
+  			    android:id="@id/controls_extras_reserve"
+		    	android:layout_width="0dp"
+		    	android:layout_height="fill_parent"
+		    	android:layout_weight="1"
+	  			custom:button_background_color="@color/button_background"
+		    	custom:button_name="@string/controls_reserve_button_name"
+		  		custom:button_icon="@drawable/button_icon_loop"
+		  		custom:button_icon_alt="@drawable/button_icon_bolt"
+		  		/>
+  		</LinearLayout>
+  		
+  		<!-- 2nd row: versus button on the left, score on the right. -->
+  		<LinearLayout
+  			android:layout_width="fill_parent"
+  			android:layout_height="0dp"
+  			android:orientation="horizontal"
+  			android:layout_weight="1"
+  			android:id="@id/controls_extras_row_bottom">
+  			
+  			<!-- Versus button! -->
+  			<com.peaceray.quantro.view.controls.InvisibleButtonSimple
+  			    android:id="@id/controls_extras_vs"
+		    	android:layout_width="0dp"
+		    	android:layout_height="fill_parent"
+		    	android:layout_weight="1"
+		    	custom:button_name="@string/controls_opponent_button_name"
+		  		custom:button_text="vs"
+		  		custom:button_show="false"/>
+  		
+  			<!-- Score button! -->
+  			<com.peaceray.quantro.view.controls.InvisibleButtonSimple
+  			    android:id="@id/controls_extras_score"
+		    	android:layout_width="0dp"
+		    	android:layout_height="fill_parent"
+		    	android:layout_weight="1"
+		    	custom:button_name="@string/controls_score_button_name"
+		  		custom:button_text="score"
+		  		custom:button_show="false"/>
+  		</LinearLayout>
+  		
+  		<!-- Row above bottom: CCW, CW.  Height WAS 130... -->
+	  	<LinearLayout
+	  		android:layout_width="fill_parent"
+	  		android:layout_height="0dp"
+	  		android:layout_weight="1.45"
+	  		android:orientation="horizontal"
+	  		android:id="@id/controls_row_top">
+	  	
+	  		<com.peaceray.quantro.view.controls.InvisibleButtonSimple
+	  		    	android:id="@id/controls_button_ccw"
+	  				android:layout_width="0dp"
+	  				android:layout_height="fill_parent"
+	  				android:layout_weight="1"
+	  				custom:button_background_color="@color/button_background"
+	  				custom:button_name="@string/controls_ccw_button_name"
+	  				custom:button_icon="@drawable/button_icon_curved_arrow_ccw"
+	  				/>
+	  		<com.peaceray.quantro.view.controls.InvisibleButtonSimple
+	  		    	android:id="@id/controls_button_flip"
+	  		    	android:layout_width="0dp"
+	  		    	android:layout_height="fill_parent"
+	  		    	android:layout_weight="1"
+	  		    	custom:button_background_color="@color/button_background"
+	  				custom:button_name="@string/controls_flip_button_name"
+	  				custom:button_icon="@drawable/button_icon_arrow_up_down"
+	  				/>
+	  		<com.peaceray.quantro.view.controls.InvisibleButtonSimple
+	  		    android:id="@id/controls_button_cw"
+	  				android:layout_width="0dp"
+	  				android:layout_height="fill_parent"
+	  				android:layout_weight="1"
+	  				custom:button_background_color="@color/button_background"
+	  				custom:button_name="@string/controls_cw_button_name"
+	  				custom:button_icon="@drawable/button_icon_curved_arrow"
+	  				/>	
+	  	</LinearLayout>
+	  	
+	  	
+	  	<!-- Bottom row of buttons: Left, Down, Right -->
+	  	<LinearLayout
+	  		android:layout_width="fill_parent"
+	  		android:layout_height="0dp"
+	  		android:layout_weight="1.45"
+	  		android:orientation="horizontal"
+	  		android:id="@id/controls_row_bottom">
+	  		<com.peaceray.quantro.view.controls.InvisibleButtonSimple
+	  		    	android:id="@id/controls_button_left"
+	  				android:layout_width="0dp"
+	  				android:layout_height="fill_parent"
+	  				android:layout_weight="1"
+	  				custom:button_background_color="@color/button_background"
+	  				custom:button_name="@string/controls_left_button_name"
+	  				custom:button_icon="@drawable/button_icon_arrow_left"
+	  				/>
+	  		<com.peaceray.quantro.view.controls.InvisibleButtonSimple
+	  		    	android:id="@id/controls_button_down"
+	  				android:layout_width="0dp"
+	  				android:layout_height="fill_parent"
+	  				android:layout_weight="1"
+	  				custom:button_background_color="@color/button_background"
+	  				custom:button_name="@string/controls_down_button_name"
+	  				custom:button_double_tap_name="@string/controls_slide_down_button_name"
+	  				custom:button_icon="@drawable/button_icon_download"
+	  				/>
+	  		<com.peaceray.quantro.view.controls.InvisibleButtonSimple
+	  		    	android:id="@id/controls_button_right"
+	  				android:layout_width="0dp"
+	  				android:layout_height="fill_parent"
+	  				android:layout_weight="1"
+	  				custom:button_background_color="@color/button_background"
+	  				custom:button_name="@string/controls_right_button_name"
+	  				custom:button_icon="@drawable/button_icon_arrow_right"
+	  				/>
+	  	</LinearLayout>
+  	
+  	
+  	</LinearLayout>	
+	
+  	
+  	
+</com.peaceray.quantro.view.controls.InvisibleControlsGamepadOfRows>

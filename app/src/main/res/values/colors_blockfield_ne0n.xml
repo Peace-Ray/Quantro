@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Retro colors -->
+    <color name="ne0n_block_field_background">#ff181818</color>		<!-- was 181818 -->
+    
+    <!-- use the same border colors, but with different shines. -->
+    <color name="ne0n_border_shine_color">#ffffffff</color>
+    <integer name="ne0n_border_shine_shape">@integer/block_shine_shape_full_wrap_top_left</integer>
+    <integer name="ne0n_border_shine_alpha_range">@integer/block_shine_alpha_range_extreme</integer>
+	
+	<color name="ne0n_r0_fill">#005b07b2</color>
+	<color name="ne0n_r1_fill">#00ff2a00</color>		
+	<color name="ne0n_r2_fill">#00ffd500</color>		
+	<color name="ne0n_r3_fill">#0061f81f</color>		
+	<color name="ne0n_r4_fill">#0032e9f9</color>		
+	<color name="ne0n_r5_fill">#001b8ef9</color>		
+	<color name="ne0n_r6_fill">#00fe51df</color>		
+	<color name="ne0n_rainbow_bland_fill">#00ddedf4</color>		<!-- was 00888899 -->
+	<color name="ne0n_push_down_fill">#003442e3</color>
+	<color name="ne0n_push_up_fill">#00e34234</color>
+	
+	
+	<color name="ne0n_r0_border">#ff5b07b2</color>
+	<color name="ne0n_r1_border">#ffff2a00</color>		
+	<color name="ne0n_r2_border">#ffffd500</color>		
+	<color name="ne0n_r3_border">#ff61f81f</color>		
+	<color name="ne0n_r4_border">#ff32e9f9</color>		
+	<color name="ne0n_r5_border">#ff1b8ef9</color>		
+	<color name="ne0n_r6_border">#fffe51df</color>		
+	<color name="ne0n_rainbow_bland_border">#ffddedf4</color>
+	<color name="ne0n_push_down_border">#ff3442e3</color>
+	<color name="ne0n_push_up_border">#ffe34234</color>
+	
+	
+	<color name="ne0n_r0_inner_shadow">#ff5b07b2</color>
+	<color name="ne0n_r1_inner_shadow">#ffff2a00</color>		
+	<color name="ne0n_r2_inner_shadow">#ffffd500</color>		
+	<color name="ne0n_r3_inner_shadow">#ff61f81f</color>		
+	<color name="ne0n_r4_inner_shadow">#ff32e9f9</color>		
+	<color name="ne0n_r5_inner_shadow">#ff1b8ef9</color>		
+	<color name="ne0n_r6_inner_shadow">#fffe51df</color>		
+	<color name="ne0n_rainbow_bland_inner_shadow">#ffddedf4</color>
+	<color name="ne0n_push_down_inner_shadow">#ff3442e3</color>
+	<color name="ne0n_push_up_inner_shadow">#ffe34234</color>
+	
+	<color name="ne0n_r0_outer_shadow">#ff5b07b2</color>
+	<color name="ne0n_r1_outer_shadow">#ffff2a00</color>		
+	<color name="ne0n_r2_outer_shadow">#ffffd500</color>		
+	<color name="ne0n_r3_outer_shadow">#ff61f81f</color>		
+	<color name="ne0n_r4_outer_shadow">#ff32e9f9</color>		
+	<color name="ne0n_r5_outer_shadow">#ff1b8ef9</color>		
+	<color name="ne0n_r6_outer_shadow">#fffe51df</color>		
+	<color name="ne0n_rainbow_bland_outer_shadow">#ffddedf4</color>
+	<color name="ne0n_push_down_outer_shadow">#ff3442e3</color>
+	<color name="ne0n_push_up_outer_shadow">#ffe34234</color>
+	
+    
+</resources>

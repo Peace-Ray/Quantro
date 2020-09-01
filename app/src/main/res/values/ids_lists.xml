@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- IDs for lists, allowing multiple layouts to reference the same IDs. -->
+    <!-- Generic lists / list headers -->
+    <item	type="id"
+        	name="quantro_list_item_header"/>
+    <item	type="id"
+        	name="quantro_list_item_header_top_spacer"/>
+    <item	type="id"
+        	name="quantro_list_item_header_text"/>
+    
+    
+    <!-- Main Menu -->
+    <item	type="id"
+        	name="main_menu_list_item"/>
+    <item	type="id"
+        	name="main_menu_list_row"/>
+    <item	type="id"
+        	name="main_menu_button_strip"/>
+    
+    
+    <!-- Free Play Collages / Collage lists -->
+    <item	type="id"
+        	name="free_play_game_mode_list_item"/>
+    <item	type="id"
+        	name="free_play_game_mode_list_row"/>
+    
+    <!-- Lobby Lists (for lobby managers) -->
+    <item	type="id"
+        	name="lobby_list_item"/>
+    <item	type="id"
+        	name="lobby_list_row"/>
+    <item	type="id"
+        	name="lobby_button_strip"/>
+    
+    <!-- Multi Player Collages / Collage lists -->
+    <item	type="id"
+        	name="multiplayer_game_mode_list_item"/>
+    <item	type="id"
+        	name="multiplayer_game_mode_list_row"/>
+
+    <!-- Skin Lists -->
+    <item	type="id"
+        	name="skin_list_item"/>
+    <item	type="id"
+        	name="skin_list_row"/>
+    
+    <!-- Background Lists -->
+    <item	type="id"
+        	name="background_list_item"/>
+    <item	type="id"
+        	name="background_list_row"/>
+    
+    <!-- Music Lists -->
+    <item	type="id"
+        	name="music_list_item"/>
+    <item	type="id"
+        	name="music_list_row"/>
+    
+    
+    <!-- Premium Content List -->
+    <item	type="id"
+        	name="premium_content_list_item"/>
+    <item	type="id"
+        	name="premium_content_list_row"/>
+    
+    
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.peaceray.quantro.view.button.collage.MusicButtonCollage
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    custom:mbc_alert_drawable_locked="@drawable/action_locked_baked_small"
+    custom:mbc_alert_drawable_active="@drawable/action_play_baked_small"
+    android:id="@id/button_collage_music"
+     >
+    
+    <!-- Big Main Button -->
+    <com.peaceray.quantro.view.button.QuantroButton
+    	android:id="@id/button_collage_music_button_main"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		custom:content_layout="@layout/content_title_left_alert_right_gravity"
+		custom:border_width = "@dimen/button_border_size"
+		custom:drop_shadow="true"
+		custom:qb_style="block_underline_two_tier_enclose_content"
+		android:clickable="true"/>
+
+</com.peaceray.quantro.view.button.collage.MusicButtonCollage>

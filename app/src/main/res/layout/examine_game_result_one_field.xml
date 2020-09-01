@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:minHeight="200dp"
+	android:orientation="horizontal"
+	android:gravity="center_vertical"
+	>
+	
+    
+	<LinearLayout
+		android:layout_weight="1"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="vertical"
+		>
+		
+	    <com.peaceray.quantro.view.generic.MagicTextView
+			android:id="@id/examine_game_result_name"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:textSize="@dimen/examine_game_result_text_size_name"
+			android:paddingLeft="10dp"
+			android:paddingBottom="2dp"
+			android:paddingRight="10dp"
+			custom:typeface="Roboto-Condensed"
+			/>
+	    
+	    <com.peaceray.quantro.view.generic.MagicTextView
+	       	android:id="@id/examine_game_result_difficulty"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:textSize="@dimen/examine_game_result_text_size_difficulty"
+			android:paddingLeft="10dp"
+			android:paddingBottom="4dp"
+			android:paddingRight="10dp"
+			custom:typeface="Roboto-Condensed"
+			/>
+		
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        >
+			
+			<com.peaceray.quantro.view.generic.MagicTextView
+			    android:id="@id/examine_game_result_level_full"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/examine_game_result_text_size_score"
+				android:paddingLeft="1dp"
+				android:paddingBottom="4dp"
+				android:paddingRight="1dp"
+				android:gravity="center"
+				custom:typeface="Roboto-Condensed"
+				/>
+			
+			<com.peaceray.quantro.view.generic.MagicTextView
+	            android:id="@id/examine_game_result_time_full"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/examine_game_result_text_size_score"
+				android:paddingLeft="1dp"
+				android:paddingBottom="4dp"
+				android:paddingRight="1dp"
+				android:gravity="center"
+				custom:typeface="Roboto-Condensed"
+				/>
+				
+			<com.peaceray.quantro.view.generic.MagicTextView
+			    android:id="@id/examine_game_result_score_full"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/examine_game_result_text_size_score"
+				android:paddingTop="0dp"
+				android:paddingLeft="1dp"
+				android:paddingBottom="4dp"
+				android:paddingRight="1dp"
+				android:gravity="center"
+				custom:typeface="Roboto-Condensed"
+				/>
+				
+			<com.peaceray.quantro.view.generic.MagicTextView
+			    android:id="@id/examine_game_result_rows_full"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/examine_game_result_text_size_score"
+				android:paddingTop="0dp"
+				android:paddingLeft="1dp"
+				android:paddingBottom="4dp"
+				android:paddingRight="1dp"
+				android:gravity="center"
+				custom:typeface="Roboto-Condensed"
+				/>
+			
+				    
+		    <com.peaceray.quantro.view.generic.MagicTextView
+		        android:id="@id/examine_game_result_config"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:textSize="@dimen/examine_game_result_text_size_config"
+		        android:padding="10dp"
+		        custom:typeface="Roboto-Condensed"
+		        />
+			        
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	
+	<!-- This is the "left panel."  For multiplayer, player slot 0.
+			For single player, it is 'previous state.' -->
+	<LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#ff000000"
+            >
+        
+	        <com.peaceray.quantro.view.game.BlockFieldView
+				android:id="@id/examine_game_result_block_field_view"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				/>
+	</LinearLayout>
+
+</LinearLayout>

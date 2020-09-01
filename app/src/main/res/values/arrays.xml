@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- The below is depreciated (if it was ever used at all!  TODO: remove it and deal with the aftermath -->
+<string-array name="prototypingPieceDisplayInts">
+	<item>0</item>
+	<item>1</item>
+	<item>2</item>
+	<item>3</item>
+	<item>4</item>
+	<item>5</item>
+	<item>6</item>
+	<item>7</item>
+	<item>8</item>
+	<item>9</item>
+	<item>10</item>
+</string-array>
+<integer-array name="prototypingPieceInts">
+	<item>0</item>
+	<item>1</item>
+	<item>2</item>
+	<item>3</item>
+	<item>4</item>
+	<item>5</item>
+	<item>6</item>
+	<item>7</item>
+	<item>8</item>
+	<item>9</item>
+	<item>10</item>
+</integer-array>
+<string-array name="prototypingTimingDisplayVals">
+	<item>0.1</item>
+	<item>0.2</item>
+	<item>0.3</item>
+	<item>0.4</item>
+	<item>0.5</item>
+	<item>0.6</item>
+	<item>0.7</item>
+	<item>0.8</item>
+	<item>0.9</item>
+	<item>1.0</item>
+	<item>1.2</item>
+	<item>1.4</item>
+	<item>1.6</item>
+	<item>1.8</item>
+	<item>2.0</item>
+</string-array>
+<string-array name="prototypingTimingVals">
+	<item>0.1</item>
+	<item>0.2</item>
+	<item>0.3</item>
+	<item>0.4</item>
+	<item>0.5</item>
+	<item>0.6</item>
+	<item>0.7</item>
+	<item>0.8</item>
+	<item>0.9</item>
+	<item>1.0</item>
+	<item>1.2</item>
+	<item>1.4</item>
+	<item>1.6</item>
+	<item>1.8</item>
+	<item>2.0</item>
+</string-array>
+</resources>
+

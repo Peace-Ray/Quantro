@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="package_name">com.peaceray.quantro</string>
+    
+	<!-- My intents! -->
+	<string name="intent_action_challenge_sms_sent">com.peaceray.quantro.INTENT_ACTION_CHALLENGE_SMS_SENT</string>
+	<!-- Extras for my intents! -->
+	<string name="intent_action_challenge_sms_sent_extra_nonce">com.peaceray.quantro.INTENT_ACTION_CHALLEGE_SMS_SENT_EXTRA_NONCE</string>
+	<string name="intent_extra_lobby_intent_package">com.peaceray.quantro.lobby_activity_intent_package</string>
+
+    <string name="hello">Hello World, GameActivity!</string>
+    <string name="app_name">Quantro</string>
+    <string name="game_activity_name">Quantro: Game</string>
+    <string name="game_options_menu_activity_name">Quantro: Game Options</string>
+    <string name="lobby_activity_name">Quantro: Multiplayer Lobby</string>
+    <string name="internet_lobby_manager_activity_name">Quantro</string>
+    <string name="quantro_preference_activity_name">Settings</string>
+    <string name="lobby_manager_activity_name">Quantro: WiFi Multiplayer</string>
+    <string name="new_lobby_activity_name">Create Lobby</string>
+    <string name="new_internet_lobby_activity_name">Create Lobby</string>
+    <string name="key_manager_activity_name">Quantro: Key Manager</string>
+    <string name="premium_store_activity_name">Quantro: Store</string>
+    <string name="manual_key_activation_activity_name">Unlock Premium Content</string>
+    <string name="target_wifi_address_activity">Find Lobby</string>
+    
+    <string name="global_dialog_help_name_free_play_game_manager">Single Player</string>
+    <string name="global_dialog_help_name_internet_lobby_manager">Internet Multiplayer</string>
+    <string name="global_dialog_help_name_lobby">Lobby</string>
+    <string name="global_dialog_help_name_main_menu">Main Menu</string>
+    <string name="global_dialog_help_name_premium_store">Premium Store</string>
+    <string name="global_dialog_help_name_wifi_lobby_manager">WiFi Multiplayer</string>
+    
+    
+    <!-- Intent Chooser -->
+	<string name="send_email_intent_query">Send email with:</string>
+	<string name="send_lobby_invitation_intent_query">Invite players using:</string>
+	<string name="lobby_invitation_clipboard_toast">Lobby invitation URL copied to clipboard</string>
+	<string name="lobby_invitation_subject">Quantro Lobby Invitation</string>
+	<string name="lobby_invitation">Let\'s play Quantro online!\n\nINVITATION_LOBBY_STRING_ENCODING_XXXX</string>
+	<string name="lobby_invitation_full">Let\'s play Quantro online!  Quantro is a free multiplayer puzzle game for Android.  Join me in this Internet lobby!\n\nGet Quantro:\nGOOGLE_PLAY_LINK_XXXX\n\nJoin lobby (on Android):\nINVITATION_LOBBY_STRING_ENCODING_XXXX</string>
+    <string name="google_play_link">https://play.google.com/store/apps/details?id=com.peaceray.quantro</string>
+	
+    
+    <!-- Apps which we know support the full invitation -->
+    <string name="package_name_google_plus">com.google.android.apps.plus</string>
+    <string name="package_name_gmail">com.google.android.gm</string>
+    <string name="package_name_google_android_email">com.google.android.email</string>
+    <string name="package_name_android_email">com.android.email</string>
+    <string name="package_name_k9">com.fsck.k9</string>
+    <string name="package_name_facebook">com.facebook.katana</string>
+    <string name="package_name_facebook_messenger">com.facebook.orca</string>
+    
+    <string-array name="package_name_array_supports_long_invitation">
+        <item>@string/package_name_google_plus</item>
+        <item>@string/package_name_gmail</item>
+        <item>@string/package_name_google_android_email</item>
+        <item>@string/package_name_android_email</item>
+        <item>@string/package_name_k9</item>
+        <item>@string/package_name_facebook</item>
+        <item>@string/package_name_facebook_messenger</item>
+    </string-array>
+    
+    <!-- Package name substrings which we know support the full invitation -->
+    <string name="package_substring_email">mail</string>
+    <string name="package_substring_facebook">facebook</string>
+    
+    <string-array name="package_substring_array_supports_long_invitation">
+        <item>@string/package_substring_email</item>
+        <item>@string/package_substring_facebook</item>
+    </string-array>
+    
+    <!-- We use a string as the service notification id, because its ID is a unique integer. -->
+    <string name="game_service_foreground_notification_id">nostring</string>
+    <string name="lobby_service_foreground_notification_id">nostring</string>
+    
+    <!-- Stinger Text -->
+    <string name="stinger_app_version">Quantro 1.0.6</string>
+    <string name="stinger_company_info">Peace Ray LLC</string>
+    <string name="stinger_text">Quantro 1.0.6\nPeace Ray LLC</string>
+    <string name="stinger_caret_expand">&#9650;</string>
+    <string name="stinger_caret_reduce">&#9660;</string>
+    
+    <!-- Ads -->
+    <string name="admod_publisher_id">ca-app-pub-4219152246387686/4803132652</string>
+
+</resources>

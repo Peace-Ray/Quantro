@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_border_size">4dp</dimen>
+    <dimen name="button_content_size">56dp</dimen>
+    
+    <dimen name="button_medium_size">112dp</dimen>
+    <dimen name="button_medium_border_size">7dp</dimen>
+    <dimen name="button_medium_content_size">98dp</dimen>
+    
+    <dimen name="button_big_size">160dp</dimen>
+    <dimen name="button_big_border_size">10dp</dimen>
+    <dimen name="button_big_content_size">140dp</dimen>
+    
+    <dimen name="button_small_size_orig">70dp</dimen>
+    <dimen name="button_small_size">80dp</dimen>
+    
+    
+    <!-- Floading images?-->
+    <dimen name="button_content_floating_padding">4dp</dimen>
+    
+    
+    <!-- Button Text -->
+    <dimen name="button_text_bigscreen_big">30sp</dimen>
+    <dimen name="button_text_bigscreen">20sp</dimen>
+    <dimen name="button_text_bigscreen_small">12sp</dimen>
+    
+    <dimen name="button_text_standardscreen_big">26sp</dimen>
+    <dimen name="button_text_standardscreen">18sp</dimen>
+    <dimen name="button_text_standardscreen_small">12sp</dimen>
+    
+    <dimen name="button_text_miniscreen_big">22sp</dimen>
+    <dimen name="button_text_miniscreen">16sp</dimen>
+    <dimen name="button_text_miniscreen_small">12sp</dimen>
+    
+</resources>

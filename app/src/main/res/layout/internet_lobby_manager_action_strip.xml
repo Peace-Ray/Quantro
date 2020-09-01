@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Height WAS 64dp -->
+<com.peaceray.quantro.view.button.strip.CustomButtonStrip
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	
+	custom:cbs_button_0_title="@string/internet_lobby_manager_action_bar_title"
+	custom:cbs_button_0_description="@string/internet_lobby_manager_action_bar_description"
+	custom:cbs_button_0_color="@color/internet_lobby_new"
+	
+	custom:cbs_button_1_title="@string/internet_lobby_manager_action_bar_new_title"
+	custom:cbs_button_1_image_drawable="@drawable/action_new_baked"
+	custom:cbs_button_1_name="@string/action_strip_name_new"
+	custom:cbs_button_1_color="@color/internet_lobby_new"
+	
+	custom:cbs_button_2_title="@string/internet_lobby_manager_action_bar_refresh_title"
+	custom:cbs_button_2_image_drawable="@drawable/action_refresh_baked"
+	custom:cbs_button_2_name="@string/action_strip_name_refresh"
+	custom:cbs_button_2_color="@color/internet_lobby_refresh"
+	
+	custom:cbs_button_3_title="@string/internet_lobby_manager_action_bar_unhide_title"
+	custom:cbs_button_3_image_drawable="@drawable/action_undo_baked"
+	custom:cbs_button_3_name="@string/action_strip_name_unhide"
+	custom:cbs_button_3_color="@color/internet_lobby_unhide"
+	
+	custom:cbs_button_4_title="@string/internet_lobby_manager_action_bar_help_title"
+	custom:cbs_button_4_image_drawable="@drawable/action_help_baked"
+	custom:cbs_button_4_name="@string/action_strip_name_help"
+	custom:cbs_button_4_color="@color/internet_lobby_help"
+	
+	custom:cbs_button_5_title="@string/internet_lobby_manager_action_bar_settings_title"
+	custom:cbs_button_5_image_drawable="@drawable/action_settings_baked"
+	custom:cbs_button_5_name="@string/action_strip_name_settings"
+	custom:cbs_button_5_color="@color/internet_lobby_settings"
+	
+	
+	
+	custom:button_layout="@layout/action_bar_image_button"
+	
+	custom:overflow="force"
+	custom:trim="runs_left"
+	
+	custom:button_border_width = "4dip"
+	custom:button_gradient_height="0dip"
+	custom:sub_button_border_inset="0dip"
+	custom:main_button_horizontal_offset="0dip"
+	custom:button_horizontal_separation="3dip"
+	android:paddingLeft="20dp"
+	android:paddingRight="3dp"
+	android:paddingBottom="4dp"
+	android:paddingTop="4dp"
+	>
+  
+  		<!-- Include three buttons -->
+   		<com.peaceray.quantro.view.button.QuantroButton
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 custom:content_layout="@layout/content_title_big_left_gravity"
+				 android:clickable="false"/>
+
+</com.peaceray.quantro.view.button.strip.CustomButtonStrip>

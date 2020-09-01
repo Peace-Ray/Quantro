@@ -1,0 +1,850 @@
+<GB_SLICE_SEQUENCE>
+
+<GB_SS_META>
+LOOPS	true
+R		6
+C		3
+NUM		3
+EDGE	1
+</GB_SS_META>
+
+<GB_SS_SLICES>
+
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 4000 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 0
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 21 </META>
+		<SPECIAL> </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			S1	0	S0
+			S1	S1	SS
+			0	0	ST
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 1000 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 0
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 0 </META>
+		<SPECIAL> </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	ST
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 1000 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 0
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 0 </META>
+		<SPECIAL> </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	ST
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 1000 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 1
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 12 </META>
+		<SPECIAL> FIRST_CHUNK 1		NUM_CHUNKS 1 </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	S0
+			S0	S0	S0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	S0
+			S0	S0	S0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	S0
+			S0	S0	S0
+			0	0	0
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 300 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 1
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 12 </META>
+		<SPECIAL> FIRST_CHUNK 1		NUM_CHUNKS 1 </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	S0
+			S0	S0	S0
+			0	0	0
+			0	0	0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	S0
+			S0	S0	S0
+			0	0	0
+			0	0	0
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	S0
+			S0	S0	S0
+			0	0	0
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 150 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 1
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 12 </META>
+		<SPECIAL> FIRST_CHUNK 1		NUM_CHUNKS 1 </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			S0	S0	0
+			0	S0	0
+			0	S0	0
+			0	0	0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			S0	S0	0
+			0	S0	0
+			0	S0	0
+			0	0	0
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			S0	S0	0
+			0	S0	0
+			0	S0	0
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 550 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 1
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 12 </META>
+		<SPECIAL> FIRST_CHUNK 1		NUM_CHUNKS 1 </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	0
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	0
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 1000 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 1
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 12 </META>
+		<SPECIAL> FIRST_CHUNK 1		NUM_CHUNKS 1 </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	0
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 0 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 2
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 12 </META>
+		<SPECIAL> FIRST_CHUNK 0		NUM_CHUNKS 2 	PIECE_COMPONENTS true	INCLUDES_AGGREGATED_CHUNKS true		FALL_DISTANCES -1 0		IS_NEW false false 	NUM_UNLOCKED_COLUMNS 0	UNLOCKED_COLUMNS </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+			
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	0
+			] ] </FIELD>
+			
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	0
+			] ] </FIELD>
+			
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 1000 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 1
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 21 </META>
+		<SPECIAL> FIRST_CHUNK 1		NUM_CHUNKS 1 </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			S1	0	0
+			S1	S1	S1
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			S1	0	0
+			S1	S1	S1
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			S1	0	0
+			S1	S1	S1
+			0	0	0
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 700 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 1
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 21 </META>
+		<SPECIAL> FIRST_CHUNK 1		NUM_CHUNKS 1 </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			S1	0	0
+			S1	SS	SS
+			0	0	S0
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			S1	0	0
+			S1	S1	S1
+			0	0	0
+			0	0	0
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			S1	0	0
+			S1	S1	S1
+			0	0	0
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 300 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 1
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 21 </META>
+		<SPECIAL> FIRST_CHUNK 1		NUM_CHUNKS 1 </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	S1	S1
+			0	SS	S0
+			0	S1	S0
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	S1	S1
+			0	S1	0
+			0	S1	0
+			0	0	0
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			0	S1	S1
+			0	S1	0
+			0	S1	0
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 50 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 1
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 21 </META>
+		<SPECIAL> FIRST_CHUNK 1		NUM_CHUNKS 1 </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	SS	SS
+			0	S1	S0
+			0	S1	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S1	S1
+			0	S1	0
+			0	S1	0
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			0	S1	S1
+			0	S1	0
+			0	S1	0
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 350 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 1
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 21 </META>
+		<SPECIAL> FIRST_CHUNK 1		NUM_CHUNKS 1 </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			S1	S1	SS
+			0	0	SS
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			S1	S1	S1
+			0	0	S1
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			S1	S1	S1
+			0	0	S1
+			0	0	0
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 350 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 1
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 21 </META>
+		<SPECIAL> FIRST_CHUNK 1		NUM_CHUNKS 1 </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	SS	S0
+			0	S1	S0
+			S1	S1	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S1	0
+			0	S1	0
+			S1	S1	0
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			0	S1	0
+			0	S1	0
+			S1	S1	0
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 150 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 1
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 21 </META>
+		<SPECIAL> FIRST_CHUNK 1		NUM_CHUNKS 1 </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			S1	S0	S0
+			S1	S1	S1
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			S1	0	0
+			S1	S1	S1
+			0	0	0
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			S1	0	0
+			S1	S1	S1
+			0	0	0
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 1000 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 1
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 21 </META>
+		<SPECIAL> FIRST_CHUNK 1		NUM_CHUNKS 1 </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			S1	0	S0
+			S1	S1	SS
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			S1	0	0
+			S1	S1	S1
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			S1	0	0
+			S1	S1	S1
+			0	0	0
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 0 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 2
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 21 </META>
+		<SPECIAL> FIRST_CHUNK 0		NUM_CHUNKS 2 	PIECE_COMPONENTS true	INCLUDES_AGGREGATED_CHUNKS true 	FALL_DISTANCES -1 0 	IS_NEW false false		NUM_UNLOCKED_COLUMNS 0	UNLOCKED_COLUMNS </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			0	0	S0
+			0	0	S0
+			0	0	ST
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			S1	0	S0
+			S1	S1	SS
+			0	0	ST
+			] ] </FIELD>
+			
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			S1	0	0
+			S1	S1	S1
+			0	0	0
+			] ] </FIELD>
+			
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			S1	0	0
+			S1	S1	S1
+			0	0	0
+			] ] </FIELD>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	0	0
+			S1	0	0
+			S1	S1	S1
+			0	0	0
+			] ] </FIELD>
+			
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			S1	0	S0
+			S1	S1	SS
+			0	0	ST
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+	
+	<GB_SS_SLICE>
+	<GB_SS_S_META> 	DURATION 4000 	</GB_SS_S_META>
+	<GB_SS_S_CONTENT>
+		<GB_SLICE>
+		<META>	BLOCK_STATE 0
+				R 6 C 3 NUM 3 EDGE 1
+				PIECE_TYPE 21 </META>
+		<SPECIAL> </SPECIAL>
+		<FIELDS>
+			<FIELD> [ 0 6 3 [
+			0	0	0
+			0	0	0
+			0	S0	S0
+			S1	0	S0
+			S1	S1	SS
+			0	0	ST
+			] ] </FIELD>
+		</FIELDS>
+		</GB_SLICE>
+	</GB_SS_S_CONTENT>
+	</GB_SS_SLICE>
+
+</GB_SS_SLICES>
+
+</GB_SLICE_SEQUENCE>

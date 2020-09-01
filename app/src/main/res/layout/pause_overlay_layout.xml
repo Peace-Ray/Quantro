@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center_horizontal"
+	android:id="@id/pause_overlay"
+	android:background="#88222222"
+	>
+    
+	
+	<TextView
+		android:id="@id/pause_overlay_state"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:gravity="center_horizontal|bottom"
+		android:textSize="30sp"
+		android:textColor="#ffffffff"
+		android:shadowColor="#000000"
+		android:shadowDx="0.0"
+		android:shadowDy="0.0"
+		android:shadowRadius="1.0"
+		android:paddingBottom="1dp"
+		/>
+		
+	<TextView
+		android:id="@id/pause_overlay_state_description"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal|top"
+		android:textSize="12sp"
+		android:textColor="#ffffffff"
+		android:shadowColor="#000000"
+		android:shadowDx="0.0"
+		android:shadowDy="0.0"
+		android:shadowRadius="1.0"
+		android:paddingTop="1dp"
+		android:paddingLeft="50dp"
+		android:paddingRight="50dp"
+		/>
+	
+	<TextView
+	    android:id="@id/pause_overlay_graphics_description"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textSize="12sp"
+		android:textColor="#ffffffff"
+		android:shadowColor="#000000"
+		android:shadowDx="0.0"
+		android:shadowDy="0.0"
+		android:shadowRadius="1.0"
+		android:paddingTop="15dp"
+		android:paddingLeft="50dp"
+		android:paddingRight="50dp"
+		/>
+	
+	<TextView
+	    android:id="@id/pause_overlay_colors_description"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textSize="12sp"
+		android:textColor="#ffffffff"
+		android:shadowColor="#000000"
+		android:shadowDx="0.0"
+		android:shadowDy="0.0"
+		android:shadowRadius="1.0"
+		android:paddingLeft="50dp"
+		android:paddingRight="50dp"
+		/>
+	
+	
+		
+	<TextView
+	    android:id="@id/pause_overlay_music_description"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textSize="12sp"
+		android:textColor="#ffffffff"
+		android:shadowColor="#000000"
+		android:shadowDx="0.0"
+		android:shadowDy="0.0"
+		android:shadowRadius="1.0"
+		android:paddingLeft="50dp"
+		android:paddingRight="50dp"
+		/>
+	<TextView
+	    android:id="@id/pause_overlay_sound_description"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textSize="12sp"
+		android:textColor="#ffffffff"
+		android:shadowColor="#000000"
+		android:shadowDx="0.0"
+		android:shadowDy="0.0"
+		android:shadowRadius="1.0"
+		android:paddingBottom="15dp"
+		android:paddingLeft="50dp"
+		android:paddingRight="50dp"
+		/>
+	
+	
+	<ImageView
+	    android:id="@id/pause_overlay_image_controls"
+		android:layout_width="wrap_content"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:scaleType="fitEnd"
+		android:gravity="bottom|center_horizontal"
+		android:padding="10dp"
+	    android:paddingLeft="50dp"
+		android:paddingRight="50dp"
+		/>
+		
+	
+	<TextView
+	    android:id="@id/pause_overlay_controls_description"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal|top"
+		android:textSize="10sp"
+		android:textColor="#ffffffff"
+		android:shadowColor="#000000"
+		android:shadowDx="0.0"
+		android:shadowDy="0.0"
+		android:shadowRadius="1.0"
+		android:paddingBottom="15dp"
+	    android:paddingLeft="50dp"
+		android:paddingRight="50dp"
+		/>
+	
+</LinearLayout>

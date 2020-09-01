@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="standard_block_field_background">#ff000000</color>
+    
+    <!-- Quantro colors -->
+	<color name="standard_s0_fill">#ffff3333</color>
+	<color name="standard_s1_fill">#ff00ccff</color>
+	
+	<color name="standard_st_fill">#ff66ff33</color>
+	<color name="standard_sl_s0_fill">#ff808080</color>
+	<color name="standard_sl_s1_fill">#ff808080</color>
+	<color name="standard_sl_active_s0_fill">#ffffffff</color>
+	<color name="standard_sl_active_s1_fill">#ffffffff</color>
+	<color name="standard_ul_fill">#ffffffff</color>
+	<color name="standard_u0_fill">#ffff3333</color>
+	<color name="standard_u1_fill">#ff00ccff</color>
+	<color name="standard_f0_fill">#ffffd500</color>
+	<color name="standard_f1_fill">#ffffd500</color>
+	
+	<color name="standard_s0_border">#ffff3333</color>
+	<color name="standard_s1_border">#ff00ccff</color>
+	
+	<!-- sticky borders might have different colors depending on the qPane -->
+	<color name="standard_st_s0_border">#ffc38233</color>		<!-- kinda brownish... -->
+	<color name="standard_st_s1_border">#ff3eea7e</color>		<!-- blue-green -->
+	<!-- linked borders might have very low-saturation colors -->
+	<color name="standard_sl_s0_border">#ffad8585</color>		<!-- low-sat red... -->
+	<color name="standard_sl_s1_border">#ff658f99</color>		<!-- low-sat blue -->
+	<color name="standard_sl_active_s0_border">#ffffffff</color>
+	<color name="standard_sl_active_s1_border">#ffffffff</color>
+	
+	<!-- flash borders might have different colors as well -->
+	<color name="standard_f0_border">#ffffac0c</color>
+	<color name="standard_f1_border">#ff35cdca</color>
+	
+	<color name="standard_prism_side">#ffffffff</color>
+	<color name="standard_prism_edge">#ffeeeeee</color>
+	
+	<!-- Special detail colors for composing bitmaps and the like. -->
+	<color name="standard_f0_detail_burst">#fff35b00</color>
+	<color name="standard_f0_detail_stripe">#ffffd500</color>
+	<color name="standard_f1_detail_burst">#fff35b00</color>
+	<color name="standard_f1_detail_stripe">#ffffd500</color>
+	
+	
+	<!-- Retro colors -->
+	<color name="standard_r0_fill">#ffff0042</color>		<!-- blush red, was red #ffff0000 -->
+	<color name="standard_r1_fill">#ffff3600</color>		<!-- fiery red, was orange #ffff7f00 -->
+	<color name="standard_r2_fill">#ffffd500</color>		<!-- yellow gold, was yellow #ffffff00 -->
+	<color name="standard_r3_fill">#ff7bf69d</color>		<!-- light green, was green (lime) #ff00ff00 -->
+	<color name="standard_r4_fill">#ff1b8ef9</color>		<!-- blue, was #ff0000ff -->
+	<color name="standard_r5_fill">#ff9f6fed</color>		<!-- was #ffab97cb purple-grey, was electric indigo #ff6600ff -->
+	<color name="standard_r6_fill">#ffff6ec7</color>		<!-- pink, was electric violet #ff8b00ff -->
+	<color name="standard_rainbow_bland_fill">#ffaaaabb</color>
+	
+	<color name="standard_r0_border">#ffff0042</color>		<!-- blush red, was red #ffff0000 -->
+	<color name="standard_r1_border">#ffff3600</color>		<!-- fiery red, was orange #ffff7f00 -->
+	<color name="standard_r2_border">#ffffd500</color>		<!-- yellow gold, was yellow #ffffff00 -->
+	<color name="standard_r3_border">#ff7bf69d</color>		<!-- light green, was green (lime) #ff00ff00 -->
+	<color name="standard_r4_border">#ff1b8ef9</color>		<!-- blue, was #ff0000ff -->
+	<color name="standard_r5_border">#ff9f6fed</color>		<!-- was #ffab97cb purple-grey, was electric indigo #ff6600ff -->
+	<color name="standard_r6_border">#ffff6ec7</color>		<!-- pink, was electric violet #ff8b00ff -->
+	<color name="standard_rainbow_bland_border">#ffaaaabb</color>
+	
+	<!-- Special detail colors for composing bitmaps -->
+	<color name="standard_push_down_chevron">#ff3442e3</color>
+	<color name="standard_push_up_chevron">#ffe34234</color>
+	
+	
+	<!-- Inner shadows -->
+	<color name="standard_fill_shadow">#ff000000</color>
+	<color name="standard_drop_shadow">#ff000000</color>
+	
+	<color name="standard_block_background">#ff000000</color>
+    
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <!-- A frame which allows collapsable "stinger" holding useful information.
+    	This frame is applied by QuantroActivity to any content view which is
+    	1. Full-Screen and 2. not a Game. 
+    	
+    	The frame puts is filled with the custom Activity content, plus a stinger.
+    	A 'reduced' or 'slim' stinger is displayed under the content (thus the
+    	content gets the full screen, less the slim stinger profile) showing
+    	the version name and company name, along with an "expand" caret.
+    	
+    	Floating above both the slim stinger and the main content is an 'expanded'
+    	stinger, holding the same information (version and company name) on one
+    	side, and a series of social icons on the other, such as ScoreLoop.  An
+    	inverse caret occurs in the same horizontal location (possibly offset
+    	vertically).
+    	
+    	It's the QuantroActivity's responsibility to show and hide these structures.
+    	-->
+    	
+    <!-- Background! -->
+    <ImageView
+        android:id="@id/menu_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        />
+        
+    	
+    <!-- Content view placeholder -->
+    <View
+        android:id="@id/activity_frame_content_placeholder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/stinger_slim_background"
+        />
+    
+
+    <!-- Slim Stinger! -->
+	<View
+	    android:id="@id/stinger_slim_background"
+	    android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@id/stinger_slim_text_app"
+        android:background="@color/quantro_stinger_background"
+        />
+    
+    <!-- App version. -->
+    <TextView
+        android:id="@id/stinger_slim_text_app"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="4dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:gravity="left"
+        android:text="@string/stinger_app_version"
+        android:textSize="12sp"
+        android:textColor="@color/mid_text"
+        />
+
+	<!-- App company. -->
+	<TextView
+		android:id="@id/stinger_slim_text_company"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:paddingRight="4dp"
+		android:paddingTop="1dp"
+		android:paddingBottom="1dp"
+		android:gravity="left"
+		android:text="@string/stinger_company_info"
+		android:textSize="12sp"
+		android:textColor="@color/mid_text"
+		/>
+    
+</RelativeLayout>

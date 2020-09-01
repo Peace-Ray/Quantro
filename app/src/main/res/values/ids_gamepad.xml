@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item	type="id"
+        	name="controls_button_ccw"/>
+    <item	type="id"
+        	name="controls_button_cw"/>
+    <item	type="id"
+        	name="controls_button_flip"/>
+    <item	type="id"
+        	name="controls_button_left"/>
+    <item	type="id"
+        	name="controls_button_down"/>
+    <item	type="id"
+        	name="controls_button_right"/>
+    
+    <item	type="id"
+        	name="controls_extras_next"/>
+    <item	type="id"
+        	name="controls_extras_reserve"/>
+    <item	type="id"
+        	name="controls_extras_vs"/>
+    <item	type="id"
+        	name="controls_extras_score"/>
+    
+    
+    <item	type="id"
+        	name="controls_row_top"/>
+    <item	type="id"
+        	name="controls_row_bottom"/>
+    
+    <item	type="id"
+        	name="controls_extras_row_top"/>
+    <item	type="id"
+        	name="controls_extras_row_bottom"/>
+    
+    
+    
+</resources>

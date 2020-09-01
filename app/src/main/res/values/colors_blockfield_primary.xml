@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <!-- Primary: Bold, primary colors.
+    
+    		We use bright, primary colors from a color wheel, although these
+    		may differ substantially from the standard additive color model. 
+    		
+    		The main seven colors used are:
+    		
+    		ff2501		red
+    		ff7c00		orange
+    		fffa00		yellow
+    		01b700		green
+    		00b1d3		cyan / turquoise
+    		0128b4		blue
+    		7825b5		purple
+    		
+    		the values above were taken from a color wheel; those represented below
+    		were then then "tweaked" as needed to produce bright, bold, but still
+    		"primary" colors.
+    		
+    		-->
+    <color name="primary_block_field_background">#ff000000</color>
+    
+    <color name="primary_red"	>#ffff0101</color>
+    <color name="primary_orange">#ffff7f00</color>
+    <color name="primary_yellow">#fffffa00</color>
+    <color name="primary_green"	>#ff01e400</color>
+    <color name="primary_cyan"	>#ff00d8f5</color>
+    <color name="primary_blue"	>#ff002dd1</color>
+    <color name="primary_purple">#ff7825b5</color>
+    
+	
+	<!-- Retro colors -->
+	<color name="primary_r0_fill">@color/primary_red</color>
+	<color name="primary_r1_fill">@color/primary_orange</color>
+	<color name="primary_r2_fill">@color/primary_yellow</color>
+	<color name="primary_r3_fill">@color/primary_green</color>
+	<color name="primary_r4_fill">@color/primary_cyan</color>
+	<color name="primary_r5_fill">@color/primary_blue</color>
+	<color name="primary_r6_fill">@color/primary_purple</color>
+	<color name="primary_rainbow_bland_fill">#ffa0a0a0</color>
+	<color name="primary_push_down_fill">#ffffffff</color>
+	<color name="primary_push_up_fill">#ffffffff</color>
+	
+	<color name="primary_r0_border">@color/primary_red</color>
+	<color name="primary_r1_border">@color/primary_orange</color>
+	<color name="primary_r2_border">@color/primary_yellow</color>
+	<color name="primary_r3_border">@color/primary_green</color>
+	<color name="primary_r4_border">@color/primary_cyan</color>
+	<color name="primary_r5_border">@color/primary_blue</color>
+	<color name="primary_r6_border">@color/primary_purple</color>
+	<color name="primary_rainbow_bland_border">#ffa0a0a0</color>	<!-- Grey -->
+	<color name="primary_push_down_border">#ffffffff</color>
+	<color name="primary_push_up_border">#ffffffff</color>
+	
+	<!-- Push blocks -->
+	
+	<!-- Special detail colors for composing bitmaps -->
+	<color name="primary_push_down_chevron">#ff26b0ff</color>		<!-- a brighter blue than standard -->
+	<color name="primary_push_up_chevron">#fffee300</color>			<!-- Yellow -->
+	
+	<!-- Inner shadows -->
+	<color name="primary_fill_shadow">#ff000000</color>
+	<color name="primary_drop_shadow">#ff000000</color>
+	
+</resources>
