@@ -16,7 +16,11 @@ Quantro, Peace Ray, and the Q logo are trademarks of Peace Ray LLC.
 
 ## Installation
 
-TODO: installation and/or build instructions
+Quantro may be built from source (this project uses Android Studio) or installed
+directly as an APK (see [Quantro Releases](https://github.com/Peace-Ray/Quantro/releases)).
+
+Although Quantro is unlikely to return to the Google Play Store, support for other
+app repositories is pending.
 
 ## Description
 
