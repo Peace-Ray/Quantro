@@ -1163,8 +1163,7 @@ public class GameActivity extends QuantroActivity
     
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-    	if ( super.handleActivityResult(requestCode, resultCode, data) )
-    		return ;
+		super.onActivityResult(requestCode, resultCode, data);
     	
     	switch( requestCode ) {
     	case IntentForResult.REQUEST_EXAMINE_GAME_RESULT:

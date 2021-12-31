@@ -41,7 +41,7 @@ public class AdministratedWrappedUDPSocketChannelAdministrator implements Admini
 
 	@SuppressWarnings("unused")
 	private static final boolean DEBUG_LOG = false && Debug.LOG ;
-	private static final String TAG = "AdministratedWrappedUDPSocketChannelAdministrator" ;
+	private static final String TAG = "AWUDPSChannelAdministrator" ;
 	
 	private final void log( String msg ) {
 		if ( DEBUG_LOG ) {

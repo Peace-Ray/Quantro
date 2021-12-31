@@ -828,10 +828,8 @@ public class LobbyActivity extends QuantroActivity implements
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		if ( super.handleActivityResult(requestCode, resultCode, data) )
-    		return ;
-    	
-		
+		super.onActivityResult(requestCode, resultCode, data);
+
 		Log.d(TAG, "onActivityResult: " + requestCode + " " + resultCode);
 		// Dismiss the launching dialog.
 		dialogManager.dismissDialog(DIALOG_LAUNCHING_GAME_ID);

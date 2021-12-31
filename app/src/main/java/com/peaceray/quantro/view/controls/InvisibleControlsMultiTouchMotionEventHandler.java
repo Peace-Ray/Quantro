@@ -8,7 +8,7 @@ import android.view.MotionEvent;
 public class InvisibleControlsMultiTouchMotionEventHandler extends
 		InvisibleControlsSingleTouchMotionEventHandler {
 	
-	public static final String TAG = "InvisibleControlsMultiTouchMotionEventHandler" ;
+	public static final String TAG = "ICMTMEventHandler" ;
 
 	public InvisibleControlsMultiTouchMotionEventHandler( InvisibleControls ic, boolean anywhere ) {
 		super(ic, anywhere) ;

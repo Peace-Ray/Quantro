@@ -26,7 +26,7 @@ import android.widget.TextView;
 public class StandardPauseViewComponentAdapter extends
 		PauseViewComponentAdapter {
 	
-	private static final String TAG = "StandardPauseViewComponentAdapter" ;
+	private static final String TAG = "SPVComponentAdapter" ;
 	
 	// We don't want to do a lot of string construction,
 	// so we pre-construct strings in advance.

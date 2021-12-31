@@ -32,7 +32,7 @@ import com.peaceray.quantro.utils.ThreadSafety;
  */
 public class LobbyClientCommunications implements MessagePassingConnection.Delegate {
 	
-	public static final String TAG = "LobbyClientCommunications" ;
+	public static final String TAG = "LCCommunications" ;
 	
 	
 	/**
@@ -385,7 +385,7 @@ public class LobbyClientCommunications implements MessagePassingConnection.Deleg
 	
 	class LobbyClientCommunicationsThread extends Thread {
 		
-		private static final String TAG = "LobbyClientCommunicationsThread" ;
+		private static final String TAG = "LCCommunicationsThread" ;
 		
 		public static final long millisecondsBetweenUpdates = 100 ;
 		

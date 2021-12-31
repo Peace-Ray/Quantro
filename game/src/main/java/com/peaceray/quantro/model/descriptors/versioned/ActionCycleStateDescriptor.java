@@ -741,10 +741,10 @@ public final class ActionCycleStateDescriptor {
 		 * 		for ( int r = 0; r < mR; r++ ) {
 		 * 			mBlockFieldUpdate[r] = setBlockFieldRowUpdate( r, from.bf, to.bf, this.bf )
 		 * 		}
-		 * @param row
+		 * @param r
 		 * @param from
 		 * @param to
-		 * @param storeUpdate
+		 * @param update
 		 * @return
 		 */
 		private static boolean setBlockFieldRowUpdateRows( int r, byte [][][] from, byte [][][] to, byte [][][] update ) {

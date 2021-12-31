@@ -59,7 +59,7 @@ public class WifiMonitor implements Runnable {
 	synchronized public static int getWifiIpAddress( Context context ) {
 		if ( context == null )
 			return 0 ;
-		WifiManager manager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
+		WifiManager manager = (WifiManager) context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 		
 		WifiInfo wifiInfo = manager.getConnectionInfo();
 		return wifiInfo.getIpAddress();	

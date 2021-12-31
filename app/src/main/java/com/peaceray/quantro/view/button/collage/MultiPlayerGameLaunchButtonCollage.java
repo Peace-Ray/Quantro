@@ -30,7 +30,7 @@ import android.view.View.OnLongClickListener;
 public class MultiPlayerGameLaunchButtonCollage extends QuantroButtonCollage implements OnClickListener, OnLongClickListener, SupportsLongClickOracle {
 
 	
-	private static final String TAG = "MultiPlayerGameLaunchButtonCollage" ;
+	private static final String TAG = "MPGLButtonCollage" ;
 	
 	public interface Delegate {
 		

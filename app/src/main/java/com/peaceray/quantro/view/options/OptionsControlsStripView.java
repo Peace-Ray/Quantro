@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class OptionsControlsStripView extends OptionsView implements
 		OptionsControlsView, com.peaceray.quantro.view.button.strip.CustomButtonStrip.Delegate {
 	
-	private static final String TAG = "OptionsControlsStripView" ;
+	private static final String TAG = "OCStripView" ;
 	
 	protected static int enm ;
 	

@@ -2,7 +2,7 @@
 <!-- Height WAS 55dp -->
 <com.peaceray.quantro.view.button.strip.LobbyButtonStrip
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+  xmlns:custom="http://schemas.android.com/apk/res-auto"
   android:id="@id/lobby_button_strip"
   android:layout_width="fill_parent"
   android:layout_height="wrap_content"

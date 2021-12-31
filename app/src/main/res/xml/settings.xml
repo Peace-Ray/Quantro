@@ -3,7 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:robobunny="http://robobunny.com"
     xmlns:peaceray="http://peaceray.com"
-    android:background="@color/menu_background">
+    android:background="@color/menu_background"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
     
     <PreferenceScreen
         android:key="@string/setting_screen_key_game"

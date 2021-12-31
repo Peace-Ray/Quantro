@@ -17,7 +17,7 @@ import com.peaceray.quantro.utils.ThreadSafety;
 public class MultiplayerClientCommunications extends ClientCommunications
 		implements MessagePassingConnection.Delegate {
 	
-	private static final String TAG = "MultiplayerClientCommunications" ;
+	private static final String TAG = "MClientCommunications" ;
 	
 	
 	// Orders from above!  Connect or disconnect our connections.

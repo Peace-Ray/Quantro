@@ -22,7 +22,7 @@ public class AndroidCommunication {
 	 */
 	public static InetAddress getWifiBroadcastAddress( Context context ) throws IOException {
 		
-	    WifiManager wifi = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
+	    WifiManager wifi = (WifiManager) context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 	    DhcpInfo dhcp = wifi.getDhcpInfo();
 	    // handle null somehow
 	    

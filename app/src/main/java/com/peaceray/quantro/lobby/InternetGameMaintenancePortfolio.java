@@ -66,7 +66,7 @@ import com.peaceray.quantro.lobby.exception.CommunicationErrorException;
  */
 public class InternetGameMaintenancePortfolio {
 	
-	private static final String TAG = "InternetGameMaintenancePortfolio" ;
+	private static final String TAG = "IGMaintenancePortfolio" ;
 	
 	
 	/**

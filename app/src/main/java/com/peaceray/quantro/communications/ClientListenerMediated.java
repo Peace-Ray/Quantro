@@ -33,7 +33,7 @@ public class ClientListenerMediated extends ClientListener {
 
 	
 	class ClientListenerMediatedThread extends Thread {
-		public static final String TAG = "ClientListenerMediatedThread" ;
+		public static final String TAG = "CLMediatedThread" ;
 		
 		ClientListenerMediated listener ;
 		
@@ -220,7 +220,7 @@ public class ClientListenerMediated extends ClientListener {
 	 */
 	class PassThroughOpenerThread extends Thread {
 		
-		private static final String TAG = "PassThroughOpenerThread" ;
+		private static final String TAG = "PTOpenerThread" ;
  		
 		WeakReference<ClientListener> listener ;
 		long absoluteTimeAvailable ;

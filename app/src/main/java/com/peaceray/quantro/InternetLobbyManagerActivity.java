@@ -72,7 +72,7 @@ import com.peaceray.quantro.view.lobby.InternetLobbyManagerView;
 public class InternetLobbyManagerActivity extends QuantroActivity implements
 		InternetLobbyManagerView.Delegate, GlobalDialog.DialogContext {
 
-	public static final String TAG = "InternetLobbyManagerActivity";
+	public static final String TAG = "ILManagerActivity";
 	
 	public static final String BUNDLE_EXTRA_MIN_VERSION = "com.peaceray.quantro.InternetLobbyManagerActivity.BUNDLE_EXTRA_MIN_VERSION" ;
 	public static final String BUNDLE_EXTRA_SHOWED_INTRO = "com.peaceray.quantro.InternetLobbyManagerActivity.BUNDLE_EXTRA_SHOWED_INTRO" ;
@@ -539,10 +539,8 @@ public class InternetLobbyManagerActivity extends QuantroActivity implements
 	// Activity Result listener (making a new challenge)
 
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		if ( super.handleActivityResult(requestCode, resultCode, data) )
-    		return ;
-    	
-		
+		super.onActivityResult(requestCode, resultCode, data);
+
 		if (resultCode == RESULT_OK) {
 
 			Bundle extras = data.getExtras();

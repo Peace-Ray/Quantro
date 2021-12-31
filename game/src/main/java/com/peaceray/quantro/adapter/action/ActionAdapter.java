@@ -71,7 +71,6 @@ public abstract class ActionAdapter {
 		 * 
 		 * @param caller
 		 * @param game
-		 * @param returnValue
 		 */
 		public void gal_gameBeginningActionCycle( ActionAdapter caller, Game game, boolean outgoingActionCycleStatePending, boolean incomingActionCycleStatePending ) ;
 		
@@ -95,8 +94,8 @@ public abstract class ActionAdapter {
 		 * OutgoingActionQueue.  This method is called as the last operation
 		 * of the method called on 'caller,' in other words, the outgoing
 		 * action queue has already been updated.
-		 * @param game
-		 * @param endActionCycle Does this end an action cycle?
+		 * @param caller
+		 * @param actionCycleEnds Does this end an action cycle?
 		 */
 		public void gal_gameDidEnqueueActions( ActionAdapter caller, boolean actionCycleEnds ) ;
 		
@@ -508,7 +507,6 @@ public abstract class ActionAdapter {
 	
 	/**
 	 * Indicates that the current row displacement for the game has changed.
-	 * @param displacement
 	 */
 	public abstract void game_didChangeRealtime( Game game, long millisecondsTicked, double displacementSeconds, double rowsDisplacedAndTransferred ) ;
 	

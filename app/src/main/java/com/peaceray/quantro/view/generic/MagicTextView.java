@@ -56,7 +56,10 @@ import android.util.AttributeSet;
 import android.util.Pair;
 import android.widget.TextView;
 
-public class MagicTextView extends TextView {
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatTextView;
+
+public class MagicTextView extends AppCompatTextView {
 	private static final String TAG = "MagicTextView" ;
 	
 	private ArrayList<Shadow> outerShadows;

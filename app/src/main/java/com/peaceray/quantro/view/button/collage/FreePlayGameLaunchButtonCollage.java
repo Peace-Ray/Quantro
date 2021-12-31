@@ -37,7 +37,7 @@ import android.view.View.OnLongClickListener;
 
 public class FreePlayGameLaunchButtonCollage extends QuantroButtonCollage implements OnClickListener, OnLongClickListener, SupportsLongClickOracle, GameSaver.ThumbnailLoader.Client {
 	
-	public static final String TAG = "FreePlayGameLaunchButtonCollage" ;
+	public static final String TAG = "FPGLButtonCollage" ;
 	
 	public interface Delegate {
 		

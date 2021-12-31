@@ -843,8 +843,8 @@ public class GameService extends Service
 	 * *************************************************************************
 	 */
     
-    private static final String LOCK_NAME_PARTIAL_STATIC="com.peaceray.quantro.main.GameService.PARTIAL_WAKE_LOCK";
-    private static final String LOCK_NAME_FULL_STATIC="com.peaceray.quantro.main.GameService.FULL_WAKE_LOCK" ;
+    private static final String LOCK_NAME_PARTIAL_STATIC="quantro:game_partial";
+    private static final String LOCK_NAME_FULL_STATIC="quantro:game_full" ;
 	private volatile PowerManager.WakeLock lockPartial=null;
 	private volatile PowerManager.WakeLock lockFull=null ;
     
@@ -866,7 +866,7 @@ public class GameService extends Service
     
     synchronized private WifiManager.WifiLock getWifiLock(Context context) {
     	if ( lockWifi==null ) {
-    		WifiManager mgr=(WifiManager)context.getSystemService(Context.WIFI_SERVICE);
+    		WifiManager mgr=(WifiManager)context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 		    
     		int mode = WifiManager.WIFI_MODE_FULL ;
     		if ( VersionCapabilities.getVersion() >= 12 ) {

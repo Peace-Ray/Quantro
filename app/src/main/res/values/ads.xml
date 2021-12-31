@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ad_banner_height">@dimen/ad_banner_height_phone</dimen>
+    <dimen name="ad_banner_width">@dimen/ad_banner_width_phone</dimen>
+    
+    <drawable name="premium_remove_ads_notice">@drawable/premium_remove_ads_notice_phone</drawable>
+</resources>

@@ -31,7 +31,7 @@ public class GameSettingsDatabaseAdapter {
     public static final String KEY_DIFFICULTY = "difficulty" ;
     public static final String KEY_DISPLACEMENT_FIXED_RATE = "fixed_rate" ;
     
-    private static final String TAG = "GameSettingsDatabaseAdapter";
+    private static final String TAG = "GSDatabaseAdapter";
     
     private static final String DATABASE_NAME = "quantro_game_settings";
     private static final String DATABASE_TABLE = "most_recent_game_settings";

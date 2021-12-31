@@ -101,7 +101,7 @@ public class LobbyViewComponentAdapter
 		implements LobbyViewAdapter, View.OnClickListener, View.OnLongClickListener, MultiPlayerGameLaunchButtonStrip.Delegate, MultiPlayerGameLaunchButtonCollage.Delegate {
 	
 	
-	private static final String TAG = "LobbyViewComponentAdapter" ;
+	private static final String TAG = "LVComponentAdapter" ;
 	
 	
 	// COMPONENTS.  These ints let us select various components.  We

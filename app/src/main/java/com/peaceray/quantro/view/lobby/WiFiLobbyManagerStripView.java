@@ -41,7 +41,7 @@ public class WiFiLobbyManagerStripView extends RelativeLayout implements
 		WifiLobbyManagerView, LobbyButtonStrip.Delegate, WifiMonitor.Listener, CustomButtonStrip.Delegate, com.peaceray.quantro.view.button.collage.LobbyButtonCollage.Delegate {
 	
 	
-	private static final String TAG = "WifiLobbyManagerStripView" ;
+	private static final String TAG = "WFLMStripView" ;
 	
 	
 	

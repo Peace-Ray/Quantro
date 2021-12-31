@@ -9,7 +9,7 @@ public interface AcceptsClientSockets {
 	 * the playerSlot designated for this player; '-1' if no playerSlot was
 	 * assigned and the set failed.
 	 * 
-	 * @param sock 	The client socket we have already interrogated.
+	 * @param wsock 	The client socket we have already interrogated.
 	 * @param ci 	Information about the client socket.
 	 * @return
 	 */

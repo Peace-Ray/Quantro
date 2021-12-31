@@ -175,7 +175,7 @@ public class HtmlViewerActivity extends QuantroActivity {
 	
 	@Override
 	public synchronized void onPause() {
-		super.onResume() ;
+		super.onPause(); ;
 		
 		mDialogManager.hideDialogs() ;
 	}

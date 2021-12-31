@@ -19,7 +19,7 @@ import android.view.MotionEvent;
 public class InvisibleControlsFourWayGestureListener
 		implements GestureDetector.OnGestureListener {
 	
-	private static final String TAG = "InvisibleControlsFourWayGestureListener" ;
+	private static final String TAG = "IC4WGestureListener" ;
 	
 	
 	// the larger this value, the larger the range of movement which is 

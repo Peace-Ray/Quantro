@@ -46,7 +46,7 @@ public class AdministratedMessageAwareWrappedUDPSocketChannelAdministrator imple
 	@SuppressWarnings("unused")
 	private static final boolean DEBUG_LOG = true && Debug.LOG ;
 	private static final boolean VERBOSE_LOG = false && Debug.LOG ;
-	private static final String TAG = "AdministratedMessageAwareWrappedUDPSocketChannelAdministrator" ;
+	private static final String TAG = "AMAWUDPSChannelAdministrator" ;
 	
 	private final void log( String msg ) {
 		if ( DEBUG_LOG ) {
@@ -92,8 +92,7 @@ public class AdministratedMessageAwareWrappedUDPSocketChannelAdministrator imple
 	 * 'null' is returned, some error occurred and the channel will not be
 	 * administrated.  Otherwise, the return WrappedSocket can be treated
 	 * as if it is Autonomous.
-	 * 
-	 * @param dchannel
+	 *
 	 * @return
 	 */
 	public synchronized WrappedSocket wrap( Class<?> messageClass, DatagramChannel channel, SocketAddress dest, byte [] prefix ) {

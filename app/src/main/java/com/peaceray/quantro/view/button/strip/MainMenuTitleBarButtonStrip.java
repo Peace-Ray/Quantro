@@ -44,7 +44,7 @@ import com.peaceray.quantro.view.game.SliceSequenceView;
 public class MainMenuTitleBarButtonStrip extends QuantroButtonStrip implements QuantroButtonStrip.Controller {
 
 	
-	public static final String TAG = "MainMenuTitleBarButtonStrip" ;
+	public static final String TAG = "MMTBButtonStrip" ;
 	
 	public interface Delegate {
 		/**

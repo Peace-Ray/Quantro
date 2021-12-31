@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.peaceray.quantro.view.button.collage.BackgroundButtonCollage
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     custom:bbc_alert_drawable_locked="@drawable/action_locked_baked_small"

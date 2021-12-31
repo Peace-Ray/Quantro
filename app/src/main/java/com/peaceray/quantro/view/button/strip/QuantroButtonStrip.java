@@ -132,7 +132,7 @@ public class QuantroButtonStrip extends ViewGroup implements View.OnClickListene
 		public void qbsc_onOverflowClicked( QuantroButtonStrip strip ) ;
 	}
 	
-	private static final String TAG = "QuantroButtonStrip" ;
+	private static final String TAG = "QButtonStrip" ;
 	
 	
 	/**

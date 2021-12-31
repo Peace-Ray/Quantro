@@ -69,7 +69,7 @@ public class ControlsToActionsAdapter implements InvisibleControls.Delegate {
 
 	
 
-	private final String TAG = "ControlsToActionsAdapter" ;
+	private final String TAG = "CTActionsAdapter" ;
 
 	// Structures to track the current state of the buttons.
 	private boolean buttonsEnabled ;

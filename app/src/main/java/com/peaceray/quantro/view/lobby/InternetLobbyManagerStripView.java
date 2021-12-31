@@ -43,7 +43,7 @@ public class InternetLobbyManagerStripView extends RelativeLayout implements
 	InternetLobbyManagerView, LobbyButtonStrip.Delegate, CustomButtonStrip.Delegate, OnClickListener, com.peaceray.quantro.view.button.collage.LobbyButtonCollage.Delegate {
 
 	
-	private static final String TAG = "InternetLobbyManagerStripView" ;
+	private static final String TAG = "ILManagerStripView" ;
 	
 	
 	

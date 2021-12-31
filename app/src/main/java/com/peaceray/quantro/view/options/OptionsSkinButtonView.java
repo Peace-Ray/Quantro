@@ -34,7 +34,7 @@ import com.velosmobile.utils.SectionableAdapter;
 public class OptionsSkinButtonView extends OptionsView implements
 		OptionsSkinView, com.peaceray.quantro.view.button.strip.CustomButtonStrip.Delegate, com.peaceray.quantro.view.button.collage.SkinButtonCollage.Delegate {
 	
-	private static final String TAG = "OptionsSkinButtonView" ;
+	private static final String TAG = "OSButtonView" ;
 	
 	// ACTION BAR BUTTONS
 	private String ACTION_NAME_SETTINGS ;

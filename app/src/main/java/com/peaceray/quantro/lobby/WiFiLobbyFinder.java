@@ -224,7 +224,7 @@ public class WiFiLobbyFinder {
 	
 	class LobbyFinderCoordinatorThread extends Thread {
 		
-		public static final String TAG = "LobbyFinderCoordinatorThread" ;
+		public static final String TAG = "LFCoordinatorThread" ;
 		
 		boolean running ;
 		
@@ -364,7 +364,7 @@ public class WiFiLobbyFinder {
 		
 		
 		class LobbyFinderAnnouncementListenerThread extends Thread {
-			public final static String TAG = "LobbyFinderAnnouncementListenerThread" ;
+			public final static String TAG = "LFAListenerThread" ;
  			
 			LobbyFinderCoordinatorThread coordinator ;
 			

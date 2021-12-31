@@ -51,7 +51,7 @@ public class WifiLobbyManagerActivity extends QuantroActivity
 		implements WifiLobbyManagerView.Delegate, WiFiLobbyFinder.Delegate,
 		GlobalDialog.DialogContext {
 
-	public static final String TAG = "WiFiLobbyManagerActivity" ;
+	public static final String TAG = "WFLManagerActivity" ;
 	
 	////////////////////////////////////////////////////////////////////////////
 	//
@@ -254,6 +254,7 @@ public class WifiLobbyManagerActivity extends QuantroActivity
 	
 	@Override
 	synchronized protected void onNewIntent( Intent intent ) {
+		super.onNewIntent(intent);
 		Log.d(TAG, "onNewIntent") ;
 		try {
 			Uri data = intent.getData() ;
@@ -407,11 +408,9 @@ public class WifiLobbyManagerActivity extends QuantroActivity
 	// Activity Result listener (making a new lobby) 
 	
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {  
-    	if ( super.handleActivityResult(requestCode, resultCode, data) )
-    		return ;
+    	super.onActivityResult(requestCode, resultCode, data);
     	
-        if (resultCode == RESULT_OK) {  
-        	
+        if (resultCode == RESULT_OK) {
         	Bundle extras = data.getExtras() ;
         	
             switch (requestCode) {  

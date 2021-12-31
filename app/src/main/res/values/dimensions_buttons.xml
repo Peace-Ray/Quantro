@@ -20,6 +20,10 @@
     
     
     <!-- Button Text -->
+    <dimen name="button_text_big">@dimen/button_text_miniscreen_big</dimen>
+    <dimen name="button_text">@dimen/button_text_miniscreen</dimen>
+    <dimen name="button_text_small">@dimen/button_text_miniscreen_small</dimen>
+
     <dimen name="button_text_bigscreen_big">30sp</dimen>
     <dimen name="button_text_bigscreen">20sp</dimen>
     <dimen name="button_text_bigscreen_small">12sp</dimen>

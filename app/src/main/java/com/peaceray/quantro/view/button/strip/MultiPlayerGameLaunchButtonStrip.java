@@ -23,7 +23,7 @@ import android.util.Log;
 public class MultiPlayerGameLaunchButtonStrip extends QuantroButtonStrip
 	implements QuantroButtonStrip.Controller {
 	
-	private static final String TAG = "MultiPlayerGameLaunchButtonStrip" ;
+	private static final String TAG = "MPGLButtonStrip" ;
 
 	public interface Delegate {
 		/**

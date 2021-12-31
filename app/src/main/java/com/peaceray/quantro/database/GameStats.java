@@ -371,7 +371,7 @@ public class GameStats {
 	
 	public static class DatabaseAdapter {
 		
-		private static final String TAG = "GameStats.DatabaseAdapter" ;
+		private static final String TAG = "GS.DatabaseAdapter" ;
 		
 		private static final Object DATABASE_MUTEX = new Object() ;
 		

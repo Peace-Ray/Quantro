@@ -1032,8 +1032,8 @@ public class MainMenuActivity extends QuantroActivity
     		rowTag.mHeaderTextView.setText("AaBbCcGgJjKkPpQqTtWwXxYyZz") ;
     	}
     	menuItem.measure(
-    			MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE, MeasureSpec.AT_MOST),
-    			MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE, MeasureSpec.AT_MOST)) ;
+    			MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE / 2, MeasureSpec.AT_MOST),
+    			MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE / 2, MeasureSpec.AT_MOST)) ;
     	
     	int height = itemTag.mMBS.getIdealHeight() ;
     	if ( rowView.getChildCount() > 1 )

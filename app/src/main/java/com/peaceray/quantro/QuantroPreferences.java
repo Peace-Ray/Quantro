@@ -8,7 +8,6 @@ import com.peaceray.quantro.content.Background;
 import com.peaceray.quantro.content.Music;
 import com.peaceray.quantro.content.Skin;
 import com.peaceray.quantro.dialog.DialogManager;
-import com.peaceray.quantro.keys.FastKeyCheck;
 import com.peaceray.quantro.premium.PremiumLibrary;
 import com.peaceray.quantro.utils.Analytics;
 import com.peaceray.quantro.utils.VersionCapabilities;
@@ -196,9 +195,7 @@ public class QuantroPreferences extends PreferenceActivity implements
     	
     	launchingActivity.startActivity(intent) ;
 	}
-	
 
-	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		// There appears to be a crash-bug when applying screen size settings to
@@ -211,9 +208,9 @@ public class QuantroPreferences extends PreferenceActivity implements
 		// Force portrait layout
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT) ;
 
-		addPreferencesFromResource(R.layout.settings);
+		addPreferencesFromResource(R.xml.settings);
 		PreferenceManager.setDefaultValues(QuantroPreferences.this,
-				R.layout.settings, false);
+				R.xml.settings, false);
 
 		mOriginalSummary = new Hashtable<String, String>();
 		mDialogManager = new DialogManager(this);

@@ -21,7 +21,7 @@ import android.view.ViewParent;
 public class InvisibleControlsSingleTouchMotionEventHandler implements
 		InvisibleControlsMotionEventHandler {
 	
-	public static final String TAG = "InvisibleControlsSingleTouchMotionEventHandler" ;
+	public static final String TAG = "ICSTMEventHandler" ;
 	
 	private Rect tempRect = new Rect() ;
 

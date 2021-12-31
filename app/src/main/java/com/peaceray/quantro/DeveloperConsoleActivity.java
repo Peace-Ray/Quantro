@@ -46,7 +46,7 @@ import android.widget.Toast;
 
 public class DeveloperConsoleActivity extends QuantroActivity implements OnTimeSetListener, OnClickListener  {
 
-	private static final String TAG = "DeveloperConsoleActivity" ;
+	private static final String TAG = "DConsoleActivity" ;
 	
 	private static final int DIALOG_PROGRESS = 0 ;
 	private static final int DIALOG_ALERT = 1 ;
@@ -675,7 +675,7 @@ public class DeveloperConsoleActivity extends QuantroActivity implements OnTimeS
     	refreshHandler.sleep(5000) ;
     	
     	// invalidate content view
-    	View v = this.findViewById(R.layout.developer_console_layout) ;
+    	View v = this.findViewById(R.id.developer_console) ;
     	if ( v != null )
     		v.invalidate() ;
     	

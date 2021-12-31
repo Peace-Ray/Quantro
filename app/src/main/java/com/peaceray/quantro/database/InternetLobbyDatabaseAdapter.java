@@ -43,7 +43,7 @@ public class InternetLobbyDatabaseAdapter {
 		private static final String ORIGIN = "origin" ;
 	}
     
-    private static final String TAG = "InternetLobbyDatabaseAdapter";
+    private static final String TAG = "ILDatabaseAdapter";
     
     private static final String DATABASE_NAME = "quantro_internet_lobbies";
     private static final String DATABASE_TABLE = "lobby" ;

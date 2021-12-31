@@ -26,7 +26,7 @@ import com.peaceray.quantro.model.game.Game;
  */
 public class NoOpClientCommunications extends ClientCommunications {
 	
-	private static final String TAG = "NoOpClientCommunications" ;
+	private static final String TAG = "NOCCommunications" ;
 	
 	protected Object BUFFER_RUNNING_MUTEX = new Object() ;
 	

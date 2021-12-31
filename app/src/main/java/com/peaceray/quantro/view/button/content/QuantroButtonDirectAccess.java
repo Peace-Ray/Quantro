@@ -16,7 +16,7 @@ import com.peaceray.quantro.view.button.QuantroContentWrappingButton;
 public class QuantroButtonDirectAccess implements QuantroButtonAccess {
 	
 	@SuppressWarnings("unused")
-	private static final String TAG = "QuantroButtonDirectSetter" ;
+	private static final String TAG = "QBDirectSetter" ;
 
 	QuantroContentWrappingButton mButton ;
 	

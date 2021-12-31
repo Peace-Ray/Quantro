@@ -43,7 +43,7 @@ import com.peaceray.quantro.view.dialog.ProgressDialog;
 public class NewInternetLobbyActivity extends QuantroActivity implements OnItemSelectedListener {
 	
 	
-	private static final String TAG = "NewInternetLobbyActivity" ;
+	private static final String TAG = "NILobbyActivity" ;
 	
 	
 	////////////////////////////////////////////////////////////////////////////
@@ -675,7 +675,7 @@ public class NewInternetLobbyActivity extends QuantroActivity implements OnItemS
 	}
 	
 	
-	private static final String LOCK_NAME_DIM_STATIC="com.peaceray.quantro.main.NewInternetLobbyActivity.DIM_WAKE_LOCK" ;
+	private static final String LOCK_NAME_DIM_STATIC="quantro:internetlobby_dim" ;
 	private static volatile PowerManager.WakeLock lockDimStatic=null ;
     
 	

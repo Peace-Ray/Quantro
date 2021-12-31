@@ -86,7 +86,7 @@ public class ToastShowerService extends Service {
 	    	Field f = c.getField("START_NOT_STICKY") ;
 	    	return f.getInt(null) ;
 	    } catch (Exception e) { 
-	    	return 0 ;		// shouldn't ever happen
+	    	return Service.START_STICKY_COMPATIBILITY ;		// shouldn't ever happen
 	    }
 	}
 	

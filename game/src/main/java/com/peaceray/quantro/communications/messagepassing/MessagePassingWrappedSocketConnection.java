@@ -63,7 +63,7 @@ public abstract class MessagePassingWrappedSocketConnection
 	implements MessageReader.Delegate, MultipleMessageReader.Delegate, DataObjectSenderReceiver<Message> {
 	
 	private static final boolean DEBUG_LOG = true && Debug.LOG ;
-	private static final String TAG = "MessagePassingWrappedSocketConnection" ;
+	private static final String TAG = "MPWSocketConnection" ;
 	
 	private static final void log(String str) {
 		if ( DEBUG_LOG ) {

@@ -11,7 +11,7 @@ public class RingerModeChangedService extends IntentService {
 	
 	private static final String NAME = "com.peaceray.quantro.main.RingerModeChangedService" ;
 	
-	private static final String LOCK_NAME_STATIC="com.peaceray.quantro.main.RingerModeChangedService";
+	private static final String LOCK_NAME_STATIC="quantro:ringermode";
 	private static volatile PowerManager.WakeLock lockStatic=null;
 	
 

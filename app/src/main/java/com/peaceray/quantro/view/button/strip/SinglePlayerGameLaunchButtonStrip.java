@@ -90,7 +90,7 @@ public class SinglePlayerGameLaunchButtonStrip extends QuantroButtonStrip
 				int buttonType, int gameMode ) ;
 	}
 
-	private static final String TAG = "SinglePlayerGameLaunchButtonStrip" ;
+	private static final String TAG = "SPGLButtonStrip" ;
 	
 	public SinglePlayerGameLaunchButtonStrip(Context context, AttributeSet attrs) {
 		super(context, attrs);

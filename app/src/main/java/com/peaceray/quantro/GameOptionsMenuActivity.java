@@ -105,9 +105,7 @@ public class GameOptionsMenuActivity extends QuantroActivity implements GameOpti
     
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-    	if ( super.handleActivityResult(requestCode, resultCode, data) ) {
-    		return ;
-    	}
+		super.onActivityResult(requestCode, resultCode, data);
     }
     
     

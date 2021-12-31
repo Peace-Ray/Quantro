@@ -76,7 +76,7 @@ public class LobbyTitleBarButtonStrip extends QuantroButtonStrip
 	
 	
 	@SuppressWarnings("unused")
-	private static final String TAG = "LobbyTitleBarButtonStrip" ;
+	private static final String TAG = "LTBButtonStrip" ;
 	
 	
 	public LobbyTitleBarButtonStrip(Context context, AttributeSet attrs) {

@@ -14,7 +14,7 @@ import android.util.Log;
 
 public class CustomGameModeSettingsDatabaseAdapter {
 	
-	private static final String TAG = "CustomGameModeSettingsDatabaseAdapter";
+	private static final String TAG = "CGMSDatabaseAdapter";
 
 	private static final Object DATABASE_MUTEX = new Object() ;
 	

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.peaceray.quantro.view.lobby.InternetLobbyManagerStripView
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:custom="http://schemas.android.com/apk/res/com.peaceray.quantro"
+  xmlns:custom="http://schemas.android.com/apk/res-auto"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
   custom:ilmsv_action_strip="@+id/internet_lobby_manager_action_strip"

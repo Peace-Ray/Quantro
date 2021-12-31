@@ -737,7 +737,7 @@ public class LobbyService extends Service
 	 * *************************************************************************
 	 */
     
-    private static final String LOCK_NAME_STATIC="com.peaceray.quantro.main.LobbyService";
+    private static final String LOCK_NAME_STATIC="quantro:lobby";
 	private volatile PowerManager.WakeLock lock=null;
 	
     
@@ -760,7 +760,7 @@ public class LobbyService extends Service
     
     synchronized private WifiManager.WifiLock getWifiLock(Context context) {
 		if (wifiLock==null) {
-			WifiManager mgr=(WifiManager)context.getSystemService(Context.WIFI_SERVICE);
+			WifiManager mgr=(WifiManager)context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 			
 			int mode = WifiManager.WIFI_MODE_FULL ;
     		if ( VersionCapabilities.getVersion() >= 12 ) {

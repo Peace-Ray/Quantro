@@ -44,7 +44,7 @@ public class OptionsSoundMusicButtonView extends OptionsView implements
 		CustomButtonStrip.Delegate,
 		LabeledSeekBarAdapter.OnSeekBarChangeListener, com.peaceray.quantro.view.button.collage.MusicButtonCollage.Delegate {
 	
-	private static final String TAG = "OptionsSoundMusicButtonView" ;
+	private static final String TAG = "OSMButtonView" ;
 	
 	
 	Delegate mDelegate ;

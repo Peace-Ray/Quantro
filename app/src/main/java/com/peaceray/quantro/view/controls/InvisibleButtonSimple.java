@@ -22,7 +22,7 @@ public class InvisibleButtonSimple extends View
 		implements InvisibleButtonInterface {
 
 	@SuppressWarnings("unused")
-	private static final String TAG = "InvisibleButtonSimple.java" ;
+	private static final String TAG = "InvisibleButtonSimple" ;
 	
 	public long MAX_MILLIS_TAP ;
 	public long MAX_MILLIS_DOUBLE_TAP ;

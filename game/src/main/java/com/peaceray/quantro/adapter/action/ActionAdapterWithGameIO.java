@@ -600,7 +600,6 @@ public class ActionAdapterWithGameIO extends ActionAdapter {
 	
 	/**
 	 * Indicates that the current row displacement for the game has changed.
-	 * @param displacement
 	 */
 	public synchronized void game_didChangeRealtime( Game game, long millis, double displacementSeconds, double rowsDisplacedAndTransferred ) {
 		double prevR = this.realtimeData.getDisplacementRows() ;

@@ -42,7 +42,7 @@ import android.util.Log;
  */
 public class DropShadowDrawableFactory {
 	
-	public static final String TAG = "DropShadowDrawableFactory" ;
+	public static final String TAG = "DSDrawableFactory" ;
 	
 	public static final int RESIZEABLE_WIDTH = 20 ;
 	public static final int RESIZEABLE_HEIGHT = 20 ;

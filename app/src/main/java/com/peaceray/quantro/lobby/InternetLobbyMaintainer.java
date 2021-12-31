@@ -107,7 +107,7 @@ public class InternetLobbyMaintainer {
 	}
 	
 
-	private static final String TAG = "InternetLobbyMaintainer" ;
+	private static final String TAG = "ILobbyMaintainer" ;
 	
 	InternetLobbyMaintainerThread mThread ;
 	InternetLobby mLobby ;

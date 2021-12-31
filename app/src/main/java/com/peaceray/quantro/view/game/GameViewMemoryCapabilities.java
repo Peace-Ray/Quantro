@@ -23,7 +23,7 @@ import com.peaceray.quantro.utils.VersionSafe;
  */
 public class GameViewMemoryCapabilities {
 	
-	private static final String TAG = "GameViewMemoryCapabilities" ;
+	private static final String TAG = "GVMCapabilities" ;
 	
 	private static final int MAX_SHEETS = 4 ;
 	private static final int MAX_CUSTOM_SHADOW_Q_ORIENTATIONS = 24 ;		// over-estimate

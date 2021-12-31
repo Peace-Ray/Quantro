@@ -42,7 +42,7 @@ public class FreePlayGameManagerStripView extends RelativeLayout
 		FreePlayGameManagerView, SinglePlayerGameLaunchButtonStrip.Delegate, CustomButtonStrip.Delegate, com.peaceray.quantro.view.button.collage.FreePlayGameLaunchButtonCollage.Delegate {
 
 	
-	private static final String TAG = "FreePlayGameManagerStripView" ;
+	private static final String TAG = "FPGManagerStripView" ;
 	
 	
 	

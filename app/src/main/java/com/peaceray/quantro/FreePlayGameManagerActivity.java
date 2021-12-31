@@ -42,7 +42,7 @@ import com.peaceray.quantro.view.options.OptionAvailability;
 public class FreePlayGameManagerActivity extends QuantroActivity
 		implements FreePlayGameManagerView.Delegate, GlobalDialog.DialogContext {
 
-	private static final String TAG = "FreePlayGameManagerActivity" ;
+	private static final String TAG = "FPGManagerActivity" ;
 	
 	
 	private static final int DIALOG_ID_TOO_MANY_CUSTOM_GAME_MODES = 0 ;
@@ -679,8 +679,7 @@ public class FreePlayGameManagerActivity extends QuantroActivity
 	
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-    	if ( super.handleActivityResult(requestCode, resultCode, data) )
-    		return ;
+		super.onActivityResult(requestCode, resultCode, data);
     	
     	//Log.d(TAG, "onActivityResult bracket IN") ;
     	Log.d(TAG, "onActivityResult") ;
