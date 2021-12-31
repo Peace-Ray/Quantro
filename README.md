@@ -58,8 +58,12 @@ support.
 In 2021 I returned to the code base, updating Quantro to run on modern
 Android OS versions and cleaning the project up a little for open source
 release. Other than these changes it's basically the same code I wrote ten
-years ago and should be viewed as an artifact from an inexperienced developer
-learning the ropes.
+years ago. In other words, it does not follow modern Android development conventions,
+nor match the code style and design patterns I'd use today. Updating the project
+to compile and run on modern Android systems has also introduced bugs and bottlenecks
+that may not have occurred in the original release. In short, this project
+should be viewed as an artifact from an inexperienced developer learning the
+ropes -- not a representative example of modern Android app development.
 
 I don't plan to actively continue development of Quantro, although I may review
 and clean up the multiplayer server code for open source release eventually.
