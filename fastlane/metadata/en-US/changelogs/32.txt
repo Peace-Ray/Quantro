@@ -1,0 +1,6 @@
+Optimized for modern Android OS versions
+Remove AdMob, Flurry, GPG and other non-free libraries
+Remove online leaderboards and achievements
+All premium content unlocked
+No more ads
+Adjustable game resolution

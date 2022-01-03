@@ -1,0 +1,5 @@
+Falling tetracube/tetromino puzzle game. Maneuver tetracubes to fill and clear rows across two different interacting layers in "Quantro" mode, or enjoy classic falling tetromino gameplay in "Retro" mode. All game modes are available in single-player and WiFi / Internet multiplayer.
+
+Play 6 different single-player game types with 36 unique pieces, or design your own with custom controls and piece types. Progress saves automatically.
+
+Challenge your friends on a local WiFi network, or over the Internet (Internet play relies on an external server and availability is not guaranteed).
