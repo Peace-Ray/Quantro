@@ -65,9 +65,12 @@ that may not have occurred in the original release. In short, this project
 should be viewed as an artifact from an inexperienced developer learning the
 ropes -- not a representative example of modern Android app development.
 
-I don't plan to actively continue development of Quantro, although I may review
-and clean up the multiplayer server code for open source release eventually.
-
 Thanks, and have fun!
 
 --Jake, 2022-1-1
+
+### Donations
+
+At present I don't plan to continue active development of Quantro, but if you feel
+like sending a donation my way anyway, I'm on PayPal at
+[paypal.me/jakemrosin](https://paypal.me/jakemrosin).
